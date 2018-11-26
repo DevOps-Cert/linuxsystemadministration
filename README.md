@@ -1,3 +1,4 @@
+
 # linuxsystemadministration
 This guide provides lab activities to help co-workers learn to become Linux system administrators.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is listed for our selected Linux distribution which is Ubuntu 16.04 LTS server.   This also helps me learn markdown for documentation.
 
@@ -1941,8 +1942,10 @@ nmtui
 # echo -e "10.20.30.50\tlb50" >> /etc/hosts
 ```
 ##	Host-based firewalling with iptables
-Although Ubuntu often uses ufw, straight iptables is better to learn.  All filtering tasks to be performed on lb99 only to avoid creating difficulty of troubleshooting a broken service on a machine also running another service such as bind or squid.
-#### Tasks: Disable ufw if configured,  and setup iptables to accept ssh as first rule.
+Although Ubuntu often uses ufw as an iptables front end, regular iptables is better to learn as it translates across all Linux distributions as well as it is more powerful.  
+
+All filtering tasks to be performed on lb90 only to avoid creating difficulty of troubleshooting a broken service on a machine also running another service such as bind or squid.
+#### Tasks: Disable ufw if configured on lb90,  and setup iptables to accept ssh as first rule.
 ```
 iptables -A INPUT -p tcp --dport ssh -j ACCEPT
 ```
@@ -2145,7 +2148,7 @@ ssh ciphers
 #### TASK: SSH as the user larry from 40 to 50 to test passwordless authentication
 #### TASK: SSH as the user larry from 50 to 40 to test passwordless authentication
 
-#### TASK: For SSH server on lb99, disable  TCP keepalives, enable password authentication, and disable remote root login 
+#### TASK: For SSH server on lb90, disable  TCP keepalives, enable password authentication, and disable remote root login 
 ````
 # cat /etc/ssh/sshd_config
 TCPKeepAlive no
@@ -2293,5 +2296,6 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDI1NjUyOSwtMTI3MTAyODUwOF19
+eyJoaXN0b3J5IjpbLTE0MDAxNjE2MzcsLTEyNzEwMjg1MDhdfQ
+==
 -->
