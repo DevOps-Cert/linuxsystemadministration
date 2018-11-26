@@ -241,7 +241,6 @@ sudo useradd -m george
 # sudo apt-get -y install apache2 squid tmux ntp bind9 dnsutils quota quotatool fish
 # sudo chsh -s /usr/bin/fish
 # sudo apt-get autoremove
-
 ```
 ### lb40.txt
 ```
@@ -2368,9 +2367,10 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg3NjMxMzYyLDM5NjE2MzE2OSwxODc0OD
-Q2Njg1LC0xMTY0MDY2Mjk0LDYwMjkwNDcxMSwtNjU1MzM1NzY2
-LDUyNjQ2MjgyMSwxMDk4Mzc0MzUxLC0xNDc3ODU3OTgyLC0xNj
-Q0MzEyNzI2LC0xMDA0NjkyOTc2LDE5NTQwNzcwNjMsLTc3MzI0
-OTAyMiwtMTQwMDE2MTYzNywtMTI3MTAyODUwOF19
+eyJoaXN0b3J5IjpbMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MT
+YzMTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNjAyOTA0NzEx
+LC02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nz
+c4NTc5ODIsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5NzYsMTk1NDA3
+NzA2MywtNzczMjQ5MDIyLC0xNDAwMTYxNjM3LC0xMjcxMDI4NT
+A4XX0=
 -->
