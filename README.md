@@ -905,7 +905,7 @@ crontab -u lab -l
 ```
 Run `df -h > /var/log/df.log` that daily at 10:15 checks disk space and writes it to /var/log/systemstatus.log
 ```
-# apt install sysstat
+# apt-get install sysstat
 # grep ENA /etc/default/sysstat
 ENABLED="true"
 # service sysstat restart
@@ -925,7 +925,7 @@ cron will log output which can be useful to investigate how a job performed.  Th
 Commands: dpkg, apt-get, apt-cache, aptitude
 ### Update packages from the network, a remote repository, or from the local file system
 Install a specific DEB file given URL: `# apt-get -y install `
-install web server: `apt install -y apache2`
+install web server: `apt-get install -y apache2`
 dump the information for package apache to a file named /tmp/3.2/apacheinfo `apt-cache show apache2 > /tmp/3.2/apacheinfo`
 Remove package named finger: `apt purge -y finger`
 How many files are part of finger?
@@ -1170,7 +1170,7 @@ Task: Restore default SELinux file contexts for /etc/passwd
 
 Additional resources: [tecmint - Implementing Mandatory Access Control](https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/), [Ubuntu AppArmor Wiki](https://wiki.ubuntu.com/AppArmor)
 ##	Manage Software
-On Ubuntu you can add software with `apt install -y <packagename>`
+On Ubuntu you can add software with `apt-get install -y <packagename>`
 Find out which package provides ping6 and install: 
 ```
 # apt-cache search ping6
@@ -1181,7 +1181,7 @@ thc-ipv6 - The Hacker Choice's IPv6 Attack Toolkit
 bash-completion: /usr/share/bash-completion/completions/ping6
 iputils-ping: /bin/ping6
 iputils-ping: /usr/share/man/man8/ping6.8.gz
-# apt install -y iputils-ping
+# apt-get install -y iputils-ping
 ```
 ##	Identify the component of a Linux distribution that a file belongs to placing the package name only in the file /tmp/7.5/pingpackage
 ```
@@ -1624,7 +1624,7 @@ For all of /dev/sdf make file system that is ext4. Make it active on boot under 
 # parted /dev/sdf --script mkpart primary ext4 0% 100%
 # parted /dev/sdf --script name 1 crypt
 # dd if=/dev/random of=/root/luks.key bs=1024 count=2
-# apt install cryptsetup
+# apt-get install cryptsetup
 # lsmod dm_crypt
 # modprobe dm_crypt
 # lsmod | grep dm_crypt
@@ -1905,7 +1905,7 @@ First, lookup octal values with `man 2 stat`
 Commands: quotacheck, quotaon, quotaoff, edquota, quotatool, quota 
 Assumption is that /quota is a separate partition on /dev/sdh1 taking up the entire 50 MB drive. If not, make one for home somewhere and somehow.
 ```
-# apt install quota quotatool
+# apt-get install quota quotatool
 # mkdir /quota
 /etc/fstab needs to have ,usrquota,grpquota added as options
 man mount # helps to point out the syntax for ,usrquota,grpquota
@@ -2051,7 +2051,7 @@ Documentation : `/usr/share/doc/ifupdown/examples/network-interfaces` which is a
 ##	Establishing and maintaining correct time 
 Traditional NTP server is best; when installing ntp package the new Ubuntu mechanism gets disabled which is what you want at this time as the new Ubuntu method drifts slightly and is just not as good.
 ```
-# apt install ntp -y -qqq
+# apt-get install ntp -y -qqq
 ```
 Setup ntp client to using several pool servers on lb40 and host service to other lb50-lb60 devices:
 ```
@@ -2367,7 +2367,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MDE2OTE3LDEyNDc5NzU2MzYsODg3Nj
+eyJoaXN0b3J5IjpbNDUwNDEyNzQyLDEyNDc5NzU2MzYsODg3Nj
 MxMzYyLDM5NjE2MzE2OSwxODc0ODQ2Njg1LC0xMTY0MDY2Mjk0
 LDYwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2MjgyMSwxMDk4Mz
 c0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0MzEyNzI2LC0xMDA0Njky
