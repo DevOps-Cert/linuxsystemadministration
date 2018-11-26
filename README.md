@@ -71,7 +71,7 @@ More tweaks can be found at https://wiki.ubuntu.com/SquidDebProxy
 ### apt-mirror
 An alternative idea would be a local apt-mirror repository which will never slow you down in that all files will be local; but, it will take a significant amount of time and space to populate your repository.  This will take in the ballpark of 129.0 GB heavily depending on configuration (use deb-amd64 to not also download i386).
 ### squid-deb-proxy
-This is the easiest solution, and easiest to maintain and install, it requires no configuration on the client side, and almost or no configuration on the server side.  However, you really aren't going to learn squid this way so doing this is to be discouraged.
+This is the easiest solution, and easiest to maintain and install, it requires no configuration on the client side, and almost or no configuration on the server side.   Therefore, this will be used by default. 
 _Install on the server_
 ```
 sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo start squid-deb-proxy
@@ -2304,7 +2304,8 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5ODM3NDM1MSwtMTQ3Nzg1Nzk4MiwtMT
-Y0NDMxMjcyNiwtMTAwNDY5Mjk3NiwxOTU0MDc3MDYzLC03NzMy
-NDkwMjIsLTE0MDAxNjE2MzcsLTEyNzEwMjg1MDhdfQ==
+eyJoaXN0b3J5IjpbNTI2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nz
+c4NTc5ODIsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5NzYsMTk1NDA3
+NzA2MywtNzczMjQ5MDIyLC0xNDAwMTYxNjM3LC0xMjcxMDI4NT
+A4XX0=
 -->
