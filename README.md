@@ -86,10 +86,10 @@ An alternative idea would be a local apt-mirror repository which will never slow
 Another idea would be to use apt-cacher-ng which will be slow on the first download of a file; but, like squid will keep a copy around for all future usage.  In contrast to apt-mirror, when clients are requesting for a package, apt-cacher checks if it has it cached, if yes – the package is served, if no – apt-cacher-ng fetches it from repositories, serves it to the client, and caches it [for other clients].  The biggest concern about this approach is people report it isn't stable.  Squid seems to be a better option.
 
 ## Files to support Vagrant
-Install vagrant and put the supplied Vagrantfile and standardize.txt file in the same folder.  Bring up the VMs (after they finish downloading) with vagrant up.   
+Install vagrant and put the supplied Vagrantfile, lb40.txt and standardize.txt file in the same folder.  Bring up the VMs (after they finish downloading) with vagrant up.   
 As we are using vagrant, the default username and password to accomplish tasks for these activities is vagrant/vagrant.  
 
-## Vagrantfile
+#### Vagrantfile
 ```
 Vagrant.configure("2") do |config|
  config.vm.provision :shell, path: "standardize.txt", run: 'always'
@@ -186,11 +186,11 @@ Vagrant.configure("2") do |config|
  end
 end
 ```
-## standardize.txt file
+### standardize.txt file
 ```
-# file is to be in same folder as Vagrantfile and named standardize.txt
-# It will allow for getting systems into a standardize state 
-# such as booting without Ubuntu's cloud-init
+# make sure to grab packages locally if possible
+sudo apt-get install -y squid-deb-proxy-client
+
 # enable vagrant ssh remotely with passwordsed
 sed -i 's/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/g' /etc/ssh/sshd_config  
 service ssh restart
@@ -198,12 +198,41 @@ service ssh restart
 sudo apt-get -y purge cloud-init
 sudo mv /etc/cloud/ ~/; sudo mv /var/lib/cloud/ ~/cloud-lib
 sudo apt remove -y open-iscsi
+#
 mkdir /tmp/{1..9}.{1..9}
-apt-get -y install --install-recommends linux-generic-hwe-16.04
-useradd -m fred
-useradd -m sally
-useradd -m george
-sudo apt-get install --install-recommends linux-generic-hwe-16.04
+sudo useradd -m fred
+sudo useradd -m sally
+sudo useradd -m george
+
+
+# apt-get update; apt-get upgrade -y
+# sudo apt-get -y install apache2 squid tmux ntp bind9 dnsutils quota quotatool fish
+# sudo chsh -s /usr/bin/fish
+# sudo apt-get autoremove
+
+```
+### lb40.txt
+```
+# Let's make sure we have fastest way to run updates by storing them on lb40
+sudo apt-get install squid-deb-proxy -y
+sudo systemctl start squid-deb-proxy
+sudo systemctl enable squid-deb-proxy
+# enable vagrant ssh remotely with password
+sed -i 's/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/g' /etc/ssh/sshd_config  
+service ssh restart
+# disable cloud for a faster bootpin
+sudo apt-get -y purge cloud-init
+sudo mv /etc/cloud/ ~/; sudo mv /var/lib/cloud/ ~/cloud-lib
+sudo apt remove -y open-iscsi
+mkdir /tmp/{1..9}.{1..9}
+sudo useradd -m fred
+sudo useradd -m sally
+sudo useradd -m george
+# apt-get update; apt-get upgrade -y
+# sudo apt-get -y install apache2 squid tmux ntp bind9 dnsutils quota quotatool fish
+# sudo chsh -s /usr/bin/fish
+# sudo apt-get autoremove
+
 ```
 ## tmux and fish and apropos and documentation
 Before doing any work within a vm at the command line, the first thing which should always be run is tmux (or screen if you are so inclined).  This will allow you to look up documentation without opening a new session or stopping your existing command.  Some vendors run tmux as the first thing they do when they log into our machines on shared sessions.  The most basic thing to do is open two terminals after tmux is loaded is to use `CTRL-B` then `" `.  To switch between them, use the `CTRL-B` then `up` or `down` arrow key.  There is a lot more a person could learn about tmux; but, this is enough to get several terminals up and running as well as navigate quickly between them.
@@ -2306,9 +2335,9 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDg0NjY4NSwtMTE2NDA2NjI5NCw2MD
-I5MDQ3MTEsLTY1NTMzNTc2Niw1MjY0NjI4MjEsMTA5ODM3NDM1
-MSwtMTQ3Nzg1Nzk4MiwtMTY0NDMxMjcyNiwtMTAwNDY5Mjk3Ni
-wxOTU0MDc3MDYzLC03NzMyNDkwMjIsLTE0MDAxNjE2MzcsLTEy
-NzEwMjg1MDhdfQ==
+eyJoaXN0b3J5IjpbMjA0OTI1NjE4OCwxODc0ODQ2Njg1LC0xMT
+Y0MDY2Mjk0LDYwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2Mjgy
+MSwxMDk4Mzc0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0MzEyNzI2LC
+0xMDA0NjkyOTc2LDE5NTQwNzcwNjMsLTc3MzI0OTAyMiwtMTQw
+MDE2MTYzNywtMTI3MTAyODUwOF19
 -->
