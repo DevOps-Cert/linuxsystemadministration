@@ -54,7 +54,8 @@ We are going to setup a group of computers all running Ubuntu 16.04 Server withi
 As you will be running more than one identical Ubuntu box; it makes some sense to maintain local LAN copies of packages you are going to be using to speed up installation.  There is no one size fits all; merely different ways of approaching the problem.
 Additional resources: [Cache APT packages with Squid proxy](http://www.rushiagr.com/blog/2015/06/05/cache-apt-packages-with-squid-proxy/)
 ### squid-deb-proxy
-This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than , and almost or no configuration on the server side.   Therefore, this will be used by default.  lb40 will automatically install this functionality.
+This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than and almost or no configuration on the server side.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy
+ Therefore, this will be used by default.  lb40 will automatically install this functionality.
 _Install on the server_
 ```
 sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo start squid-deb-proxy
@@ -2306,8 +2307,9 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2ND
-YyODIxLDEwOTgzNzQzNTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3
-MjYsLTEwMDQ2OTI5NzYsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC
-0xNDAwMTYxNjM3LC0xMjcxMDI4NTA4XX0=
+eyJoaXN0b3J5IjpbMTgxMTcyNDg4NCw2MDI5MDQ3MTEsLTY1NT
+MzNTc2Niw1MjY0NjI4MjEsMTA5ODM3NDM1MSwtMTQ3Nzg1Nzk4
+MiwtMTY0NDMxMjcyNiwtMTAwNDY5Mjk3NiwxOTU0MDc3MDYzLC
+03NzMyNDkwMjIsLTE0MDAxNjE2MzcsLTEyNzEwMjg1MDhdfQ==
+
 -->
