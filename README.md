@@ -62,7 +62,7 @@ refresh_pattern -i \.(tar.gz|tar|deb|rpm|bz2|gz|xml)$ 129600 90% 129600 override
 ```
 #### Squid Clients
 ````
-cat /etc/apt/apt.conf.d/01proxy
+# cat /etc/apt/apt.conf.d/01proxy
 Acquire::http::Proxy "http://10.20.30.40:8080/";
 Acquire::https::Proxy "http://10.20.30.40:8080/";
 ````
@@ -2304,7 +2304,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDg2ODk3NDYsLTE2NDQzMTI3MjYsLT
-EwMDQ2OTI5NzYsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0xNDAw
-MTYxNjM3LC0xMjcxMDI4NTA4XX0=
+eyJoaXN0b3J5IjpbMTU0MjE4NTE2MywtMTY0NDMxMjcyNiwtMT
+AwNDY5Mjk3NiwxOTU0MDc3MDYzLC03NzMyNDkwMjIsLTE0MDAx
+NjE2MzcsLTEyNzEwMjg1MDhdfQ==
 -->
