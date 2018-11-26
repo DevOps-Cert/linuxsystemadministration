@@ -53,8 +53,18 @@ We are going to setup a group of computers all running Ubuntu 16.04 Server withi
 ## Caching Updates and Packages
 As you will be running more than one identical Ubuntu box; it makes some sense to maintain local LAN copies of packages you are going to be using to speed up installation.  There is no one size fits all; merely different ways of approaching the problem.
 Additional resources: [Cache APT packages with Squid proxy](http://www.rushiagr.com/blog/2015/06/05/cache-apt-packages-with-squid-proxy/)
+### squid-deb-proxy
+This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than , and almost or no configuration on the server side.   Therefore, this will be used by default. 
+_Install on the server_
+```
+sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo start squid-deb-proxy
+```
+_Install on clients_
+```
+sudo apt-get install squid-deb-proxy-client
+```
 ### Squid
-One of the things we are practicing anyways is setting up a squid caching server.  So, this is the ideal approach to make updates apply faster locally off your LAN using lb40 as the caching server and can be up and running quickly (apt-mirror requires you to download the entire mirror which can take a long time).  Before doing anything else, setup and optimize squid on lb40 as a recommendation.  Although it was tempting to force all vms to use this feature with vagrant, the clients should be added manually after lb40 is working.  Set Debian package files to a longer life than normal (perhaps several months).  
+One of the things we are practicing anyways is setting up a squid caching server.  So, this is the ideal long term approaches to make updates apply faster locally off your LAN using lb40 as the caching server and can be up and running quickly (apt-mirror requires you to download the entire mirror which can take a long time).  Before doing anything else, setup and optimize squid on lb40 as a recommendation.  Although it was tempting to force all vms to use this feature with vagrant, the clients should be added manually after lb40 is working.  Set Debian package files to a longer life than normal (perhaps several months).  
 #### Squid Server
 ```
 http_port 8080
@@ -70,16 +80,8 @@ The first download will be at WAN speed; but, subsequent downloads should be muc
 More tweaks can be found at https://wiki.ubuntu.com/SquidDebProxy
 ### apt-mirror
 An alternative idea would be a local apt-mirror repository which will never slow you down in that all files will be local; but, it will take a significant amount of time and space to populate your repository.  This will take in the ballpark of 129.0 GB heavily depending on configuration (use deb-amd64 to not also download i386).
-### squid-deb-proxy
-This is the easiest solution, and easiest to maintain and install, it requires no configuration on the client side, and almost or no configuration on the server side.   Therefore, this will be used by default. 
-_Install on the server_
-```
-sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo start squid-deb-proxy
-```
-_Install on clients_
-```
-sudo apt-get install squid-deb-proxy-client
-```
+
+
 ### apt-cacher-ng
 Another idea would be to use apt-cacher-ng which will be slow on the first download of a file; but, like squid will keep a copy around for all future usage.  In contrast to apt-mirror, when clients are requesting for a package, apt-cacher checks if it has it cached, if yes – the package is served, if no – apt-cacher-ng fetches it from repositories, serves it to the client, and caches it [for other clients].  The biggest concern about this approach is people report it isn't stable.  Squid seems to be a better option.
 
@@ -2304,8 +2306,8 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nz
-c4NTc5ODIsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5NzYsMTk1NDA3
-NzA2MywtNzczMjQ5MDIyLC0xNDAwMTYxNjM3LC0xMjcxMDI4NT
-A4XX0=
+eyJoaXN0b3J5IjpbLTY1NTMzNTc2Niw1MjY0NjI4MjEsMTA5OD
+M3NDM1MSwtMTQ3Nzg1Nzk4MiwtMTY0NDMxMjcyNiwtMTAwNDY5
+Mjk3NiwxOTU0MDc3MDYzLC03NzMyNDkwMjIsLTE0MDAxNjE2Mz
+csLTEyNzEwMjg1MDhdfQ==
 -->
