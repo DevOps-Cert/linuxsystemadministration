@@ -1963,9 +1963,9 @@ iptables -A INPUT -p tcp --source 10.20.30.60 --dport 80 -j DROP
 iptables -A INPUT -p tcp --source 10.20.30.0/24 --dport 80 -j ACCEPT
 ```
 #### TASK: Save current iptable rules to /etc/iptables
-````
+```
 iptables-save > /etc/iptables
-````
+```
 Additional resources: [tecmint - iptables](https://www.tecmint.com/basic-guide-on-iptables-linux-firewall-tips-commands/)
 
 ##	Route traffic statically
@@ -2157,12 +2157,12 @@ ssh ciphers
 #### TASK: SSH as the user larry from 50 to 40 to test passwordless authentication
 
 #### TASK: For SSH server on lb90, disable  TCP keepalives, enable password authentication, and disable remote root login 
-````
+```
 # cat /etc/ssh/sshd_config
 TCPKeepAlive no
 PermitRootLogin no
 PasswordAuthentication yes
-````
+```
 #### TASK: Allow users luke and vagrant to ssh in
 ```
 # grep Users /etc/ssh/sshd_config
@@ -2304,7 +2304,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NTA4ODg0MywtMTY0NDMxMjcyNiwtMT
-AwNDY5Mjk3NiwxOTU0MDc3MDYzLC03NzMyNDkwMjIsLTE0MDAx
-NjE2MzcsLTEyNzEwMjg1MDhdfQ==
+eyJoaXN0b3J5IjpbLTE0ODgyMDE2NDcsLTE2NDQzMTI3MjYsLT
+EwMDQ2OTI5NzYsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0xNDAw
+MTYxNjM3LC0xMjcxMDI4NTA4XX0=
 -->
