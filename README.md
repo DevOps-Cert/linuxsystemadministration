@@ -264,7 +264,6 @@ sudo useradd -m george
 # sudo apt-get -y install apache2 squid tmux ntp bind9 dnsutils quota quotatool fish
 # sudo chsh -s /usr/bin/fish
 # sudo apt-get autoremove
-
 ```
 ## tmux and fish and apropos and documentation
 Before doing any work within a vm at the command line, the first thing which should always be run is tmux (or screen if you are so inclined).  This will allow you to look up documentation without opening a new session or stopping your existing command.  Some vendors run tmux as the first thing they do when they log into our machines on shared sessions.  The most basic thing to do is open two terminals after tmux is loaded is to use `CTRL-B` then `" `.  To switch between them, use the `CTRL-B` then `up` or `down` arrow key.  There is a lot more a person could learn about tmux; but, this is enough to get several terminals up and running as well as navigate quickly between them.
@@ -2367,7 +2366,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MDI0MzcxOSwxODc0ODQ2Njg1LC0xMT
+eyJoaXN0b3J5IjpbLTcxMDY0NjY0NSwxODc0ODQ2Njg1LC0xMT
 Y0MDY2Mjk0LDYwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2Mjgy
 MSwxMDk4Mzc0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0MzEyNzI2LC
 0xMDA0NjkyOTc2LDE5NTQwNzcwNjMsLTc3MzI0OTAyMiwtMTQw
