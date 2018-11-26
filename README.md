@@ -57,6 +57,7 @@ Additional resources: [Cache APT packages with Squid proxy](http://www.rushiagr.
 One of the things we are practicing anyways is setting up a squid caching server.  So, this is the ideal approach to make updates apply faster locally off your LAN using lb40 as the caching server and can be up and running quickly (apt-mirror requires you to download the entire mirror which can take a long time).  Before doing anything else, setup and optimize squid on lb40 as a recommendation.  Although it was tempting to force all vms to use this feature, the clients should be added manually after lb40 is working.  Set Debian package files to a longer life than normal (perhaps several months).  
 #### Squid Server
 ```
+http_port 8080
 refresh_pattern -i \.(tar.gz|tar|deb|rpm|bz2|gz|xml)$ 129600 90% 129600 override-expire ignore-no-cache ignore-no-store ignore-private
 ```
 #### Squid Clients
@@ -2303,7 +2304,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNTk5MDAxNywtMTY0NDMxMjcyNiwtMT
+eyJoaXN0b3J5IjpbLTkxOTY2ODkxNywtMTY0NDMxMjcyNiwtMT
 AwNDY5Mjk3NiwxOTU0MDc3MDYzLC03NzMyNDkwMjIsLTE0MDAx
 NjE2MzcsLTEyNzEwMjg1MDhdfQ==
 -->
