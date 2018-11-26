@@ -2113,7 +2113,7 @@ Ubuntu can provide hypervisor services to run VMs within domains.
 
 To enable this, you will need appropriate packages:
 ```
-apt install -y qemu-kvm qemu-img libvirt
+apt-get install -y qemu-kvm qemu-img libvirt
 ```
 Ensure that libvirtd service is running:
 ```
@@ -2140,7 +2140,7 @@ Before we can do anything, we need our IP address and hostname
 ```
 Install DNS stuff and switch to configuration folder:
 ```
-# apt install bind9 dnsutils -y
+# apt-get install bind9 dnsutils -y
 cd /etc/bind/
 ```
 Setup DNS caching server to use 10.0.0.1:
@@ -2273,7 +2273,7 @@ Set lb50 to use lb40 as proxy server for updates:
 ### Restrict access to a web page
 #### Set up a default configuration HTTP server with SELinux in Enforcing mode and active firewalld configuration.
 `
-apt install -y apache2
+apt-get install -y apache2
 systemctl enable apache2
 systemctl start apache2
 `
@@ -2294,7 +2294,7 @@ MariaDB is the most common database server and is what we use.
 ##	Containers
 #### TASK: Setup Linux container ubuntu and start it
 ```
-# apt install lxc
+# apt-get install lxc
 # systemctl status lxc.service
 # systemctl enable lxc
 # lxc-ls
@@ -2367,10 +2367,10 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUwNDEyNzQyLDEyNDc5NzU2MzYsODg3Nj
-MxMzYyLDM5NjE2MzE2OSwxODc0ODQ2Njg1LC0xMTY0MDY2Mjk0
-LDYwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2MjgyMSwxMDk4Mz
-c0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0MzEyNzI2LC0xMDA0Njky
-OTc2LDE5NTQwNzcwNjMsLTc3MzI0OTAyMiwtMTQwMDE2MTYzNy
-wtMTI3MTAyODUwOF19
+eyJoaXN0b3J5IjpbLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4Nz
+YzMTM2MiwzOTYxNjMxNjksMTg3NDg0NjY4NSwtMTE2NDA2NjI5
+NCw2MDI5MDQ3MTEsLTY1NTMzNTc2Niw1MjY0NjI4MjEsMTA5OD
+M3NDM1MSwtMTQ3Nzg1Nzk4MiwtMTY0NDMxMjcyNiwtMTAwNDY5
+Mjk3NiwxOTU0MDc3MDYzLC03NzMyNDkwMjIsLTE0MDAxNjE2Mz
+csLTEyNzEwMjg1MDhdfQ==
 -->
