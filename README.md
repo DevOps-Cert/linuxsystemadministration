@@ -66,7 +66,8 @@ An alternative idea would be a local apt-mirror repository which will never slow
 This is the easiest solution, and easiest to maintain and install, it requires no configuration on the client side, and almost or no configuration on the server side.
 _Install on the server_
 ```
-sudo apt-get install squid-deb-proxy squid-deb-proxy-client
+sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo start squid-deb-proxy
+
 ```
 _Install on clients_
 ```
@@ -2296,6 +2297,6 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDAxNjE2MzcsLTEyNzEwMjg1MDhdfQ
-==
+eyJoaXN0b3J5IjpbLTc3MzI0OTAyMiwtMTQwMDE2MTYzNywtMT
+I3MTAyODUwOF19
 -->
