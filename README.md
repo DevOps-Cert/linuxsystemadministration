@@ -55,6 +55,7 @@ As you will be running more than one identical Ubuntu box; it makes some sense t
 Additional resources: [Cache APT packages with Squid proxy](http://www.rushiagr.com/blog/2015/06/05/cache-apt-packages-with-squid-proxy/)
 ### squid-deb-proxy
 This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than package and no configuration on the server side after installing packages.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default with Vagrantfile and configuration scripts.  lb40 will automatically install this functionality and this server should be the most heavily used anyways.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128.
+
 _Install on the server_
 ```
 # sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo systemctl start squid-deb-proxy; systemctl enable squid-deb-proxy
@@ -2366,9 +2367,9 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNjkyNjc5NSwxODc0ODQ2Njg1LC0xMT
-Y0MDY2Mjk0LDYwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2Mjgy
-MSwxMDk4Mzc0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0MzEyNzI2LC
-0xMDA0NjkyOTc2LDE5NTQwNzcwNjMsLTc3MzI0OTAyMiwtMTQw
-MDE2MTYzNywtMTI3MTAyODUwOF19
+eyJoaXN0b3J5IjpbMjk1NDc1OTc1LDE4NzQ4NDY2ODUsLTExNj
+QwNjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIx
+LDEwOTgzNzQzNTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3MjYsLT
+EwMDQ2OTI5NzYsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0xNDAw
+MTYxNjM3LC0xMjcxMDI4NTA4XX0=
 -->
