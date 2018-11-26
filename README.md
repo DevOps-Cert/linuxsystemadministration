@@ -54,7 +54,7 @@ We are going to setup a group of computers all running Ubuntu 16.04 Server withi
 As you will be running more than one identical Ubuntu box; it makes some sense to maintain local LAN copies of packages you are going to be using to speed up installation.  There is no one size fits all; merely different ways of approaching the problem.
 Additional resources: [Cache APT packages with Squid proxy](http://www.rushiagr.com/blog/2015/06/05/cache-apt-packages-with-squid-proxy/)
 ### squid-deb-proxy
-This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than and almost or no configuration on the server side.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default with Vagrantfile and configuration scripts.  lb40 will automatically install this functionality.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128.
+This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than package and no configuration on the server side after installing packages.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default with Vagrantfile and configuration scripts.  lb40 will automatically install this functionality and this server should be the most heavily used anyways.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128.
 _Install on the server_
 ```
 # sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo systemctl start squid-deb-proxy; systemctl enable squid-deb-proxy
@@ -2366,7 +2366,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDY0NjY0NSwxODc0ODQ2Njg1LC0xMT
+eyJoaXN0b3J5IjpbLTkxNjkyNjc5NSwxODc0ODQ2Njg1LC0xMT
 Y0MDY2Mjk0LDYwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2Mjgy
 MSwxMDk4Mzc0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0MzEyNzI2LC
 0xMDA0NjkyOTc2LDE5NTQwNzcwNjMsLTc3MzI0OTAyMiwtMTQw
