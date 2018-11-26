@@ -2293,7 +2293,6 @@ lb60 # cat /etc/exports
 * [Cert Exam Prep: Linux Foundation Certified System Administrator (LFCS) by  Mark Grimes](https://channel9.msdn.com/events/Ignite/2016/BRK3268?term=Mark%20Grimes&lang-en=true)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
-* Hah
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMjE0ODUyOCwtMTI3MTAyODUwOF19
+eyJoaXN0b3J5IjpbMTM2MTM2MTA1MywtMTI3MTAyODUwOF19
 -->
