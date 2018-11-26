@@ -93,10 +93,22 @@ As we are using vagrant, the default username and password to accomplish tasks f
 ```
 Vagrant.configure("2") do |config|
  config.vm.provision :shell, path: "standardize.txt", run: 'always'
+#  This is the best way to set all machines to use the same proxy server; but, requires plugin and proxy server to be already setup
+# consider using squid-deb-proxy instead as it is automatically optimized for this function
+# if Vagrant.has_plugin?("vagrant-proxyconf")
+#    config.apt_proxy.http     = "http://10.20.30.40:8080/"
+#    config.apt_proxy.https    = "http://10.20.30.40:8080/"
+# end
  config.vm.define "lb40" do |lb40|
+    lb40.vm.provision :shell, path: "lb40.txt", run: 'always'
     lb40.vm.box = "lb40"
 	lb40.vm.network "private_network", ip: "10.20.30.40", virtualbox__intnet: true, :adapter => 2
     lb40.vm.network "forwarded_port", guest: 22, host: 55540
+	lb40.vm.network "forwarded_port", guest: 3128, host: 3128
+	lb40.vm.network "forwarded_port", guest: 8080, host: 8080
+	lb40.vm.network "forwarded_port", guest: 44480, host: 80
+	lb40.vm.network "forwarded_port", guest: 44443, host: 443
+	lb40.vm.network "forwarded_port", guest: 44421, host: 21
 	lb40.vm.hostname = "lb40"
 	lb40.vm.box = "ubuntu/xenial64"
 	lb40.vm.provider :virtualbox do |lb40|
@@ -162,6 +174,16 @@ Vagrant.configure("2") do |config|
              lb40.customize ['createhd', '--filename', './14Disk.vdi', '--variant', 'Fixed', '--size', 50]
         end
         lb40.customize ['storageattach', :id,  '--storagectl', 'SCSI', '--port', 13, '--device', 0, '--type', 'hdd', '--medium', './14Disk.vdi']
+		# drive 15
+		unless File.exist?('./15Disk.vdi')
+             lb40.customize ['createhd', '--filename', './15Disk.vdi', '--variant', 'Fixed', '--size', 50]
+        end
+        lb40.customize ['storageattach', :id,  '--storagectl', 'SCSI', '--port', 14, '--device', 0, '--type', 'hdd', '--medium', './15Disk.vdi']
+		# drive 16
+		unless File.exist?('./16Disk.vdi')
+             lb40.customize ['createhd', '--filename', './16Disk.vdi', '--variant', 'Fixed', '--size', 50]
+        end
+        lb40.customize ['storageattach', :id,  '--storagectl', 'SCSI', '--port', 15, '--device', 0, '--type', 'hdd', '--medium', './16Disk.vdi']
 	end
  end
  config.vm.define "lb50" do |lb50|
@@ -183,6 +205,16 @@ Vagrant.configure("2") do |config|
 	lb60.vm.provider :virtualbox do |lb60|
         lb60.name = "lb60"
 	end
+ end
+   config.vm.define "lb90" do |lb90|
+    lb90.vm.box = "iptables"
+    lb90.vm.network "forwarded_port", guest: 22, host: 55590
+	lb90.vm.network "private_network", ip: "10.20.30.90", virtualbox__intnet: true, :adapter => 2
+	lb90.vm.hostname = "lb90"
+	lb90.vm.box = "ubuntu/xenial64"
+	lb90.vm.provider :virtualbox do |lb90|
+        lb90.name = "lb90"
+    end
  end
 end
 ```
@@ -2335,7 +2367,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0OTI1NjE4OCwxODc0ODQ2Njg1LC0xMT
+eyJoaXN0b3J5IjpbLTU0MDI0MzcxOSwxODc0ODQ2Njg1LC0xMT
 Y0MDY2Mjk0LDYwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2Mjgy
 MSwxMDk4Mzc0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0MzEyNzI2LC
 0xMDA0NjkyOTc2LDE5NTQwNzcwNjMsLTc3MzI0OTAyMiwtMTQw
