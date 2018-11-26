@@ -57,7 +57,7 @@ Additional resources: [Cache APT packages with Squid proxy](http://www.rushiagr.
 This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than and almost or no configuration on the server side.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default.  lb40 will automatically install this functionality.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128.
 _Install on the server_
 ```
-sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo start squid-deb-proxy
+sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo systemctl start squid-deb-proxy; systemctl enable squid-deb-proxy
 ```
 _Install on clients_
 ```
@@ -2306,9 +2306,9 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM2MjMwMDY2LC0xMTY0MDY2Mjk0LDYwMj
-kwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2MjgyMSwxMDk4Mzc0MzUx
-LC0xNDc3ODU3OTgyLC0xNjQ0MzEyNzI2LC0xMDA0NjkyOTc2LD
-E5NTQwNzcwNjMsLTc3MzI0OTAyMiwtMTQwMDE2MTYzNywtMTI3
-MTAyODUwOF19
+eyJoaXN0b3J5IjpbLTE4MzUzODY3ODEsLTExNjQwNjYyOTQsNj
+AyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgzNzQz
+NTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5Nz
+YsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0xNDAwMTYxNjM3LC0x
+MjcxMDI4NTA4XX0=
 -->
