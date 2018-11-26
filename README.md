@@ -667,7 +667,7 @@ fred $ umask -p
 fred $ umask -S
 u=rwx,g=rwx,o=rx
 # umask 0037
-# apt install -y pam_umask
+# apt-get install -y pam_umask
 ```
 Other stuff:
 ```
@@ -2367,10 +2367,10 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MT
-YzMTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNjAyOTA0NzEx
-LC02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nz
-c4NTc5ODIsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5NzYsMTk1NDA3
-NzA2MywtNzczMjQ5MDIyLC0xNDAwMTYxNjM3LC0xMjcxMDI4NT
-A4XX0=
+eyJoaXN0b3J5IjpbLTk3MDE2OTE3LDEyNDc5NzU2MzYsODg3Nj
+MxMzYyLDM5NjE2MzE2OSwxODc0ODQ2Njg1LC0xMTY0MDY2Mjk0
+LDYwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2MjgyMSwxMDk4Mz
+c0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0MzEyNzI2LC0xMDA0Njky
+OTc2LDE5NTQwNzcwNjMsLTc3MzI0OTAyMiwtMTQwMDE2MTYzNy
+wtMTI3MTAyODUwOF19
 -->
