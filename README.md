@@ -54,10 +54,17 @@ We are going to setup a group of computers all running Ubuntu 16.04 Server withi
 As you will be running more than one identical Ubuntu box; it makes some sense to maintain local LAN copies of packages you are going to be using to speed up installation.  There is no one size fits all; merely different ways of approaching the problem.
 Additional resources: [Cache APT packages with Squid proxy](http://www.rushiagr.com/blog/2015/06/05/cache-apt-packages-with-squid-proxy/)
 ### Squid
-One of the things we are practicing anyways is setting up a squid caching server.  So, this is the ideal approach to make updates apply faster locally off your LAN using lb40 as the caching server and can be up and running quickly (apt-mirror requires you to download the entire mirror which can take a long time).  Before doing anything else, setup and optimize squid on lb40 as a recommendation.  Set Debian package files to a longer life than normal (perhaps several months).  
+One of the things we are practicing anyways is setting up a squid caching server.  So, this is the ideal approach to make updates apply faster locally off your LAN using lb40 as the caching server and can be up and running quickly (apt-mirror requires you to download the entire mirror which can take a long time).  Before doing anything else, setup and optimize squid on lb40 as a recommendation.  Although it was tempting to force all vms to use this feature, the clients should be added manually after lb40 is working.  Set Debian package files to a longer life than normal (perhaps several months).  
+#### Squid Server
 ```
 refresh_pattern -i \.(tar.gz|tar|deb|rpm|bz2|gz|xml)$ 129600 90% 129600 override-expire ignore-no-cache ignore-no-store ignore-private
 ```
+#### Squid Clients
+````
+cat /etc/apt/apt.conf.d/01proxy
+Acquire::http::Proxy "http://10.20.30.40:8080/";
+Acquire::https::Proxy "http://10.20.30.40:8080/";
+````
 The first download will be at WAN speed; but, subsequent downloads should be much faster. 
 More tweaks can be found at https://wiki.ubuntu.com/SquidDebProxy
 ### apt-mirror
@@ -2296,7 +2303,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDQzMTI3MjYsLTEwMDQ2OTI5NzYsMT
-k1NDA3NzA2MywtNzczMjQ5MDIyLC0xNDAwMTYxNjM3LC0xMjcx
-MDI4NTA4XX0=
+eyJoaXN0b3J5IjpbMTYyNTk5MDAxNywtMTY0NDMxMjcyNiwtMT
+AwNDY5Mjk3NiwxOTU0MDc3MDYzLC03NzMyNDkwMjIsLTE0MDAx
+NjE2MzcsLTEyNzEwMjg1MDhdfQ==
 -->
