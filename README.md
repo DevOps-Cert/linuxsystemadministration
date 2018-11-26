@@ -1,4 +1,3 @@
-
 # linuxsystemadministration
 This guide provides lab activities to help co-workers learn to become Linux system administrators.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is listed for our selected Linux distribution which is Ubuntu 16.04 LTS server.   This also helps me learn markdown for documentation.
 
@@ -2294,5 +2293,5 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTM2MTA1MywtMTI3MTAyODUwOF19
+eyJoaXN0b3J5IjpbLTYwNDI1NjUyOSwtMTI3MTAyODUwOF19
 -->
