@@ -27,7 +27,7 @@ Make vim default editor: ```update-alternatives --config editor```
 
 To create the working folders to be consistent in /tmp; use ```mkdir /tmp/{1..9}.{1..9}```
 ### Layout of drives
-The disk layout will be as follows for lb40 and is reflected in Vagrantfile supplied (to avoid confusion and drive re-use between exercises as well as partitioning for exercises):
+Virtualbox restricts us to 15 hard drives.  The disk layout will be as follows for lb40 and is reflected in Vagrantfile supplied to avoid confusion and drive re-use between exercises as well as partitioning for exercises:
 1. /dev/sda VagrantRoot
 2. /dev/sdb ubuntu cloud fs
 3. /dev/sdc 1000MB will be for partition practicing and other non-persistent across boot stuff
@@ -2304,7 +2304,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzc4NTc5ODIsLTE2NDQzMTI3MjYsLT
-EwMDQ2OTI5NzYsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0xNDAw
-MTYxNjM3LC0xMjcxMDI4NTA4XX0=
+eyJoaXN0b3J5IjpbMTA5ODM3NDM1MSwtMTQ3Nzg1Nzk4MiwtMT
+Y0NDMxMjcyNiwtMTAwNDY5Mjk3NiwxOTU0MDc3MDYzLC03NzMy
+NDkwMjIsLTE0MDAxNjE2MzcsLTEyNzEwMjg1MDhdfQ==
 -->
