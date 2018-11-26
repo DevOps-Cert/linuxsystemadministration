@@ -68,7 +68,6 @@ _Install on clients_
 One of the things we are practicing anyways is setting up a squid caching server.  So, if one was to skip down to configuring squid right away this could be the best learning approach to make updates apply faster locally off your LAN using lb40 as the caching server and can be up and running quickly (apt-mirror requires you to download the entire mirror which can take a long time).  However, after testing all methodologies, squid-deb-proxy appears to be better run off lb40.  
 #### Squid Server
 ```
-http_port 8080
 refresh_pattern -i \.(tar.gz|tar|deb|rpm|bz2|gz|xml)$ 129600 90% 129600 override-expire ignore-no-cache ignore-no-store ignore-private refresh-ims
 ```
 #### Squid Clients
@@ -2367,9 +2366,9 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTgxOTIwODUsMTg3NDg0NjY4NSwtMT
-E2NDA2NjI5NCw2MDI5MDQ3MTEsLTY1NTMzNTc2Niw1MjY0NjI4
-MjEsMTA5ODM3NDM1MSwtMTQ3Nzg1Nzk4MiwtMTY0NDMxMjcyNi
-wtMTAwNDY5Mjk3NiwxOTU0MDc3MDYzLC03NzMyNDkwMjIsLTE0
-MDAxNjE2MzcsLTEyNzEwMjg1MDhdfQ==
+eyJoaXN0b3J5IjpbMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNj
+QwNjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIx
+LDEwOTgzNzQzNTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3MjYsLT
+EwMDQ2OTI5NzYsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0xNDAw
+MTYxNjM3LC0xMjcxMDI4NTA4XX0=
 -->
