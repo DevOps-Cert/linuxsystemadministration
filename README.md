@@ -249,6 +249,8 @@ sudo useradd -m george
 sudo apt-get install squid-deb-proxy -y
 sudo systemctl start squid-deb-proxy
 sudo systemctl enable squid-deb-proxy
+sudo apt-get install -y squid-deb-proxy-client
+
 # enable vagrant ssh remotely with password
 sed -i 's/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/g' /etc/ssh/sshd_config  
 service ssh restart
@@ -2366,9 +2368,9 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNj
-QwNjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIx
-LDEwOTgzNzQzNTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3MjYsLT
-EwMDQ2OTI5NzYsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0xNDAw
-MTYxNjM3LC0xMjcxMDI4NTA4XX0=
+eyJoaXN0b3J5IjpbODg3NjMxMzYyLDM5NjE2MzE2OSwxODc0OD
+Q2Njg1LC0xMTY0MDY2Mjk0LDYwMjkwNDcxMSwtNjU1MzM1NzY2
+LDUyNjQ2MjgyMSwxMDk4Mzc0MzUxLC0xNDc3ODU3OTgyLC0xNj
+Q0MzEyNzI2LC0xMDA0NjkyOTc2LDE5NTQwNzcwNjMsLTc3MzI0
+OTAyMiwtMTQwMDE2MTYzNywtMTI3MTAyODUwOF19
 -->
