@@ -61,11 +61,11 @@ http_port 8080
 refresh_pattern -i \.(tar.gz|tar|deb|rpm|bz2|gz|xml)$ 129600 90% 129600 override-expire ignore-no-cache ignore-no-store ignore-private refresh-ims
 ```
 #### Squid Clients
-````
+```
 # cat /etc/apt/apt.conf.d/01proxy
 Acquire::http::Proxy "http://10.20.30.40:8080/";
 Acquire::https::Proxy "http://10.20.30.40:8080/";
-````
+```
 The first download will be at WAN speed; but, subsequent downloads should be much faster. 
 More tweaks can be found at https://wiki.ubuntu.com/SquidDebProxy
 ### apt-mirror
@@ -2304,7 +2304,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MjE4NTE2MywtMTY0NDMxMjcyNiwtMT
+eyJoaXN0b3J5IjpbLTg5NTA4ODg0MywtMTY0NDMxMjcyNiwtMT
 AwNDY5Mjk3NiwxOTU0MDc3MDYzLC03NzMyNDkwMjIsLTE0MDAx
 NjE2MzcsLTEyNzEwMjg1MDhdfQ==
 -->
