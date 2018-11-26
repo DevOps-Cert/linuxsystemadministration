@@ -57,11 +57,11 @@ Additional resources: [Cache APT packages with Squid proxy](http://www.rushiagr.
 This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than and almost or no configuration on the server side.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default.  lb40 will automatically install this functionality.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128.
 _Install on the server_
 ```
-sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo systemctl start squid-deb-proxy; systemctl enable squid-deb-proxy
+# sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo systemctl start squid-deb-proxy; systemctl enable squid-deb-proxy
 ```
 _Install on clients_
 ```
-sudo apt-get install squid-deb-proxy-client
+# sudo apt-get install squid-deb-proxy-client
 ```
 ### Squid
 One of the things we are practicing anyways is setting up a squid caching server.  So, this is the ideal long term approaches to make updates apply faster locally off your LAN using lb40 as the caching server and can be up and running quickly (apt-mirror requires you to download the entire mirror which can take a long time).  Before doing anything else, setup and optimize squid on lb40 as a recommendation.  Although it was tempting to force all vms to use this feature with vagrant, the clients should be added manually after lb40 is working.  Set Debian package files to a longer life than normal (perhaps several months).  
@@ -2306,7 +2306,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzUzODY3ODEsLTExNjQwNjYyOTQsNj
+eyJoaXN0b3J5IjpbLTEyNDYwNTY3MjcsLTExNjQwNjYyOTQsNj
 AyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgzNzQz
 NTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5Nz
 YsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0xNDAwMTYxNjM3LC0x
