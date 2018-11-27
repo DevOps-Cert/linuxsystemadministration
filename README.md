@@ -364,7 +364,7 @@ cat /tmp/1.2/filepath
 Like -name, but the match is case insensitive.  For example, the  patterns `fo*'  and  `F??'  match  the  file names `Foo', `FOO', `foo', `fOo', etc. The pattern `*foo*` will also match a file called '.foobar'.
 </details>
 
-### Find by type
+### TASK: Find directories 
 <details><summary>Put path of first five directories in /usr/share/ into /tmp/1.2/dirs:  </summary>
 
 ```
@@ -375,16 +375,21 @@ Like -name, but the match is case insensitive.  For example, the  patterns `fo*'
 /usr/share/apache2
 /usr/share/apache2/build
 /usr/share/apache2/default-site
-# man find 
--type c
-File is of type c:
-b      block (buffered) special
-c      character (unbuffered) special
-d      directory
-p      named pipe (FIFO)
-f      regular file
-l      symbolic link; this is never true if the -L option or  the  -follow
-s      socket
+```
+
+</details>
+
+### TASK: Find files
+<details><summary>Put path of first five files in /usr/share/ into /tmp/1.2/filepaths:  </summary>
+
+```
+# find /usr/share/* -type f -print | head -5 > /tmp/1.2/dirs
+# cat /tmp/1.2/dirs
+/usr/share/aclocal
+/usr/share/adduser
+/usr/share/apache2
+/usr/share/apache2/build
+/usr/share/apache2/default-site
 ```
 
 </details>
@@ -2389,7 +2394,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTg5NDM0NDcsMjk0OTU2NDYxLDEwND
+eyJoaXN0b3J5IjpbLTE2NjQ3NzIyMTIsMjk0OTU2NDYxLDEwND
 c1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0MTEsLTE1NDgxOTk4
 MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC
 02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MTYz
