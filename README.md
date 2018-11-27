@@ -314,11 +314,13 @@ To begin this exercise; make sure you are in /tmp/1.2 folder which should have b
 ```
 cd /tmp/1.2
 ```
-### TASK: Find binary path for ping
+### TASK: Put the binary path for ping into file named /tmp/1.2/path 
 Figure out where the program 'ping' is stored:
 ```
 # which ping
 /bin/ping
+# which ping > /tmp/1.2/path 
+#
 ```
 ### Find by name
 To find a specific file named file in /tmp/1.2/ after creating it.
@@ -2358,11 +2360,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODI3MjAwMTYsLTE1NDgxOTk4MzQsLT
-E5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC02NTg2
-Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5LD
-E4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNjAyOTA0NzExLC02NTUz
-MzU3NjYsNTI2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nzc4NTc5OD
-IsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5NzYsMTk1NDA3NzA2Mywt
-NzczMjQ5MDIyXX0=
+eyJoaXN0b3J5IjpbMTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMT
+k2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLTY1ODYz
+ODQwOCwxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMxNjksMT
+g3NDg0NjY4NSwtMTE2NDA2NjI5NCw2MDI5MDQ3MTEsLTY1NTMz
+NTc2Niw1MjY0NjI4MjEsMTA5ODM3NDM1MSwtMTQ3Nzg1Nzk4Mi
+wtMTY0NDMxMjcyNiwtMTAwNDY5Mjk3NiwxOTU0MDc3MDYzLC03
+NzMyNDkwMjJdfQ==
 -->
