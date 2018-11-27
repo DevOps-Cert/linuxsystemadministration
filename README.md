@@ -1872,9 +1872,14 @@ Filesystem      Size  Used Avail Use% Mounted on
 </details>
 
 #### TASK: Add fourth drive as spare /dev/sdl
+
+<details><summary>
+
 ```
 # mdadm --add /dev/md0 /dev/sdl
 ```
+
+</details>
 
 #### TASK: Fail drive /dev/sdi then remove
 ```
@@ -2443,7 +2448,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NTYwODAxNCwxMDIzNDYzNjM4LC01Mj
+eyJoaXN0b3J5IjpbMTgzNzkzMzEwMSwxMDIzNDYzNjM4LC01Mj
 Y2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1NjQ2
 MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDExLC0xNT
 Q4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMTM2OTk4
