@@ -388,18 +388,22 @@ cat /tmp/1.2/filepath
 
 </details>
 
-### Find -exec
+### TASK: Run commands on results of a search
 <details><summary>In etc, find all files and then output their type to /tmp/1.2/etctypes and take a look at the top of the resulting file:</summary>
 
 ```
 # find /etc -type f -exec file '{}' > /tmp/1.2/etctypes \;
 # head /tmp/1.2/etctypes
-/etc/overlayroot.local.conf: ASCII text
-/etc/rpc: ASCII text
-/etc/mysql/my.cnf.fallback: BSD makefile script, ASCII text
-/etc/mysql/conf.d/mysqldump.cnf: ASCII text
-/etc/mysql/conf.d/mysql.cnf: ASCII text
-/etc/X11/Xsession.d/60xdg-user-dirs-update: ASCII text
+/etc/environment: ASCII text
+/etc/apache2/magic: magic text file for file(1) cmd, ASCII text
+/etc/apache2/sites-available/default-ssl.conf: ASCII text
+/etc/apache2/sites-available/000-default.conf: ASCII text
+/etc/apache2/conf-available/localized-error-pages.conf: ASCII text
+/etc/apache2/conf-available/security.conf: ASCII text
+/etc/apache2/conf-available/javascript-common.conf: ASCII text
+/etc/apache2/conf-available/charset.conf: ASCII text
+/etc/apache2/conf-available/serve-cgi-bin.conf: ASCII text
+/etc/apache2/conf-available/other-vhosts-access-log.conf: ASCII text
 ```
 
 </details>
@@ -414,6 +418,9 @@ Add file deleteme in /tmp/1.2.  Find all files in /tmp/1.2 and ask if it is ok t
 < rm ... ./etctypes > ? n
 < rm ... ./deleteme > ? y
 ```
+
+</details>
+
 ### Find size
 Make 10 files which are sized 1k through 10k with such names (1k size is named 1k).  Find all files sized less than 6k.
 
@@ -2392,11 +2399,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDM1NzMyNzcsLTE1NzYwNjQ4NDAsMj
-k0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0
-MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NC
-wxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2
-MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOT
-QsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgz
-NzQzNTFdfQ==
+eyJoaXN0b3J5IjpbLTk0MTgwNzc0NywtMTU3NjA2NDg0MCwyOT
+Q5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQx
+MSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LD
+EzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYz
+MTM2MiwzOTYxNjMxNjksMTg3NDg0NjY4NSwtMTE2NDA2NjI5NC
+w2MDI5MDQ3MTEsLTY1NTMzNTc2Niw1MjY0NjI4MjEsMTA5ODM3
+NDM1MV19
 -->
