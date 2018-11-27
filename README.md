@@ -364,8 +364,10 @@ cat /tmp/1.2/filepath
 Like -name, but the match is case insensitive.  For example, the  patterns `fo*'  and  `F??'  match  the  file names `Foo', `FOO', `foo', `fOo', etc. The pattern `*foo*` will also match a file called '.foobar'.
 </details>
 
-### Find type
-To find directories: `find . -type d -print`
+### Find by type
+<details>
+<summary>Find first directories in :  `find . -type d -print` </summary>
+
 ```
 -type c
 File is of type c:
@@ -377,6 +379,9 @@ f      regular file
 l      symbolic link; this is never true if the -L option or  the  -follow
 s      socket
 ```
+
+</details>
+
 ### Find -exec
 In etc, find all files and then output their type to /tmp/1.2/etctypes and take a look at the top of the resulting file:
 ```
@@ -2377,11 +2382,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNz
-gwNzA2LDEzNzA1MDk0MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5
-NjAsMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMT
-I0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2
-ODUsLTExNjQwNjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNT
-I2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nzc4NTc5ODIsLTE2NDQz
-MTI3MjZdfQ==
+eyJoaXN0b3J5IjpbMTI4MzcwMDAxNiwyOTQ5NTY0NjEsMTA0Nz
+U2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgz
+NCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLT
+Y1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMx
+NjksMTg3NDg0NjY4NSwtMTE2NDA2NjI5NCw2MDI5MDQ3MTEsLT
+Y1NTMzNTc2Niw1MjY0NjI4MjEsMTA5ODM3NDM1MSwtMTQ3Nzg1
+Nzk4Ml19
 -->
