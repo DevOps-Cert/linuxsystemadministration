@@ -1881,9 +1881,9 @@ Filesystem      Size  Used Avail Use% Mounted on
 
 </details>
 
-#### TASK: Fail drive /dev/sdi then remove
+#### TASK: Fail drive
 
-<details>
+<details><summary>Fail drive /dev/sdi then remove</summary>
 
 ```
 # mdadm --fail /dev/md0 /dev/sdi
@@ -2454,11 +2454,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEyNTE4MDI0LDEwMjM0NjM2MzgsLTUyNj
-Y0NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4NDAsMjk0OTU2NDYx
-LDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0MTEsLTE1ND
-gxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMzY5OTg5
-NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMz
-k2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNjAyOTA0
-NzExXX0=
+eyJoaXN0b3J5IjpbLTEwODA4NDA0NzcsMTAyMzQ2MzYzOCwtNT
+I2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0
+NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMT
+U0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5
+ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYzMTM2Mi
+wzOTYxNjMxNjksMTg3NDg0NjY4NSwtMTE2NDA2NjI5NCw2MDI5
+MDQ3MTFdfQ==
 -->
