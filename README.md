@@ -1841,6 +1841,7 @@ For starters, don't try to memorize all the options.  Start with the information
 <details><summary>Make a striped RAID array on two hard drives and place a ext4 file system on it.</summary>
 
 ```
+# less /usr/share/doc/mdadm/README.recipes
 # mdadm --create /dev/md0 -n 2 -l raid1 /dev/sdi /dev/sdj
 # mdadm --detail /dev/md0
 # mkfs.ext4 /dev/md0 
@@ -2425,7 +2426,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzMxNjA1MzgsMTAyMzQ2MzYzOCwtNT
+eyJoaXN0b3J5IjpbLTE1Nzg2Nzk0NzYsMTAyMzQ2MzYzOCwtNT
 I2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0
 NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMT
 U0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5
