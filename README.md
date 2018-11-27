@@ -219,7 +219,6 @@ end
 ```
 # make sure to grab packages locally if possible
 sudo apt-get install -y squid-deb-proxy-client
-
 # enable vagrant ssh remotely with passwordsed
 sed -i 's/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/g' /etc/ssh/sshd_config  
 service ssh restart
@@ -227,13 +226,10 @@ service ssh restart
 sudo apt-get -y purge cloud-init
 sudo mv /etc/cloud/ ~/; sudo mv /var/lib/cloud/ ~/cloud-lib
 sudo apt remove -y open-iscsi
-#
 mkdir /tmp/{1..9}.{1..9}
 sudo useradd -m fred
 sudo useradd -m sally
 sudo useradd -m george
-
-
 # apt-get update; apt-get upgrade -y
 # sudo apt-get -y install apache2 squid tmux ntp bind9 dnsutils quota quotatool fish
 # sudo chsh -s /usr/bin/fish
@@ -246,7 +242,6 @@ sudo apt-get install squid-deb-proxy -y
 sudo systemctl start squid-deb-proxy
 sudo systemctl enable squid-deb-proxy
 sudo apt-get install -y squid-deb-proxy-client
-
 # enable vagrant ssh remotely with password
 sed -i 's/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/g' /etc/ssh/sshd_config  
 service ssh restart
@@ -2364,7 +2359,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMDAyNzIwNywxMzY5OTg5NTkzLC02NT
+eyJoaXN0b3J5IjpbMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC02NT
 g2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5
 LDE4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNjAyOTA0NzExLC02NT
 UzMzU3NjYsNTI2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nzc4NTc5
