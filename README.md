@@ -1834,7 +1834,7 @@ For starters, don't try to memorize all the options.  Start with the information
 /usr/share/doc/mdadm/README.recipes
 /usr/share/doc/mdadm/examples/mdadm.conf-example 
 # mdadm --stop /dev/md0
-# mdadm --zero-superblock /dev/sdi /dev/sdj /dev/sdk /dev/sdl
+# wipefs -a /dev/sdi /dev/sdj /dev/sdk /dev/sdl
 
 ``` 
 #### TASK:  Create /dev/md0
@@ -2425,7 +2425,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzA0MzI2MTIsMTAyMzQ2MzYzOCwtNT
+eyJoaXN0b3J5IjpbLTE4MzMxNjA1MzgsMTAyMzQ2MzYzOCwtNT
 I2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0
 NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMT
 U0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5
