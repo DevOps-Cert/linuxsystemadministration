@@ -314,7 +314,7 @@ To begin this exercise; make sure you are in /tmp/1.2 folder which should have b
 ```
 cd /tmp/1.2
 ```
-### Find binary path
+### TASK: Find binary path for ping
 Figure out where the program 'ping' is stored:
 ```
 # which ping
@@ -2358,11 +2358,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMT
-gwMDA2MDg1NCwxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3
-NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLT
-ExNjQwNjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYy
-ODIxLDEwOTgzNzQzNTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3Mj
-YsLTEwMDQ2OTI5NzYsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0x
-NDAwMTYxNjM3XX0=
+eyJoaXN0b3J5IjpbLTEyODI3MjAwMTYsLTE1NDgxOTk4MzQsLT
+E5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC02NTg2
+Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5LD
+E4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNjAyOTA0NzExLC02NTUz
+MzU3NjYsNTI2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nzc4NTc5OD
+IsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5NzYsMTk1NDA3NzA2Mywt
+NzczMjQ5MDIyXX0=
 -->
