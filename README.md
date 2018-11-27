@@ -2443,7 +2443,7 @@ Additional information: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs
 <details><summary>On lb80, share /nfs with dummy file named test with lb70 machines on network as /nfs and set to mount persistently</summary>
 
 ```
-lb80 # apt-get install nfswatch nfs-common nfs-kernel-server
+lb80 # apt-get install -y nfswatch nfs-common nfs-kernel-server
 lb80 # # cat /etc/hosts
 127.0.1.1       lb60    lb60
 10.20.30.40     lb40    lb40
@@ -2479,7 +2479,7 @@ lb60 #
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNTYwOTI4MSw4MjI0MzQyNSwtNDEzMD
+eyJoaXN0b3J5IjpbLTY4NDY4MjkwMyw4MjI0MzQyNSwtNDEzMD
 g2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4
 LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5ND
 k1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDEx
