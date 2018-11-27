@@ -368,7 +368,7 @@ Like -name, but the match is case insensitive.  For example, the  patterns `fo*'
 <details><summary>Put path of first five directories in /usr/share/ into /tmp/1.2/dirs:  </summary>
 
 ```
-# find /usr/share/ -type d -print | head -5 > /tmp/1.2/dirs
+# find /usr/share/* -type d -print | head -5 > /tmp/1.2/dirs
 # cat /tmp/1.2/dirs
 # man find 
 -type c
@@ -2384,11 +2384,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzA3NzYwOSwyOTQ5NTY0NjEsMTA0Nz
-U2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgz
-NCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLT
-Y1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMx
-NjksMTg3NDg0NjY4NSwtMTE2NDA2NjI5NCw2MDI5MDQ3MTEsLT
-Y1NTMzNTc2Niw1MjY0NjI4MjEsMTA5ODM3NDM1MSwtMTQ3Nzg1
-Nzk4Ml19
+eyJoaXN0b3J5IjpbMTgzNDI4Nzg1LDI5NDk1NjQ2MSwxMDQ3NT
+Y2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDExLC0xNTQ4MTk5ODM0
+LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMTM2OTk4OTU5MywtNj
+U4NjM4NDA4LDEyNDc5NzU2MzYsODg3NjMxMzYyLDM5NjE2MzE2
+OSwxODc0ODQ2Njg1LC0xMTY0MDY2Mjk0LDYwMjkwNDcxMSwtNj
+U1MzM1NzY2LDUyNjQ2MjgyMSwxMDk4Mzc0MzUxLC0xNDc3ODU3
+OTgyXX0=
 -->
