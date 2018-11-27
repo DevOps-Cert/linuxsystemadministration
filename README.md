@@ -2185,11 +2185,11 @@ Additional resources: [tecmint - Configure Zones for Domain](https://www.tecmint
 ##	Email
 ###	Configure an IMAP and IMAPS service
 ```
-apt -y install postfix dovecot
+# apt-get -y install postfix dovecot
 vi /etc/postfix/main.cf
 	myorigin = /etc/mailname (hostname)
 	file /etc/postfix/transport and command postmap /etc/postfix/transport
-```	
+```
 Additional resources: [Installing Postfix and Dovecot](https://www.tecmint.com/installing-network-services-and-configuring-services-at-system-boot/)
 ### Configure email aliases
 ```
@@ -2358,11 +2358,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMz
-Y5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEz
-NjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNj
-AyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgzNzQz
-NTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5Nz
-YsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0xNDAwMTYxNjM3LC0x
-MjcxMDI4NTA4XX0=
+eyJoaXN0b3J5IjpbLTExMjAyOTkxOTYsLTE5NjQxNzM5NjAsMT
+gwMDA2MDg1NCwxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3
+NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLT
+ExNjQwNjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYy
+ODIxLDEwOTgzNzQzNTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3Mj
+YsLTEwMDQ2OTI5NzYsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0x
+NDAwMTYxNjM3XX0=
 -->
