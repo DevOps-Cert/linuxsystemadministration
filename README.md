@@ -366,9 +366,12 @@ Like -name, but the match is case insensitive.  For example, the  patterns `fo*'
 
 ### Find by type
 <details>
-<summary>Find first directories in :  `find . -type d -print` </summary>
+<summary>Put path of first five directories in /usr/share/ into /tmp/1.2/dirs:  </summary>
 
 ```
+# find /usr/share/ -type d -print | head -5 > /tmp/1.2/dirs
+# cat /tmp/1.2/dirs
+# man find 
 -type c
 File is of type c:
 b      block (buffered) special
@@ -2382,7 +2385,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MzcwMDAxNiwyOTQ5NTY0NjEsMTA0Nz
+eyJoaXN0b3J5IjpbLTYwMDY0MTM4NSwyOTQ5NTY0NjEsMTA0Nz
 U2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgz
 NCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLT
 Y1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMx
