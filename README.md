@@ -322,8 +322,8 @@ Figure out where the program 'ping' is stored:
 # which ping > /tmp/1.2/path 
 #
 ```
-### Find by name
-To find a specific file named file in /tmp/1.2/ after creating it.
+### TASK: Find by name
+Find file named file in /tmp/1.2/ after creating it.
 ```
 $ touch file
 $ find /tmp/1.2 -name file -print
@@ -2360,11 +2360,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMT
-k2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLTY1ODYz
-ODQwOCwxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMxNjksMT
-g3NDg0NjY4NSwtMTE2NDA2NjI5NCw2MDI5MDQ3MTEsLTY1NTMz
-NTc2Niw1MjY0NjI4MjEsMTA5ODM3NDM1MSwtMTQ3Nzg1Nzk4Mi
-wtMTY0NDMxMjcyNiwtMTAwNDY5Mjk3NiwxOTU0MDc3MDYzLC03
-NzMyNDkwMjJdfQ==
+eyJoaXN0b3J5IjpbNDM4NDE0MjkyLDEzNzA1MDk0MTEsLTE1ND
+gxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMzY5OTg5
+NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMz
+k2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNjAyOTA0
+NzExLC02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgzNzQzNTEsLT
+E0Nzc4NTc5ODIsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5NzYsMTk1
+NDA3NzA2M119
 -->
