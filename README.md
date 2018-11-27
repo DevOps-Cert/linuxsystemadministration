@@ -2185,7 +2185,7 @@ Additional resources: [tecmint - Configure Zones for Domain](https://www.tecmint
 ##	Email
 ###	Configure an IMAP and IMAPS service
 ```
-# apt-get -y install postfix dovecot
+# apt-get -y install postfix dovecot-core
 vi /etc/postfix/main.cf
 	myorigin = /etc/mailname (hostname)
 	file /etc/postfix/transport and command postmap /etc/postfix/transport
@@ -2358,7 +2358,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjAyOTkxOTYsLTE5NjQxNzM5NjAsMT
+eyJoaXN0b3J5IjpbLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMT
 gwMDA2MDg1NCwxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3
 NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLT
 ExNjQwNjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYy
