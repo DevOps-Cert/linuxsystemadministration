@@ -1744,7 +1744,6 @@ Make a 3 MB swap file at /tmp/3MBswap and temporarily use it.
 ```
 #### pick between dd and fallocate
 # fallocate  -l 3M /swap
-# dd if=/dev/zero of=/swap bs=1024 count=3 
 # mkswap /swap
 Setting up swapspace version 1, size = 3 MiB (3141632 bytes)
 no label, UUID=f0d9560a-47b0-4781-bb7d-4b1998be62ed
@@ -2359,11 +2358,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC02NT
-g2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5
-LDE4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNjAyOTA0NzExLC02NT
-UzMzU3NjYsNTI2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nzc4NTc5
-ODIsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5NzYsMTk1NDA3NzA2My
-wtNzczMjQ5MDIyLC0xNDAwMTYxNjM3LC0xMjcxMDI4NTA4XX0=
-
+eyJoaXN0b3J5IjpbLTE5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMz
+Y5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEz
+NjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNj
+AyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgzNzQz
+NTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3MjYsLTEwMDQ2OTI5Nz
+YsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC0xNDAwMTYxNjM3LC0x
+MjcxMDI4NTA4XX0=
 -->
