@@ -2462,7 +2462,8 @@ lb70 # mount /nfs
 lb70 # df -h /nfs/
 Filesystem      Size  Used Avail Use% Mounted on
 lb80:/nfs       9.7G  1.4G  8.3G  14% /nfs
-lb70 # 
+lb70 # ls /nfs/test
+/nfs/test
 ```
 
 </details>
@@ -2488,7 +2489,7 @@ lb60 #
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1Mjk5NjY3MSw4MjI0MzQyNSwtNDEzMD
+eyJoaXN0b3J5IjpbMTYyNTc2ODc2Niw4MjI0MzQyNSwtNDEzMD
 g2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4
 LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5ND
 k1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDEx
