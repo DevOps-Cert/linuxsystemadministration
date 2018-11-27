@@ -424,10 +424,10 @@ cat /tmp/1.2/filepath
 
 ### Find size
 <details><summary>After make several files in /tmp/8.5 `cd /tmp/8.5; fallocate -l 1k 1k; fallocate -l 4k 4k; fallocate -l 5k 5k; fallocate -l 7k 7k; fallocate -l 9k 9k; fallocate -l 10k 10k `
-which are sized 1k through 10k with such names (1k size is named 1k).  Find all files sized less than 6k.<summary>
+which are sized 1k through 10k with such names (1k size is named 1k).  Find all files sized less than 6k and write results to /tmp/1.2/small.<summary>
 
 ```
-
+# find 
 ```
 
 </details>
@@ -2407,11 +2407,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4ODEwOTAwMSwtMTU3NjA2NDg0MCwyOT
-Q5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQx
-MSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LD
-EzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYz
-MTM2MiwzOTYxNjMxNjksMTg3NDg0NjY4NSwtMTE2NDA2NjI5NC
-w2MDI5MDQ3MTEsLTY1NTMzNTc2Niw1MjY0NjI4MjEsMTA5ODM3
-NDM1MV19
+eyJoaXN0b3J5IjpbLTE4ODA4NjI0NDYsLTE1NzYwNjQ4NDAsMj
+k0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0
+MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NC
+wxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2
+MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOT
+QsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgz
+NzQzNTFdfQ==
 -->
