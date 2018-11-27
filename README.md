@@ -423,10 +423,11 @@ cat /tmp/1.2/filepath
 </details>
 
 ### Find size
-<details><summary>Make 10 files which are sized 1k through 10k with such names (1k size is named 1k).  Find all files sized less than 6k.<summary>
+<details><summary>After make several files ` fallocate -l 1k 1k; fallocate -l 4k 4k; fallocate -l 7k 7k; fallocate -l 10k 10k`
+which are sized 1k through 10k with such names (1k size is named 1k).  Find all files sized less than 6k.<summary>
 
 ```
-# find
+
 ```
 
 </details>
@@ -2406,7 +2407,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NzM3MDMyNCwtMTU3NjA2NDg0MCwyOT
+eyJoaXN0b3J5IjpbMTc5Mjg3NTg2MiwtMTU3NjA2NDg0MCwyOT
 Q5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQx
 MSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LD
 EzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYz
