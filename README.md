@@ -2450,7 +2450,7 @@ lb80 # tail -2 /etc/hosts
 lb80 # mkdir /nfs
 lb80 # touch /nfs/test
 lb80 # cat /etc/exports
-/nfs       lb70(rw,sync,no_subtree_check)
+/nfs       lb70(rw,no_root_squash)
 # exportfs -avr
 lb80 # systemctl restart nfs-server.service rpcbind
 lb70 # tail -2 /etc/hosts
@@ -2492,7 +2492,7 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MjQ0ODExNSwtMTM5OTEzMDA1MSw4Mj
+eyJoaXN0b3J5IjpbMTIxNDY0MTI4NywtMTM5OTEzMDA1MSw4Mj
 I0MzQyNSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYz
 OCwxMDIzNDYzNjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNT
 c2MDY0ODQwLDI5NDk1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcw
