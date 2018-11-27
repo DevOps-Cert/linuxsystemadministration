@@ -2444,10 +2444,7 @@ Additional information: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs
 
 ```
 lb80 # apt-get install -y nfswatch nfs-common nfs-kernel-server
-lb80 # cat /etc/hosts
-127.0.1.1       lb60    lb60
-10.20.30.40     lb40    lb40
-10.20.30.50     lb50    lb50
+lb80 # tail -2 /etc/hosts
 10.20.30.70     lb70    lb70
 10.20.30.80     lb80    lb80
 lb80 # mkdir /nfs
@@ -2455,6 +2452,9 @@ lb80 # touch /nfs/test
 lb80 # cat /etc/exports
 /nfs       lb70(rw,sync,no_subtree_check)
 lb80 # systemctl restart nfs-server.service
+lb70 # tail -2 /etc/hosts
+10.20.30.70     lb70    lb70
+10.20.30.80     lb80    lb80
 lb70 # mkdir /nfs
 lb70 # grep nfs /etc/fstab
 lb80:/nfs       /nfs    nfs     defaults        0       2
@@ -2489,11 +2489,11 @@ lb60 #
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNTc2ODc2Niw4MjI0MzQyNSwtNDEzMD
-g2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4
-LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5ND
-k1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDEx
-LC0xNTQ4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMT
-M2OTk4OTU5MywtNjU4NjM4NDA4LDEyNDc5NzU2MzYsODg3NjMx
-MzYyXX0=
+eyJoaXN0b3J5IjpbMjc0Mzg3MTkxLDgyMjQzNDI1LC00MTMwOD
+Y2NzMsLTEyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMjM0NjM2Mzgs
+LTUyNjY0NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4NDAsMjk0OT
+U2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0MTEs
+LTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMz
+Y5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEz
+NjJdfQ==
 -->
