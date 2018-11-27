@@ -6,6 +6,8 @@ Work on list
 * PAM modules (figure out fastest way to search for appropriate ones to install and configure)
 * Managing libvirt machines (use old competencies as a guide)
 * Verify the integrity and availability of resources: fsck and memtest86+ 
+* nfs and samba
+* ldap
 # Table of Contents
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -2462,11 +2464,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIyNDM0MjUsLTQxMzA4NjY3MywtMTI3NT
-cyMTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNTI2NjQ1NjQ3
-LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0NjEsMTA0Nz
-U2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgz
-NCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLT
-Y1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMx
-NjldfQ==
+eyJoaXN0b3J5IjpbMTczOTc0MTkwMiw4MjI0MzQyNSwtNDEzMD
+g2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4
+LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5ND
+k1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDEx
+LC0xNTQ4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMT
+M2OTk4OTU5MywtNjU4NjM4NDA4LDEyNDc5NzU2MzYsODg3NjMx
+MzYyXX0=
 -->
