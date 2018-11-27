@@ -1889,9 +1889,14 @@ mdadm: set /dev/sdi faulty in /dev/md0
 
 </details>
 
+<details><summary>bring back in sdi</summary>
+
 ```
 # mdadm --add/dev/md0 /dev/sdi
 ```
+
+</details>
+
 <details><summary>Verify that there are three drives as RAID 5 and a spare</summary>
 
 ```
@@ -2453,11 +2458,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY0MjI0NDQ0LC05NDIzNTM2MzgsMTAyMz
-Q2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0
-MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MD
-UwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYw
-ODU0LDEzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LD
-g4NzYzMTM2MiwzOTYxNjMxNjksMTg3NDg0NjY4NSwtMTE2NDA2
-NjI5NF19
+eyJoaXN0b3J5IjpbLTEzMjgwNDQ4NiwtOTQyMzUzNjM4LDEwMj
+M0NjM2MzgsLTUyNjY0NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4
+NDAsMjk0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNz
+A1MDk0MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2
+MDg1NCwxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNi
+w4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQw
+NjYyOTRdfQ==
 -->
