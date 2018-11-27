@@ -324,12 +324,12 @@ Figure out where the program 'ping' is stored:
 ```
 ### TASK: Find by name
 Find file named file in /tmp/1.2/ after creating it and place path into /tmp/1.2/filepath.
-```
-# touch /tmp/1.2/file
-# find /tmp/1.2 -name file -print > /tmp/1.2/filepath
-# cat /tmp/1.2/filepath
-/tmp/1.2/file
-```
+
+>! # touch /tmp/1.2/file
+>! # find /tmp/1.2 -name file -print > /tmp/1.2/filepath
+>! # cat /tmp/1.2/filepath
+>! /tmp/1.2/file
+
 ### TASK: Find with permissions
 Find all files in /etc which are read only for all users:
 ```
@@ -2361,11 +2361,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDI4NDYzNSwxMDMxNzgwNzA2LDEzNz
-A1MDk0MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2
-MDg1NCwxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNi
-w4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQw
-NjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIxLD
-EwOTgzNzQzNTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3MjYsLTEw
-MDQ2OTI5NzZdfQ==
+eyJoaXN0b3J5IjpbLTIwMzk4NjE1MzUsMTAzMTc4MDcwNiwxMz
+cwNTA5NDExLC0xNTQ4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAw
+NjA4NTQsMTM2OTk4OTU5MywtNjU4NjM4NDA4LDEyNDc5NzU2Mz
+YsODg3NjMxMzYyLDM5NjE2MzE2OSwxODc0ODQ2Njg1LC0xMTY0
+MDY2Mjk0LDYwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2MjgyMS
+wxMDk4Mzc0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0MzEyNzI2LC0x
+MDA0NjkyOTc2XX0=
 -->
