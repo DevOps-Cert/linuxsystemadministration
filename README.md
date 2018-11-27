@@ -423,7 +423,13 @@ cat /tmp/1.2/filepath
 </details>
 
 ### Find size
-Make 10 files which are sized 1k through 10k with such names (1k size is named 1k).  Find all files sized less than 6k.
+<details><summary>Make 10 files which are sized 1k through 10k with such names (1k size is named 1k).  Find all files sized less than 6k.<summary>
+
+```
+# find
+```
+
+</details>
 
 ### Find time
 First, let inside /tmp/1.2/ make dummy file named 1999 with the modify time of January 1st, 1999 and a current file with all timestamps for today named 2018; then, find only the 1999 file using find command and the 2018 file using find.
@@ -2400,7 +2406,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTgxNjE4NywtMTU3NjA2NDg0MCwyOT
+eyJoaXN0b3J5IjpbMTY4NzM3MDMyNCwtMTU3NjA2NDg0MCwyOT
 Q5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQx
 MSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LD
 EzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYz
