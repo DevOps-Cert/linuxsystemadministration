@@ -347,13 +347,16 @@ cat /tmp/1.2/filepath
 </details>
 
 ### Find owner
-To find a file with ownership of fred in /tmp/1.2 after creating it:
+<details><summary>To find a file with ownership of fred in /tmp/1.2 after creating it:</summary>
+
 ```
 # touch freds
 # chown fred freds
 # find . -user fred -print
 ./freds/
 ```
+</detail>
+
 ### Find -iname
  -iname pattern
 Like -name, but the match is case insensitive.  For example, the  patterns `fo*'  and  `F??'  match  the  file names `Foo', `FOO', `foo', `fOo', etc. The pattern `*foo*` will also match a file called '.foobar'.
@@ -2370,7 +2373,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjEyMDM5ODIsMTA0NzU2NjQ1LDEwMz
+eyJoaXN0b3J5IjpbLTEzMTg4NDgwNDEsMTA0NzU2NjQ1LDEwMz
 E3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3
 Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLTY1ODYzODQwOC
 wxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMxNjksMTg3NDg0
