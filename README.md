@@ -54,7 +54,7 @@ We are going to setup a group of computers all running Ubuntu 16.04 Server withi
 As you will be running more than one identical Ubuntu box; it makes some sense to maintain local LAN copies of packages you are going to be using to speed up installation.  There is no one size fits all; merely different ways of approaching the problem.
 Additional resources: [Cache APT packages with Squid proxy](http://www.rushiagr.com/blog/2015/06/05/cache-apt-packages-with-squid-proxy/)
 ### squid-deb-proxy
-This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than package and no configuration on the server side after installing packages.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default with Vagrantfile and configuration scripts.  lb40 will automatically install this functionality and this server should be the most heavily used anyways.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128.
+This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than package and no configuration on the server side after installing packages.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default with Vagrantfile and configuration scripts.  lb40 will automatically install this functionality and this server should be the most heavily used anyways.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128 on lb40.
 
 _Install on the server_
 ```
@@ -79,9 +79,7 @@ Acquire::https::Proxy "http://10.20.30.40:8080/";
 The first download will be at WAN speed; but, subsequent downloads should be much faster. 
 More tweaks can be found at https://wiki.ubuntu.com/SquidDebProxy
 ### apt-mirror
-An alternative idea would be a local apt-mirror repository which will never slow you down in that all files will be local; but, it will take a significant amount of time and space to populate your repository.   While the fastest automated solution from a loading of any package once mirror is populated; the space makes this a suspect method as mi take in the ballpark of 129.0 GB heavily depending on configuration (use deb-amd64 to not also download i386).
-
-
+An alternative idea would be a local apt-mirror repository which will never slow you down in that all files will be local; but, it will take a significant amount of time and space to populate your repository.   While the fastest automated solution from a loading of any package once mirror is populated; the space makes this a suspect method as mirror will take in the ballpark of 129.0 GB heavily depending on configuration (use deb-amd64 to not also download i386).
 ### apt-cacher-ng
 Another idea would be to use apt-cacher-ng which will be slow on the first download of a file; but, like squid will keep a copy around for all future usage.  In contrast to apt-mirror, when clients are requesting for a package, apt-cacher checks if it has it cached, if yes – the package is served, if no – apt-cacher-ng fetches it from repositories, serves it to the client, and caches it [for other clients].  The biggest concern about this approach is people report it isn't stable.  Squid seems to be a better option.
 
@@ -2367,10 +2365,10 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE1NzY1ODMzLC02NTg2Mzg0MDgsMTI0Nz
-k3NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUs
-LTExNjQwNjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2ND
-YyODIxLDEwOTgzNzQzNTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3
-MjYsLTEwMDQ2OTI5NzYsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC
-0xNDAwMTYxNjM3LC0xMjcxMDI4NTA4XX0=
+eyJoaXN0b3J5IjpbMTM2OTk4OTU5MywtNjU4NjM4NDA4LDEyND
+c5NzU2MzYsODg3NjMxMzYyLDM5NjE2MzE2OSwxODc0ODQ2Njg1
+LC0xMTY0MDY2Mjk0LDYwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNj
+Q2MjgyMSwxMDk4Mzc0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0MzEy
+NzI2LC0xMDA0NjkyOTc2LDE5NTQwNzcwNjMsLTc3MzI0OTAyMi
+wtMTQwMDE2MTYzNywtMTI3MTAyODUwOF19
 -->
