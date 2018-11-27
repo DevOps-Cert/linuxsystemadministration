@@ -345,6 +345,7 @@ cat /tmp/1.2/filepath
 -r--r--r-- 1 root root 33 Nov  9 22:24 /etc/machine-id
 ```
 </details>
+
 ### Find owner
 To find a file with ownership of fred in /tmp/1.2 after creating it:
 ```
@@ -2369,11 +2370,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MDk5NTE2OCwxMDQ3NTY2NDUsMTAzMT
-c4MDcwNiwxMzcwNTA5NDExLC0xNTQ4MTk5ODM0LC0xOTY0MTcz
-OTYwLDE4MDAwNjA4NTQsMTM2OTk4OTU5MywtNjU4NjM4NDA4LD
-EyNDc5NzU2MzYsODg3NjMxMzYyLDM5NjE2MzE2OSwxODc0ODQ2
-Njg1LC0xMTY0MDY2Mjk0LDYwMjkwNDcxMSwtNjU1MzM1NzY2LD
-UyNjQ2MjgyMSwxMDk4Mzc0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0
-MzEyNzI2XX0=
+eyJoaXN0b3J5IjpbLTE4NjEyMDM5ODIsMTA0NzU2NjQ1LDEwMz
+E3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3
+Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLTY1ODYzODQwOC
+wxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMxNjksMTg3NDg0
+NjY4NSwtMTE2NDA2NjI5NCw2MDI5MDQ3MTEsLTY1NTMzNTc2Ni
+w1MjY0NjI4MjEsMTA5ODM3NDM1MSwtMTQ3Nzg1Nzk4MiwtMTY0
+NDMxMjcyNl19
 -->
