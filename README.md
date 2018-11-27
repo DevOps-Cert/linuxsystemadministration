@@ -2477,6 +2477,7 @@ lb60 #
 
 </details>
 
+Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 
 # Other resources
 * [tecmint series](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
@@ -2489,11 +2490,11 @@ lb60 #
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc0Mzg3MTkxLDgyMjQzNDI1LC00MTMwOD
-Y2NzMsLTEyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMjM0NjM2Mzgs
-LTUyNjY0NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4NDAsMjk0OT
-U2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0MTEs
-LTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMz
-Y5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEz
-NjJdfQ==
+eyJoaXN0b3J5IjpbLTEzOTkxMzAwNTEsODIyNDM0MjUsLTQxMz
+A4NjY3MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYz
+OCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOT
+Q5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQx
+MSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LD
+EzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYz
+MTM2Ml19
 -->
