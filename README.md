@@ -1838,7 +1838,7 @@ For starters, don't try to memorize all the options.  Start with the information
 
 ``` 
 #### TASK:  Create /dev/md0
-<details><summary>Make a striped RAID array on two hard drives and place a ext4 file system on it, mount it at /raid, then dismount it and disable it.</summary>
+<details><summary>Make a striped RAID array on two hard drives (/dev/sdi AND /dev/sdj) and place a ext4 file system on it, mount it at /raid, then dismount it and disable it.</summary>
 
 ```
 # less /usr/share/doc/mdadm/README.recipes
@@ -1851,7 +1851,7 @@ For starters, don't try to memorize all the options.  Start with the information
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/md0         45M  810K   41M   2% /raid
 # umount /dev/md0
-mdadm --stop mdadm 
+# mdadm --stop /dev/md0
 ```
 
 </details>
@@ -1860,7 +1860,7 @@ mdadm --stop mdadm
 <details><summary>On three drives (/dev/sdi /dev/sdj /dev/sdk) as /dev/md0 and format as ext4</summary>
 
 ```
-# mdadm --create /dev/md0 -n 3 -l raid5 /dev/sdi /dev/sdj /dev/sdk
+# mdadm --create -l5 -n3  /dev/md0 /dev/sdi /dev/sdj /dev/sdk
 # mkfs.ext4 /dev/md0 
 ```
 </details>
@@ -2437,7 +2437,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjk5ODE5OTgsMTAyMzQ2MzYzOCwtNT
+eyJoaXN0b3J5IjpbLTIxMTkwMTM3NzksMTAyMzQ2MzYzOCwtNT
 I2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0
 NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMT
 U0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5
