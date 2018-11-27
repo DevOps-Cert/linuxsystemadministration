@@ -409,10 +409,11 @@ cat /tmp/1.2/filepath
 </details>
 
 ### Find -ok
-Add file deleteme in /tmp/1.2.  Find all files in /tmp/1.2 and ask if it is ok to delete them one by one but answer no to each delete other than deleteme: 
+<details><summary>Add file deleteme in /tmp/1.2.  Find all files in /tmp/1.2 and ask if it is ok to delete them one by one but answer no to each delete other than deleteme: </summary>
+
 ```
-# touch deleteme
-# find /tmp/1.2 -type f -ok rm {} \;
+# touch /tmp/1.2/{deleteme,nodelete}
+# find /tmp/1.2 -type f -ok rm '{}' \;
 < rm ... ./1999 > ? n
 < rm ... ./2018 > ? n
 < rm ... ./etctypes > ? n
@@ -2399,7 +2400,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MTgwNzc0NywtMTU3NjA2NDg0MCwyOT
+eyJoaXN0b3J5IjpbMTI3OTgxNjE4NywtMTU3NjA2NDg0MCwyOT
 Q5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQx
 MSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LD
 EzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYz
