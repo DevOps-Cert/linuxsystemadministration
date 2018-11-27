@@ -325,11 +325,17 @@ Figure out where the program 'ping' is stored:
 ### TASK: Find by name
 <details>
 <summary>Find file named file in /tmp/1.2/ after creating it and place path into /tmp/1.2/filepath.</summary>
+
+```
+
 touch /tmp/1.2/file
 find /tmp/1.2 -name file -print > /tmp/1.2/filepath
 cat /tmp/1.2/filepath
 /tmp/1.2/file
+
+```
 </details>
+
 ### TASK: Find with permissions
 Find all files in /etc which are read only for all users:
 ```
@@ -2361,7 +2367,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NDI3NTQxMiwxMDQ3NTY2NDUsMTAzMT
+eyJoaXN0b3J5IjpbLTQ1NDcxMjg4OCwxMDQ3NTY2NDUsMTAzMT
 c4MDcwNiwxMzcwNTA5NDExLC0xNTQ4MTk5ODM0LC0xOTY0MTcz
 OTYwLDE4MDAwNjA4NTQsMTM2OTk4OTU5MywtNjU4NjM4NDA4LD
 EyNDc5NzU2MzYsODg3NjMxMzYyLDM5NjE2MzE2OSwxODc0ODQ2
