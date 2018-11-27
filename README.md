@@ -1893,7 +1893,7 @@ mdadm: set /dev/sdi faulty in /dev/md0
 <details><summary>Bring back in /dev/sdi into array</summary>
 
 ```
-# mdadm --add/dev/md0 /dev/sdi
+# mdadm --add /dev/md0 /dev/sdi
 ```
 
 </details>
@@ -1901,10 +1901,10 @@ mdadm: set /dev/sdi faulty in /dev/md0
 <details><summary>Verify that there are three drives as RAID 5 and a spare</summary>
 
 ```
-# mdadm --detail /dev/md0
+# mdadm  --detail /dev/md0
 /dev/md0:
         Version : 1.2
-  Creation Time : Sun Nov 18 19:24:46 2018
+  Creation Time : Tue Nov 27 17:03:59 2018
      Raid Level : raid5
      Array Size : 100352 (98.02 MiB 102.76 MB)
   Used Dev Size : 50176 (49.01 MiB 51.38 MB)
@@ -1912,7 +1912,7 @@ mdadm: set /dev/sdi faulty in /dev/md0
   Total Devices : 4
     Persistence : Superblock is persistent
 
-    Update Time : Sun Nov 18 19:35:03 2018
+    Update Time : Tue Nov 27 17:05:30 2018
           State : clean
  Active Devices : 3
 Working Devices : 4
@@ -1923,16 +1923,15 @@ Working Devices : 4
      Chunk Size : 512K
 
            Name : lb40:0  (local to host lb40)
-           UUID : 11285a2f:1c02a2db:834572f6:17cec6c0
-         Events : 82
+           UUID : f31b37d5:c45f6f19:bf142fd1:99c0295b
+         Events : 40
 
     Number   Major   Minor   RaidDevice State
-       4       8      176        0      active sync   /dev/sdl
-       6       8      144        1      active sync   /dev/sdj
+       0       8      128        0      active sync   /dev/sdi
+       4       8      176        1      active sync   /dev/sdl
        3       8      160        2      active sync   /dev/sdk
 
-       5       8      128        -      spare   /dev/sdi
-
+       5       8      144        -      spare   /dev/sdj
 ``` 
 
 </details>
@@ -2463,11 +2462,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMzA4NjY3MywtMTI3NTcyMTIxLC05ND
-IzNTM2MzgsMTAyMzQ2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2
-NiwtMTU3NjA2NDg0MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMz
-E3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3
-Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLTY1ODYzODQwOC
-wxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMxNjksMTg3NDg0
-NjY4NV19
+eyJoaXN0b3J5IjpbODIyNDM0MjUsLTQxMzA4NjY3MywtMTI3NT
+cyMTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNTI2NjQ1NjQ3
+LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0NjEsMTA0Nz
+U2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgz
+NCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLT
+Y1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMx
+NjldfQ==
 -->
