@@ -1873,7 +1873,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 
 #### TASK: Add fourth drive as spare /dev/sdl
 
-<details><summary>
+<details>
 
 ```
 # mdadm --add /dev/md0 /dev/sdl
@@ -1882,11 +1882,17 @@ Filesystem      Size  Used Avail Use% Mounted on
 </details>
 
 #### TASK: Fail drive /dev/sdi then remove
+
+<details>
+
 ```
 # mdadm --fail /dev/md0 /dev/sdi
 mdadm: set /dev/sdi faulty in /dev/md0
 # mdadm --remove /dev/md0 /dev/sdi
 ```
+
+</details>
+
 #### TASK: Bring /dev/sdi back into array 
 ```
 # mdadm --add/dev/md0 /dev/sdi
@@ -2448,11 +2454,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNzkzMzEwMSwxMDIzNDYzNjM4LC01Mj
-Y2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1NjQ2
-MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDExLC0xNT
-Q4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMTM2OTk4
-OTU5MywtNjU4NjM4NDA4LDEyNDc5NzU2MzYsODg3NjMxMzYyLD
-M5NjE2MzE2OSwxODc0ODQ2Njg1LC0xMTY0MDY2Mjk0LDYwMjkw
-NDcxMV19
+eyJoaXN0b3J5IjpbMzEyNTE4MDI0LDEwMjM0NjM2MzgsLTUyNj
+Y0NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4NDAsMjk0OTU2NDYx
+LDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0MTEsLTE1ND
+gxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMzY5OTg5
+NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMz
+k2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNjAyOTA0
+NzExXX0=
 -->
