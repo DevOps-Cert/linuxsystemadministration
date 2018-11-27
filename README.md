@@ -323,8 +323,9 @@ Figure out where the program 'ping' is stored:
 #
 ```
 ### TASK: Find by name
-Find file named file in /tmp/1.2/ after creating it and place path into /tmp/1.2/filepath.
->! # touch /tmp/1.2/file
+<details>
+<Summary>Find file named file in /tmp/1.2/ after creating it and place path into /tmp/1.2/filepath.</summary>
+ # touch /tmp/1.2/file
 >! # find /tmp/1.2 -name file -print > /tmp/1.2/filepath
 >! # cat /tmp/1.2/filepath
 >! /tmp/1.2/file
@@ -2360,11 +2361,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MD
-UwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYw
-ODU0LDEzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LD
-g4NzYzMTM2MiwzOTYxNjMxNjksMTg3NDg0NjY4NSwtMTE2NDA2
-NjI5NCw2MDI5MDQ3MTEsLTY1NTMzNTc2Niw1MjY0NjI4MjEsMT
-A5ODM3NDM1MSwtMTQ3Nzg1Nzk4MiwtMTY0NDMxMjcyNiwtMTAw
-NDY5Mjk3Nl19
+eyJoaXN0b3J5IjpbMTQyNjU5MTg2MywxMDQ3NTY2NDUsMTAzMT
+c4MDcwNiwxMzcwNTA5NDExLC0xNTQ4MTk5ODM0LC0xOTY0MTcz
+OTYwLDE4MDAwNjA4NTQsMTM2OTk4OTU5MywtNjU4NjM4NDA4LD
+EyNDc5NzU2MzYsODg3NjMxMzYyLDM5NjE2MzE2OSwxODc0ODQ2
+Njg1LC0xMTY0MDY2Mjk0LDYwMjkwNDcxMSwtNjU1MzM1NzY2LD
+UyNjQ2MjgyMSwxMDk4Mzc0MzUxLC0xNDc3ODU3OTgyLC0xNjQ0
+MzEyNzI2XX0=
 -->
