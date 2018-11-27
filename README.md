@@ -2455,6 +2455,7 @@ lb80 # touch /nfs/test
 lb80 # cat /etc/exports
 /nfs       lb70(rw,sync,no_subtree_check)
 lb80 # systemctl restart nfs-server.service
+lb70 # 
 ```
 
 </details>
@@ -2480,7 +2481,7 @@ lb60 #
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MTUyOTI5Nyw4MjI0MzQyNSwtNDEzMD
+eyJoaXN0b3J5IjpbMTc4MDMyMTQzMSw4MjI0MzQyNSwtNDEzMD
 g2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4
 LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5ND
 k1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDEx
