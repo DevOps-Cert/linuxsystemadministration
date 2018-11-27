@@ -423,11 +423,10 @@ cat /tmp/1.2/filepath
 </details>
 
 ### Find size
-<details><summary>After make several files in /tmp/8.5 `cd /tmp/8.5; fallocate -l 1k 1k; fallocate -l 4k 4k; fallocate -l 5k 5k; fallocate -l 7k 7k; fallocate -l 9k 9k; fallocate -l 10k 10k `
-which are sized 1k through 10k with such names (1k size is named 1k).  Find all files sized less than 6k and write results to /tmp/1.2/small.<summary>
+<details><summary>Find all files sized greater than 2k in /etc/pam.d/ and write results to  /tmp/1.2/bigpamfiles.txt.<summary>
 
 ```
-# find 
+# find /etc/pam.d/ -size +2k  -print > /tmp/1.2/bigpamfiles.txt
 ```
 
 </details>
@@ -2407,7 +2406,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODA4NjI0NDYsLTE1NzYwNjQ4NDAsMj
+eyJoaXN0b3J5IjpbLTE5OTY3NDUwMzAsLTE1NzYwNjQ4NDAsMj
 k0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0
 MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NC
 wxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2
