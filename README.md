@@ -1871,9 +1871,9 @@ Filesystem      Size  Used Avail Use% Mounted on
 ```
 </details>
 
-#### TASK: Add fourth drive as spare /dev/sdl
+#### TASK: Adding drives
 
-<details>
+<details><summary>Add fourth drive as spare /dev/sdl</summary>
 
 ```
 # mdadm --add /dev/md0 /dev/sdl
@@ -2454,11 +2454,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODA4NDA0NzcsMTAyMzQ2MzYzOCwtNT
-I2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0
-NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMT
-U0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5
-ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYzMTM2Mi
-wzOTYxNjMxNjksMTg3NDg0NjY4NSwtMTE2NDA2NjI5NCw2MDI5
-MDQ3MTFdfQ==
+eyJoaXN0b3J5IjpbLTk0MjM1MzYzOCwxMDIzNDYzNjM4LC01Mj
+Y2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1NjQ2
+MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDExLC0xNT
+Q4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMTM2OTk4
+OTU5MywtNjU4NjM4NDA4LDEyNDc5NzU2MzYsODg3NjMxMzYyLD
+M5NjE2MzE2OSwxODc0ODQ2Njg1LC0xMTY0MDY2Mjk0LDYwMjkw
+NDcxMV19
 -->
