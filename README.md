@@ -1936,11 +1936,15 @@ Working Devices : 4
 
 </details>
 
-#### TASK: Make this current status persistent after boot
+<details><summary>Make this current status persistent after boot</summary>
+
 ```
 # mdadm --detail --scan >> /etc/mdadm/mdadm.conf
 # echo "/dev/md0        /raid   ext4    defaults        0       2" >> /etc/fstab
 ```
+
+</details>
+
 Additional resources: [tecmint - Assembling Partitions as RAID Devices](https://www.tecmint.com/creating-and-managing-raid-backups-in-linux/), [mdadm cheat sheet](http://www.ducea.com/2009/03/08/mdadm-cheat-sheet/), [MSDN blog](https://blogs.msdn.microsoft.com/maheshk/2018/06/11/lfcs-managing-software-raid/)
 
 ##	Configure systems to mount file systems on demand
@@ -2458,7 +2462,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjgwNDQ4NiwtOTQyMzUzNjM4LDEwMj
+eyJoaXN0b3J5IjpbLTEyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMj
 M0NjM2MzgsLTUyNjY0NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4
 NDAsMjk0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNz
 A1MDk0MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2
