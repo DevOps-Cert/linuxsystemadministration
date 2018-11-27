@@ -1838,7 +1838,7 @@ For starters, don't try to memorize all the options.  Start with the information
 # wipefs -a /dev/sdi /dev/sdj /dev/sdk /dev/sdl
 
 ``` 
-#### TASK:  Create /dev/md0
+#### TASK:  Create stripped RAID drive
 <details><summary>Make a striped RAID array on two hard drives (/dev/sdi AND /dev/sdj) and place a ext4 file system on it, mount it at /raid, then dismount it and disable it.</summary>
 
 ```
@@ -2463,7 +2463,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNjg5OTIxMCwtMTI3NTcyMTIxLC05ND
+eyJoaXN0b3J5IjpbLTQxMzA4NjY3MywtMTI3NTcyMTIxLC05ND
 IzNTM2MzgsMTAyMzQ2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2
 NiwtMTU3NjA2NDg0MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMz
 E3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3
