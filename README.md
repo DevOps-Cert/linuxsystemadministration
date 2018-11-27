@@ -358,9 +358,11 @@ cat /tmp/1.2/filepath
 
 </details>
 
-### Find -iname
+### TASK: Find files by names without case
+<details><summary>Find files matching pattern ignoring case</summary>
  -iname pattern
 Like -name, but the match is case insensitive.  For example, the  patterns `fo*'  and  `F??'  match  the  file names `Foo', `FOO', `foo', `fOo', etc. The pattern `*foo*` will also match a file called '.foobar'.
+</details>
 ### Find type
 To find directories: `find . -type d -print`
 ```
@@ -2374,11 +2376,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTMzNDMyNDEsMTA0NzU2NjQ1LDEwMz
-E3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3
-Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLTY1ODYzODQwOC
-wxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMxNjksMTg3NDg0
-NjY4NSwtMTE2NDA2NjI5NCw2MDI5MDQ3MTEsLTY1NTMzNTc2Ni
-w1MjY0NjI4MjEsMTA5ODM3NDM1MSwtMTQ3Nzg1Nzk4MiwtMTY0
-NDMxMjcyNl19
+eyJoaXN0b3J5IjpbNTUyMzE3MTE5LDEwNDc1NjY0NSwxMDMxNz
+gwNzA2LDEzNzA1MDk0MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5
+NjAsMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMT
+I0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2
+ODUsLTExNjQwNjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNT
+I2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nzc4NTc5ODIsLTE2NDQz
+MTI3MjZdfQ==
 -->
