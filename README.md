@@ -1871,8 +1871,6 @@ Filesystem      Size  Used Avail Use% Mounted on
 ```
 </details>
 
-#### TASK: Adding drives
-
 <details><summary>Add fourth drive as spare /dev/sdl</summary>
 
 ```
@@ -1880,8 +1878,6 @@ Filesystem      Size  Used Avail Use% Mounted on
 ```
 
 </details>
-
-#### TASK: Fail drive
 
 <details><summary>Fail drive /dev/sdi then remove</summary>
 
@@ -1893,11 +1889,11 @@ mdadm: set /dev/sdi faulty in /dev/md0
 
 </details>
 
-#### TASK: Bring /dev/sdi back into array 
 ```
 # mdadm --add/dev/md0 /dev/sdi
 ```
-#### TASK: Verify that there are three drives as RAID 5 and a spare
+<details><summary>Verify that there are three drives as RAID 5 and a spare</summary>
+
 ```
 # mdadm --detail /dev/md0
 /dev/md0:
@@ -1932,6 +1928,9 @@ Working Devices : 4
        5       8      128        -      spare   /dev/sdi
 
 ``` 
+
+</details>
+
 #### TASK: Make this current status persistent after boot
 ```
 # mdadm --detail --scan >> /etc/mdadm/mdadm.conf
@@ -2454,7 +2453,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU3NTIwOTI1LC05NDIzNTM2MzgsMTAyMz
+eyJoaXN0b3J5IjpbNTY0MjI0NDQ0LC05NDIzNTM2MzgsMTAyMz
 Q2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0
 MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MD
 UwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYw
