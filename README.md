@@ -363,6 +363,7 @@ cat /tmp/1.2/filepath
  -iname pattern
 Like -name, but the match is case insensitive.  For example, the  patterns `fo*'  and  `F??'  match  the  file names `Foo', `FOO', `foo', `fOo', etc. The pattern `*foo*` will also match a file called '.foobar'.
 </details>
+
 ### Find type
 To find directories: `find . -type d -print`
 ```
@@ -2376,7 +2377,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUyMzE3MTE5LDEwNDc1NjY0NSwxMDMxNz
+eyJoaXN0b3J5IjpbMjk0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNz
 gwNzA2LDEzNzA1MDk0MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5
 NjAsMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMT
 I0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2
