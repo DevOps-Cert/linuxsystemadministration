@@ -356,7 +356,7 @@ cat /tmp/1.2/filepath
 ./freds/
 ```
 
-</detail>
+</details>
 
 ### Find -iname
  -iname pattern
@@ -2374,7 +2374,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDQ3ODA0MjQsMTA0NzU2NjQ1LDEwMz
+eyJoaXN0b3J5IjpbLTE4NTMzNDMyNDEsMTA0NzU2NjQ1LDEwMz
 E3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3
 Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLTY1ODYzODQwOC
 wxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMxNjksMTg3NDg0
