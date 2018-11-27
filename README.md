@@ -1829,21 +1829,22 @@ Previous competency LFCS 2.16: Assemble partitions as RAID devices
 11. /dev/sdk 50MB mdadm RAID
 12. /dev/sdl 50MB mdadm RAID
 
-For starters, don't try to memorize all the options.  Start with the information provided by: 
+For starters, don't try to memorize all the options.  Start with the information provided by and wipe drive using: 
 ```
 /usr/share/doc/mdadm/README.recipes
 /usr/share/doc/mdadm/examples/mdadm.conf-example 
+# mdadm --stop /dev/md0
+# mdadm --zero-superblock /dev/sdi /dev/sdj /dev/sdk /dev/sdl
+
 ``` 
 #### TASK:  Create /dev/md0
-<detail><summary>Make a striped RAID array on two hard drives, save configuration.</summary>
+<detail><summary>Make a striped RAID array on two hard drives and place a ext4 file system on it.</summary>
 
 ```
 # mdadm --create /dev/md0 -n 2 -l raid1 /dev/sdi /dev/sdj
 # mdadm --detail /dev/md0
 # mkfs.ext4 /dev/md0 
 # mdadm --detail /dev/md0
-# mdadm --stop /dev/md0
-# mdadm --zero-superblock /dev/sdi /dev/sdj /dev/sdk /dev/sdl
 ```
 
 </details>
@@ -2424,7 +2425,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMTU3NjMzNywxMDIzNDYzNjM4LC01Mj
+eyJoaXN0b3J5IjpbMTQ2MDE1MjQwMywxMDIzNDYzNjM4LC01Mj
 Y2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1NjQ2
 MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDExLC0xNT
 Q4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMTM2OTk4
