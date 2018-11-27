@@ -1833,6 +1833,7 @@ For starters, don't try to memorize all the options.  Start with the information
 ```
 /usr/share/doc/mdadm/README.recipes
 /usr/share/doc/mdadm/examples/mdadm.conf-example 
+# umount /dev/md0
 # mdadm --stop /dev/md0
 # wipefs -a /dev/sdi /dev/sdj /dev/sdk /dev/sdl
 
@@ -2462,7 +2463,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzQ1MTg2MSwtMTI3NTcyMTIxLC05ND
+eyJoaXN0b3J5IjpbMTIxNjg5OTIxMCwtMTI3NTcyMTIxLC05ND
 IzNTM2MzgsMTAyMzQ2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2
 NiwtMTU3NjA2NDg0MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMz
 E3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3
