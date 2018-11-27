@@ -2440,7 +2440,7 @@ $ docker build -t my-image dockerfiles/ or $ docker build -t aspnet5 . { there i
 Additional information: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs-commands-to-manage-and-configure-containers-in-linux/
 ## File Sharing
 #### TASK: Setup NFS  
-<details><summary>On lb80, share /nfs with lb70 machines on network as /nfs and set to mount persistently</summary>
+<details><summary>On lb80, share /nfs with dummy file named test with lb70 machines on network as /nfs and set to mount persistently</summary>
 
 ```
 lb80 # apt-get install nfswatch nfs-common nfs-kernel-server
@@ -2450,7 +2450,9 @@ lb80 # # cat /etc/hosts
 10.20.30.50     lb50    lb50
 10.20.30.70     lb70    lb70
 10.20.30.80     lb80    lb80
-lb60 # cat /etc/exports
+lb80 # mkdir /nfs
+lb80 # touch /nfs/test
+lb80 # cat /etc/exports
 /nfs       hostname1(rw,sync,no_subtree_check)
 ```
 
@@ -2477,11 +2479,11 @@ lb60 #
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjU3ODI5MTksODIyNDM0MjUsLTQxMz
-A4NjY3MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYz
-OCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOT
-Q5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQx
-MSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LD
-EzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYz
-MTM2Ml19
+eyJoaXN0b3J5IjpbLTQwNTYwOTI4MSw4MjI0MzQyNSwtNDEzMD
+g2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4
+LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5ND
+k1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDEx
+LC0xNTQ4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMT
+M2OTk4OTU5MywtNjU4NjM4NDA4LDEyNDc5NzU2MzYsODg3NjMx
+MzYyXX0=
 -->
