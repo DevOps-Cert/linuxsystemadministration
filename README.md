@@ -384,12 +384,12 @@ Like -name, but the match is case insensitive.  For example, the  patterns `fo*'
 
 ```
 # find /usr/share/* -type f -print | head -5 > /tmp/1.2/filepaths.txt
-# cat /tmp/1.2/dirs
-/usr/share/aclocal
-/usr/share/adduser
-/usr/share/apache2
-/usr/share/apache2/build
-/usr/share/apache2/default-site
+# cat /tmp/1.2/filepaths.txt
+/usr/share/aclocal/dovecot.m4
+/usr/share/aclocal/dovecot-pigeonhole.m4
+/usr/share/adduser/adduser.conf
+/usr/share/apache2/build/envvars-std
+/usr/share/apache2/apache2-maintscript-helper
 ```
 
 </details>
@@ -2394,11 +2394,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNzM3NjYyNCwyOTQ5NTY0NjEsMTA0Nz
-U2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgz
-NCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5ODk1OTMsLT
-Y1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYzMTM2MiwzOTYxNjMx
-NjksMTg3NDg0NjY4NSwtMTE2NDA2NjI5NCw2MDI5MDQ3MTEsLT
-Y1NTMzNTc2Niw1MjY0NjI4MjEsMTA5ODM3NDM1MSwtMTQ3Nzg1
-Nzk4Ml19
+eyJoaXN0b3J5IjpbLTE1NzYwNjQ4NDAsMjk0OTU2NDYxLDEwND
+c1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0MTEsLTE1NDgxOTk4
+MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC
+02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MTYz
+MTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNjAyOTA0NzExLC
+02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nzc4
+NTc5ODJdfQ==
 -->
