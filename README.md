@@ -2444,7 +2444,7 @@ Additional information: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs
 
 ```
 lb80 # apt-get install -y nfswatch nfs-common nfs-kernel-server
-lb80 # # cat /etc/hosts
+lb80 # cat /etc/hosts
 127.0.1.1       lb60    lb60
 10.20.30.40     lb40    lb40
 10.20.30.50     lb50    lb50
@@ -2453,7 +2453,8 @@ lb80 # # cat /etc/hosts
 lb80 # mkdir /nfs
 lb80 # touch /nfs/test
 lb80 # cat /etc/exports
-/nfs       hostname1(rw,sync,no_subtree_check)
+/nfs       lb70(rw,sync,no_subtree_check)
+lb80 # systemctl restart nfs-server.service
 ```
 
 </details>
@@ -2479,7 +2480,7 @@ lb60 #
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NDY4MjkwMyw4MjI0MzQyNSwtNDEzMD
+eyJoaXN0b3J5IjpbMTQ3MTUyOTI5Nyw4MjI0MzQyNSwtNDEzMD
 g2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4
 LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5ND
 k1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDEx
