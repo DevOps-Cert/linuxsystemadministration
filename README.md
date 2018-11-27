@@ -423,7 +423,7 @@ cat /tmp/1.2/filepath
 </details>
 
 ### Find size
-<details><summary>Find all files sized greater than 2k in /etc/pam.d/ and write results to  /tmp/1.2/bigpamfiles.txt.<summary>
+<details><summary>Find all files sized greater than 2k in /etc/pam.d/ and write results to  /tmp/1.2/bigpamfiles.txt.</summary>
 
 ```
 # find /etc/pam.d/ -size +2k  -print > /tmp/1.2/bigpamfiles.txt
@@ -437,18 +437,28 @@ cat /tmp/1.2/filepath
 </details>
 
 ### Find time
-First, let inside /tmp/1.2/ make dummy file named 1999 with the modify time of January 1st, 1999 and a current file with all timestamps for today named 2018; then, find only the 1999 file using find command and the 2018 file using find.
+<details><summary>First, let inside /tmp/1.2/ make dummy file named 1999 with the modify time of January 1st, 1999 and a current file with all timestamps for today named 2018; 
+
 ```
 # touch -t 199901010101 1999 -m 1999
 # touch 2018
 # stat 1999 | grep Modify
 Modify: 1999-01-01 01:01:00.000000000 +0000
+```
+
+</summary>
+
+Now,  find only the 1999 file using find command and the 2018 file using find.
+```
 # find . -atime +6480 -print
 ./1999
-# find . -mtime 0
+# find . -mtime 0 -type f
 .
 ./2018
 ```
+
+</details>
+
 ### File path
 Sometimes it is helpful to find out the full path for a file:
 ```
@@ -2411,11 +2421,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5ND
-k1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDEx
-LC0xNTQ4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMT
-M2OTk4OTU5MywtNjU4NjM4NDA4LDEyNDc5NzU2MzYsODg3NjMx
-MzYyLDM5NjE2MzE2OSwxODc0ODQ2Njg1LC0xMTY0MDY2Mjk0LD
-YwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2MjgyMSwxMDk4Mzc0
-MzUxXX0=
+eyJoaXN0b3J5IjpbMzY5NjM5OTQ3LDE1MzUzMjY2NiwtMTU3Nj
+A2NDg0MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYs
+MTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxOD
+AwMDYwODU0LDEzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1
+NjM2LDg4NzYzMTM2MiwzOTYxNjMxNjksMTg3NDg0NjY4NSwtMT
+E2NDA2NjI5NCw2MDI5MDQ3MTEsLTY1NTMzNTc2Niw1MjY0NjI4
+MjFdfQ==
 -->
