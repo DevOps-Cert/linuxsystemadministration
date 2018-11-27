@@ -79,7 +79,7 @@ Acquire::https::Proxy "http://10.20.30.40:8080/";
 The first download will be at WAN speed; but, subsequent downloads should be much faster. 
 More tweaks can be found at https://wiki.ubuntu.com/SquidDebProxy
 ### apt-mirror
-An alternative idea would be a local apt-mirror repository which will never slow you down in that all files will be local; but, it will take a significant amount of time and space to populate your repository.  This will take in the ballpark of 129.0 GB heavily depending on configuration (use deb-amd64 to not also download i386).
+An alternative idea would be a local apt-mirror repository which will never slow you down in that all files will be local; but, it will take a significant amount of time and space to populate your repository.   While the fastest automated solution from a loading of any package once mirror is populated; the space makes this a suspect method as mi take in the ballpark of 129.0 GB heavily depending on configuration (use deb-amd64 to not also download i386).
 
 
 ### apt-cacher-ng
@@ -2367,10 +2367,10 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4Nz
-YzMTM2MiwzOTYxNjMxNjksMTg3NDg0NjY4NSwtMTE2NDA2NjI5
-NCw2MDI5MDQ3MTEsLTY1NTMzNTc2Niw1MjY0NjI4MjEsMTA5OD
-M3NDM1MSwtMTQ3Nzg1Nzk4MiwtMTY0NDMxMjcyNiwtMTAwNDY5
-Mjk3NiwxOTU0MDc3MDYzLC03NzMyNDkwMjIsLTE0MDAxNjE2Mz
-csLTEyNzEwMjg1MDhdfQ==
+eyJoaXN0b3J5IjpbMzE1NzY1ODMzLC02NTg2Mzg0MDgsMTI0Nz
+k3NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUs
+LTExNjQwNjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2ND
+YyODIxLDEwOTgzNzQzNTEsLTE0Nzc4NTc5ODIsLTE2NDQzMTI3
+MjYsLTEwMDQ2OTI5NzYsMTk1NDA3NzA2MywtNzczMjQ5MDIyLC
+0xNDAwMTYxNjM3LC0xMjcxMDI4NTA4XX0=
 -->
