@@ -2439,7 +2439,9 @@ $ docker build -t my-image dockerfiles/ or $ docker build -t aspnet5 . { there i
 ```
 Additional information: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs-commands-to-manage-and-configure-containers-in-linux/
 ## File Sharing
-#### TASK: Setup NFS  on lb60 to share /nfs with lb40 machines on network as /nfs
+#### TASK: Setup NFS  
+<details><summary>on lb60 to share /nfs with lb40 machines on network as /nfs</summary>
+
 ```
 lb60 # apt-get install nfswatch nfs-common nfs-kernel-server
 lb60 # # cat /etc/hosts
@@ -2449,6 +2451,9 @@ lb60 # # cat /etc/hosts
 lb60 # cat /etc/exports
 /nfs       hostname1(rw,sync,no_subtree_check)
 ```
+
+</details>
+
 #### TASK: Setup SAMBA  on lb60 to share /smb with lb40 machines on network as /smb
 
 
@@ -2464,7 +2469,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczOTc0MTkwMiw4MjI0MzQyNSwtNDEzMD
+eyJoaXN0b3J5IjpbMTUzMDU1MDI2Niw4MjI0MzQyNSwtNDEzMD
 g2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4
 LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5ND
 k1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDEx
