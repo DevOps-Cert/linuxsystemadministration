@@ -358,12 +358,6 @@ cat /tmp/1.2/filepath
 
 </details>
 
-### TASK: Find files by names without case
-<details><summary>Find files matching pattern ignoring case</summary>
- -iname pattern
-Like -name, but the match is case insensitive.  For example, the  patterns `fo*'  and  `F??'  match  the  file names `Foo', `FOO', `foo', `fOo', etc. The pattern `*foo*` will also match a file called '.foobar'.
-</details>
-
 ### TASK: Find directories 
 <details><summary>Put path of first five directories in /usr/share/ into /tmp/1.2/dirs:  </summary>
 
@@ -395,10 +389,11 @@ Like -name, but the match is case insensitive.  For example, the  patterns `fo*'
 </details>
 
 ### Find -exec
-In etc, find all files and then output their type to /tmp/1.2/etctypes and take a look at the top of the resulting file:
+<details><summary>In etc, find all files and then output their type to /tmp/1.2/etctypes and take a look at the top of the resulting file:</summary>
+
 ```
 # find /etc -type f -exec file '{}' > /tmp/1.2/etctypes \;
-# head etctypes
+# head /tmp/1.2/etctypes
 /etc/overlayroot.local.conf: ASCII text
 /etc/rpc: ASCII text
 /etc/mysql/my.cnf.fallback: BSD makefile script, ASCII text
@@ -406,6 +401,9 @@ In etc, find all files and then output their type to /tmp/1.2/etctypes and take 
 /etc/mysql/conf.d/mysql.cnf: ASCII text
 /etc/X11/Xsession.d/60xdg-user-dirs-update: ASCII text
 ```
+
+</details>
+
 ### Find -ok
 Add file deleteme in /tmp/1.2.  Find all files in /tmp/1.2 and ask if it is ok to delete them one by one but answer no to each delete other than deleteme: 
 ```
@@ -2394,11 +2392,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzYwNjQ4NDAsMjk0OTU2NDYxLDEwND
-c1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0MTEsLTE1NDgxOTk4
-MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC
-02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2MzEzNjIsMzk2MTYz
-MTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOTQsNjAyOTA0NzExLC
-02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgzNzQzNTEsLTE0Nzc4
-NTc5ODJdfQ==
+eyJoaXN0b3J5IjpbLTEyMDM1NzMyNzcsLTE1NzYwNjQ4NDAsMj
+k0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0
+MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NC
+wxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2
+MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOT
+QsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgz
+NzQzNTFdfQ==
 -->
