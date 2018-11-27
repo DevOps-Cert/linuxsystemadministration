@@ -325,13 +325,13 @@ Figure out where the program 'ping' is stored:
 ### TASK: Find by name
 Find file named file in /tmp/1.2/ after creating it and place path into /tmp/1.2/filepath.
 ```
-# touch /tmp/1.2file
+# touch /tmp/1.2/file
 # find /tmp/1.2 -name file -print > /tmp/1.2/filepath
 # cat /tmp/1.2/filepath
 /tmp/1.2/file
 ```
-### Find with permissions
-Find all files in etc which are read only for all users:
+### TASK: Find with permissions
+Find all files in /etc which are read only for all users:
 ```
 # find /etc/ -perm 444 -exec ls -al {} \;
 -r--r--r-- 1 root root 1504 Nov  9 08:30 /etc/apt/apt.conf.d/01autoremove-kernels
@@ -2361,7 +2361,7 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjE1NzQyNCwxMDMxNzgwNzA2LDEzNz
+eyJoaXN0b3J5IjpbMTYwNDI4NDYzNSwxMDMxNzgwNzA2LDEzNz
 A1MDk0MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2
 MDg1NCwxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNi
 w4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQw
