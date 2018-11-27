@@ -427,6 +427,11 @@ cat /tmp/1.2/filepath
 
 ```
 # find /etc/pam.d/ -size +2k  -print > /tmp/1.2/bigpamfiles.txt
+# cat /tmp/1.2/bigpamfiles.txt
+/etc/pam.d/
+/etc/pam.d/login
+/etc/pam.d/sshd
+/etc/pam.d/su
 ```
 
 </details>
@@ -2406,11 +2411,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTY3NDUwMzAsLTE1NzYwNjQ4NDAsMj
-k0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0
-MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2MDg1NC
-wxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3NTYzNiw4ODc2
-MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLTExNjQwNjYyOT
-QsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYyODIxLDEwOTgz
-NzQzNTFdfQ==
+eyJoaXN0b3J5IjpbMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5ND
+k1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDEx
+LC0xNTQ4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMT
+M2OTk4OTU5MywtNjU4NjM4NDA4LDEyNDc5NzU2MzYsODg3NjMx
+MzYyLDM5NjE2MzE2OSwxODc0ODQ2Njg1LC0xMTY0MDY2Mjk0LD
+YwMjkwNDcxMSwtNjU1MzM1NzY2LDUyNjQ2MjgyMSwxMDk4Mzc0
+MzUxXX0=
 -->
