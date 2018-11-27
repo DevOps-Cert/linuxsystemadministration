@@ -437,12 +437,12 @@ cat /tmp/1.2/filepath
 </details>
 
 ### Find time
-<details><summary>First, let inside /tmp/6.2/ make dummy file named 1999 with the modify time during day of January 1st, 1999 and a current file with all timestamps for today named 2018; 
+<details><summary>First, let inside /tmp/62.21/ make dummy file named 1999 with the modify time during day of January 1st, 1999 and a current file with all timestamps for today named 2018; 
 
 ```
-# touch -t 199901010101 1999 -m /tmp/tmp/6.2/1999
-# touch /tmp/6.2/2018
-# stat /tmp/6.2/1999 | grep Modify
+# touch -t 199901010101 1999 -m /tmp/62.21/1999
+# touch /tmp/62.21/2018
+# stat /tmp/62.21/1999 | grep Modify
 Modify: 1999-01-01 01:01:00.000000000 +0000
 ```
 
@@ -451,9 +451,9 @@ Modify: 1999-01-01 01:01:00.000000000 +0000
 Now,  find only the 1999 file using find command and the 2018 file using find.
 
 ```
-# find /tmp/1.2 -atime +6480 -print
+# find /tmp/62.21/ -atime +6480 -print
 ./1999
-# find . -mtime 0 -type f
+# find /tmp/62.21/ -mtime 0 -type f
 .
 ./2018
 ```
@@ -2422,11 +2422,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNjgxODYzLDE1MzUzMjY2NiwtMTU3Nj
-A2NDg0MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYs
-MTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxOD
-AwMDYwODU0LDEzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1
-NjM2LDg4NzYzMTM2MiwzOTYxNjMxNjksMTg3NDg0NjY4NSwtMT
-E2NDA2NjI5NCw2MDI5MDQ3MTEsLTY1NTMzNTc2Niw1MjY0NjI4
-MjFdfQ==
+eyJoaXN0b3J5IjpbLTUyNjY0NTY0NywxNTM1MzI2NjYsLTE1Nz
+YwNjQ4NDAsMjk0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2
+LDEzNzA1MDk0MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMT
+gwMDA2MDg1NCwxMzY5OTg5NTkzLC02NTg2Mzg0MDgsMTI0Nzk3
+NTYzNiw4ODc2MzEzNjIsMzk2MTYzMTY5LDE4NzQ4NDY2ODUsLT
+ExNjQwNjYyOTQsNjAyOTA0NzExLC02NTUzMzU3NjYsNTI2NDYy
+ODIxXX0=
 -->
