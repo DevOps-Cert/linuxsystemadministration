@@ -1852,16 +1852,22 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/md0         45M  810K   41M   2% /raid
 # umount /dev/md0
 # mdadm --stop /dev/md0
+# wipefs -a /dev/sdi /dev/sdj /dev/sdk /dev/sdl
 ```
 
 </details>
 
 #### TASK: Create RAID5 
-<details><summary>On three drives (/dev/sdi /dev/sdj /dev/sdk) as /dev/md0 and format as ext4</summary>
+<details><summary>On three drives (/dev/sdi /dev/sdj /dev/sdk) as /dev/md0 and format as ext4, mount to /raid, check file system.</summary>
 
 ```
 # mdadm --create -l5 -n3  /dev/md0 /dev/sdi /dev/sdj /dev/sdk
 # mkfs.ext4 /dev/md0 
+# mkdir /raid
+# mount /dev/md0 /raid
+#  df -h /raid
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/md0         45M  810K   41M   2% /raid
 ```
 </details>
 
@@ -2437,11 +2443,11 @@ lb60 # cat /etc/exports
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTkwMTM3NzksMTAyMzQ2MzYzOCwtNT
-I2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0
-NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMT
-U0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5
-ODk1OTMsLTY1ODYzODQwOCwxMjQ3OTc1NjM2LDg4NzYzMTM2Mi
-wzOTYxNjMxNjksMTg3NDg0NjY4NSwtMTE2NDA2NjI5NCw2MDI5
-MDQ3MTFdfQ==
+eyJoaXN0b3J5IjpbMTc5NTYwODAxNCwxMDIzNDYzNjM4LC01Mj
+Y2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1NjQ2
+MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDExLC0xNT
+Q4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMTM2OTk4
+OTU5MywtNjU4NjM4NDA4LDEyNDc5NzU2MzYsODg3NjMxMzYyLD
+M5NjE2MzE2OSwxODc0ODQ2Njg1LC0xMTY0MDY2Mjk0LDYwMjkw
+NDcxMV19
 -->
