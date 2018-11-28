@@ -1439,7 +1439,8 @@ Task: What is my current SELINUX state?
 
 Task: Disable SELINUX permanently?
 ```
-# grep disabled **/etc/selinux/config**
+# grep disabled /etc/selinux/config
+SELINUX=disabled
 ```
 
 #### TASK: Install and start AppArmor and place tcpdump profile into enforce
@@ -2921,7 +2922,7 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNTk0NjMzMSw2ODYwNTQyMzYsLTExNj
+eyJoaXN0b3J5IjpbMTk2MzY2Mjc2Niw2ODYwNTQyMzYsLTExNj
 A2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3
 MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOT
 U3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgz
