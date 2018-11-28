@@ -742,12 +742,13 @@ dir1  dir2  dir3  dir4  dir5  dir6  dir7  dir8
 
 </details>
 
-<details><summary>Copy /etc/debian_version to /tmp/1.8/ </summary>
+
+<details><summary>Copy /etc/debian_version to /tmp/34.21/ </summary>
 
 ```
-# cp /etc/debian_version /tmp/1.8/
-# ls /tmp/1.8/debi*
-/tmp/1.8/debian_version
+# cp /etc/debian_version /tmp/34.21/
+# ls /tmp/34.21/debi*
+/tmp/34.21/debian_version
 ```
 
 </details>
@@ -2801,7 +2802,7 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMjgzMDA4MSwtOTE3MzEwMDQ3LC02Mz
+eyJoaXN0b3J5IjpbMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02Mz
 AzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQy
 NSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMD
 IzNDYzNjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0
