@@ -721,7 +721,8 @@ index.php  lang/  README  themes/
 
 Additional resources: [tecmint - Archiving Files/Directories](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
 ##	Affecting directories and files with mv, cp, and others
-Create directories dir1-dir8 in /tmp/1.8
+<details><summary>Create directories dir1-dir8 in /tmp/1.8</summary>
+
 ```
 mkdir /tmp/1.8/dir{1..8}
 # ls /tmp/1.8/
@@ -730,7 +731,8 @@ dir1  dir2  dir3  dir4  dir5  dir6  dir7  dir8
 
 </details>
 
-Create dummy files file1-99 in /tmp/3.1 and then delete file40 through file49
+<details><summary>Create dummy files file1-99 in /tmp/3.1 and then delete file40 through file49</summary>
+
 ```
 # touch /tmp/3.1/file{1..99}
 # rm /tmp/3.1/file{40..49}
@@ -740,7 +742,8 @@ Create dummy files file1-99 in /tmp/3.1 and then delete file40 through file49
 
 </details>
 
-<details><summary>Copy /etc/debian_version to /tmp/1.8/ 
+<details><summary>Copy /etc/debian_version to /tmp/1.8/ </summary>
+
 ```
 # cp /etc/debian_version /tmp/1.8/
 # ls /tmp/1.8/debi*
@@ -750,6 +753,7 @@ Create dummy files file1-99 in /tmp/3.1 and then delete file40 through file49
 </details>
 
 <details><summary>Make directories in /tmp/1.8/dirtest named 1,2,3,4, and 5 with one command; then delete them all with one command:</summary>
+
 ```
 # mkdir -p /tmp/1.8/dirtest/{1..5}
 # find /tmp/1.8/dirtest/ -type d -print
@@ -2797,7 +2801,7 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NjMwMTM5OCwtOTE3MzEwMDQ3LC02Mz
+eyJoaXN0b3J5IjpbMTkxMjgzMDA4MSwtOTE3MzEwMDQ3LC02Mz
 AzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQy
 NSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMD
 IzNDYzNjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0
