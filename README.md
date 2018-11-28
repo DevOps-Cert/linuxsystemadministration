@@ -1209,39 +1209,6 @@ cp `grep -il "grub" /etc/grub.d/*` .
 for file in /etc/grub.d/*; do if grep -q "grub" "$file";then cp "$file"
 ```
 Additional resources: [tecmint - Linux Package Management](https://www.tecmint.com/linux-package-management/), [tecmint - 25 apt-get Command Examples](https://www.tecmint.com/linux-package-management/)
-##	File system fixing and memory testing
-Verify the integrity of the main resources a Linux server needs using fsck and memtest86+ tools.
-### fsck
-Commands: fsck
-#### TASK: Fix your ext4 partition which you may need to create at /dev/sdg1 which has errors
-
-```
-# dd if=/dev/zero count=1 bs=4096 seek=0 of=/dev/sdg1
-1+0 records in
-1+0 records out
-4096 bytes (4.1 kB, 4.0 KiB) copied, 0.000791206 s, 5.2 MB/s
-# fsck.ext4 -y /dev/sdg1
-e2fsck 1.42.13 (17-May-2015)
-ext2fs_open2: Bad magic number in super-block
-fsck.ext4: Superblock invalid, trying backup blocks...
-/dev/sdg1 was not cleanly unmounted, check forced.
-Resize inode not valid.  Recreate? yes
-Pass 1: Checking inodes, blocks, and sizes
-Pass 2: Checking directory structure
-Pass 3: Checking directory connectivity
-Pass 4: Checking reference counts
-Pass 5: Checking group summary information
-Free blocks count wrong for group #0 (6398, counted=6399).
-Fix? yes
-Free blocks count wrong (43674, counted=43675).
-Fix? yes
-/dev/sdg1: ***** FILE SYSTEM WAS MODIFIED *****
-/dev/sdg1: 11/12544 files (0.0% non-contiguous), 6481/50156 blocks
-```
-
-### memtest86+
-Commands: memtest86+ in grub or boot CD
-Simply access this using the grub menu item or boot CD.  It runs pretty much auto-magic.
 
 ### Produce and deliver reports on system use (processor, memory, disk, and network), outages, and user requests
 ##	Monitor Linux Processes Resource Usage
@@ -1718,6 +1685,36 @@ lsattr: No such file or directory while trying to stat /tmp/43.23/*mutable
 Access: 2018-11-08 15:22:07.248033652 -0600
   File: '/tmp/1.3/timenoatime'
 Access: 2018-11-08 15:18:12.279613170 -0600
+```
+
+</details>
+
+##	File system fixing 
+Verify the integrity of the main resources a Linux server needs using fsck.
+<details><summary>Fix your ext4 partition which you may need to create at /dev/sdg1 which has errors</summary>
+
+```
+# dd if=/dev/zero count=1 bs=4096 seek=0 of=/dev/sdg1
+1+0 records in
+1+0 records out
+4096 bytes (4.1 kB, 4.0 KiB) copied, 0.000791206 s, 5.2 MB/s
+# fsck.ext4 -y /dev/sdg1
+e2fsck 1.42.13 (17-May-2015)
+ext2fs_open2: Bad magic number in super-block
+fsck.ext4: Superblock invalid, trying backup blocks...
+/dev/sdg1 was not cleanly unmounted, check forced.
+Resize inode not valid.  Recreate? yes
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+Free blocks count wrong for group #0 (6398, counted=6399).
+Fix? yes
+Free blocks count wrong (43674, counted=43675).
+Fix? yes
+/dev/sdg1: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/sdg1: 11/12544 files (0.0% non-contiguous), 6481/50156 blocks
 ```
 
 </details>
@@ -2901,11 +2898,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNzkzODg1NywzMTIyODY1NjQsLTc4Mz
-I2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgy
-OCwxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMj
-YyNDM4MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2
-NzMsLTEyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMjM0NjM2MzgsLT
-UyNjY0NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4NDAsMjk0OTU2
-NDYxXX0=
+eyJoaXN0b3J5IjpbLTEwNTUzOTA3MjksMzEyMjg2NTY0LC03OD
+MyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4
+MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMT
+I2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEzMDg2
+NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4LC
+01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1
+NjQ2MV19
 -->
