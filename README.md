@@ -9,6 +9,7 @@ Work on list
 * ldap
 * Fixup mail stuff
 * mysql steps
+* Docker and lxc
 # Table of Contents
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -2915,11 +2916,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4OTEwMjg4NiwtMTE2MDY4NzI4NiwyOT
-MxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC0xNzE3OTg3
-NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4NzQ4NDAsMz
-k2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OTEsLTkxNzMx
-MDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEzOTkxMzAwNT
-EsODIyNDM0MjUsLTQxMzA4NjY3MywtMTI3NTcyMTIxLC05NDIz
-NTM2MzhdfQ==
+eyJoaXN0b3J5IjpbNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5Mz
+E4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3MTc5ODc0
+ODYsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nzg3NDg0MCwzOT
+YyNDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEw
+MDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MS
+w4MjI0MzQyNSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1
+MzYzOF19
 -->
