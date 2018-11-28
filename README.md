@@ -1427,6 +1427,11 @@ Task: Restore default SELinux file contexts for /etc/passwd
 #
 ```
 
+Task: What is my current SELINUX state?
+```
+#
+```
+
 Additional resources: [tecmint - Implementing Mandatory Access Control](https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/), [Ubuntu AppArmor Wiki](https://wiki.ubuntu.com/AppArmor)
 ##	Manage Software
 On Ubuntu you can add software with `apt-get install -y <packagename>`
@@ -2895,11 +2900,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMT
-IyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMy
-MCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC05MTczMTAwNDcsLT
-YzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgyMjQz
-NDI1LC00MTMwODY2NzMsLTEyNzU3MjEyMSwtOTQyMzUzNjM4LD
-EwMjM0NjM2MzgsLTUyNjY0NTY0NywxNTM1MzI2NjYsLTE1NzYw
-NjQ4NDBdfQ==
+eyJoaXN0b3J5IjpbLTEwMjI1ODQyNDksLTcwNjA5MjE3MiwtMT
+cxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0
+ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC
+05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMzk5
+MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2NzMsLTEyNzU3MjEyMS
+wtOTQyMzUzNjM4LDEwMjM0NjM2MzgsLTUyNjY0NTY0NywxNTM1
+MzI2NjZdfQ==
 -->
