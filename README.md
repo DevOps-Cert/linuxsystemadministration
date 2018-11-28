@@ -1,5 +1,5 @@
 # linuxsystemadministration
-This guide provides lab activities to help practice Linux system administration commands.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is listed for our selected Linux distribution which is Ubuntu 16.04 LTS server.   This also helps me learn markdown for documentation.
+While there are many introductions to Linux, this guide provides working lab activities to help practice Linux system administration commands.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is available for the selected Linux distribution which is Ubuntu 16.04 LTS server.   
 
 Work on list
 * SELinux and AppArmor https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/2/ 
@@ -16,7 +16,7 @@ Work on list
 
 # Setup Process
 ## Caveats
-While this guide could make use of sudo for all super privileged commands (/sbin) to avoid the use of the root account; efficiency of time makes it optimal to use the root account for almost all functions.  In a few cases, an unprivileged account will be used such as testing file and user privileges.  It is with heavy heart that the use of root account herein is documented; but, the goal is speed and this shortcut turns into a tremendous time saver.  Do not pursue this approach with production servers with multiple administrators where you should be using sudo and visudo rather than these shortcuts.  Root can be accessed via `sudo -i` or `sudo su - root`.
+While this guide could make use of sudo for all super privileged commands (/sbin) to avoid the use of the root account; efficiency of time makes it optimal to use the root account for almost all functions.  In a few cases, an unprivileged account will be used such as testing file and user privileges.  It is with heavy heart that the use of root account herein is documented; but, the goal is speed and this shortcut turns into a tremendous time saver.  Do not pursue this approach with production servers with multiple administrators where you should be using sudo to provide audit trail and visudo rather than these shortcuts.  Root can be accessed via `sudo -i` or `sudo su - root`.
 ## Platform generic focus
 Take careful note of the version of Ubuntu as this presumes 16.04.  These instructions are platform specific to Ubuntu 16.04 to avoid extra commands to master.  When possible, generic concepts and methods are covered such as iptables instead of ufw for example.
 ## Setup notes
@@ -2929,11 +2929,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjAzOTA4MDYsLTEzNjM0OTQwNzQsLT
-E1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5MzE4
-NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3MTc5ODc0OD
-YsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nzg3NDg0MCwzOTYy
-NDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMD
-Q3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4
-MjI0MzQyNV19
+eyJoaXN0b3J5IjpbLTY3NzEyMjI5NiwtMTM2MzQ5NDA3NCwtMT
+U3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0
+OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4Ni
+wzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0
+MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC05MTczMTAwND
+csLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgy
+MjQzNDI1XX0=
 -->
