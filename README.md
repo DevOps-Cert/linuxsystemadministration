@@ -755,6 +755,17 @@ dir1  dir2  dir3  dir4  dir5  dir6  dir7  dir8
 
 </details>
 
+<details><summary>Place a copy of /etc/debian_version in directory /tmp/33.23 with the name of ubuntu </summary>
+
+```
+# cp /etc/debian_version /tmp/33.23/
+# ls /tmp/33.23/debi*
+/tmp/33.23/debian_version
+```
+
+</details>
+
+
 <details><summary>Make directories in /tmp/1.8/dirtest named 1,2,3,4, and 5 with one command; then delete them all with one command:</summary>
 
 ```
@@ -2804,11 +2815,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMDkzNTgxMywtMTAxMzEyMjgyOCwxMz
-g3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4
-MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2NzMsLT
-EyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMjM0NjM2MzgsLTUyNjY0
-NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4NDAsMjk0OTU2NDYxLD
-EwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0MTEsLTE1NDgx
-OTk4MzRdfQ==
+eyJoaXN0b3J5IjpbLTE5NDg1NTMxNjYsLTEwMTMxMjI4MjgsMT
+M4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQz
+ODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEzMDg2NjczLC
+0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4LC01MjY2
+NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1NjQ2MS
+wxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDExLC0xNTQ4
+MTk5ODM0XX0=
 -->
