@@ -1437,7 +1437,14 @@ Task: What is my current SELINUX state?
 # getenforce
 ```
 
-#### TASK: Install AppArmor and configure 
+#### TASK: Install and start AppArmor and place tcpdump profile into enforce
+
+```
+# apt-get install apparmor-profiles
+aa-enforce tcpdump
+systemctl enable apparmor
+systemctl start apparmor
+```
 
 Additional resources: [tecmint - Implementing Mandatory Access Control](https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/), [Ubuntu AppArmor Wiki](https://wiki.ubuntu.com/AppArmor)
 ##	Manage Software
@@ -2907,7 +2914,7 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MTIxMjM4OCwtNzA2MDkyMTcyLC0xNz
+eyJoaXN0b3J5IjpbLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC0xNz
 E3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4NzQ4
 NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OTEsLT
 kxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEzOTkx
