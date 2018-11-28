@@ -826,10 +826,14 @@ cp
 mv
 ```
 ##	Shortcuts to files and directories with hard and soft links
-#### TASK: Create a hard link from /etc/apg.conf to /tmp/2.4/apglink: 
+<details><summary> TASK: Create a hard link from /etc/apg.conf to /tmp/2.4/apglink: </summary>
+
 ```
 ln /etc/apg.conf /tmp/2.4/apglink
 ```
+
+</details>
+
 #### TASK: Create a symbolic link between /etc/appstream.conf and /tmp/5.6/appstream.txt
 ```
 # ln -s /etc/appstream.conf /tmp/5.6/appstream.txt
@@ -2819,7 +2823,7 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjM1ODc5NiwzOTYyNDMzMjAsLTEwMT
+eyJoaXN0b3J5IjpbMTgyNTY1NTYxNiwzOTYyNDMzMjAsLTEwMT
 MxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4
 NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtND
 EzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYz
