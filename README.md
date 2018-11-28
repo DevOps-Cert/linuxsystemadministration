@@ -2758,13 +2758,12 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [Cert Exam Prep: Linux Foundation Certified System Administrator (LFCS) by  Mark Grimes](https://channel9.msdn.com/events/Ignite/2016/BRK3268?term=Mark%20Grimes&lang-en=true)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA5MDk1MjIzLC05MTczMTAwNDcsLTYzMD
-M5NDg3LC0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1
-LC00MTMwODY2NzMsLTEyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMj
-M0NjM2MzgsLTUyNjY0NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4
-NDAsMjk0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNz
-A1MDk0MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2
-MDg1NF19
+eyJoaXN0b3J5IjpbLTYwNDcyOTUyNywtOTE3MzEwMDQ3LC02Mz
+AzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQy
+NSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMD
+IzNDYzNjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0
+ODQwLDI5NDk1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMz
+cwNTA5NDExLC0xNTQ4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAw
+NjA4NTRdfQ==
 -->
