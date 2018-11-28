@@ -2694,10 +2694,11 @@ lb70 # ls /nfs/test
 </details>
 Additional details: [certdepo](https://www.certdepot.net/rhel7-provide-nfs-network-shares-specific-clients/)
 #### TASK: Setup SAMBA  
-<details><summary>on lb60 to share /smb with lb40 machines on network as /smb</summary>
+<details><summary>on lb80 to share /smb RO with lb70 machines on network as /smbpublic </summary>
 
 ```
-lb60 # 
+lb80 # apt-get install -y samba samba-client samba-common
+lb80 # cp /etc/samba/smb.conf /etc/samba/smb.conf.orig 
 ```
 
 </details>
@@ -2715,11 +2716,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMz
-k5MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2NzMsLTEyNzU3MjEy
-MSwtOTQyMzUzNjM4LDEwMjM0NjM2MzgsLTUyNjY0NTY0NywxNT
-M1MzI2NjYsLTE1NzYwNjQ4NDAsMjk0OTU2NDYxLDEwNDc1NjY0
-NSwxMDMxNzgwNzA2LDEzNzA1MDk0MTEsLTE1NDgxOTk4MzQsLT
-E5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC02NTg2
-Mzg0MDhdfQ==
+eyJoaXN0b3J5IjpbLTc3MjYxNDE4MCwtNjMwMzk0ODcsLTEyNj
+I0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0MjUsLTQxMzA4NjY3
+MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNT
+I2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0
+NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMT
+U0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5
+ODk1OTNdfQ==
 -->
