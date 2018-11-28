@@ -732,13 +732,14 @@ dir1  dir2  dir3  dir4  dir5  dir6  dir7  dir8
 
 </details>
 
-<details><summary>Create dummy files file1-99 in /tmp/3.1 and then delete file40 through file49</summary>
+
+<details><summary>Create dummy files file1-99 in /tmp/1.64 and then delete file40 through file52</summary>
 
 ```
-# touch /tmp/3.1/file{1..99}
-# rm /tmp/3.1/file{40..49}
-# ls /tmp/3.1/file{40..49}
-# ls /tmp/3.1/file* # result truncated to avoid filling this space
+# touch /tmp/1.64/file{1..99}
+# rm /tmp/1.64/file{40..49}
+# ls /tmp/1.64/file{40..49}
+# ls /tmp/1.64/file* # result truncated to avoid filling this space
 ```
 
 </details>
@@ -2803,11 +2804,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MSwtOT
-E3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEz
-MDA1MSw4MjI0MzQyNSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLT
-k0MjM1MzYzOCwxMDIzNDYzNjM4LC01MjY2NDU2NDcsMTUzNTMy
-NjY2LC0xNTc2MDY0ODQwLDI5NDk1NjQ2MSwxMDQ3NTY2NDUsMT
-AzMTc4MDcwNiwxMzcwNTA5NDExLC0xNTQ4MTk5ODM0LC0xOTY0
-MTczOTYwXX0=
+eyJoaXN0b3J5IjpbMTExMDkzNTgxMywtMTAxMzEyMjgyOCwxMz
+g3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4
+MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2NzMsLT
+EyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMjM0NjM2MzgsLTUyNjY0
+NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4NDAsMjk0OTU2NDYxLD
+EwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNzA1MDk0MTEsLTE1NDgx
+OTk4MzRdfQ==
 -->
