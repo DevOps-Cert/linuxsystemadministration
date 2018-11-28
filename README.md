@@ -1136,10 +1136,14 @@ The main system logs are located in /var/log/
 /var/log/apache2 stores apache2 logs
 
 
-#### TASK: Find all occurrences of sudo and su authentication and place a report in /tmp/4.5
+<details><summary>TASK: Find all occurrences of sudo and su authentication and place a report in /tmp/4.5</summary>
+
 ```
 # grep "su|sudo" /var/log/auth.log
 ```
+
+</details>
+
 /var/log/syslog is the kernel boot information
 
 Make use of grep on these to find what you are looking for in previous content or use tail -f <logfile> to watch events as they happen.
@@ -2869,11 +2873,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5Nj
-I0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC05MTczMTAw
-NDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLD
-gyMjQzNDI1LC00MTMwODY2NzMsLTEyNzU3MjEyMSwtOTQyMzUz
-NjM4LDEwMjM0NjM2MzgsLTUyNjY0NTY0NywxNTM1MzI2NjYsLT
-E1NzYwNjQ4NDAsMjk0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgw
-NzA2XX0=
+eyJoaXN0b3J5IjpbLTg1MzIxMDA5OCwtNzgzMjY5MzMyLC05NT
+c4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5
+OTEsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLT
+EzOTkxMzAwNTEsODIyNDM0MjUsLTQxMzA4NjY3MywtMTI3NTcy
+MTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNTI2NjQ1NjQ3LD
+E1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0NjEsMTA0NzU2
+NjQ1XX0=
 -->
