@@ -570,10 +570,14 @@ Vimdiff starts Vim on two (or three or four) files.  Each file gets its own wind
 ### textfiles: head
 ### textfiles: tail
 ### textfiles: tr
-Capitalize everything in /etc/passwd and send to /tmp/1.4/CAPITALIZED.txt
+<details><summary>Capitalize everything in /etc/passwd and send to /tmp/1.4/CAPITALIZED.txt</summary>
+
 ```
 cat /etc/passwd | tr '[:lower:]' '[:upper:]' > /tmp/1.4/CAPITALIZED.txt
 ```
+
+</details>
+
 ### textfiles: sed
 Don't study harder than you need to, **/usr/share/doc/sed/sedfaq.txt** contains many examples.
 
@@ -2815,11 +2819,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzOD
-c0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0Mzgx
-ODksLTEzOTkxMzAwNTEsODIyNDM0MjUsLTQxMzA4NjY3MywtMT
-I3NTcyMTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNTI2NjQ1
-NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0NjEsMT
-A0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMTU0ODE5
-OTgzNF19
+eyJoaXN0b3J5IjpbLTE4MjM1ODc5NiwzOTYyNDMzMjAsLTEwMT
+MxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4
+NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtND
+EzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYz
+NjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLD
+I5NDk1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5
+NDExXX0=
 -->
