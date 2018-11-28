@@ -1,3 +1,4 @@
+
 # linuxsystemadministration
 This guide provides lab activities to help co-workers learn to become Linux system administrators.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is listed for our selected Linux distribution which is Ubuntu 16.04 LTS server.   This also helps me learn markdown for documentation.
 
@@ -55,7 +56,7 @@ We are going to setup a group of computers all running Ubuntu 16.04 Server withi
 
 ## Caching Updates and Packages
 As you will be running more than one identical Ubuntu box; it makes some sense to maintain local LAN copies of packages you are going to be using to speed up installation.  There is no one size fits all; merely different ways of approaching the problem.
-Additional resources: [Cache APT packages with Squid proxy](http://www.rushiagr.com/blog/2015/06/05/cache-apt-packages-with-squid-proxy/)
+Sources: [Cache APT packages with Squid proxy](http://www.rushiagr.com/blog/2015/06/05/cache-apt-packages-with-squid-proxy/)
 ### squid-deb-proxy
 This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than package and no configuration on the server side after installing packages.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default with Vagrantfile and configuration scripts.  lb40 will automatically install this functionality and this server should be the most heavily used anyways.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128 on lb40.
 
@@ -520,7 +521,7 @@ file1  file2  file3  file4  file5  file6  file7  file8  file9
 ### textfiles: vi(m)
 There are many text editors.  For the serious administrator, traditional vi or one of the many newer versions which are vi improved (vim) is the one to at least be able to use with some proficiency as it is installed on systems when others are not.  When you are using a system without nano and you have no Internet connection, a knowledge of vi is critical. Unfortunately, vi requires more than a passing commitment to make it worth the effort.  It will pay huge dividends in the long run to learn vi/vim; but, requires some commitment to master. Use vimtutor to master program.
 
-Additional resources: [How to Install and Use vi/vim as a Full Text Editor](https://www.tecmint.com/vi-editor-usage/)
+Sources: [How to Install and Use vi/vim as a Full Text Editor](https://www.tecmint.com/vi-editor-usage/)
 
 ### textfiles: nano
 For someone just learning Linux, there is no shame in using nano.  Were vi and emacs are similar in power to a full word processor, nano functions as a simple text editor and provides you on the bottom the commands need to complete a task.
@@ -724,7 +725,7 @@ index.php  lang/  README  themes/
 
 </details>
 
-Additional resources: [tecmint - Archiving Files/Directories](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
+Sources: [tecmint - Archiving Files/Directories](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
 ##	Affecting directories and files with mv, cp, and others
 
 <details><summary>Create directories dir1-dir8 in /tmp/37.24</summary>
@@ -913,7 +914,7 @@ Create a directory named /private. Use an acl to only allow access (rwx) to tom 
 umask
 ```
 
-Additional resources: [tecmint - File Permissions & Attributes](https://www.tecmint.com/manage-users-and-groups-in-linux/)
+Sources: [tecmint - File Permissions & Attributes](https://www.tecmint.com/manage-users-and-groups-in-linux/)
 ## Documentation on systems
 ```
 # man ls #### Truncated but is simple system manual
@@ -968,7 +969,7 @@ Options:
   -n      : do nothing (useful with -v)
 ```
 
-Additional resources: [tecmint]( https://www.tecmint.com/explore-linux-installed-help-documentation-and-tools/)
+Sources: [tecmint]( https://www.tecmint.com/explore-linux-installed-help-documentation-and-tools/)
 
 ##	Root account and root-like access
 Commands: su, sudo, 
@@ -1062,7 +1063,7 @@ root #
 ```
 </details>
 
-Additional resources: [tecmint - Enabling sudo Access on Accounts](https://www.tecmint.com/manage-users-and-groups-in-linux/)
+Sources: [tecmint - Enabling sudo Access on Accounts](https://www.tecmint.com/manage-users-and-groups-in-linux/)
 #	Operation of Running Systems
 
 ##	Bootloader configuration
@@ -1188,7 +1189,7 @@ Run command `ping -c 1 8.8.8.8 > /var/log/networkstatus.log` during work hours o
 # 
 ```
 
-Additional Resources: [tecmint](https://www.tecmint.com/11-cron-scheduling-task-examples-in-linux/ )
+Sources: [tecmint](https://www.tecmint.com/11-cron-scheduling-task-examples-in-linux/ )
 
 ##	Evaluating results of scheduled commands
 cron will log output which can be useful to investigate how a job performed.  The logs will inform you as to the failure or success of your task.
@@ -1209,7 +1210,7 @@ Copy all files that contain the word grub from /etc/grub.d into /tmp/4.7:
 cp `grep -il "grub" /etc/grub.d/*` .
 for file in /etc/grub.d/*; do if grep -q "grub" "$file";then cp "$file"
 ```
-Additional resources: [tecmint - Linux Package Management](https://www.tecmint.com/linux-package-management/), [tecmint - 25 apt-get Command Examples](https://www.tecmint.com/linux-package-management/)
+Sources: [tecmint - Linux Package Management](https://www.tecmint.com/linux-package-management/), [tecmint - 25 apt-get Command Examples](https://www.tecmint.com/linux-package-management/)
 
 ### Produce and deliver reports on system use (processor, memory, disk, and network), outages, and user requests
 ##	Monitor Linux Processes Resource Usage
@@ -1241,7 +1242,7 @@ Changing kernel runtime parameters which will remain in effect after reboot but 
 vm.swappiness=0
 sysctl -p
 ```
-Additional resources: [tecmint](https://www.tecmint.com/change-modify-linux-kernel-runtime-parameters/)
+Sources: [tecmint](https://www.tecmint.com/change-modify-linux-kernel-runtime-parameters/)
 ##	Basic Shell Scripting
 Commands: mktemp, touch, crontab, at, cron
 Files: /etc/cron.d/, /etc/crontab
@@ -1280,7 +1281,7 @@ Simpler answer:
 # for N in `seq 1 17`; do fallocate -l 1M file_$N; done
 ```
 
-Additional resources: [tecmint - Learning Basic Shell Scripting](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
+Sources: [tecmint - Learning Basic Shell Scripting](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
 ##	Manage system services with systemd
 Check specific service: 
 ```
@@ -1296,7 +1297,7 @@ Check status on, disable, and stop ufw:
 # systemctl stop ufw
 # systemctl disable ufw
 ```
-Additional resources: [tecmint - Managing System Startup Process and Services)](https://www.tecmint.com/linux-boot-process-and-manage-services/)
+Sources: [tecmint - Managing System Startup Process and Services)](https://www.tecmint.com/linux-boot-process-and-manage-services/)
 
 ###	Configure a service to run every time after boot
 Enable network service dns to start at boot time.
@@ -1307,7 +1308,7 @@ Disable network service dns to start at boot time.
 ```
 systemctl disable bind
 ```
-Additional resources: [tecmint - Configuring Services Automatic Start on Boot](https://www.tecmint.com/installing-network-services-and-configuring-services-at-system-boot/)
+Sources: [tecmint - Configuring Services Automatic Start on Boot](https://www.tecmint.com/installing-network-services-and-configuring-services-at-system-boot/)
 
 ###	Start, stop, and check the status of network services
 Start network service dns for current session.
@@ -1459,7 +1460,7 @@ systemctl enable apparmor
 systemctl start apparmor
 ```
 
-Additional resources: [tecmint - Implementing Mandatory Access Control](https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/), [Ubuntu AppArmor Wiki](https://wiki.ubuntu.com/AppArmor)
+Sources: [tecmint - Implementing Mandatory Access Control](https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/), [Ubuntu AppArmor Wiki](https://wiki.ubuntu.com/AppArmor)
 ##	Manage Software
 On Ubuntu you can add software with `apt-get install -y <packagename>`
 Find out which package provides ping6 and install: 
@@ -1487,7 +1488,7 @@ What is in a package:
 /sbin
 /sbin/quotaon
 ```
-Additional resources: [tecmint - 15 dpkg Command Examples](https://www.tecmint.com/dpkg-command-examples/)
+Sources: [tecmint - 15 dpkg Command Examples](https://www.tecmint.com/dpkg-command-examples/)
 #	User and Group Management
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module2-userandgroupmanagement/
 ##	Local user accounts
@@ -1545,7 +1546,7 @@ Create a directory named /home/partners. Allow fred and hal to share documents i
 ```
 Set sally to use Korn Shell, fred to use CSH, walt to use tcsh, and george to use sh.
 
-Additional resources: [tecmint - Managing Users & Groups](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
+Sources: [tecmint - Managing Users & Groups](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
 ##	System-wide profiles
 ##	New user templates
 Adding, deleting, and modifying the files in /etc/skel for new users
@@ -1593,7 +1594,7 @@ $ ulimit -a | grep proc
 max user processes              (-u) 20
 $ exit
 ``` 
-Additional resources: [Forkbomb explained](https://www.cyberciti.biz/faq/understanding-bash-fork-bomb/),  [Set Process Limits on a Per-User Basis](https://www.tecmint.com/monitor-linux-processes-and-set-process-limits-per-user/)
+Sources: [Forkbomb explained](https://www.cyberciti.biz/faq/understanding-bash-fork-bomb/),  [Set Process Limits on a Per-User Basis](https://www.tecmint.com/monitor-linux-processes-and-set-process-limits-per-user/)
 
 ##	Updating privileges for groups and users
 Let's go ahead and add fred to the sudo user group so he can manage system:
@@ -1637,7 +1638,7 @@ URI      ldap://10.20.30.40
 ### To have PAM use LDAP server:
 To configure PAM within an application to use specifically LDAP:
 
-Additional resources: [Ubuntu LDAP Server](https://www.linuxbabe.com/ubuntu/install-configure-openldap-server-ubuntu-16-04)
+Sources: [Ubuntu LDAP Server](https://www.linuxbabe.com/ubuntu/install-configure-openldap-server-ubuntu-16-04)
 
 #	File System
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module5-storagemanagement/
@@ -1792,7 +1793,7 @@ Number  Start (sector)    End (sector)  Size       Code  Name
 
 </details>
 
-Additional resources: [tecmint - Formatting Filesystems](https://www.tecmint.com/create-partitions-and-filesystems-in-linux/)
+Sources: [tecmint - Formatting Filesystems](https://www.tecmint.com/create-partitions-and-filesystems-in-linux/)
 ##	Manage and configure LVM storage
 Commands: lvm, mkfs.*, mount/umount
 Files: /etc/fstab
@@ -1976,7 +1977,7 @@ no label, UUID=7e2f501c-37a1-4358-af23-3d5082bf9e47
 
 </details>
 
-Additional resources: [tecmint](https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/)
+Sources: [tecmint](https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/)
 ##	Create and configure encrypted storage
 Commands: cryptsetup, mount, umount
 Files: **/usr/share/doc/cryptsetup/{README.Debian/FAQ}**
@@ -2049,7 +2050,7 @@ crypt   /dev/sdf1       /root/luks.key  none
 
 </details>
 
-Additional Resources: [tecmint - Disk Encryption](https://www.tecmint.com/disk-encryption-in-linux/), [chousensha - encryption](http://chousensha.github.io/blog/2018/02/12/lfcs-prep-managing-encrypted-partitions/)
+Sources: [tecmint - Disk Encryption](https://www.tecmint.com/disk-encryption-in-linux/), [chousensha - encryption](http://chousensha.github.io/blog/2018/02/12/lfcs-prep-managing-encrypted-partitions/)
 ##	Configure systems to mount file systems at or during boot
 Look at system as it currently stands
 ```
@@ -2316,7 +2317,7 @@ Working Devices : 4
 
 </details>
 
-Additional resources: [tecmint - Assembling Partitions as RAID Devices](https://www.tecmint.com/creating-and-managing-raid-backups-in-linux/), [mdadm cheat sheet](http://www.ducea.com/2009/03/08/mdadm-cheat-sheet/), [MSDN blog](https://blogs.msdn.microsoft.com/maheshk/2018/06/11/lfcs-managing-software-raid/)
+Sources: [tecmint - Assembling Partitions as RAID Devices](https://www.tecmint.com/creating-and-managing-raid-backups-in-linux/), [mdadm cheat sheet](http://www.ducea.com/2009/03/08/mdadm-cheat-sheet/), [MSDN blog](https://blogs.msdn.microsoft.com/maheshk/2018/06/11/lfcs-managing-software-raid/)
 
 ##	Configure systems to mount file systems on demand
 Commands: mkdir, mount, umount 
@@ -2437,7 +2438,7 @@ dd: error writing '/quota/walt/bigfile': Disk quota exceeded
 7311360 bytes (7.3 MB, 7.0 MiB) copied, 0.196509 s, 37.2 MB/s
 rm ~/bigfile
 ```
-Additional resources: [tecmint - Disk Quotas for Users and Groups](https://www.tecmint.com/set-access-control-lists-acls-and-disk-quotas-for-users-groups/)
+Sources: [tecmint - Disk Quotas for Users and Groups](https://www.tecmint.com/set-access-control-lists-acls-and-disk-quotas-for-users-groups/)
 
 ## Create and configure file systems
 
@@ -2462,7 +2463,7 @@ lvm> vgs
 
 You can lookup UUID with “blkid” anytime for all drives to configure a lvm into fstab
 
-Additional resources: [tecmint - Filesystem Troubleshooting](https://www.tecmint.com/linux-basic-shell-scripting-and-linux-filesystem-troubleshooting/)
+Sources: [tecmint - Filesystem Troubleshooting](https://www.tecmint.com/linux-basic-shell-scripting-and-linux-filesystem-troubleshooting/)
 #	Network Configuration
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module3-networking/
 ##	Hostname resolution
@@ -2495,7 +2496,7 @@ iptables -A INPUT -p tcp --source 10.20.30.0/24 --dport 80 -j ACCEPT
 ```
 iptables-save > /etc/iptables
 ```
-Additional resources: [tecmint - iptables](https://www.tecmint.com/basic-guide-on-iptables-linux-firewall-tips-commands/)
+Sources: [tecmint - iptables](https://www.tecmint.com/basic-guide-on-iptables-linux-firewall-tips-commands/)
 
 ##	Route traffic statically
 Commands: route, netstat -nr
@@ -2634,7 +2635,7 @@ dig www.google.com @localhost
 
 </details>
 
-Additional resources: [tecmint - Caching DNS Server](https://www.tecmint.com/setup-recursive-caching-dns-server-and-configure-dns-zones/)
+Sources: [tecmint - Caching DNS Server](https://www.tecmint.com/setup-recursive-caching-dns-server-and-configure-dns-zones/)
 ###	DNS zone management
 <details><summary>Using domainname of linux.local; create master DNS server on lb40</summary>
 
@@ -2681,7 +2682,7 @@ google.com.             58      IN      A       172.217.14.238
 
 </details>
 
-Additional resources: [tecmint - Configure Zones for Domain](https://www.tecmint.com/setup-recursive-caching-dns-server-and-configure-dns-zones/)
+Sources: [tecmint - Configure Zones for Domain](https://www.tecmint.com/setup-recursive-caching-dns-server-and-configure-dns-zones/)
 ##	Email
 ###	Configure an IMAP and IMAPS service
 ```
@@ -2690,7 +2691,7 @@ vi /etc/postfix/main.cf
 	myorigin = /etc/mailname (hostname)
 	file /etc/postfix/transport and command postmap /etc/postfix/transport
 ```
-Additional resources: [Installing Postfix and Dovecot](https://www.tecmint.com/installing-network-services-and-configuring-services-at-system-boot/)
+Sources: [Installing Postfix and Dovecot](https://www.tecmint.com/installing-network-services-and-configuring-services-at-system-boot/)
 ### Configure email aliases
 ```
 # grep /etc/postfix/aliases: 
@@ -2929,7 +2930,7 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMTA0NjQ0MCwtMTU3MzQ5MzkyNCw2OD
+eyJoaXN0b3J5IjpbMTQxMDExNzc1NCwtMTU3MzQ5MzkyNCw2OD
 YwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1
 MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLT
 c4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEy
