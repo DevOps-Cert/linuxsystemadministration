@@ -383,7 +383,6 @@ cat /tmp/1.2/filepath
 
 </details>
 
-### TASK: Find directories 
 <details><summary>Put path of first five directories in /usr/share/ into /tmp/1.2/dirs:  </summary>
 
 ```
@@ -413,7 +412,6 @@ cat /tmp/1.2/filepath
 
 </details>
 
-### TASK: Run commands on results of a search
 <details><summary>In etc, find all files and then output their type to /tmp/1.2/etctypes and take a look at the top of the resulting file:</summary>
 
 ```
@@ -691,23 +689,35 @@ of having them make modifications exclusively for you, or provide you
 ##	Archive or compress files and directories
 Commands: gzip, bzip2, gunzip, bunzip2, tar, xz, zip, star or tar --selinux for SELinux, rsync to another machine with ssh
 
-#### TASK: Place a gzipped archive in /tmp/3.2/ named "cron.tar.gz" which contains /etc/cron.d/ but without absolute paths
+<details><summary>Place a gzipped archive in /tmp/3.2/ named "cron.tar.gz" which contains /etc/cron.d/ but without absolute paths</summary>
+
 ```
 # cd /etc/cron.d/
 # tar cfgv /tmp/3.2/cron.tar.gz *
 ```
-#### TASK: Place a XZ compressed tar archive in /tmp/3.2/ named "ssh_config.tar.xz" which contains all of /etc/ssh but without folders from root.
+
+</details>
+
+<details><summary> TASK: Place a XZ compressed tar archive in /tmp/3.2/ named "ssh_config.tar.xz" which contains all of /etc/ssh but without folders from root.</summary>
+
 ```
 # cd /etc/ssh/
 # tar cfJ /tmp/3.2/ssh_config.tar.xz *
+
 ```
-#### TASK: Extract  /usr/share/doc/apg/php.tar.gz into a new directory named /tmp/3.2/php
+
+</details>
+
+<details><summary> Extract  /usr/share/doc/apg/php.tar.gz into a new directory named /tmp/3.2/php</summary>
+
 ```
 # mkdir -p /tmp/3.2/php
 # tar xfvz /usr/share/doc/apg/php.tar.gz -C /tmp/3.2/php
 # ls /tmp/3.2/php
 index.php  lang/  README  themes/
 ```
+
+
 Additional resources: [tecmint - Archiving Files/Directories](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
 ##	Affecting directories and files with mv, cp, and others
 Create directories dir1-dir8 in /tmp/1.8
@@ -2759,7 +2769,7 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDcyOTUyNywtOTE3MzEwMDQ3LC02Mz
+eyJoaXN0b3J5IjpbLTU0NTUzOTM0NiwtOTE3MzEwMDQ3LC02Mz
 AzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQy
 NSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMD
 IzNDYzNjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0
