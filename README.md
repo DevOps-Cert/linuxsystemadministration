@@ -2709,7 +2709,7 @@ lb80 # cp /etc/samba/smb.conf /etc/samba/smb.conf.orig
 	security = user
 [Anonymous]
 	comment = Anonymous File Server Share
-	path = **/srv/samba/anonymous**
+	path = /srv/samba/anonymous
 	browsable =yes
 	writable = yes
 	guest ok = yes
@@ -2738,7 +2738,7 @@ lb80 # cp /etc/samba/smb.conf /etc/samba/smb.conf.orig
 # vi /etc/samba/smb.conf
 [Secure]
 	comment = Secure File Server Share
-	path =  **/srv/samba/secure**
+	path =  /srv/samba/secure
 	valid users = @smbgrp
 	guest ok = no
 	writable = yes
@@ -2760,11 +2760,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzAzNjkzNTMsLTkxNzMxMDA0NywtNj
-MwMzk0ODcsLTEyNjI0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0
-MjUsLTQxMzA4NjY3MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMT
-AyMzQ2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2
-NDg0MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMT
-M3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAw
-MDYwODU0XX0=
+eyJoaXN0b3J5IjpbNzA5MDk1MjIzLC05MTczMTAwNDcsLTYzMD
+M5NDg3LC0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1
+LC00MTMwODY2NzMsLTEyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMj
+M0NjM2MzgsLTUyNjY0NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4
+NDAsMjk0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNz
+A1MDk0MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2
+MDg1NF19
 -->
