@@ -2139,11 +2139,13 @@ swapon -s
 
 </details>
 
-Make a simple 40MB swap partition on /dev/sdc and activate it every boot:
+<details><summary>Make a simple 40MB swap partition on /dev/sdc and activate it every boot:</summary>
+
 ```
 # 
 ```
  
+ </details>
 <details><summary>Make a 3 MB swap file at /tmp/3MBswap and temporarily use it. </summary>
 
 ```
@@ -2913,11 +2915,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI4OTIzOTE2LDI5MzE4NDkwNCwtNjQ3Nz
-kyNTIyLC03MDYwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0
-LC03ODMyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMT
-MxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4
-NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtND
-EzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYz
-NjM4XX0=
+eyJoaXN0b3J5IjpbLTExNjA2ODcyODYsMjkzMTg0OTA0LC02ND
+c3OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1
+NjQsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMT
+AxMzEyMjgyOCwxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5
+NDg3LC0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1LC
+00MTMwODY2NzMsLTEyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMjM0
+NjM2MzhdfQ==
 -->
