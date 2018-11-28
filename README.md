@@ -2693,7 +2693,7 @@ lb70 # ls /nfs/test
 
 </details>
 Additional details: [certdepo](https://www.certdepot.net/rhel7-provide-nfs-network-shares-specific-clients/)
-#### TASK: Setup SAMBA  
+#### SAMBA File Sharing 
 <details><summary>on lb80 to share /smbpublic RO with lb70 machines on network as /smbpublic </summary>
 
 ```
@@ -2760,11 +2760,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNj
-I0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0MjUsLTQxMzA4NjY3
-MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNT
-I2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0
-NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMT
-U0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5
-ODk1OTNdfQ==
+eyJoaXN0b3J5IjpbLTE4NzAzNjkzNTMsLTkxNzMxMDA0NywtNj
+MwMzk0ODcsLTEyNjI0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0
+MjUsLTQxMzA4NjY3MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMT
+AyMzQ2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2
+NDg0MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMT
+M3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAw
+MDYwODU0XX0=
 -->
