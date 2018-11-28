@@ -2573,7 +2573,8 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 ### Configure systems to launch virtual machines at boot
 ### Evaluate memory usage of virtual machines
 ### Create light-weight virtualized guests via namespaces
-### Resize RAM or storage of VMs
+### Resize RAM or storage of VM
+### Resize storage of a VM
 ### Cloning and replicating VMs using images or snapshots
 Ubuntu can provide hypervisor services to run VMs within domains.
 
@@ -2929,7 +2930,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NzkwMDg1OCwtMTM2MzQ5NDA3NCwtMT
+eyJoaXN0b3J5IjpbMTM5NDM2MTMyNiwtMTM2MzQ5NDA3NCwtMT
 U3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0
 OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4Ni
 wzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0
