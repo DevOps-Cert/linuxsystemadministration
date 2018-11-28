@@ -1136,10 +1136,10 @@ The main system logs are located in /var/log/
 /var/log/apache2 stores apache2 logs
 
 
-<details><summary>TASK: Find all occurrences of sudo and su authentication and place a report in /tmp/4.5</summary>
+<details><summary>TASK: Find all occurrences of sudo and su authentication and place a report in /tmp/41.15 in a file named attackers.txt</summary>
 
 ```
-# grep "su|sudo" /var/log/auth.log
+# grep "su|sudo" /var/log/auth.log > /tmp/41.15/attackers.txt
 ```
 
 </details>
@@ -1159,7 +1159,7 @@ crontab -l
 ```
 Edit crontab:
 ```
-update-alternatives --config editor # Great time to set text editor 
+update-alternatives --config editor # Great time to set text editor to avoid nano
 crontab -e
 ```
 List a specific user’s scheduled jobs:
@@ -2873,11 +2873,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MzIxMDA5OCwtNzgzMjY5MzMyLC05NT
-c4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5
-OTEsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLT
-EzOTkxMzAwNTEsODIyNDM0MjUsLTQxMzA4NjY3MywtMTI3NTcy
-MTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNTI2NjQ1NjQ3LD
-E1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0NjEsMTA0NzU2
-NjQ1XX0=
+eyJoaXN0b3J5IjpbLTE3OTUzMzg2NjAsLTc4MzI2OTMzMiwtOT
+U3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgz
+OTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC
+0xMzk5MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2NzMsLTEyNzU3
+MjEyMSwtOTQyMzUzNjM4LDEwMjM0NjM2MzgsLTUyNjY0NTY0Ny
+wxNTM1MzI2NjYsLTE1NzYwNjQ4NDAsMjk0OTU2NDYxLDEwNDc1
+NjY0NV19
 -->
