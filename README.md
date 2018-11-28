@@ -708,7 +708,7 @@ Commands: gzip, bzip2, gunzip, bunzip2, tar, xz, zip, star or tar --selinux for 
 
 </details>
 
-<details><summary> Extract  /usr/share/doc/apg/php.tar.gz into a new directory named /tmp/3.2/php</summary>
+<details><summary>Extract  /usr/share/doc/apg/php.tar.gz into a new directory named /tmp/3.2/php</summary>
 
 ```
 # mkdir -p /tmp/3.2/php
@@ -727,6 +727,9 @@ mkdir /tmp/1.8/dir{1..8}
 # ls /tmp/1.8/
 dir1  dir2  dir3  dir4  dir5  dir6  dir7  dir8
 ```
+
+</details>
+
 Create dummy files file1-99 in /tmp/3.1 and then delete file40 through file49
 ```
 # touch /tmp/3.1/file{1..99}
@@ -734,13 +737,19 @@ Create dummy files file1-99 in /tmp/3.1 and then delete file40 through file49
 # ls /tmp/3.1/file{40..49}
 # ls /tmp/3.1/file* # result truncated to avoid filling this space
 ```
-Copy /etc/debian_version to /tmp/1.8/ 
+
+</details>
+
+<details><summary>Copy /etc/debian_version to /tmp/1.8/ 
 ```
 # cp /etc/debian_version /tmp/1.8/
 # ls /tmp/1.8/debi*
 /tmp/1.8/debian_version
 ```
-Make directories in /tmp/1.8/dirtest named 1,2,3,4, and 5 with one command; then delete them all with one command:
+
+</details>
+
+<details><summary>Make directories in /tmp/1.8/dirtest named 1,2,3,4, and 5 with one command; then delete them all with one command:</summary>
 ```
 # mkdir -p /tmp/1.8/dirtest/{1..5}
 # find /tmp/1.8/dirtest/ -type d -print
@@ -752,17 +761,24 @@ Make directories in /tmp/1.8/dirtest named 1,2,3,4, and 5 with one command; then
 /tmp/1.8/dirtest/5
 # rm -rf /tmp/1.8/dirtest/
 ```
-Ask for confirmation before deleting directory /tmp/1.8/ then cancel: `rm -Rfi /tmp/1.8/`
-Make the following path: /tmp/1.8/4/5/1/3/2/1/4/1/3/2/1/4/5/6/4 
+
+</details>
+
+<details><summary>Ask for confirmation before deleting directory /tmp/1.8/ then cancel: `rm -Rfi /tmp/1.8/`
+</details>
+<details><summary>Make the following path: /tmp/1.8/4/5/1/3/2/1/4/1/3/2/1/4/5/6/4 
 ```
 mkdir -p /tmp/1.8/4/5/1/3/2/1/4/1/3/2/1/4/5/6/4
 ```
-Change your working directory (the directory you are currently in) to /tmp/1.8 and print working directory:
+<details><summary>Change your working directory (the directory you are currently in) to /tmp/1.8 and print working directory:
 ```
 # cd /tmp/1.8
 # pwd
 /tmp/1.8
 ```
+
+</details>
+
 Other commands
 ```
 echo 'text' > file
@@ -2770,11 +2786,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjgzMzI1OTUsLTkxNzMxMDA0NywtNj
-MwMzk0ODcsLTEyNjI0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0
-MjUsLTQxMzA4NjY3MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMT
-AyMzQ2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2
-NDg0MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMT
-M3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAw
-MDYwODU0XX0=
+eyJoaXN0b3J5IjpbODg0MzUwNDcyLC05MTczMTAwNDcsLTYzMD
+M5NDg3LC0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1
+LC00MTMwODY2NzMsLTEyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMj
+M0NjM2MzgsLTUyNjY0NTY0NywxNTM1MzI2NjYsLTE1NzYwNjQ4
+NDAsMjk0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgwNzA2LDEzNz
+A1MDk0MTEsLTE1NDgxOTk4MzQsLTE5NjQxNzM5NjAsMTgwMDA2
+MDg1NF19
 -->
