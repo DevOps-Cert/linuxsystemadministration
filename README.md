@@ -1080,6 +1080,13 @@ Found memtest86+ image: /memtest86+.bin
 Done
 $
 ```
+
+Install kernel linux-headers-4.8.0-42 and then select the 4.4 kernel as the default instead during bootup.
+
+```
+# update-grub
+```
+
 Additional information: [tecmint](https://www.tecmint.com/configure-and-troubleshoot-grub-boot-loader-linux/), [Configure GRUB2 Boot Loader Settings In Ubuntu 16.04](https://www.ostechnix.com/configure-grub-2-boot-loader-settings-ubuntu-16-04/)
 
 ##	Rebooting and halting system properly
@@ -2862,11 +2869,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMT
-MxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4
-NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtND
-EzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYz
-NjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLD
-I5NDk1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5
-NDExXX0=
+eyJoaXN0b3J5IjpbLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5Nj
+I0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC05MTczMTAw
+NDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLD
+gyMjQzNDI1LC00MTMwODY2NzMsLTEyNzU3MjEyMSwtOTQyMzUz
+NjM4LDEwMjM0NjM2MzgsLTUyNjY0NTY0NywxNTM1MzI2NjYsLT
+E1NzYwNjQ4NDAsMjk0OTU2NDYxLDEwNDc1NjY0NSwxMDMxNzgw
+NzA2XX0=
 -->
