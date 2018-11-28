@@ -16,9 +16,9 @@ Work on list
 
 # Setup Process
 ## Caveats
-While this guide could make use of sudo for all super privileged commands (/sbin) to avoid the use of the root account; efficiency of time makes it optimal to use the root account for almost all functions.  In a few cases, an unprivileged account will be used such as testing file and user privileges.  It is with heavy heart that the use of root account herein is documented; but, the goal is speed and this shortcut turns into a tremendous time saver.  Do not pursue this approach with production servers with multiple administrators where you should be using sudo to provide audit trail and visudo rather than these shortcuts.  Root can be accessed via `sudo -i` or `sudo su - root`.
+While this guide could make use of sudo for all super privileged commands (/sbin) to avoid the use of the root account; efficiency of time makes it optimal to use the root account for almost all functions.  In a few cases, an unprivileged account will be used such as testing file and user privileges.  It is with heavy heart that the use of root account herein is documented; but, the goal is speed and this shortcut turns into a tremendous time saver.  Do not pursue this approach with production servers with multiple administrators where you should be using sudo to provide audit trail and visudo rather than these shortcuts.  Root can be accessed via `sudo -i` or `sudo su - root` from vagrant account.
 ## Platform generic focus
-Take careful note of the version of Ubuntu as this presumes 16.04.  These instructions are platform specific to Ubuntu 16.04 to avoid extra commands to master.  When possible, generic concepts and methods are covered such as iptables instead of ufw for example.
+Take careful note of the version of Ubuntu as this presumes 16.04.  These instructions are platform specific to Ubuntu 16.04 to avoid extra commands to master.  When possible, generic concepts and methods encompassing multiple distributions are covered such as iptables instead of ufw for example.
 ## Setup notes
 There are a multitude of possible ways to setup your learning environment.  However, given the overall benefit of standardizing your configuration to match this guide so that it works every time from scratch and is identical, vagrant is the preferred solution.  A libvirt hypervisor or manual configuration of a group of virtualbox/vm ware hosts can work but provide some complexity to keep standardized.
 
@@ -2479,7 +2479,7 @@ nmtui
 # echo -e "10.20.30.50\tlb50" >> /etc/hosts
 ```
 ##	Host-based firewalling with iptables
-Although Ubuntu often uses ufw as an iptables front end, regular iptables is better to learn as it translates across all Linux distributions as well as it is more powerful.  
+Although Ubuntu often uses ufw as an iptables front end and CentOS uses firewalld, generic iptables is better to learn as it translates across all Linux distributions as well as it is more powerful.  
 
 All filtering tasks to be performed on lb90 only to avoid creating difficulty of troubleshooting a broken service on a machine also running another service such as bind or squid.
 #### Tasks: Disable ufw if configured on lb90,  and setup iptables to accept ssh as first rule.
@@ -2929,7 +2929,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NzEyMjI5NiwtMTM2MzQ5NDA3NCwtMT
+eyJoaXN0b3J5IjpbLTI3NzkwMDg1OCwtMTM2MzQ5NDA3NCwtMT
 U3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0
 OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4Ni
 wzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0
