@@ -721,11 +721,12 @@ index.php  lang/  README  themes/
 
 Additional resources: [tecmint - Archiving Files/Directories](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
 ##	Affecting directories and files with mv, cp, and others
-<details><summary>Create directories dir1-dir8 in /tmp/1.8</summary>
+
+<details><summary>Create directories dir1-dir8 in /tmp/37.24</summary>
 
 ```
-mkdir /tmp/1.8/dir{1..8}
-# ls /tmp/1.8/
+mkdir /tmp/37.24/dir{1..8}
+# ls /tmp/37.24/
 dir1  dir2  dir3  dir4  dir5  dir6  dir7  dir8
 ```
 
@@ -2802,11 +2803,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02Mz
-AzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQy
-NSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMD
-IzNDYzNjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0
-ODQwLDI5NDk1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMz
-cwNTA5NDExLC0xNTQ4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAw
-NjA4NTRdfQ==
+eyJoaXN0b3J5IjpbLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MSwtOT
+E3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEz
+MDA1MSw4MjI0MzQyNSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLT
+k0MjM1MzYzOCwxMDIzNDYzNjM4LC01MjY2NDU2NDcsMTUzNTMy
+NjY2LC0xNTc2MDY0ODQwLDI5NDk1NjQ2MSwxMDQ3NTY2NDUsMT
+AzMTc4MDcwNiwxMzcwNTA5NDExLC0xNTQ4MTk5ODM0LC0xOTY0
+MTczOTYwXX0=
 -->
