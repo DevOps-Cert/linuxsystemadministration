@@ -717,6 +717,7 @@ Commands: gzip, bzip2, gunzip, bunzip2, tar, xz, zip, star or tar --selinux for 
 index.php  lang/  README  themes/
 ```
 
+</details>
 
 Additional resources: [tecmint - Archiving Files/Directories](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
 ##	Affecting directories and files with mv, cp, and others
@@ -2769,11 +2770,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NTUzOTM0NiwtOTE3MzEwMDQ3LC02Mz
-AzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQy
-NSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMD
-IzNDYzNjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0
-ODQwLDI5NDk1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMz
-cwNTA5NDExLC0xNTQ4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAw
-NjA4NTRdfQ==
+eyJoaXN0b3J5IjpbLTE0NjgzMzI1OTUsLTkxNzMxMDA0NywtNj
+MwMzk0ODcsLTEyNjI0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0
+MjUsLTQxMzA4NjY3MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMT
+AyMzQ2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2
+NDg0MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMT
+M3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAw
+MDYwODU0XX0=
 -->
