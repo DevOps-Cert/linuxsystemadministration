@@ -983,7 +983,8 @@ Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 ```
-#### TASK: Allow sally to run all the root commands without entering her password:
+<details><summary>Allow sally to run all the root commands without entering her password:</summary>
+
 ```
 root # sudo su - sally
 sally $ sudo fdisk -l /dev/sdj
@@ -998,7 +999,11 @@ Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 ```
-#### TASK: Allow fred to become sally during her vacation but no other user (ethical issues aside):
+
+</details>
+
+<details><summary>Allow fred to become sally during her vacation but no other user (ethical issues aside):</summary>
+
 ```
 root # grep "joe" /usr/share/doc/sudo/examples/sudoers    # joe may su only to operator
 joe             ALL = /bin/su operator 
@@ -1009,7 +1014,11 @@ Password:
 sally $ whoami
 sally
 ```
-#### TASK: Allow fred to activate edit passwd file and change users passwords:
+
+</details>
+
+<details><summary>Allow fred to activate edit passwd file and change users passwords:</summary>
+
 ```
 root # swapoff -a
 root # free | grep -i swap
@@ -1027,6 +1036,9 @@ Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 ```
+
+</details>
+
 #### TASK: Recover root password if nobody knows the root password on a machine or a sudo account:
 ```
 #### HOLD left shift DURING BIOS POST.
@@ -2844,11 +2856,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTIzNTA2NTcsMzk2MjQzMzIwLC0xMD
-EzMTIyODI4LDEzODc0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0
-ODcsLTEyNjI0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0MjUsLT
-QxMzA4NjY3MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMTAyMzQ2
-MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MC
-wyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUw
-OTQxMV19
+eyJoaXN0b3J5IjpbMTg0NTIyNjM1OCwzOTYyNDMzMjAsLTEwMT
+MxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4
+NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtND
+EzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYz
+NjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLD
+I5NDk1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5
+NDExXX0=
 -->
