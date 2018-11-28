@@ -1177,8 +1177,15 @@ ENABLED="true"
 ```
 Run command `df -h > /var/log/df.log` on at 21:50 every Friday.
 
+``` 
+# 
+```
+
 Run command `ping -c 1 8.8.8.8 > /var/log/networkstatus.log` during work hours of 8 AM to 5 PM (8-13) at 30 minutes after the hour on weekdays only (M-F).
 
+``` 
+# 
+```
 
 Additional Resources: [tecmint](https://www.tecmint.com/11-cron-scheduling-task-examples-in-linux/ )
 
@@ -2873,11 +2880,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTUzMzg2NjAsLTc4MzI2OTMzMiwtOT
-U3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgz
-OTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC
-0xMzk5MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2NzMsLTEyNzU3
-MjEyMSwtOTQyMzUzNjM4LDEwMjM0NjM2MzgsLTUyNjY0NTY0Ny
-wxNTM1MzI2NjYsLTE1NzYwNjQ4NDAsMjk0OTU2NDYxLDEwNDc1
-NjY0NV19
+eyJoaXN0b3J5IjpbMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nz
+g3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5
+MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMT
+M5OTEzMDA1MSw4MjI0MzQyNSwtNDEzMDg2NjczLC0xMjc1NzIx
+MjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4LC01MjY2NDU2NDcsMT
+UzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1NjQ2MSwxMDQ3NTY2
+NDVdfQ==
 -->
