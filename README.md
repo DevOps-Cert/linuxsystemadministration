@@ -1213,9 +1213,10 @@ Additional resources: [tecmint - Linux Package Management](https://www.tecmint.c
 Verify the integrity of the main resources a Linux server needs using fsck and memtest86+ tools.
 ### fsck
 Commands: fsck
-#### TASK: Fix your ext4 partition at /dev/sdg1 which has errors
+#### TASK: Fix your ext4 partition which you may need to create at /dev/sdg1 which has errors
+
 ```
-# dd if=/dev/zero bs=1 count=10 of=/dev/sdg1 seek=10000
+# dd if=/dev/zero count=1 bs=4096 seek=0 of=/dev/sdg1
 # fsck.ext4 -y /dev/sdg1
 ```
 
@@ -2881,7 +2882,7 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDM4OTE1NjIsMzEyMjg2NTY0LC03OD
+eyJoaXN0b3J5IjpbLTE2MDEyNTE1ODEsMzEyMjg2NTY0LC03OD
 MyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4
 MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMT
 I2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEzMDg2
