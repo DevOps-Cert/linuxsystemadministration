@@ -2195,7 +2195,7 @@ For starters, don't try to memorize all the options.  Start with the information
 # wipefs -a /dev/sdi /dev/sdj /dev/sdk /dev/sdl
 
 ``` 
-#### TASK:  Create stripped RAID drive
+#### Create stripped RAID drive
 <details><summary>Make a striped RAID array on two hard drives (/dev/sdi AND /dev/sdj) and place a ext4 file system on it, mount it at /raid, then dismount it and disable it.</summary>
 
 ```
@@ -2215,7 +2215,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 
 </details>
 
-#### TASK: Create RAID5 out of three drives, add a drive, fail a drive, bring back in failed drive, then save for reboot a three drive RAID 5 with spare.
+#### Create RAID5 out of three drives, add a drive, fail a drive, bring back in failed drive, then save for reboot a three drive RAID 5 with spare.
 <details><summary>On three drives (/dev/sdi /dev/sdj /dev/sdk) as /dev/md0 and format as ext4, mount to /raid, check file system.</summary>
 
 ```
@@ -2915,11 +2915,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjA2ODcyODYsMjkzMTg0OTA0LC02ND
-c3OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1
-NjQsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMT
-AxMzEyMjgyOCwxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5
-NDg3LC0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1LC
-00MTMwODY2NzMsLTEyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMjM0
-NjM2MzhdfQ==
+eyJoaXN0b3J5IjpbMTM4OTEwMjg4NiwtMTE2MDY4NzI4NiwyOT
+MxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC0xNzE3OTg3
+NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4NzQ4NDAsMz
+k2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OTEsLTkxNzMx
+MDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEzOTkxMzAwNT
+EsODIyNDM0MjUsLTQxMzA4NjY3MywtMTI3NTcyMTIxLC05NDIz
+NTM2MzhdfQ==
 -->
