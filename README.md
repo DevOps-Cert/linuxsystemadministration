@@ -2694,11 +2694,38 @@ lb70 # ls /nfs/test
 </details>
 Additional details: [certdepo](https://www.certdepot.net/rhel7-provide-nfs-network-shares-specific-clients/)
 #### TASK: Setup SAMBA  
-<details><summary>on lb80 to share /smb RO with lb70 machines on network as /smbpublic </summary>
+<details><summary>on lb80 to share /smbpublic RO with lb70 machines on network as /smbpublic </summary>
 
 ```
 lb80 # apt-get install -y samba samba-client samba-common
 lb80 # cp /etc/samba/smb.conf /etc/samba/smb.conf.orig 
+# mkdir -p /srv/samba/anonymous
+# chmod -R 0775 /srv/samba/anonymous
+# chown -R nobody:nobody /srv/samba/anonymous
+# vi /etc/samba/smb.conf
+# testparm
+# systemctl enable smb.service
+# systemctl enable nmb.service
+# systemctl start smb.service
+# systemctl start nmb.service
+```
+
+</details>
+
+<details><summary>On lb80 to share /smbprivate RO with lb70 machines on network as /smbprivate</summary>
+
+```
+lb80 # apt-get install -y samba samba-client samba-common
+lb80 # cp /etc/samba/smb.conf /etc/samba/smb.conf.orig 
+# mkdir -p /srv/samba/anonymous
+# chmod -R 0775 /srv/samba/anonymous
+# chown -R nobody:nobody /srv/samba/anonymous
+# vi /etc/samba/smb.conf
+# testparm
+# systemctl enable smb.service
+# systemctl enable nmb.service
+# systemctl start smb.service
+# systemctl start nmb.service
 ```
 
 </details>
@@ -2716,7 +2743,7 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MjYxNDE4MCwtNjMwMzk0ODcsLTEyNj
+eyJoaXN0b3J5IjpbLTk1OTExNjU1OCwtNjMwMzk0ODcsLTEyNj
 I0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0MjUsLTQxMzA4NjY3
 MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNT
 I2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0
