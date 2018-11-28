@@ -1081,8 +1081,7 @@ Done
 $
 ```
 
-Install kernel linux-headers-4.8.0-42 and then select the 4.4 kernel as the default instead during bootup.
-
+Change boot timeout to 9 seconds
 ```
 # update-grub
 ```
@@ -2894,11 +2893,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03OD
-MyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4
-MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMT
-I2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEzMDg2
-NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4LC
-01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1
-NjQ2MV19
+eyJoaXN0b3J5IjpbNDE3NjU1ODUsLTE3MTc5ODc0ODYsMzEyMj
+g2NTY0LC03ODMyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAs
+LTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02Mz
+AzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQy
+NSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMD
+IzNDYzNjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0
+ODQwXX0=
 -->
