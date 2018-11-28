@@ -2717,15 +2717,13 @@ lb80 # cp /etc/samba/smb.conf /etc/samba/smb.conf.orig
 ```
 lb80 # apt-get install -y samba samba-client samba-common
 lb80 # cp /etc/samba/smb.conf /etc/samba/smb.conf.orig 
-# mkdir -p /srv/samba/anonymous
-# chmod -R 0775 /srv/samba/anonymous
-# chown -R nobody:nobody /srv/samba/anonymous
-# vi /etc/samba/smb.conf
-# testparm
-# systemctl enable smb.service
-# systemctl enable nmb.service
-# systemctl start smb.service
-# systemctl start nmb.service
+# # groupadd smbgrp
+# usermod tecmint -aG smbgrp
+# smbpasswd -a tecmint
+# mkdir -p /srv/samba/secure
+# chmod -R 0770 /srv/samba/secure
+# chown -R root:smbgrp /srv/samba/secure
+# chcon -t samba_share_t /srv/samba/secure
 ```
 
 </details>
@@ -2743,11 +2741,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1OTExNjU1OCwtNjMwMzk0ODcsLTEyNj
-I0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0MjUsLTQxMzA4NjY3
-MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNT
-I2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0
-NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUwOTQxMSwtMT
-U0ODE5OTgzNCwtMTk2NDE3Mzk2MCwxODAwMDYwODU0LDEzNjk5
-ODk1OTNdfQ==
+eyJoaXN0b3J5IjpbMzM5OTg2NzMxLC02MzAzOTQ4NywtMTI2Mj
+QzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEzMDg2Njcz
+LC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4LC01Mj
+Y2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1NjQ2
+MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5NDExLC0xNT
+Q4MTk5ODM0LC0xOTY0MTczOTYwLDE4MDAwNjA4NTQsMTM2OTk4
+OTU5M119
 -->
