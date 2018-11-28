@@ -1352,7 +1352,14 @@ Display all processes with one line per thread: `ps -eLf`
 Display all processes on a system in BSD like syntax: `ps aux`
 Show the current resource limits for user: `ulimit -a`
 Two commands to set a process priority: `nice` and `renice`
-How do you find out which libraries a binary needs? `ldd <binary>` [source](https://channel9.msdn.com/events/Ignite/2016/BRK3268?term=Mark%20Grimes&lang-en=true)
+<details><summary>How do you find out which libraries a binary needs. [source](https://channel9.msdn.com/events/Ignite/2016/BRK3268?term=Mark%20Grimes&lang-en=true)</summary>
+ 
+```
+ldd <binary>
+``` 
+
+</details>
+
 Additional resources: [tecmint - Monitor Linux Processes Resource Usage](https://www.tecmint.com/monitor-linux-processes-and-set-process-limits-per-user/)
 
 ## SELinux and AppArmor
@@ -2922,11 +2929,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTY5ODc5MywtMTU3MzQ5MzkyNCw2OD
-YwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1
-MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLT
-c4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEy
-MjgyOCwxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC
-0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1LC00MTMw
-ODY2NzNdfQ==
+eyJoaXN0b3J5IjpbLTIwNTYyOTY2NTIsLTE1NzM0OTM5MjQsNj
+g2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3Nzky
+NTIyLC03MDYwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC
+03ODMyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMx
+MjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4Ny
+wtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEz
+MDg2NjczXX0=
 -->
