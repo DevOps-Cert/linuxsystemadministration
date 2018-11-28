@@ -1690,7 +1690,6 @@ Access: 2018-11-08 15:18:12.279613170 -0600
 </details>
 
 ##	File system fixing 
-Verify the integrity of the main resources a Linux server needs using fsck.
 <details><summary>Fix your ext4 partition which you may need to create at /dev/sdg1 which has we will create errors on using `dd if=/dev/zero count=1 bs=4096 seek=0 of=/dev/sdg1`
 </summary>
 
@@ -2895,11 +2894,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyODg4NDg1LDMxMjI4NjU2NCwtNzgzMj
-Y5MzMyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4
-LDEzODc0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNj
-I0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0MjUsLTQxMzA4NjY3
-MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNT
-I2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MCwyOTQ5NTY0
-NjFdfQ==
+eyJoaXN0b3J5IjpbLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03OD
+MyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4
+MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMT
+I2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEzMDg2
+NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4LC
+01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1
+NjQ2MV19
 -->
