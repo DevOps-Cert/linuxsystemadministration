@@ -2,7 +2,7 @@
 This guide provides lab activities to help co-workers learn to become Linux system administrators.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is listed for our selected Linux distribution which is Ubuntu 16.04 LTS server.   This also helps me learn markdown for documentation.
 
 Work on list
-* SELinux and AppArmor
+* SELinux and AppArmor https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/2/
 * PAM modules (figure out fastest way to search for appropriate ones to install and configure)
 * Managing libvirt machines (use old competencies as a guide)
 * samba
@@ -2913,7 +2913,7 @@ lb80 # cp /etc/samba/smb.conf /etc/samba/smb.conf.orig
 Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/), [certdepo](https://www.certdepot.net/rhel7-provide-smb-network-shares/)
 # Other resources
 * [tecmint series](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
-* [older guide that inspired me](http://blog.leonelatencio.com/wp-content/uploads/2014/11/Linux-Foundation-Certified-System-Administrator-LFCS-v1.3.pdf)
+* [older but still good guide](http://blog.leonelatencio.com/wp-content/uploads/2014/11/Linux-Foundation-Certified-System-Administrator-LFCS-v1.3.pdf)
 * [chousensha notes](http://chousensha.github.io/blog/categories/sysadmin/)
 * [Awesome start on basic CLI](https://github.com/learnbyexample/Linux_command_line/blob/master/README.md)
 * [Presentations](https://github.com/guruskill/LinuxAzure/tree/master/Presentations)
@@ -2922,11 +2922,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMT
-YwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIx
-NzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMzIsLT
-k1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4
-Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OS
-wtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEzMDg2NjczLC0xMjc1
-NzIxMjFdfQ==
+eyJoaXN0b3J5IjpbMjAyMzcyMDc0NywtMTU3MzQ5MzkyNCw2OD
+YwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1
+MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLT
+c4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEy
+MjgyOCwxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC
+0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1LC00MTMw
+ODY2NzNdfQ==
 -->
