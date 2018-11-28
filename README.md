@@ -1,5 +1,5 @@
 # linuxsystemadministration
-This guide provides lab activities to help co-workers learn to become Linux system administrators.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is listed for our selected Linux distribution which is Ubuntu 16.04 LTS server.   This also helps me learn markdown for documentation.
+This guide provides lab activities to help practice Linux system administration commands.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is listed for our selected Linux distribution which is Ubuntu 16.04 LTS server.   This also helps me learn markdown for documentation.
 
 Work on list
 * SELinux and AppArmor https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/2/ 
@@ -57,7 +57,7 @@ We are going to setup a group of computers all running Ubuntu 16.04 Server withi
 As you will be running more than one identical Ubuntu box; it makes some sense to maintain local LAN copies of packages you are going to be using to speed up installation.  There is no one size fits all; merely different ways of approaching the problem.
 Sources: [Cache APT packages with Squid proxy](http://www.rushiagr.com/blog/2015/06/05/cache-apt-packages-with-squid-proxy/)
 ### squid-deb-proxy
-This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than package and no configuration on the server side after installing packages.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default with Vagrantfile and configuration scripts.  lb40 will automatically install this functionality and this server should be the most heavily used anyways.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128 on lb40.  Default mirrors work, I prefer to use the fastest US mirror I can find and tweak appropriately in the configuration files
+This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than package and no configuration on the server side after installing packages.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default with Vagrantfile and configuration scripts.  lb40 will automatically install this functionality and this server should be the most heavily used anyways.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128 on lb40.  Default mirrors work, I prefer to use the fastest US mirror I can find and tweak appropriately in the configuration files run on on devices.
 
 _Install on the server_
 ```
@@ -2929,11 +2929,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY4OTA2MTAxLC0xMzYzNDk0MDc0LC0xNT
-czNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4NzI4NiwyOTMxODQ5
-MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC0xNzE3OTg3NDg2LD
-MxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4NzQ4NDAsMzk2MjQz
-MzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OTEsLTkxNzMxMDA0Ny
-wtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEzOTkxMzAwNTEsODIy
-NDM0MjVdfQ==
+eyJoaXN0b3J5IjpbLTE2NjAzOTA4MDYsLTEzNjM0OTQwNzQsLT
+E1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5MzE4
+NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3MTc5ODc0OD
+YsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nzg3NDg0MCwzOTYy
+NDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMD
+Q3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4
+MjI0MzQyNV19
 -->
