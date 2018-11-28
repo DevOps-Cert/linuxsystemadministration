@@ -834,19 +834,28 @@ ln /etc/apg.conf /tmp/2.4/apglink
 
 </details>
 
-#### TASK: Create a symbolic link between /etc/appstream.conf and /tmp/5.6/appstream.txt
+<details><summary>Create a symbolic link between /etc/appstream.conf and /tmp/5.6/appstream.txt</summary>
+
 ```
 # ln -s /etc/appstream.conf /tmp/5.6/appstream.txt
 # ls -al /tmp/5.6/appstream.txt
 lrwxrwxrwx 1 root root 19 Nov 10 01:47 /tmp/5.6/appstream.txt -> /etc/appstream.conf
 ```
-#### TASK: Figure out where the symbolic link /etc/vtrgb points to and put the result in /tmp/3.6/vtrgb
+
+</details>
+
+<details><summary>Figure out where the symbolic link /etc/vtrgb points to and put the result in /tmp/3.6/vtrgb</summary>
+
 ```
 # ls -al /etc/vtrgb > /tmp/3.6/vtrgb
 # cat /tmp/3.6/vtrgb
 lrwxrwxrwx 1 root root 19 Nov 10 01:47 /tmp/5.6/appstream.txt -> /etc/appstream.conf
 ```
-#### TASK: /etc/ has a bunch of symbolic links.  Provide a report of them all in /tmp/3.6/etclinks.txt
+
+</details>
+
+<details><summary>/etc/ has a bunch of symbolic links.  Provide a report of them all in /tmp/3.6/etclinks.txt</summary>
+
 ```
 # find /etc -type l  -exec ls -l {} \; > /tmp/3.6/etclinks.txt
 # head /tmp/3.6/etclinks.txt
@@ -855,10 +864,15 @@ lrwxrwxrwx 1 root root 17 Nov 14 00:55 /etc/rc5.d/S02anacron -> ../init.d/anacro
 lrwxrwxrwx 1 root root 17 Nov 15 20:42 /etc/rc5.d/S04dovecot -> ../init.d/dovecot
 lrwxrwxrwx 1 root root 22 Nov 15 20:42 /etc/rc5.d/S04cpufrequtils -> ../init.d/cpufrequtils
 ```
+
+</details>
+
 ##	Standard file permissions
 Commands: chmod, chown, chgrp, umask
-Create empty files in /tmp/8.2 with following names and permissions:
-readonly r--r--r--, readwriteowner rw-------, and readwritegroup ---rw---- 
+
+<details><summary>Create empty files in /tmp/8.2 with following names and permissions:
+readonly r--r--r--, readwriteowner rw-------, and readwritegroup ---rw---- </summary>
+
 ```
 # cd /tmp/8.2
 # touch readonlyowner readwriteowner readwritegroup
@@ -873,7 +887,11 @@ drwxrwxrwt 91 root root 4096 Nov 10 02:20 ..
 ----rw----  1 root root    0 Nov 10 02:19 readwritegroup
 -rw-------  1 root root    0 Nov 10 02:19 readwriteowner
 ```
-Set fred's account to allow group members to read only any of his new files he creates for current session.
+
+</details>
+
+<details><summary>Set fred's account to allow group members to read only any of his new files he creates for current session.</summary>
+
 ``` 
 fred $ umask -p
 0002
@@ -882,6 +900,9 @@ u=rwx,g=rwx,o=rx
 # umask 0037
 # apt-get install -y pam_umask
 ```
+
+</details>
+
 Other stuff:
 ```
 ls -l file.txt
@@ -2823,11 +2844,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTY1NTYxNiwzOTYyNDMzMjAsLTEwMT
-MxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4
-NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtND
-EzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYz
-NjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLD
-I5NDk1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5
-NDExXX0=
+eyJoaXN0b3J5IjpbLTE1NTIzNTA2NTcsMzk2MjQzMzIwLC0xMD
+EzMTIyODI4LDEzODc0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0
+ODcsLTEyNjI0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0MjUsLT
+QxMzA4NjY3MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMTAyMzQ2
+MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MC
+wyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUw
+OTQxMV19
 -->
