@@ -1055,10 +1055,13 @@ passwd: password updated successfully
 
 </details>
 
-#### TASK: Set walt, fred, and joe to all be part of a new group called "ops" and grant all ops users full control of system as if they were root
+<details><summary>Set walt, fred, and joe to all be part of a new group called "ops" and grant all ops users full control of system as if they were root</summary>
+
 ```
 root # 
 ```
+</details>
+
 Additional resources: [tecmint - Enabling sudo Access on Accounts](https://www.tecmint.com/manage-users-and-groups-in-linux/)
 #	Operation of Running Systems
 
@@ -2859,11 +2862,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjI4MTc1OTMsMzk2MjQzMzIwLC0xMD
-EzMTIyODI4LDEzODc0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0
-ODcsLTEyNjI0MzgxODksLTEzOTkxMzAwNTEsODIyNDM0MjUsLT
-QxMzA4NjY3MywtMTI3NTcyMTIxLC05NDIzNTM2MzgsMTAyMzQ2
-MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMTU3NjA2NDg0MC
-wyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3MDYsMTM3MDUw
-OTQxMV19
+eyJoaXN0b3J5IjpbLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMT
+MxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4
+NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtND
+EzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYz
+NjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLD
+I5NDk1NjQ2MSwxMDQ3NTY2NDUsMTAzMTc4MDcwNiwxMzcwNTA5
+NDExXX0=
 -->
