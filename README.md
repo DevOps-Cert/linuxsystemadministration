@@ -1210,12 +1210,13 @@ for file in /etc/grub.d/*; do if grep -q "grub" "$file";then cp "$file"
 ```
 Additional resources: [tecmint - Linux Package Management](https://www.tecmint.com/linux-package-management/), [tecmint - 25 apt-get Command Examples](https://www.tecmint.com/linux-package-management/)
 ##	File system fixing and memory testing
-Verify the integrity of the main resources a Linux server needs using the ubiquitous fsck and memtest86+ tools.
+Verify the integrity of the main resources a Linux server needs using fsck and memtest86+ tools.
 ### fsck
 Commands: fsck
 #### TASK: Fix your ext4 partition at /dev/sdg1 which has errors
 ```
-fsck.ext4 -y /dev/sdg1
+# dd if=/dev/zero bs=1 count=10 of=/dev/sdg1 seek=10000
+# fsck.ext4 -y /dev/sdg1
 ```
 
 ### memtest86+
@@ -2880,11 +2881,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nz
-g3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5
-MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMT
-M5OTEzMDA1MSw4MjI0MzQyNSwtNDEzMDg2NjczLC0xMjc1NzIx
-MjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4LC01MjY2NDU2NDcsMT
-UzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1NjQ2MSwxMDQ3NTY2
-NDVdfQ==
+eyJoaXN0b3J5IjpbLTExNDM4OTE1NjIsMzEyMjg2NTY0LC03OD
+MyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4
+MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMT
+I2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEzMDg2
+NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYzNjM4LC
+01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0ODQwLDI5NDk1
+NjQ2MV19
 -->
