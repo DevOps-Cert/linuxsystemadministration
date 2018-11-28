@@ -1436,6 +1436,9 @@ Task: What is my current SELINUX state?
 ```
 # getenforce
 ```
+
+#### TASK: Install AppArmor and configure 
+
 Additional resources: [tecmint - Implementing Mandatory Access Control](https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/), [Ubuntu AppArmor Wiki](https://wiki.ubuntu.com/AppArmor)
 ##	Manage Software
 On Ubuntu you can add software with `apt-get install -y <packagename>`
@@ -2904,11 +2907,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQ5MTI2MDEsLTcwNjA5MjE3MiwtMT
-cxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0
-ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC
-05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMzk5
-MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2NzMsLTEyNzU3MjEyMS
-wtOTQyMzUzNjM4LDEwMjM0NjM2MzgsLTUyNjY0NTY0NywxNTM1
-MzI2NjZdfQ==
+eyJoaXN0b3J5IjpbLTk3MTIxMjM4OCwtNzA2MDkyMTcyLC0xNz
+E3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4NzQ4
+NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OTEsLT
+kxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEzOTkx
+MzAwNTEsODIyNDM0MjUsLTQxMzA4NjY3MywtMTI3NTcyMTIxLC
+05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUz
+MjY2Nl19
 -->
