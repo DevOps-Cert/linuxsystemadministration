@@ -5,9 +5,10 @@ Work on list
 * SELinux and AppArmor
 * PAM modules (figure out fastest way to search for appropriate ones to install and configure)
 * Managing libvirt machines (use old competencies as a guide)
-* Verify the integrity and availability of resources: fsck and memtest86+ 
-* nfs and samba
+* samba
 * ldap
+* Fixup mail stuff
+* mysql steps
 # Table of Contents
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -49,7 +50,7 @@ Virtualbox restricts us to 15 hard drives.  The disk layout will be as follows f
 ```
 sudo apt -y update; sudo apt -y upgrade ; echo 'datasource_list: [ None ]' | sudo -s tee /etc/cloud/cloud.cfg.d/90_dpkg.cfg; sudo apt -y purge cloud-init; sudo rm -rf /etc/cloud/; sudo rm -rf /var/lib/cloud/; sudo apt -y install tmux 
 ```
-We are going to setup a group of computers all running Ubuntu 16.04 Server within a NAT Network of 10.20.30.0/24 with primary machine being 10.20.30.40 and other clients being .50 and up not to exceed .99. Static IPs will be used to make consistent for these examples to work especially for networking so consider starting there.  Hostnames will be lbXX with XX being the last octet such as 10.20.30.40 being lb40 and the domain name search will be lfcs.local.
+We are going to setup a group of computers all running Ubuntu 16.04 Server within a NAT Network of 10.20.30.0/24 with primary machine being 10.20.30.40 and other clients being .50 and up not to exceed .99. Static IPs will be used to make consistent for these examples to work especially for networking so consider starting there.  Hostnames will be lbXX with XX being the last octet such as 10.20.30.40 being lb40 and the domain name search will be linux.local.
 
 ## Caching Updates and Packages
 As you will be running more than one identical Ubuntu box; it makes some sense to maintain local LAN copies of packages you are going to be using to speed up installation.  There is no one size fits all; merely different ways of approaching the problem.
@@ -81,14 +82,13 @@ The first download will be at WAN speed; but, subsequent downloads should be muc
 More tweaks can be found at https://wiki.ubuntu.com/SquidDebProxy
 ### apt-mirror
 An alternative idea would be a local apt-mirror repository which will never slow you down in that all files will be local; but, it will take a significant amount of time and space to populate your repository.   While the fastest automated solution from a loading of any package once mirror is populated; the space makes this a suspect method as mirror will take in the ballpark of 129.0 GB heavily depending on configuration (use deb-amd64 to not also download i386).
-### apt-cacher-ng
-Another idea would be to use apt-cacher-ng which will be slow on the first download of a file; but, like squid will keep a copy around for all future usage.  In contrast to apt-mirror, when clients are requesting for a package, apt-cacher checks if it has it cached, if yes – the package is served, if no – apt-cacher-ng fetches it from repositories, serves it to the client, and caches it [for other clients].  The biggest concern about this approach is people report it isn't stable.  Squid seems to be a better option.
 
 ## Files to support Vagrant
 Install vagrant and put the supplied Vagrantfile, lb40.txt and standardize.txt file in the same folder.  Bring up the VMs (after they finish downloading) with vagrant up.   
-As we are using vagrant, the default username and password to accomplish tasks for these activities is vagrant/vagrant.  
+As we are using vagrant, the default username and password to accomplish tasks for these activities is vagrant/vagrant.  Feel free to use fewer hosts; but, since there is an abundancy of memory and processing power it seems logical to crank up may VMs with 1 GB of RAM.
 
-#### Vagrantfile
+<details><summary>Vagrantfile</summary>
+
 ```
 Vagrant.configure("2") do |config|
  config.vm.provision :shell, path: "standardize.txt", run: 'always'
@@ -217,7 +217,11 @@ Vagrant.configure("2") do |config|
  end
 end
 ```
-### standardize.txt file
+
+</details>
+
+<details><summary>standardize.txt</summary>
+
 ```
 # make sure to grab packages locally if possible
 sudo apt-get install -y squid-deb-proxy-client
@@ -237,7 +241,11 @@ sudo useradd -m george
 # sudo chsh -s /usr/bin/fish
 # sudo apt-get autoremove
 ```
-### lb40.txt
+
+</details>
+
+<details><summary>lb40.txt</summary>
+
 ```
 # Let's make sure we have fastest way to run updates by storing them on lb40
 sudo apt-get install squid-deb-proxy -y
@@ -260,12 +268,18 @@ sudo useradd -m george
 # sudo chsh -s /usr/bin/fish
 # sudo apt-get autoremove
 ```
+
+</details>
+
 ## tmux and fish and apropos and documentation
 Before doing any work within a vm at the command line, the first thing which should always be run is tmux (or screen if you are so inclined).  This will allow you to look up documentation without opening a new session or stopping your existing command.  Some vendors run tmux as the first thing they do when they log into our machines on shared sessions.  The most basic thing to do is open two terminals after tmux is loaded is to use `CTRL-B` then `" `.  To switch between them, use the `CTRL-B` then `up` or `down` arrow key.  There is a lot more a person could learn about tmux; but, this is enough to get several terminals up and running as well as navigate quickly between them.
 
 fish can also help to avoid having to remember command syntax.
 
 If you just can't remember how to do something, try apropos "idea" to see what the man pages say.
+
+Extremely helpful guides include:
+1. /usr/share/doc/sed/sedfaq.txt
 
 ### What to do when network is down to box or proxy servers block you: put the Linux documentation to work for you:
 Way too often the Internet isn't reachable because you have messed something up or the company proxy servers are just painful to detail with; so, how do you find information when you can't reach Internet or this guide?
@@ -295,6 +309,15 @@ If a specific box is being used, the prompt may also have the hostname prepended
 ```
 lb60 # 
 ```
+To avoid helping out oneself too much by looking at the solution rather than working through problem from memory and documentation, the github mechanism of hidding blocks of text will be used as such:
+<details><summary>Description</summary>
+
+```
+Example block of text
+```
+
+</details>
+
 This maybe inconsistent in earlier incarnations of the guide; but, basically the example solutions should indicate enough information to understand what to do if you get stumped without being a cut and paste mechanism.
 # Basic Linux Commands
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module1-essentialcommand/
@@ -474,46 +497,64 @@ Extra credit commands that can help out in a jam:
 ```
 ## Evaluate and Update Text Files
 ### touch
-It can be very useful to create a blank file.  Touch allows for this:
-Create files named file1-file9:
+<details><summary>It can be very useful to create a blank file.  Touch allows for this with bash:
+Create files named file1-file9 in /tmp/53.34/:</summary>
+
 ```
-# touch file{1..9}
+# touch /tmp/53.34/file{1..9}
 # ls
 file1  file2  file3  file4  file5  file6  file7  file8  file9
 ```
-Make a file named 1978 which was created that year: 
+
+</details>
+
+<details><summary>Make a file named 1978 which was created that year: </details>
+
 ```
 # touch -t 197801010101 1978
 # ls -al 1978
 -rw-r--r-- 1 root root 0 Jan  1  1978 1978
 ```
+
+</details>
+
 ### textfiles: vi(m)
-There are many text editors.  For the serious administrator, traditional vi or one of the many newer versions which are vi improved (vim) is the one to at least be able to use with some proficiency as it is installed on systems when others are not.  When you are using a system without nano and you have no Internet connection, a knowledge of vi is critical. Unfortunately, vi requires more than a passing commitment to make it worth the effort.  It will pay huge dividends in the long run to learn vi/vim; but, requires some commitment to master.
+There are many text editors.  For the serious administrator, traditional vi or one of the many newer versions which are vi improved (vim) is the one to at least be able to use with some proficiency as it is installed on systems when others are not.  When you are using a system without nano and you have no Internet connection, a knowledge of vi is critical. Unfortunately, vi requires more than a passing commitment to make it worth the effort.  It will pay huge dividends in the long run to learn vi/vim; but, requires some commitment to master. Use vimtutor to master program.
 
 Additional resources: [How to Install and Use vi/vim as a Full Text Editor](https://www.tecmint.com/vi-editor-usage/)
+
 ### textfiles: nano
 For someone just learning Linux, there is no shame in using nano.  Were vi and emacs are similar in power to a full word processor, nano functions as a simple text editor and provides you on the bottom the commands need to complete a task.
-### textfiles: diff
-#### TASK: Compare /etc/passwd and /etc/shadow: `diff /etc/passwd /etc/shadow`
 
-#### TASK:  Make two files and compare them in /tmp/1.4/
+### textfiles: diff
+<details><summary>Compare /usr/share/common-licenses/GPL-3 to /usr/share/common-licenses/GPL-2 placing result into /tmp/43.21/GPLdiff.txt: </summary>
+
 ```
-# printf "hello\nworld\n" > /tmp/1.4/hello
-# printf "world\n" > /tmp/1.4/world
-# diff /tmp/1.4/world /tmp/1.4/hello
-0a1
-> hello
+# diff /usr/share/common-licenses/GPL-3 /usr/share/common-licenses/GPL-2c2
+<                        Version 3, 29 June 2007
+---
+>                        Version 2, June 1991
+4c4,5
+<  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+---
+>  Copyright (C) 1989, 1991 Free Software Foundation, Inc.,
+>  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+10,19c11,18
 ```
-#### There are two directories named /tmp/1.4/A_dir and /tmp/1.4/B_dir which have different files and sometimes similar files.  Produce a report to /tmp/1.4/B of files only that exist only in /tmp/1.4/B_dir and not at all in /tmp/1.4/A_dir .
+
+</details>
+
+<details><summary>Make two directories using bash script `mkdir /tmp/32.42/{A_dir,B_dir}; touch /tmp/32.42/A_dir/{3..25}.txt; touch /tmp/32.42/B_dir/{5..27}.txt`   The folders have different files and sometimes similar files.  Produce a report to /tmp/32.42/B of files only that exist only in /tmp/32.42/B_dir and not at all in /tmp/32.42/A_dir .</summary>
+
 ```
-# mkdir /tmp/1.4/{A_dir,B_dir}; touch /tmp/1.4/A_dir/{3..25}.txt ; touch /tmp/1.4/B_dir/{5..27}.txt
-# cd /tmp/1.4
-# diff -q A_dir/ B_dir/ 
-# diff -q A_dir/ B_dir/ | grep B_ > /tmp/1.4/B
-# cat /tmp/1.4/B
+# diff -q /tmp/32.42/A_dir/ /tmp/32.42/B_dir/ | grep B_ > /tmp/32.42/B
+# cat /tmp/32.42/B
 Only in B_dir/: 26.txt
 Only in B_dir/: 27.txt
 ``` 
+
+</details>
+
 ### textfiles: patch
 ### textfiles: cut
 Let’s see how we can just display the third and forth columns for the first line in /etc/passwd:
@@ -536,10 +577,20 @@ Capitalize everything in /etc/passwd and send to /tmp/1.4/CAPITALIZED.txt
 cat /etc/passwd | tr '[:lower:]' '[:upper:]' > /tmp/1.4/CAPITALIZED.txt
 ```
 ### textfiles: sed
+Don't study harder than you need to, **/usr/share/doc/sed/sedfaq.txt** contains many examples.
+
 To capitalize all "a": `# sed 's/a/A/g' printer2.txt > printer3.txt`
 Special character escaped with a backslash in sed: `# sed -e "s/'/\"/g" printer2.txt`
 Print only user lab in /etc/passwd with sed: `# sed -n '/lab/p' /etc/passwd`
-Don't study harder than you need to, /usr/share/doc/sed/README contains many examples.
+
+<details><summary>Substitute all occurance of X with Y in a file</summary>
+
+```
+sudo sed -i.backup 's/security.ubuntu.com/la-mirrors.evowise.com/g' /etc/apt/sources.list
+```
+
+</details>
+
 ### Binary files: ls -l, cmp, md5sum
 ### Identify kind of file type
 ```
@@ -563,8 +614,16 @@ Also, echo is useful to take text enclosed in quotes to either send to stdout or
 Write output to file `# echo "hello" > file`
 Append output to file `# command >> file`
 Send output from one command to another (indefinitely stackable): `# cat file | grep A`
-Write stdout and errors to two seperate files: `# command > out 2>error`
-Write stdout and errors to same file: `# command &> out`
+Write stdout and errors to two separate files: `# command > out 2>error`
+
+<details><summary>Write both stdout and errors to same file named /tmp/64.34/both for command : </summary>
+
+```
+# command &> out
+```
+
+</details>
+
 To read a file back into a command: `# wc -l < syslog.pdf`
 ##	Regular expression syntax
 grep, grep -i, grep -v, grep -E '^root' /etc/passwd
@@ -575,26 +634,59 @@ $ match end of line
 \* match 0 or more preceding items
 \^ match start of line
 find out how to look these up in man or /usr/share/doc
-#### Task: Given that man man 
 
-#### Find all the lines in /usr/share/common-licenses/GPL-3 that start with the word "The" but case insenstive and put result in /tmp/7.4/the
+<details><summary>Find all the lines in /usr/share/common-licenses/GPL-3 that start with the word "The" but case insensitive and put result in /tmp/7.4/the </summary>
+
 ```
 grep -i "^The " /usr/share/common-licenses/GPL-3 > /tmp/7.4/the
 ```
-#### Find all the lines that end with the word "you" case sensitive and put result in /tmp/7.4/you
+
+</details>
+
+
+<details><summary>Find all the lines that end with the word "you" case sensitive within /usr/share/common-licenses/GPL-3 and put result in /tmp/32.43/you </summary>
+
+
 ```
-grep " you$" /usr/share/common-licenses/GPL-3 > /tmp/7.4/you
+# grep " you$" /usr/share/common-licenses/GPL-3 > /tmp/32.43/you
+# head -4 /tmp/32.43/you
+price.  Our General Public Licenses are designed to make sure that you
+them if you wish), that you receive source code or can get it if you
+  To protect your rights, we need to prevent others from denying you
+of having them make modifications exclusively for you, or provide you
 ```
-#### Find all the lines in /usr/share/common-licenses/GPL-3 that contain word "the" followed by the word "you"  and put result in /tmp/7.4/theyou
+
+</details>
+
+
+
+<details><summary>Find all the lines that start with the word "gnu" ignoring case within /usr/share/common-licenses/GPL-3 and put result in /tmp/54.24/gnu </summary>
+
+
 ```
-# grep -w "the.*you" /usr/share/common-licenses/GPL-3 > /tmp/7.4/theyou
-# head -5 /tmp/7.4/theyou
+# grep -i "^GNU" /usr/share/common-licenses/GPL-3 > /tmp/54.24/gnu
+# cat /tmp/54.24/gnu
+GNU General Public License for most of our software; it applies also to
+GNU General Public License, you may choose any version ever published
+```
+
+</details>
+
+
+
+<details><summary>Find all the lines in /usr/share/common-licenses/GPL-3 that contain word "the" followed by the word "you"  and put result in /tmp/43.24/theyou </summary>
+
+```
+# grep -w "the .* you" /usr/share/common-licenses/GPL-3 > /tmp/43.24/theyou
+# head -5 /tmp/43.24/theyou
 them if you wish), that you receive source code or can get it if you
 these rights or asking you to surrender the rights.  Therefore, you have
 or can get the source code.  And you must show them these terms so they
 (1) assert copyright on the software, and (2) offer you this License
 of having them make modifications exclusively for you, or provide you
 ```
+
+</details>
 
 ##	Archive or compress files and directories
 Commands: gzip, bzip2, gunzip, bunzip2, tar, xz, zip, star or tar --selinux for SELinux, rsync to another machine with ssh
@@ -1428,9 +1520,14 @@ Commands: cat /etc/fstab, fdisk -l, df -Th, du, e2label /dev/sda1
 # du
 # e2label /dev/sda1
 ```
-#### Task: Make Partition 4 on /dev/sdc which starts at 400 MB and ends at 499 MB and is ext4.
+<details><summary>Make Partition 4 on /dev/sdc which starts at 400 MB and ends at 499 MB and is ext4.</summary>
+
+```
 parted --script /dev/sdc mktable gpt
 parted -s /dev/sdc mkpart pri ext4 400 500 set 4 lvm on
+```
+
+</details>
 
 ### fdisk fundamentals
 Blah, who wants to write this up.  Just know parted or fdisk, gdisk, or parted.
@@ -1439,27 +1536,36 @@ Blah, who wants to write this up.  Just know parted or fdisk, gdisk, or parted.
 
 Each filesystem can have various extended attributes which can be investigated via stat, chattr, lsattr
 
-#### TASK: Make a file that is immutable and one that is mutable after creating both and then check both:
+<details><summary>Make a file that is immutable and one that is mutable after creating both and then try to delete both:</summary>
+
 ```
-# touch /tmp/1.3/{immutable,mutable}
-# chattr +i /tmp/1.3/immutable
-# lsattr /tmp/1.3/*mutable
-----i---------e--- /tmp/1.3/immutable
---------------e--- /tmp/1.3/mutable
-# rm /tmp/1.3/immutable
-rm: cannot remove '/tmp/1.3/immutable': Operation not permitted
+# touch /tmp/43.23/{immutable,mutable}
+# chattr +i /tmp/43.23/immutable
+# lsattr /tmp/43.23/*mutable
+----i---------e--- /tmp/43.23/immutable
+--------------e--- /tmp/43.23/mutable
+# rm /tmp/43.23/*mutable
+rm: cannot remove '/tmp/43.23/immutable': Operation not permitted
 ```
-#### TASK: Delete both immutable mutable created earlier
+
+</details>
+
+<details><summary>Delete both immutable mutable created earlier</summary>
+
 ```
-# chattr -i /tmp/1.3/immutable
-# lsattr /tmp/1.3/*mutable
-----i---------e--- /tmp/1.3/immutable
---------------e--- /tmp/1.3/mutable
-# rm /tmp/1.3/{immutable,mutable}
-# lsattr /tmp/1.3/*mutable
-lsattr: No such file or directory while trying to stat /tmp/1.3/*mutable
+# chattr -i /tmp/43.23/immutable
+# lsattr /tmp/43.23/*mutable
+----i---------e--- /tmp/43.23/immutable
+--------------e--- /tmp/43.23/mutable
+# rm /tmp/43.23/{immutable,mutable}
+# lsattr /tmp/43.23/*mutable
+lsattr: No such file or directory while trying to stat /tmp/43.23/*mutable
 ```
-Disable access time for a file such as would be desirable on an SSD drive and test:
+
+</details>
+
+<details><summary>Disable access time for a file such as would be desirable on an SSD drive and test:</summary>
+
 ```
 # touch /tmp/1.3/{timenoatime,timeatime}
 # chattr +A /tmp/1.3/timenoatime
@@ -1471,30 +1577,43 @@ Access: 2018-11-08 15:22:07.248033652 -0600
   File: '/tmp/1.3/timenoatime'
 Access: 2018-11-08 15:18:12.279613170 -0600
 ```
+
+</details>
+
 ##	List, create, delete, and modify physical storage partitions
+Commands: fdisk, parted, gdisk
+
+<details><summary>Create two partitions sized 100MiB on /dev/sdc with partition 1 labeled one and 2 labeled two</summary>
+
 ```
-fdisk
-parted # parted can also be used if you are more proficient with it
+Command (? for help): n
+Partition number (2-128, default 2):
+First sector (34-2097118, default = 985088) or {+-}size{KMGTP}:
+Last sector (985088-2097118, default = 2097118) or {+-}size{KMGTP}: +100M
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300):
+Changed type of partition to 'Linux filesystem'
+
+Command (? for help): p
+Disk /dev/sdc: 2097152 sectors, 1024.0 MiB
+Logical sector size: 512 bytes
+Disk identifier (GUID): 23882B3E-1041-4CD5-9990-2C96829FB512
+Partition table holds up to 128 entries
+First usable sector is 34, last usable sector is 2097118
+Partitions will be aligned on 2048-sector boundaries
+Total free space is 1298365 sectors (634.0 MiB)
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1          780288          985087   100.0 MiB   8300  Linux filesystem
+   2          985088         1189887   100.0 MiB   8300  Linux filesystem
+   3          391168          585727   95.0 MiB    8300  3
+   4          585728          780287   95.0 MiB    8300  4
 ```
-#### TASK: Create two partitions sized 50MiB on /dev/sdc with partition 1 labeled one and 2 labeled two
-```
-# gdisk
-n 
-1
-+50MiB
- 
-n 
-2
-+50MiB
-c
-1
-one
-c
-2
-two
-w
-```
-#### TASK: Format 1 as ext2 and 2 as ext4 and mount 1 as /ext2 and 2 as /ext4
+
+</details>
+
+<details><summary>Format 1 as ext2 and 2 as ext4 and mount 1 as /ext2 and 2 as /ext4</summary>
+
 ```
 # mkfs.ext2 /dev/sdc1
 # mkfs.ext4 -q /dev/sdc2
@@ -1503,12 +1622,17 @@ w
 # mount /dev/sdc2 /ext4
 ```
 
+</details>
+
 Additional resources: [tecmint - Formatting Filesystems](https://www.tecmint.com/create-partitions-and-filesystems-in-linux/)
 ##	Manage and configure LVM storage
 Commands: lvm, mkfs.*, mount/umount
 Files: /etc/fstab
 ### Practice Environment
 My preferred way of handling this is to use a virtual machine inside virtualbox and then add several 50 MB hard drives.  I am assuming that configuration for the following commands with vagrant file and that sdc, sdm, sdn, and sdo are available.	This avoids having to undo LVM to do RAID and also allows for doing swapspace on the LVM drives.
+13. /dev/sdm 50MB LVM
+14. /dev/sdn 50MB LVM
+15. /dev/sdo 50MB LVM
 ### lvm shell
 Just get into lvm shell to make command lookup faster:
 ```
@@ -1516,11 +1640,23 @@ Just get into lvm shell to make command lookup faster:
 lvm>
 ```
 
-#### TASK: Create logical volume named "projects" of 20 MB ext4 and set it be persistent after reboot at /projects:
+<details><summary>Put /dev/sdm and /dev/sdn into volume group named VG with 512k physical extends</summary>
+
 ```
-lvm> lvcreate -n projects -L 20M VG
-  Rounding up size to full physical extent 20.00 MiB
-  Logical volume "projects" created.
+# lvm
+lvm> vgcreate VG --physicalextentsize 512k /dev/sdm /dev/sdn
+  Volume group "VG" successfully created
+lvm>
+```
+
+</details>
+
+<details><summary>Create logical volume named "projects" of 20 MB ext4 that is mirrored raid1 and set it be persistent after reboot at /projects:</summary>
+
+```
+lvm> lvcreate --type raid1 -n backups -L 20M VG
+  Logical volume "backups" created.
+
 lvm> lvdisplay /dev/VG/projects
   --- Logical volume ---
   LV Path                /dev/VG/projects
@@ -1540,11 +1676,15 @@ lvm> lvdisplay /dev/VG/projects
   Block device           253:2
 # mkfs.ext4 -q /dev/mapper/VG-projects
 # mkdir /projects
-# # blkid | grep /dev/mapper/VG-projects -w
+# blkid | grep /dev/mapper/VG-projects -w
 /dev/mapper/VG-projects: UUID="51ec3153-272f-45c1-843c-e6d9099e3c69" TYPE="ext4"
 #### Add to fstab and test with mount using directory which will test persistancy 
 ```
-#### TASK: Create logical volume named "backups" of 5 MB mirrored ext2 across two drives and set it be persistent after reboot at /backups:
+
+</details>
+
+<details><summary>Create logical volume named "backups" of 5 MB mirrored ext2 across two drives and set it be persistent after reboot at /backups:</summary>
+
 ```
 lvm> lvcreate --type raid1 -n backups -L 5M VG
   Rounding up size to full physical extent 8.00 MiB
@@ -1573,17 +1713,26 @@ lvm> lvdisplay /dev/VG/backups
 /dev/mapper/VG-backups: UUID="93918f45-77d7-4fc0-bf26-9a8256d9daa7" TYPE="ext2"
 #### Add to fstab and test with mount
 ```
-#### TASK: Make backups larger by 5 MB 
+
+</details>
+
+<details><summary>Make backups larger by 5 MB </summary>
+
 ```
-lvm> lvextend -L +5M /dev/mapper/VG-backups
-  Rounding size to boundary between physical extents: 8.00 MiB
+lvm> lvextend -L +5M /dev/VG/backups
   Extending 2 mirror images.
-  Size of logical volume VG/backups changed from 8.00 MiB (2 extents) to 16.00 MiB (4 extents).
+  Size of logical volume VG/backups changed from 5.00 MiB (10 extents) to 10.00 MiB (20 extents).
   Logical volume backups successfully resized.
 ```
 
-#### TASK: Add /dev/sdo drive into VG, then mirror to three drives instead of two
+</details>
+
+<details><summary>Add /dev/sdo drive into VG, then mirror backups to three drives instead of two</summary>
+
 ```
+lvm> vgextend VG /dev/sdo
+  Physical volume "/dev/sdo" successfully created
+  Volume group "VG" successfully extended
 lvm> lvconvert -m2 VG/backups
 lvm> lvdisplay VG/backups
   --- Logical volume ---
@@ -1604,27 +1753,36 @@ lvm> lvdisplay VG/backups
   - currently set to     256
   Block device           253:7
 ```
-#### Task: Create 20 MB swap stripped across two drives withing lvm but don't active it yet:
-```
-lvm> lvcreate --stripes 2 -L 20M -n swap_lvm VG
-  Using default stripesize 64.00 KiB.
-  Logical volume "swap_lvm" created.
 
+</details>
+
+<details><summary>Create 20 MB swap stripped across all three drives with lvm but don't active it yet:</summary>
+
+```
+lvm> lvcreate --stripes 3 -L 20M -n swap_lvm VG
+  Using default stripesize 64.00 KiB.
+  Rounding size 20.00 MiB (40 extents) up to stripe boundary size 21.00 MiB (42 extents).
+  Logical volume "swap_lvm" created.
 lvm> lvdisplay VG/swap_lvm -m
-    --- Segments ---
-  --- Segments ---
-  Logical extents 0 to 79:
+  Logical extents 0 to 41:
     Type                striped
-    Stripes             2
+    Stripes             3
     Stripe size         64.00 KiB
     Stripe 0:
-      Physical volume   /dev/sdn
-      Physical extents  121 to 160
+      Physical volume   /dev/sdm
+      Physical extents  61 to 74
     Stripe 1:
+      Physical volume   /dev/sdn
+      Physical extents  21 to 34
+    Stripe 2:
       Physical volume   /dev/sdo
-      Physical extents  41 to 80
+      Physical extents  21 to 34
 ```
-#### TASK: Shrink swap to 10 MB, format it, then set it to mount upon boot
+
+</details>
+
+<details><summary>Shrink swap "lvm_swap"to 10 MB, format it, then set it to mount upon boot</summary>
+
 ```
 lvm> lvreduce -L 10M VG/swap_lvm
   WARNING: Reducing active logical volume to 10.00 MiB
@@ -1635,16 +1793,29 @@ Do you really want to reduce swap_lvm? [y/n]: y
 # mkswap /dev/mapper/VG-swap_lvm
 Setting up swapspace version 1, size = 10 MiB (10481664 bytes)
 no label, UUID=7e2f501c-37a1-4358-af23-3d5082bf9e47
+# grep swap_lvm /etc/fstab
+/dev/mapper/VG-swap_lvm swap    swap    defaults        0       0
+```
+
+</details>
+
+<details><summary>Clean this stuff out out of fstab using text editor</summary>
 
 ```
+# grep mapper /etc/fstab
+#
+```
+
+</details>
 
 Additional resources: [tecmint](https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/)
 ##	Create and configure encrypted storage
 Commands: cryptsetup, mount, umount
 Files: **/usr/share/doc/cryptsetup/{README.Debian/FAQ}**
-#### Task: Setup /dev/sde as an encrypted 50 MB swap partition active after every boot
+<details><summary>Setup /dev/sde as an encrypted 50 MB swap partition active after every boot
 Make a swap partition that fills the /dev/sde which is 50MB with label of swap_encrypted and passphrase of "swap" after destroying all partitions on the drive.  Make sure it comes up after boot.
-Make sure you open the document file and use it as your reference both in practicing as well as production.  Look for word urandom
+Make sure you open the document file and use it as your reference both in practicing as well as production.  Look for word urandom</summery>
+
 ```
 # swapoff -a
 # free | grep -i swap
@@ -1672,8 +1843,12 @@ Swap:             0           0           0
 # grep -H swap_encrypt /etc/{fstab,crypttab}
 #
 ```
-#### Task: Encrypt a ext4 file system on /dev/sdf 
-For all of /dev/sdf make file system that is ext4. Make it active on boot under mount point of /crypt.  No password should be required during boot.  The passphrase of "passphrase" shall be used and a decryption key of /root/luks.key such that on every bootup the partition gets mounted to /crypt on lb40 with no prompt for passphrase.
+
+</details>
+
+<details><summary>Encrypt a ext4 file system on /dev/sdf 
+For all of /dev/sdf make file system that is ext4. Make it active on boot under mount point of /crypt.  No password should be required during boot.  The passphrase of "passphrase" shall be used and a decryption key of /root/luks.key such that on every bootup the partition gets mounted to /crypt on lb40 with no prompt for passphrase.</summary>
+
 ```
 # umount /crypt
 # wipefs -a /dev/sdf
@@ -1703,6 +1878,9 @@ Command successful.
 # cat /etc/crypttab
 crypt   /dev/sdf1       /root/luks.key  none
 ```
+
+</details>
+
 Additional Resources: [tecmint - Disk Encryption](https://www.tecmint.com/disk-encryption-in-linux/), [chousensha - encryption](http://chousensha.github.io/blog/2018/02/12/lfcs-prep-managing-encrypted-partitions/)
 ##	Configure systems to mount file systems at or during boot
 Look at system as it currently stands
@@ -1712,8 +1890,11 @@ fdisk -l /dev/sda
 mount -t type device dir
 umount dir
 mkfs.____ or mkfs -t ____	
+df -ht
 ```
-Create a new ext4 partition 10 MB in size on lb40 using one of the spare drives and mount it every boot using UUID to /mnt/10MBext4.
+
+<details><summary>Create a new ext4 partition 10 MB in size on lb40 using one of the spare drives and mount it every boot using UUID to /mnt/10MBext4.</summary>
+
 ```
 # fdisk /dev/sdc
 Command (m for help): n
@@ -1742,7 +1923,11 @@ UUID=f0f91b53-f542-4ab6-92e8-064b63211b8e       /mnt/10MBext4   ext4    defaults
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sdc1       8.7M   92K  7.9M   2% /mnt/10MBext4
 ```
-Create a 1 MB ext4 partition that doesn't mount at bootup, copy /etc/group to it,  then resize it to 2 MB mounting it temporarily at /mnt/2MB. (In this case, we are using partition /dev/sdc1 but any valid location will do.  It is just easier to illustrate with an empty drive).
+
+</details>
+
+<details><summary>Create a 1 MB ext4 partition that doesn't mount at bootup, copy /etc/group to it,  then resize it to 2 MB mounting it temporarily at /mnt/2MB. (In this case, we are using partition /dev/sdc1 but any valid location will do.  It is just easier to illustrate with an empty drive).</summary>
+
 ```
 # fdisk /dev/sdc # details removed herein
 # partprobe
@@ -1755,6 +1940,9 @@ Create a 1 MB ext4 partition that doesn't mount at bootup, copy /etc/group to it
 # ls -al /mnt/2MB/group # this verifies we didn't lose data
 -rw-r--r-- 1 root root 1048 Nov 13 20:58 /mnt/2MB/group
 ```
+
+</details>
+
 Create a new ext3 partition 20 MB in size on lb40 using one of the spare drives using lvm and mount it every boot using /dev/mapper syntax to /mnt/20MBext3.
 
 Do a filesystem check on any unmounted partition you have created:  `fsck /dev/sdc1`
@@ -1764,8 +1952,10 @@ Disable filesystem check for a partition: `touch /mnt/1MB/fastboot` documented i
 ##	Configure and manage swap space
 Commands: mkswap, swapon, swapoff
 Files: /etc/fstab
-#### Practice: Setting up a swap partition for activation after boot
-Make a swap partition that fills the /dev/sdd which is 50MB with label of normal_swap after destroying all partitions on the drive.
+
+<details><summary> Setting up a swap partition for activation after boot
+Make a swap partition that fills the /dev/sdd which is 50MB with label of normal_swap after destroying all partitions on the drive.</summary>
+
 ```
 # free | grep -i swap
 Swap:             0           0           0
@@ -1776,36 +1966,32 @@ Swap:             0           0           0
 # swapon /dev/sdd
 # free | grep -i swap
 Swap:         51196           0       51196
-```
-Now set it up to work after boot:
-```
 # grep swap /etc/fstab 
 /dev/sdd       none            swap    sw                              0 0
 ```
-Now remove all the work you just did by destroying partition table and removing the mount on reboot:
+</details>
+
+<details><summary>Make an LVM swap partition but don't set it up to work after boot
+Create a new swap partition 10 MB in size stripping on lb40 using several LVM partitions and make active for current session but do not configure for after reboot to be active.  </summary>
+
 ```
-# swapoff /dev/sdd
-# free | grep -i swap
-Swap:             0           0           0
-# dd if=/dev/zero of=/dev/sdd bs=1024 count=2 
-# grep -w /dev/sdd /etc/fstab
-#
-```
-#### Practice: Make an LVM swap partition but don't set it up to work after boot
-Create a new swap partition 10 MB in size stripping on lb40 using several LVM partitions and make active for current session but do not configure for after reboot to be active.  
-```
-lvcreate --size 1G --name lv_swap vg
+lvcreate --size 10M --name lv_swap VG
 mkswap /dev/vg/lv_swap
 swapon /dev/vg/lv_swap
 swapon -s
 # grep lv_swap fstab
 /dev/mapper/vg-lv_swap swap swap defaults 0 0
 ```
-Make a simple 40MB swap partition somewhere and temporarily activate it:
+
+</details>
+
+Make a simple 40MB swap partition on /dev/sdc and activate it every boot:
 ```
 # 
-``` 
-Make a 3 MB swap file at /tmp/3MBswap and temporarily use it.
+```
+ 
+<details><summary>Make a 3 MB swap file at /tmp/3MBswap and temporarily use it. </summary>
+
 ```
 #### pick between dd and fallocate
 # fallocate  -l 3M /swap
@@ -1822,9 +2008,22 @@ swapon: /swap: swapon failed: Device or resource busy
 # free | grep swap
 Swap:          3068           0        3068
 ```
+</details>
+
+<details><summary>Now remove all the work you just did by destroying partition table and removing the mount on reboot:</summary>
+
+```
+# swapoff /dev/sdd
+# free | grep -i swap
+Swap:             0           0           0
+# dd if=/dev/zero of=/dev/sdd bs=1024 count=2 
+# grep -w /dev/sdd /etc/fstab
+```
+
+</details>
+
 Additional information: [tecmint - Configuring Swap Partition](https://www.tecmint.com/create-partitions-and-filesystems-in-linux/)
 ##	Create and manage RAID devices
-Previous competency LFCS 2.16: Assemble partitions as RAID devices
 #### Reminder of layout of available drives
 9. /dev/sdi 50MB mdadm RAID
 10. /dev/sdj 50MB mdadm RAID
@@ -2235,49 +2434,71 @@ Before we can do anything, we need our IP address and hostname
 # hostnamectl
 # ifconfig | grep inet
 ```
-Install DNS stuff and switch to configuration folder:
+<details><summary>Install DNS stuff and switch to configuration folder:</summary>
+
 ```
 # apt-get install bind9 dnsutils -y
 cd /etc/bind/
 ```
-Setup DNS caching server to use 10.0.0.1:
+
+</details>
+
+<details><summary>Setup DNS caching server to use Google DNS at 8.8.8.8</summary>
+
 ```
 grep "forwarders {" -A 2 /etc/bind/named.conf.options
         forwarders {
-                10.0.0.1
+                8.8.8.8
         };
 ```
-Start service, enable for reboot, and test:
+
+</details>
+
+<details><summary>Start service, enable for reboot, and test:</summary>
+
 ```
 systemctl status bind9
 systemctl enable bind9
 dig www.google.com @localhost
 ```
+
+</details>
+
 Additional resources: [tecmint - Caching DNS Server](https://www.tecmint.com/setup-recursive-caching-dns-server-and-configure-dns-zones/)
 ###	DNS zone management
-Using domainname of ubuntu.local; create master DNS server
+<details><summary>Using domainname of linux.local; create master DNS server on lb40</summary>
+
 ```
 # cat /etc/bind/named.conf.local
-zone "ubuntu.local" {
+zone "linux.local" {
         type master;
-        file "/etc/bind/db.ubuntu.local";
+        file "/etc/bind/db.linux.local";
         };
-cp /etc/bind/db.local /etc/bind/db.ubuntu.local
+cp /etc/bind/db.local /etc/bind/db.linux.local
 ```
-Edit values for zone to add a test.ubuntu.local at 10.20.30.40 and test:
+
+</details>
+
+<details><summary>Edit values for zone to add a test.linux.local at 10.20.30.40 and test:</summary>
 ```
-tail -1  /etc/bind/db.ubuntu.local
+# tail -1  /etc/bind/db.linux.local
 test    IN      A       1.2.3.4
-systemctl restart bind9
-dig test.ubuntu.local @localhost | grep 10.20.30.40
-test.ubuntu.local.      604800  IN      A       1.2.3.4
+# systemctl restart bind9
+#dig test.linux.local @localhost | grep 10.20.30.40
+test.linux.local.      604800  IN      A       1.2.3.4
 ```
-Set machine to use local DNS server:
+
+</details>
+
+<details><summary>Set machine to use local DNS server only:</summary>
 ```
-grep "dns-" /etc/network/interfaces
-dns-nameserver 192.168.1.3
+# echo -e "nameserver 10.20.30.40\nsearch linux.local" > /etc/resolv.conf
 ```
-test to make sure server is using 127.0.0.1 as name server
+
+</details>
+
+<details><summary>Test to make sure server is using 127.0.0.1 as name server coming from root servers.</summary>
+
 ```
 dig google.com | grep ANSWER -A 5
 ;; ANSWER SECTION:
@@ -2287,6 +2508,9 @@ google.com.             58      IN      A       172.217.14.238
 .                       195835  IN      NS      m.root-servers.net.
 .                       195835  IN      NS      f.root-servers.net.
 ```
+
+</details>
+
 Additional resources: [tecmint - Configure Zones for Domain](https://www.tecmint.com/setup-recursive-caching-dns-server-and-configure-dns-zones/)
 ##	Email
 ###	Configure an IMAP and IMAPS service
@@ -2491,11 +2715,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjI0MzgxODksLTEzOTkxMzAwNTEsOD
-IyNDM0MjUsLTQxMzA4NjY3MywtMTI3NTcyMTIxLC05NDIzNTM2
-MzgsMTAyMzQ2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUzMjY2NiwtMT
-U3NjA2NDg0MCwyOTQ5NTY0NjEsMTA0NzU2NjQ1LDEwMzE3ODA3
-MDYsMTM3MDUwOTQxMSwtMTU0ODE5OTgzNCwtMTk2NDE3Mzk2MC
-wxODAwMDYwODU0LDEzNjk5ODk1OTMsLTY1ODYzODQwOCwxMjQ3
-OTc1NjM2XX0=
+eyJoaXN0b3J5IjpbLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMz
+k5MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2NzMsLTEyNzU3MjEy
+MSwtOTQyMzUzNjM4LDEwMjM0NjM2MzgsLTUyNjY0NTY0NywxNT
+M1MzI2NjYsLTE1NzYwNjQ4NDAsMjk0OTU2NDYxLDEwNDc1NjY0
+NSwxMDMxNzgwNzA2LDEzNzA1MDk0MTEsLTE1NDgxOTk4MzQsLT
+E5NjQxNzM5NjAsMTgwMDA2MDg1NCwxMzY5OTg5NTkzLC02NTg2
+Mzg0MDhdfQ==
 -->
