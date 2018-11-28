@@ -1427,11 +1427,15 @@ Task: Restore default SELinux file contexts for /etc/passwd
 #
 ```
 
-Task: What is my current SELINUX state?
+Task: Change SELINUX current state to disabled until next reboot?
 ```
-#
+# setenforce 0
 ```
 
+Task: What is my current SELINUX state?
+```
+# getenforce
+```
 Additional resources: [tecmint - Implementing Mandatory Access Control](https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/), [Ubuntu AppArmor Wiki](https://wiki.ubuntu.com/AppArmor)
 ##	Manage Software
 On Ubuntu you can add software with `apt-get install -y <packagename>`
@@ -2900,7 +2904,7 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjI1ODQyNDksLTcwNjA5MjE3MiwtMT
+eyJoaXN0b3J5IjpbLTE3MDQ5MTI2MDEsLTcwNjA5MjE3MiwtMT
 cxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0
 ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC
 05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMzk5
