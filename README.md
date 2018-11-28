@@ -1,4 +1,3 @@
-
 # linuxsystemadministration
 This guide provides lab activities to help co-workers learn to become Linux system administrators.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is listed for our selected Linux distribution which is Ubuntu 16.04 LTS server.   This also helps me learn markdown for documentation.
 
@@ -293,7 +292,7 @@ Extract all the compressed gzip files in /usr/share
 # grep "route add.*" -R /usr/share/
 /usr/share/man/fr/man8/route.8:.B route add \-net 192.57.66.0 netmask 255.255.255.0 gw ipx4
 ```
-Additional information: [tmux for noobs](https://eoinoc.net/tmux-for-noobs)
+Sources: [tmux for noobs](https://eoinoc.net/tmux-for-noobs)
 ## Syntax in this guide
 All shell commands will be proceeded by a # indicating root account in use or $ indicating another account is in use that isn't the root account.  Sometimes the username will be displayed first as in this case the account fred:
 ```
@@ -1089,7 +1088,7 @@ GRUB_TIMEOUT=10
 # update-grub
 ```
 
-Additional information: [tecmint](https://www.tecmint.com/configure-and-troubleshoot-grub-boot-loader-linux/), [Configure GRUB2 Boot Loader Settings In Ubuntu 16.04](https://www.ostechnix.com/configure-grub-2-boot-loader-settings-ubuntu-16-04/)
+Sources: [tecmint](https://www.tecmint.com/configure-and-troubleshoot-grub-boot-loader-linux/), [Configure GRUB2 Boot Loader Settings In Ubuntu 16.04](https://www.ostechnix.com/configure-grub-2-boot-loader-settings-ubuntu-16-04/)
 
 ##	Rebooting and halting system properly
 #### TASK: Just reboot immediately:
@@ -2193,7 +2192,7 @@ Swap:             0           0           0
 
 </details>
 
-Additional information: [tecmint - Configuring Swap Partition](https://www.tecmint.com/create-partitions-and-filesystems-in-linux/)
+Sources: [tecmint - Configuring Swap Partition](https://www.tecmint.com/create-partitions-and-filesystems-in-linux/)
 ##	Create and manage RAID devices
 #### Reminder of layout of available drives
 9. /dev/sdi 50MB mdadm RAID
@@ -2832,7 +2831,7 @@ $ docker stats
 $ docker top container_id  
 $ docker build -t my-image dockerfiles/ or $ docker build -t aspnet5 . { there is a dot at the end to pick the local yaml file for the build }
 ```
-Additional information: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs-commands-to-manage-and-configure-containers-in-linux/
+Sources: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs-commands-to-manage-and-configure-containers-in-linux/
 ## File Sharing
 #### TASK: Setup NFS  
 <details><summary>On lb80, share /nfs with dummy file named test with lb70 machines on network as /nfs and set to mount persistently</summary>
@@ -2863,7 +2862,7 @@ lb70 # ls /nfs/test
 ```
 
 </details>
-Additional details: [certdepo](https://www.certdepot.net/rhel7-provide-nfs-network-shares-specific-clients/)
+Sources: [certdepo](https://www.certdepot.net/rhel7-provide-nfs-network-shares-specific-clients/)
 #### SAMBA File Sharing 
 <details><summary>on lb80 to share /smbpublic RO with lb70 machines on network as /smbpublic </summary>
 
@@ -2918,7 +2917,7 @@ lb80 # cp /etc/samba/smb.conf /etc/samba/smb.conf.orig
 
 </details>
 
-Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/), [certdepo](https://www.certdepot.net/rhel7-provide-smb-network-shares/)
+Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/), [certdepo](https://www.certdepot.net/rhel7-provide-smb-network-shares/)
 # Other resources
 * [tecmint series](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
 * [older but still good guide](http://blog.leonelatencio.com/wp-content/uploads/2014/11/Linux-Foundation-Certified-System-Administrator-LFCS-v1.3.pdf)
@@ -2930,11 +2929,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMDExNzc1NCwtMTU3MzQ5MzkyNCw2OD
-YwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1
-MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLT
-c4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEy
-MjgyOCwxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC
-0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1LC00MTMw
-ODY2NzNdfQ==
+eyJoaXN0b3J5IjpbLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNj
+g2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3Nzky
+NTIyLC03MDYwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC
+03ODMyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMx
+MjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4Ny
+wtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEz
+MDg2NjczXX0=
 -->
