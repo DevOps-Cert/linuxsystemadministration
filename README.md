@@ -1081,8 +1081,10 @@ Done
 $
 ```
 
-Change boot timeout to 9 seconds
+Change boot timeout to 10 seconds
 ```
+# grep GRUB_TIMEOUT /etc/default/grub
+GRUB_TIMEOUT=10
 # update-grub
 ```
 
@@ -2893,11 +2895,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3NjU1ODUsLTE3MTc5ODc0ODYsMzEyMj
-g2NTY0LC03ODMyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAs
-LTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02Mz
-AzOTQ4NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQy
-NSwtNDEzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMD
-IzNDYzNjM4LC01MjY2NDU2NDcsMTUzNTMyNjY2LC0xNTc2MDY0
-ODQwXX0=
+eyJoaXN0b3J5IjpbLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMT
+IyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMy
+MCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC05MTczMTAwNDcsLT
+YzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgyMjQz
+NDI1LC00MTMwODY2NzMsLTEyNzU3MjEyMSwtOTQyMzUzNjM4LD
+EwMjM0NjM2MzgsLTUyNjY0NTY0NywxNTM1MzI2NjYsLTE1NzYw
+NjQ4NDBdfQ==
 -->
