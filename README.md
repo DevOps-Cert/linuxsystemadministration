@@ -57,7 +57,7 @@ We are going to setup a group of computers all running Ubuntu 16.04 Server withi
 As you will be running more than one identical Ubuntu box; it makes some sense to maintain local LAN copies of packages you are going to be using to speed up installation.  There is no one size fits all; merely different ways of approaching the problem.
 Sources: [Cache APT packages with Squid proxy](http://www.rushiagr.com/blog/2015/06/05/cache-apt-packages-with-squid-proxy/)
 ### squid-deb-proxy
-This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than package and no configuration on the server side after installing packages.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default with Vagrantfile and configuration scripts.  lb40 will automatically install this functionality and this server should be the most heavily used anyways.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128 on lb40.
+This is the easiest solution and easiest to maintain and install.  It requires no configuration on the client side other than package and no configuration on the server side after installing packages.   A bad configuration or down traditional squid server will cause updates to still work after connection to the squid-deb-proxy fails. Therefore, this style will be used by default with Vagrantfile and configuration scripts.  lb40 will automatically install this functionality and this server should be the most heavily used anyways.  The nice thing is the port will work off 8000 so it won't conflict with later configuration of a squid server on 3128 on lb40.  Default mirrors work, I prefer to use the fastest US mirror I can find and tweak appropriately in the configuration files
 
 _Install on the server_
 ```
@@ -2929,11 +2929,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNj
-g2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3Nzky
-NTIyLC03MDYwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC
-03ODMyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMx
-MjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4Ny
-wtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEz
-MDg2NjczXX0=
+eyJoaXN0b3J5IjpbMzY4OTA2MTAxLC0xMzYzNDk0MDc0LC0xNT
+czNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4NzI4NiwyOTMxODQ5
+MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC0xNzE3OTg3NDg2LD
+MxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4NzQ4NDAsMzk2MjQz
+MzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OTEsLTkxNzMxMDA0Ny
+wtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEzOTkxMzAwNTEsODIy
+NDM0MjVdfQ==
 -->
