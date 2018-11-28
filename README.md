@@ -928,7 +928,6 @@ mountpoint (1)       - see if a directory or file is a mountpoint
 # whereis mount
 mount: /bin/mount /sbin/mount.lowntfs-3g /sbin/mount.vmhgfs /sbin/mount.ntfs /sbin/mount.ntfs-3g /sbin/mount.fuse /usr/share/man/man8/mount.8.gz
 
-
 # ls -l /usr/share/doc/gzip-1.5/
 ```
 Many commands offer a --help or -h to get more information.
@@ -2914,11 +2913,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC0xNz
-E3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4NzQ4
-NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OTEsLT
-kxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEzOTkx
-MzAwNTEsODIyNDM0MjUsLTQxMzA4NjY3MywtMTI3NTcyMTIxLC
-05NDIzNTM2MzgsMTAyMzQ2MzYzOCwtNTI2NjQ1NjQ3LDE1MzUz
-MjY2Nl19
+eyJoaXN0b3J5IjpbMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNj
+A5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMz
+MiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMz
+g3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4
+MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2NzMsLT
+EyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMjM0NjM2MzgsLTUyNjY0
+NTY0N119
 -->
