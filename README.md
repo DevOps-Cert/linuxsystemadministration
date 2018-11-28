@@ -1968,7 +1968,7 @@ Commands: cryptsetup, mount, umount
 Files: **/usr/share/doc/cryptsetup/{README.Debian/FAQ}**
 <details><summary>Setup /dev/sde as an encrypted 50 MB swap partition active after every boot
 Make a swap partition that fills the /dev/sde which is 50MB with label of swap_encrypted and passphrase of "swap" after destroying all partitions on the drive.  Make sure it comes up after boot.
-Make sure you open the document file and use it as your reference both in practicing as well as production.  Look for word urandom</summery>
+Make sure you open the document file and use it as your reference both in practicing as well as production.  Look for word urandom</summary>
 
 ```
 # swapoff -a
@@ -2913,11 +2913,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNj
-A5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMz
-MiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMz
-g3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4
-MTg5LC0xMzk5MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2NzMsLT
-EyNzU3MjEyMSwtOTQyMzUzNjM4LDEwMjM0NjM2MzgsLTUyNjY0
-NTY0N119
+eyJoaXN0b3J5IjpbODI4OTIzOTE2LDI5MzE4NDkwNCwtNjQ3Nz
+kyNTIyLC03MDYwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0
+LC03ODMyNjkzMzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMT
+MxMjI4MjgsMTM4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4
+NywtMTI2MjQzODE4OSwtMTM5OTEzMDA1MSw4MjI0MzQyNSwtND
+EzMDg2NjczLC0xMjc1NzIxMjEsLTk0MjM1MzYzOCwxMDIzNDYz
+NjM4XX0=
 -->
