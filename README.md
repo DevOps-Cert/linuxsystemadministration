@@ -1439,7 +1439,7 @@ Task: What is my current SELINUX state?
 
 Task: Disable SELINUX permanently?
 ```
-# grep disabled /etc/selinux/config
+# grep SELINUX /etc/selinux/config
 SELINUX=disabled
 ```
 
@@ -2922,11 +2922,11 @@ Additional details: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MzY2Mjc2Niw2ODYwNTQyMzYsLTExNj
-A2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3
-MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOT
-U3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgz
-OTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC
-0xMzk5MTMwMDUxLDgyMjQzNDI1LC00MTMwODY2NzMsLTEyNzU3
-MjEyMV19
+eyJoaXN0b3J5IjpbLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMT
+YwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIx
+NzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMzIsLT
+k1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4
+Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OS
+wtMTM5OTEzMDA1MSw4MjI0MzQyNSwtNDEzMDg2NjczLC0xMjc1
+NzIxMjFdfQ==
 -->
