@@ -3052,12 +3052,20 @@ systemctl start apache2
 </details>
 
 
-###  Configure HTTP server log files
-### Configure SSL with HTTP server
-### Set up name-based virtual web hosts
+
+
 <details><summary>Restrict access to a web page</summary>
 Restrict access to a web page in Apache2
 <details>
+
+<details><summary>More Fun</summary>
+
+Configure HTTP server log files
+Configure SSL with HTTP server
+Set up name-based virtual web hosts
+
+</details>
+
 ##	Database server
 MariaDB is the most common database server and is what we use.
 <details><summary>Setup MariaDB </summary>
@@ -3224,11 +3232,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTE1MzU5NjMsNTEwMTIxMzUzLC0yMj
-MyNTc4NjMsLTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIz
-MjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLT
-EzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYw
-Njg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNz
-IsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1
-Nzg3NDg0MF19
+eyJoaXN0b3J5IjpbLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMz
+I1Nzg2MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMy
+MDEsLTEyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMT
+M2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2
+ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3Mi
+wtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3
+ODc0ODQwXX0=
 -->
