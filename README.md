@@ -1137,6 +1137,7 @@ Sources: [tecmint](https://www.tecmint.com/configure-and-troubleshoot-grub-boot-
 </details>
 
 <details><summary>Power off system (called halting it).</summary>
+
 ```
 # shutdown -h now 
 ```
@@ -3178,11 +3179,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTAxMDA3OTksLTE5ODE2MjMyMDEsLT
-EyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5
-NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyOD
-YsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcx
-Nzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0OD
-QwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC05
-MTczMTAwNDddfQ==
+eyJoaXN0b3J5IjpbMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMT
+IyNjUyMDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYzNDk0
+MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4NzI4Ni
+wyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC0xNzE3
+OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4NzQ4ND
+AsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OTEsLTkx
+NzMxMDA0N119
 -->
