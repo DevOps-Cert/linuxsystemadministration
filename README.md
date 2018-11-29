@@ -2724,14 +2724,14 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 ### Cloning and replicating VMs using images or snapshots
 Ubuntu can provide hypervisor services to run VMs within domains.
 
-To enable this, you will need appropriate packages:
+<details><summary>To enable this, you will need appropriate packages.  Ensure that libvirtd service is running.</summary>
 ```
 apt-get install -y qemu-kvm qemu-img libvirt
-```
-Ensure that libvirtd service is running:
-```
 systemctl {enable,start} libvirtd
 ```
+
+</details>
+
 #### TASK: Get a default vm
 
 #### TASK: Change processor count on an existing libvirt machine from 1 to 2
@@ -3101,11 +3101,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU1MzM5Mjg3LDQzOTczOTY4LDEzOTQzNj
-EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
-LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
-YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
-MzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMT
-M4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQz
-ODE4OV19
+eyJoaXN0b3J5IjpbMTAxNzA3MDQyMyw0Mzk3Mzk2OCwxMzk0Mz
+YxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIz
+NiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNz
+A2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5
+MzMyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LD
+EzODc0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0
+MzgxODldfQ==
 -->
