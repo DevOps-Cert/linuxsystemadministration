@@ -609,14 +609,27 @@ sudo sed -i.backup 's/security.ubuntu.com/la-mirrors.evowise.com/g' /etc/apt/sou
 
 ### Binary files: ls -l, cmp, md5sum
 ### Identify kind of file type
+<details><summary>What is /boot/vmlinuz*</summary>
+
 ```
 # file /boot/vmlinuz-4.15.0-38-generic
 /boot/vmlinuz-4.15.0-38-generic: Linux kernel x86 boot executable bzImage, version 4.15.0-38-generic (buildd@lcy01-amd64-023) #41~16.04.1-Ubuntu S, RO-rootFS, swap_dev 0x7, Normal VGA
+```
+
+</details>
+
+<details><summary>What is /etc/passwd</summary>
+
+```
 # file /etc/passwd
 /etc/passwd: ASCII text
 ls -ld <filename>
 ```
-See how first entry of "ls -l" shows file type:
+
+</details>
+
+
+<details><summary>See how first entry of "ls -l" shows file type:<summary>
 ```
 # ls -al /etc/rc2.d/S06rc.local
 lrwxrwxrwx 1 root root 18 Nov  8 13:12 /etc/rc2.d/S06rc.local -> ../init.d/rc.local
@@ -3149,7 +3162,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE2NzQ5MjQwLDQzOTczOTY4LDEzOTQzNj
+eyJoaXN0b3J5IjpbMzc5MjA5MTA1LDQzOTczOTY4LDEzOTQzNj
 EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
 LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
 YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
