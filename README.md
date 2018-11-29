@@ -3185,6 +3185,7 @@ lb80 # cp /etc/samba/smb.conf /etc/samba/smb.conf.orig
 	guest ok = no
 	writable = yes
 	browsable = yes
+# testparm
 ```
 
 </details>
@@ -3201,11 +3202,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOT
-gxNjIzMjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEz
-MjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC
-0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYw
-OTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMz
-IsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4
-NzQ4Mzk5MV19
+eyJoaXN0b3J5IjpbNTYwMzc0ODQ3LC0yMjgwNTk3NTgsMTA2MT
+Y2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2
+OCwxMzk0MzYxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LD
+Y4NjA1NDIzNiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5
+MjUyMiwtNzA2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NC
+wtNzgzMjY5MzMyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEz
+MTIyODI4XX0=
 -->
