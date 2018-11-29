@@ -1163,6 +1163,7 @@ N 3
 </details>
 
 <details><summary>Find out names of runlevels:  </summary>
+
 ```
 # info runlevel # result truncated
        Table 1. Mapping between runlevels and systemd targets
@@ -3179,7 +3180,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNTU2MTU5MSwxMDYxNjY2MDAzLC0xOT
+eyJoaXN0b3J5IjpbMTIzOTgwNzMwNSwxMDYxNjY2MDAzLC0xOT
 gxNjIzMjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEz
 MjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC
 0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYw
