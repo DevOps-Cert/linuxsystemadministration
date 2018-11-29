@@ -2889,19 +2889,33 @@ apt-get install -y apache2
 systemctl enable apache2
 systemctl start apache2
 `
-#### Task: Configure web server to use as document root /var/www/html
+
+<details><summary>Configure web server to use as document root /var/www/html</summary>
+
 ```
 # grep -i DOC  /etc/apache2/sites-enabled/000-default.conf
         DocumentRoot /var/www/html
 ```
-###	Web server log files
+
+</details>
+
+<details><summary>Web server log files</summary>
+
 Customize HTTP server log files.
+
+</details>
 
 ###	Restrict access to a web page
 Restrict access to a web page in Apache2
 ##	Database server
 MariaDB is the most common database server and is what we use.
-#### TASK: Setup MariaDB 
+<details><summary>Setup MariaDB </summary>
+
+```
+#
+```
+
+</details>
 
 ##	Containers
 <details><summary>Setup Linux container ubuntu and start it</summary>
@@ -2920,6 +2934,9 @@ MariaDB is the most common database server and is what we use.
 # lxc-stop -n mylxcontainer  
 # lxc-destroy -n mylxcontainer
 ```
+
+</details>
+
 <details><summary>Use Docker to setup a web server before destroying it.</summary>
 
 ```
@@ -3055,11 +3072,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzE3OTUxMzcsNDM5NzM5NjgsMTM5ND
-M2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQy
-MzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLT
-cwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2
-OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOC
-wxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYy
-NDM4MTg5XX0=
+eyJoaXN0b3J5IjpbMTY2MDIwNzgwLDQzOTczOTY4LDEzOTQzNj
+EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
+LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
+YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
+MzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMT
+M4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQz
+ODE4OV19
 -->
