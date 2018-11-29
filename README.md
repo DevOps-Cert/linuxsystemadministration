@@ -629,13 +629,17 @@ ls -ld <filename>
 </details>
 
 
-<details><summary>See how first entry of "ls -l" shows file type:<summary>
+<details><summary>What is /etc/rc2.d/S06rc.local?<summary>
+
 ```
 # ls -al /etc/rc2.d/S06rc.local
 lrwxrwxrwx 1 root root 18 Nov  8 13:12 /etc/rc2.d/S06rc.local -> ../init.d/rc.local
 # ls -ld /etc/passwd
 -rw-r--r-- 1 root root 2767 Nov  8 15:15 /etc/passwd
 ```
+
+</details>
+
 ##	Redirecting shell and command output 
 To get help: `man sh` or `man bash` and look for redirect.
 This is as good of a time as any to introduce cat.  cat - concatenate files and print on the standard output. It dumps to standard output (stdout) input files.
@@ -3162,11 +3166,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc5MjA5MTA1LDQzOTczOTY4LDEzOTQzNj
-EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
-LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
-YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
-MzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMT
-M4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQz
-ODE4OV19
+eyJoaXN0b3J5IjpbLTE0NDQ4MzY5NTYsNDM5NzM5NjgsMTM5ND
+M2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQy
+MzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLT
+cwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2
+OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOC
+wxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYy
+NDM4MTg5XX0=
 -->
