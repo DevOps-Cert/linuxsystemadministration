@@ -964,20 +964,10 @@ mount: /bin/mount /sbin/mount.lowntfs-3g /sbin/mount.vmhgfs /sbin/mount.ntfs /sb
 
 # ls -l /usr/share/doc/gzip-1.5/
 ```
-Many commands offer a --help or -h to get more information.
-```
-# tune2fs --help
-tune2fs 1.42.13 (17-May-2015)
-tune2fs: invalid option -- '-'
-Usage: tune2fs [-c max_mounts_count] [-e errors_behavior] [-g group]
-        [-i interval[d|m|w]] [-j] [-J journal_options] [-l]
-        [-m reserved_blocks_percent] [-o [^]mount_options[,...]] [-p mmp_update_interval]
-        [-r reserved_blocks_count] [-u user] [-C mount_count] [-L volume_label]
-        [-M last_mounted_dir] [-O [^]feature[,...]]
-        [-Q quota_options]
-        [-E extended-option[,...]] [-T last_check_time] [-U UUID]
-        [ -I new_inode_size ] device
 
+<details><summary>Using quotatool command; get help.</summary>
+
+```
 # quotatool -h
   quotatool version 1.4.12
   Copyright (c) 1999-2012 Mike Glover / Johan Ekenberg
@@ -1000,6 +990,8 @@ Options:
   -V      : show version
   -n      : do nothing (useful with -v)
 ```
+
+</details>
 
 Sources: [tecmint]( https://www.tecmint.com/explore-linux-installed-help-documentation-and-tools/)
 
@@ -3169,11 +3161,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1MjEzODI1LDQzOTczOTY4LDEzOTQzNj
-EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
-LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
-YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
-MzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMT
-M4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQz
-ODE4OV19
+eyJoaXN0b3J5IjpbLTEyMjY1MjA2NjQsNDM5NzM5NjgsMTM5ND
+M2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQy
+MzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLT
+cwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2
+OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOC
+wxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYy
+NDM4MTg5XX0=
 -->
