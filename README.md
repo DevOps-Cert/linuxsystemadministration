@@ -1568,11 +1568,19 @@ groupadd
 chmod
 chgrp
 ```
-Create a directory named /home/partners. Allow fred and hal to share documents in this directory using a group called partners. Both of them can read, write and remove documents from the other in this directory but any user not member of the group can’t.
+
+<details><summary>Create a directory named /home/partners. Allow fred and hal to share documents in this directory using a group called partners. Both of them can read, write and remove documents from the other in this directory but any user not member of the group can’t.</summary>
+
 ```
 # mkdir /home/partners
 ```
-Set sally to use Korn Shell, fred to use CSH, walt to use tcsh, and george to use sh.
+
+</details>
+
+
+<details><summary>Set sally to use Korn Shell, fred to use CSH, walt to use tcsh, and george to use sh.</summary>
+</details>
+
 
 Sources: [tecmint - Managing Users & Groups](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
 ##	System-wide profiles
@@ -2966,7 +2974,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxODY3MjU0NSwxMzk0MzYxMzI2LC0xMz
+eyJoaXN0b3J5IjpbLTc0MzMwOTM0NSwxMzk0MzYxMzI2LC0xMz
 YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
 NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
 0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
