@@ -347,6 +347,7 @@ graphical.target
 Figure out where the program 'ping' is stored:</summary>
 
 To begin this exercise; make sure you are in /tmp/1.2 folder which should have been created during setup.
+
 ```
 # cd /tmp/1.2
 # which ping
@@ -378,7 +379,6 @@ cat /tmp/1.2/filepath
 ```
 </details>
 
-### Find owner
 <details><summary>To find a file with ownership of fred in /tmp/1.2 after creating it:</summary>
 
 ```
@@ -450,7 +450,6 @@ cat /tmp/1.2/filepath
 
 </details>
 
-### Find size
 <details><summary>Find all files sized greater than 2k in /etc/pam.d/ and write results to  /tmp/1.2/bigpamfiles.txt.</summary>
 
 ```
@@ -3142,7 +3141,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM1MDk1Mjc4LDQzOTczOTY4LDEzOTQzNj
+eyJoaXN0b3J5IjpbLTI1MjcyMTI2LDQzOTczOTY4LDEzOTQzNj
 EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
 LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
 YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
