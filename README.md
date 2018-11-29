@@ -3055,14 +3055,13 @@ echo $STATUS
 <details><summary>Restrict access to a private directory /var/www/html/nel to user nel </summary>
 
 ```
-# cat /etc/httpd/conf/httpd.conf
-<Directory "/var/www/html/nel">
+# echo "<Directory "/var/www/html/nel">
 AuthType Basic
 AuthName "Password protected area"
 AuthUserFile /etc/httpd/conf/passwd
 Require user nel
-</directory>
-# htpasswd -c /etc/httpd/conf/passwd nel
+</directory>" > /etc/apache2/sites-enabled/010-nel.conf
+# htpasswd -c /etc/apache2/passwd nel
 # service httpd restart
 # curl http://localhost/nel
 ```
@@ -3243,11 +3242,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4ODEyNjAsLTg4NjEyNTcwNCw1MTAxMj
-EzNTMsLTIyMzI1Nzg2MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMs
-LTE5ODE2MjMyMDEsLTEyMjY1MjA2NjQsNDM5NzM5NjgsMTM5ND
-M2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQy
-MzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLT
-cwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2
-OTMzMl19
+eyJoaXN0b3J5IjpbMTM1MzczMTU3OSwtODg2MTI1NzA0LDUxMD
+EyMTM1MywtMjIzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAw
+MywtMTk4MTYyMzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMz
+k0MzYxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1
+NDIzNiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMi
+wtNzA2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgz
+MjY5MzMyXX0=
 -->
