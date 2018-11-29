@@ -2423,18 +2423,23 @@ First, lookup octal values with `man 2 stat`
 -rwsrwxrwx 1 root root 0 Nov 18 20:04 /tmp/7.4/permissive
 ```
 
+</details>
 
+<details><summary>Find all SUID files in /tmp and make a record in /tmp/5.2/suid</summary>
 
-### Find all SUID files in /tmp and make a record in /tmp/5.2/suid
 ```
 # grep -i "suid" -R /usr/share/ | grep find
 /usr/share/man/man1/find.1:.B find / \e( \-perm \-4000 \-fprintf /root/suid.txt \(aq%#m %u %p\en\(aq \e) , \e
 # man find 
 # find /tmp -perm 4000 -print > /tmp/5.2/suid
 ```
+
+</details>
+
 ##	Setup user and group disk quotas for filesystems
 Commands: quotacheck, quotaon, quotaoff, edquota, quotatool, quota 
-Assumption is that /quota is a separate partition on /dev/sdh1 taking up the entire 50 MB drive. If not, make one for home somewhere and somehow.
+<details><summary>Assumption is that /quota is a separate partition on /dev/sdh1 taking up the entire 50 MB drive. If not, make one for home somewhere and somehow.</summary>
+
 ```
 # apt-get install quota quotatool
 # mkdir /quota
@@ -2445,11 +2450,15 @@ mount -o remount /quota
 # quotacheck -acug
 # quotaon -a
 ```
-Limiting particular users or groups block storage using "quota"  
 
-Hard and soft limits and set grace periods
+</details>
 
-Set quotas with a soft limit of 3 files and a hard limit of 7 for user fred  using 1 day grace limit and verify both as root and as fred:
+<details><summary>Limiting particular users or groups block storage using "quota"  </summary></details>
+
+<details><summary>Hard and soft limits and set grace periods</summary></details>
+
+<details><summary>Set quotas with a soft limit of 3 files and a hard limit of 7 for user fred  using 1 day grace limit and verify both as root and as fred: </summary>
+
 ```
 # mkdir /quota/fred; chown fred /quota/fred
 # quotatool -i -q 3 -u fred /quota
@@ -2459,6 +2468,10 @@ Set quotas with a soft limit of 3 files and a hard limit of 7 for user fred  usi
 $ cd /quota/fred/
 touch {1..100} # this should fail after 7 files
 ```
+
+</details>
+
+
 We can test groups now with a  user sally and fred who both belongs to a group named limit which for the group can only store 1MB hard limit:
 ```
 # useradd -m sally -N
@@ -3002,11 +3015,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NzA1OTg4LDEzOTQzNjEzMjYsLTEzNj
-M0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3
-Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLT
-E3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nzg3
-NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MS
-wtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMTM5
-OTEzMDA1MV19
+eyJoaXN0b3J5IjpbLTk5NDkwMDcwNiwxMzk0MzYxMzI2LC0xMz
+YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
+NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
+0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
+NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OT
+EsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEz
+OTkxMzAwNTFdfQ==
 -->
