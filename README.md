@@ -2472,7 +2472,8 @@ touch {1..100} # this should fail after 7 files
 </details>
 
 
-We can test groups now with a  user sally and fred who both belongs to a group named limit which for the group can only store 1MB hard limit:
+<details><summary>We can test groups now with a  user sally and fred who both belongs to a group named limit which for the group can only store 1MB hard limit:</summary>
+
 ```
 # useradd -m sally -N
 # groupadd limit
@@ -2493,7 +2494,11 @@ dd: error writing 'big': Disk quota exceeded
 $ ls -alh big
 -rw-r--r-- 1 sally limit 1.0M Nov 15 22:31 big
 ```
-While we are at it; let's make it so a new user named "walt" is restricted to a permanent limit of 4 MB and a temporary allowance to have up to 7 MB and make the length of time allowed to exceed temporary limit 1 day. 
+
+</details>
+
+<details><summary>While we are at it; let's make it so a new user named "walt" is restricted to a permanent limit of 4 MB and a temporary allowance to have up to 7 MB and make the length of time allowed to exceed temporary limit 1 day. </summary>
+
 ```
 root # useradd walt -m
 root # quotatool -u walt -b -q 4M /quota
@@ -2515,11 +2520,14 @@ dd: error writing '/quota/walt/bigfile': Disk quota exceeded
 7311360 bytes (7.3 MB, 7.0 MiB) copied, 0.196509 s, 37.2 MB/s
 rm ~/bigfile
 ```
+
+</details>
+
 Sources: [tecmint - Disk Quotas for Users and Groups](https://www.tecmint.com/set-access-control-lists-acls-and-disk-quotas-for-users-groups/)
 
 ## Create and configure file systems
+<details><summary>Create physical volumes on top of /dev/sdn and /dev/sdo and display all volumes:</summary>
 
-#### Task: Create physical volumes on top of /dev/sdn and /dev/sdo and display all volumes:
 ```
 lvm> pvcreate /dev/sdn /dev/sdo
   Physical volume "/dev/sdn" successfully created
@@ -2529,7 +2537,11 @@ lvm> pvs
   /dev/sdn   VG   lvm2 a--  48.00m 48.00m
   /dev/sdo   VG   lvm2 a--  48.00m 48.00m
 ```
-#### Task: Create the volume group named VG with extends sized 256k:
+
+</details>
+
+<details><summary>Create the volume group named VG with extends sized 256k:</summary>
+
 ```
 lvm> vgcreate --physicalextentsize 256k VG /dev/sdn /dev/sdo
 Volume group "vg" successfully created
@@ -2538,7 +2550,9 @@ lvm> vgs
   VG     2   0   0 wz--n- 96.00m 96.00m
 ```
 
-You can lookup UUID with “blkid” anytime for all drives to configure a lvm into fstab
+</details>
+
+<details><summary>You can lookup UUID with “blkid” anytime for all drives to configure a lvm into fstab</summary></details>
 
 Sources: [tecmint - Filesystem Troubleshooting](https://www.tecmint.com/linux-basic-shell-scripting-and-linux-filesystem-troubleshooting/)
 #	Network Configuration
@@ -3015,7 +3029,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NDkwMDcwNiwxMzk0MzYxMzI2LC0xMz
+eyJoaXN0b3J5IjpbLTk3NzM5OTQyNiwxMzk0MzYxMzI2LC0xMz
 YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
 NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
 0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
