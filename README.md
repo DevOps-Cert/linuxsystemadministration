@@ -843,7 +843,8 @@ mkdir -p /tmp/1.8/4/5/1/3/2/1/4/1/3/2/1/4/5/6/4
 
 </details>
 
-Other commands
+<details><summary>Think of all commands related to this topic</summary>
+
 ```
 echo 'text' > file
 cat
@@ -856,6 +857,9 @@ rm
 cp
 mv
 ```
+
+</details>
+
 ##	Shortcuts to files and directories with hard and soft links
 <details><summary>Create a hard link from /etc/apg.conf to /tmp/2.4/apglink: </summary>
 
@@ -3166,11 +3170,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDQ4MzY5NTYsNDM5NzM5NjgsMTM5ND
-M2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQy
-MzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLT
-cwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2
-OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOC
-wxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYy
-NDM4MTg5XX0=
+eyJoaXN0b3J5IjpbLTE1MzM2MDQ5Myw0Mzk3Mzk2OCwxMzk0Mz
+YxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIz
+NiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNz
+A2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5
+MzMyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LD
+EzODc0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0
+MzgxODldfQ==
 -->
