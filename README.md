@@ -1187,6 +1187,7 @@ N 3
 </details>
 
 <details><summary>Disable GUI boot with one command:  </summary>
+
 ```
 # systemctl {start,enable} multi-user.target
 ```
@@ -1229,7 +1230,8 @@ List a specific user’s scheduled jobs:
 ```
 crontab -u lab -l
 ```
-Run `df -h > /var/log/df.log` that daily at 10:15 checks disk space and writes it to /var/log/systemstatus.log
+<details><summary>Run `df -h > /var/log/df.log` that daily at 10:15 checks disk space and writes it to /var/log/systemstatus.log</summary>
+
 ```
 # apt-get install sysstat
 # grep ENA /etc/default/sysstat
@@ -1238,13 +1240,18 @@ ENABLED="true"
 # crontab -l
 15 22 * * * /usr/bin/sar -A > /var/log/systemstatus.log
 ```
-Run command `df -h > /var/log/df.log` on at 21:50 every Friday.
+
+</details>
+
+<details><summary>Run command `df -h > /var/log/df.log` on at 21:50 every Friday.</summary>
 
 ``` 
 # 
 ```
 
-Run command `ping -c 1 8.8.8.8 > /var/log/networkstatus.log` during work hours of 8 AM to 5 PM (8-13) at 30 minutes after the hour on weekdays only (M-F).
+</details>
+
+<details><summary>Run command `ping -c 1 8.8.8.8 > /var/log/networkstatus.log` during work hours of 8 AM to 5 PM (8-13) at 30 minutes after the hour on weekdays only (M-F).</summary>
 
 ``` 
 # 
@@ -3180,11 +3187,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzOTgwNzMwNSwxMDYxNjY2MDAzLC0xOT
-gxNjIzMjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEz
-MjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC
-0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYw
-OTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMz
-IsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4
-NzQ4Mzk5MV19
+eyJoaXN0b3J5IjpbLTE0OTE1MTY4NzgsMTA2MTY2NjAwMywtMT
+k4MTYyMzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMzk0MzYx
+MzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNi
+wtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2
+MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5Mz
+MyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEz
+ODc0ODM5OTFdfQ==
 -->
