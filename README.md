@@ -710,7 +710,7 @@ Commands: gzip, bzip2, gunzip, bunzip2, tar, xz, zip, star or tar --selinux for 
 
 </details>
 
-<details><summary> TASK: Place a XZ compressed tar archive in /tmp/3.2/ named "ssh_config.tar.xz" which contains all of /etc/ssh but without folders from root.</summary>
+<details><summary>Place a XZ compressed tar archive in /tmp/3.2/ named "ssh_config.tar.xz" which contains all of /etc/ssh but without folders from root.</summary>
 
 ```
 # cd /etc/ssh/
@@ -834,7 +834,7 @@ cp
 mv
 ```
 ##	Shortcuts to files and directories with hard and soft links
-<details><summary> TASK: Create a hard link from /etc/apg.conf to /tmp/2.4/apglink: </summary>
+<details><summary>Create a hard link from /etc/apg.conf to /tmp/2.4/apglink: </summary>
 
 ```
 ln /etc/apg.conf /tmp/2.4/apglink
@@ -981,15 +981,23 @@ Sources: [tecmint]( https://www.tecmint.com/explore-linux-installed-help-documen
 Commands: su, sudo, 
 Files: /etc/sudoers, /etc/sudoers.d/*
 Documentation: /usr/share/doc/sudo/examples/sudoers
-#### TASK: Change to root account
-Change to root using password: `sudo -i`
-#### TASK: Change root password: 
+<details><summary>Change to root account</summary>
+
+`sudo -i`
+
+</details>
+
+<details><summary>Change root password: </summary>
+
 ```
 # passwd root
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 ```
+
+</details>
+
 <details><summary>Allow sally to run all the root commands without entering her password:</summary>
 
 ```
@@ -3135,7 +3143,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMzE2NTc2Niw0Mzk3Mzk2OCwxMzk0Mz
+eyJoaXN0b3J5IjpbMjAzNTY0OTUzNCw0Mzk3Mzk2OCwxMzk0Mz
 YxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIz
 NiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNz
 A2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5
