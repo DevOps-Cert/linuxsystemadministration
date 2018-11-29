@@ -1257,6 +1257,8 @@ ENABLED="true"
 # 
 ```
 
+</details>
+
 Sources: [tecmint](https://www.tecmint.com/11-cron-scheduling-task-examples-in-linux/ )
 
 ##	Evaluating results of scheduled commands
@@ -3187,11 +3189,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTE1MTY4NzgsMTA2MTY2NjAwMywtMT
-k4MTYyMzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMzk0MzYx
-MzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNi
-wtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2
-MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5Mz
-MyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEz
-ODc0ODM5OTFdfQ==
+eyJoaXN0b3J5IjpbOTEwMzA1MzQ5LDEwNjE2NjYwMDMsLTE5OD
+E2MjMyMDEsLTEyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMy
+NiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLT
+ExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5
+MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMi
+wtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3
+NDgzOTkxXX0=
 -->
