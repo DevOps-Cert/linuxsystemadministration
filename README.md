@@ -1425,32 +1425,48 @@ other::r-x
 # setfacl -m g:acltest:rw /home/acl/group/acltest
 ```
 
+</details>
 
-To see more about a process or file with SE information:
+To see more about a process or file with SE information:</summary>
 ```
 * ls -Z
 * ps -eZ
 ```
-Task: Restore default SELinux file contexts for /etc/passwd
+
+</details>
+
+<summary><details>Task: Restore default SELinux file contexts for /etc/passwd</summary>
+
 ```
 #
 ```
 
-Task: Change SELINUX current state to disabled until next reboot?
+</details>
+
+<summary><details>Change SELINUX current state to disabled until next reboot?</summary>
+
 ```
 # setenforce 0
 ```
 
-Task: What is my current SELINUX state?
+</details>
+
+<summary><details>Task: What is my current SELINUX state?</summary>
+
 ```
 # getenforce
 ```
 
-Task: Disable SELINUX permanently?
+</details>
+
+<summary><details>Disable SELINUX permanently?</summary>
+
 ```
 # grep SELINUX /etc/selinux/config
 SELINUX=disabled
 ```
+
+</details>
 
 #### TASK: Install and start AppArmor and place tcpdump profile into enforce
 
@@ -2932,11 +2948,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ4ODUyOTI3LDEzOTQzNjEzMjYsLTEzNj
-M0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3
-Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLT
-E3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nzg3
-NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MS
-wtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMTM5
-OTEzMDA1MV19
+eyJoaXN0b3J5IjpbMTAzODQ1ODEyNiwxMzk0MzYxMzI2LC0xMz
+YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
+NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
+0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
+NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OT
+EsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEz
+OTkxMzAwNTFdfQ==
 -->
