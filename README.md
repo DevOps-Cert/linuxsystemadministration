@@ -1589,7 +1589,8 @@ Adding, deleting, and modifying the files in /etc/skel for new users
 ##	Restricting resource limits for users and groups
 /etc/security/limits.conf is the persistant file; ideally we would use /etc/security/limits.d/fred.conf but there is no documentation in there so the main file is easier to use.
 We can check with ulimit -a 
-#### TASK: Add a limit configuration file for fred limiting him to 5 user processes. Two separate sessions can be maintained to help; one for root and one for fred:
+<details><summary>Add a limit configuration file for fred limiting him to 5 user processes. Two separate sessions can be maintained to help; one for root and one for fred:</summary>
+
 ```
 fred $ ulimit -u
 max user processes (-u) 60201
@@ -1598,7 +1599,11 @@ root # echo -e "fred\thard\tnproc\t5" >> /etc/security/limits.conf
 fred $ grep fred /etc/security/limits.conf
 fred        hard    nproc           5
 ```
-Test this as fred after logging out and then back in again as fred:
+
+</details>
+
+<details><summary>Test this as fred after logging out and then back in again as fred:</summary>
+
 ```
 fred $ exit
 root # sudo su - fred
@@ -1616,7 +1621,11 @@ fred $ -su: fork: retry: Resource temporarily unavailable
 -su: fork: retry: No child processes
 -su: fork: retry: No child processes
 ```
-#### TASK: Make a group named "problems" in which new users "sid" and "ed" are placed and make it so all group members are restricted to 20 processes (both hard and soft limits) as they have been taxing the server recently.  However, since sid hasn't been as big a problem, allow sid use as many processes as needed:
+
+</details>
+
+<details><summary>Make a group named "problems" in which new users "sid" and "ed" are placed and make it so all group members are restricted to 20 processes (both hard and soft limits) as they have been taxing the server recently.  However, since sid hasn't been as big a problem, allow sid use as many processes as needed:</summary>
+
 ```
 # echo -e "@problems\t-\tnproc\t20" >> /etc/security/limits.conf
 # echo -e "sid\t-\tnproc\tunlimited" >> /etc/security/limits.conf
@@ -1630,6 +1639,9 @@ $ ulimit -a | grep proc
 max user processes              (-u) 20
 $ exit
 ``` 
+
+</details>
+
 Sources: [Forkbomb explained](https://www.cyberciti.biz/faq/understanding-bash-fork-bomb/),  [Set Process Limits on a Per-User Basis](https://www.tecmint.com/monitor-linux-processes-and-set-process-limits-per-user/)
 
 ##	Updating privileges for groups and users
@@ -2366,13 +2378,18 @@ sticky bit, setgid, and setuid
 chmod 
 find files with those permissions set on them
 ```
-#### TASK: enable suid and user's executable bit for new file called /tmp/7.4/suid
+
+<details><summary>enable suid and user's executable bit for new file called /tmp/7.4/suid</summary>
+
 ```
 # touch /tmp/7.4/suid
 # chmod u+sx  /tmp/7.4/suid 
 # ls -lt  /tmp/7.4/suid 
 -rwsr--r-- 1 root root 0 Nov 18 16:36 /tmp/7.4/suid
 ```
+
+</details>
+
 #### TASK: enable suid and user's executable bit for new file called /tmp/7.4/guid
 ```
 # touch /tmp/7.4/guid
@@ -2974,11 +2991,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MzMwOTM0NSwxMzk0MzYxMzI2LC0xMz
-YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
-NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
-0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
-NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OT
-EsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEz
-OTkxMzAwNTFdfQ==
+eyJoaXN0b3J5IjpbLTExODU2NzE5NDgsMTM5NDM2MTMyNiwtMT
+M2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2
+ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3Mi
+wtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3
+ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOT
+kxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0x
+Mzk5MTMwMDUxXX0=
 -->
