@@ -3024,9 +3024,10 @@ echo $STATUS
 <details><summary> Deploy a basic web application and get rid of welcome page</summary>
 
 ```
-# rm /etc/httpd/conf.d**
+# echo "<html><body>Hello, world.</body></html>" > /var/www/html/index.html
 ```
 </details>
+
 ### Restrict access to a web page
 <details><summary> Set up a default configuration HTTP server with SELinux in Enforcing mode and active firewalld configuration.</summary>
 
@@ -3221,11 +3222,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTU3ODEzNCw1MTAxMjEzNTMsLTIyMz
-I1Nzg2MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMy
-MDEsLTEyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMT
-M2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2
-ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3Mi
-wtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3
-ODc0ODQwXX0=
+eyJoaXN0b3J5IjpbLTE3MjI0MDI2NDcsNTEwMTIxMzUzLC0yMj
+MyNTc4NjMsLTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIz
+MjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLT
+EzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYw
+Njg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNz
+IsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1
+Nzg3NDg0MF19
 -->
