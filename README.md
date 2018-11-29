@@ -2871,20 +2871,29 @@ AllowUsers vagrant luke
 ```
 
 ##	Proxy server
-Install and enable http proxy server:
+<details><summary>Install and enable http proxy server:</summary>
+
 ```
 apt -y install squid
 systemctl restart squid.service
 systemctl enable squid.service
 ```
-Allow subnet 10.20.30.0/24 but block ip address 10.20.30.50: 
+
+</details>
+
+<details><summary>Allow subnet 10.20.30.0/24 but block ip address 10.20.30.50: </summary>
+
 ```
 acl localnet src 10.20.30.0/24 
 http_access allow localnet 
 acl badguy src 10.20.30.50
 http_access allow localhost !badguy
 ```
-Testing from client devices:
+
+</details>
+
+<details><summary>Testing from client devices: </summary>
+
 ```
 apt -y install wget
 export http_proxy='http://10.20.30.40:8080/'
@@ -2898,10 +2907,15 @@ else
 fi
 echo $STATUS
 ```
+</details>
+
 Set lb50 to use lb40 as proxy server for updates:
+
 ```
 # echo "Acquire::http::Proxy \"http://10.20.30.40:8080\"; " >  /etc/apt/apt.conf
 ```
+</details>
+
 ## Web server
 ### Configure an HTTP server
 ###  Configure HTTP server log files
@@ -3101,7 +3115,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNzA3MDQyMyw0Mzk3Mzk2OCwxMzk0Mz
+eyJoaXN0b3J5IjpbLTQ3MDgxMTIzOCw0Mzk3Mzk2OCwxMzk0Mz
 YxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIz
 NiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNz
 A2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5
