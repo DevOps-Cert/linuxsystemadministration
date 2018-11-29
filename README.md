@@ -565,13 +565,17 @@ Only in B_dir/: 27.txt
 
 ### textfiles: patch
 ### textfiles: cut
-Let’s see how we can just display the third and forth columns for the first line in /etc/passwd:
+<details><summary>Let’s see how we can just display the third and forth columns for the first line in /etc/passwd:</summary>
+
 ```
 # head -1 /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 # head -1 /etc/passwd | cut -d : -f 3,4
 0:0
 ```
+
+</details>
+
 ### textfiles: vimdiff
 Vimdiff starts Vim on two (or three or four) files.  Each file gets its own window. The differences between the files are highlighted.  This is a nice way to inspect changes and to move changes from one version to another version of the same file.
 ### textfiles: pr
@@ -3145,7 +3149,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYwNDY5NDYyLDQzOTczOTY4LDEzOTQzNj
+eyJoaXN0b3J5IjpbMjE2NzQ5MjQwLDQzOTczOTY4LDEzOTQzNj
 EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
 LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
 YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
