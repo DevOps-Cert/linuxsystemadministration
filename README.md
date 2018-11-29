@@ -2619,10 +2619,14 @@ Sources: [tecmint - iptables](https://www.tecmint.com/basic-guide-on-iptables-li
 ##	Route traffic statically
 Commands: route, netstat -nr
 Documentation : `/usr/share/doc/ifupdown/examples/network-interfaces` which is at bottom of the `man interfaces` page.
-#### TASK: Place a copy of the  current routing table using numeric values only in /tmp/3.2/routes  
+<details><summary>Place a copy of the  current routing table using numeric values only in /tmp/3.2/routes  </summary>
+
 ```
 # route -nr > /tmp/3.2/routes  
 ```
+
+</details>
+
 #### TASK: Statically route traffic dRestined for 1.2.3.0/24 through IP 10.20.40.20 persistent across reboot
 ```
 # grep route /etc/network/interfaces
@@ -2883,12 +2887,13 @@ Set lb50 to use lb40 as proxy server for updates:
 ### Set up name-based virtual web hosts
 ### Deploy a basic web application
 ### Restrict access to a web page
-#### Set up a default configuration HTTP server with SELinux in Enforcing mode and active firewalld configuration.
-`
+<details><summary> Set up a default configuration HTTP server with SELinux in Enforcing mode and active firewalld configuration.</summary>
+
+```
 apt-get install -y apache2
 systemctl enable apache2
 systemctl start apache2
-`
+```
 
 <details><summary>Configure web server to use as document root /var/www/html</summary>
 
@@ -2899,9 +2904,11 @@ systemctl start apache2
 
 </details>
 
-<details><summary>Web server log files</summary>
+<details><summary>Customize Web server log files</summary>
 
-Customize HTTP server log files.
+```
+#
+```
 
 </details>
 
@@ -3072,11 +3079,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MDIwNzgwLDQzOTczOTY4LDEzOTQzNj
-EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
-LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
-YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
-MzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMT
-M4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQz
-ODE4OV19
+eyJoaXN0b3J5IjpbLTQ3MzcxOTAyOSw0Mzk3Mzk2OCwxMzk0Mz
+YxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIz
+NiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNz
+A2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5
+MzMyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LD
+EzODc0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0
+MzgxODldfQ==
 -->
