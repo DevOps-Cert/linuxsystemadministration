@@ -2857,18 +2857,25 @@ ssh ciphers
 #### TASK: SSH as the user larry from 40 to 50 to test passwordless authentication
 #### TASK: SSH as the user larry from 50 to 40 to test passwordless authentication
 
-#### TASK: For SSH server on lb90, disable  TCP keepalives, enable password authentication, and disable remote root login 
+<details><summary>For SSH server on lb90, disable  TCP keepalives, enable password authentication, and disable remote root login </summary>
+
 ```
 # cat /etc/ssh/sshd_config
 TCPKeepAlive no
 PermitRootLogin no
 PasswordAuthentication yes
 ```
-#### TASK: Allow users luke and vagrant to ssh in
+
+</details>
+
+<details><summary>Allow users luke and vagrant to ssh in</summary>
+
 ```
 # grep Users /etc/ssh/sshd_config
 AllowUsers vagrant luke
 ```
+
+</details>
 
 ##	Proxy server
 <details><summary>Install and enable http proxy server:</summary>
@@ -2909,7 +2916,7 @@ echo $STATUS
 ```
 </details>
 
-Set lb50 to use lb40 as proxy server for updates:
+<details><summary>Set lb50 to use lb40 as proxy server for updates</summary>
 
 ```
 # echo "Acquire::http::Proxy \"http://10.20.30.40:8080\"; " >  /etc/apt/apt.conf
@@ -3115,11 +3122,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MDgxMTIzOCw0Mzk3Mzk2OCwxMzk0Mz
-YxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIz
-NiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNz
-A2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5
-MzMyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LD
-EzODc0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0
-MzgxODldfQ==
+eyJoaXN0b3J5IjpbLTIwMDg4OTE0MzUsNDM5NzM5NjgsMTM5ND
+M2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQy
+MzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLT
+cwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2
+OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOC
+wxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYy
+NDM4MTg5XX0=
 -->
