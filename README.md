@@ -1093,18 +1093,28 @@ GRUB_TIMEOUT=10
 Sources: [tecmint](https://www.tecmint.com/configure-and-troubleshoot-grub-boot-loader-linux/), [Configure GRUB2 Boot Loader Settings In Ubuntu 16.04](https://www.ostechnix.com/configure-grub-2-boot-loader-settings-ubuntu-16-04/)
 
 ##	Rebooting and halting system properly
-<details><summaryJust reboot immediately:
+<details><summary>Just reboot immediately: </summary>
+
 ```
 # reboot
 ```
-#### TASK: Power off system (called halting it):
+
+</details>
+
+<details><summary>Power off system (called halting it):</summary>
 ```
 # shutdown -h now 
 ```
-#### TASK: Shutdown in 5 minutes with explanation to users who are logged in using write all (wall):
+
+</details>
+
+<details><summary>Shutdown in 5 minutes with explanation to users who are logged in using write all (wall):</summary>
 ```
 # shutdown -r +5 "I need to apply new kernel, back in a few." 
 ```
+
+</details>
+
 ##	Set system to boot at a different runlevel
 Check current runlevel with below indicating multi-user (no Xwindows) and previous unknown: 
 ```
@@ -1426,7 +1436,7 @@ other::r-x
 
 </details>
 
-<details><summary>Task: Restore default SELinux file contexts for /etc/passwd</summary>
+<details><summary>Restore default SELinux file contexts for /etc/passwd</summary>
 
 ```
 #
@@ -1442,7 +1452,7 @@ other::r-x
 
 </details>
 
-<details><summary>Task: What is my current SELINUX state?</summary>
+<details><summary>What is my current SELINUX state?</summary>
 
 ```
 # getenforce
@@ -1521,7 +1531,7 @@ Add account hal with UID of 4000, group named hal with GUID of 4000.
 
 ```
 
-#### TASK: Add account nut with shell of tcsh, primary group of staff, password of abc123 but force user to rotate password upon login.
+<details><summary>Add account nut with shell of tcsh, primary group of staff, password of abc123 but force user to rotate password upon login. </summary>
 ```
 # useradd -g staff -s /usr/bin/tcsh nut
 # passwd nut
@@ -1532,7 +1542,7 @@ passwd: password updated successfully
 #### Alternatively use 
 # chage -E -1 nut
 ```
-Give fred access to all of hal's home directory: 
+Give fred access to all of hal's home directory: </summary>
 ```
 
 ```
@@ -2948,11 +2958,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTA0NzM2MTAsMTM5NDM2MTMyNiwtMT
-M2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2
-ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3Mi
-wtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3
-ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOT
-kxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0x
-Mzk5MTMwMDUxXX0=
+eyJoaXN0b3J5IjpbMTUyODYxMTMzNSwxMzk0MzYxMzI2LC0xMz
+YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
+NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
+0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
+NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OT
+EsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEz
+OTkxMzAwNTFdfQ==
 -->
