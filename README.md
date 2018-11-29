@@ -2924,6 +2924,7 @@ sysadmin: fred, lab
 
 </details>
 
+Sources: [certdepo](https://www.certdepot.net/smtp-configure-alias/)
 ##	Secure Shell (SSH) 
 ```
 systemctl status sshd
@@ -3203,11 +3204,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MzEwNjA5NywtMjI4MDU5NzU4LDEwNj
-E2NjYwMDMsLTE5ODE2MjMyMDEsLTEyMjY1MjA2NjQsNDM5NzM5
-NjgsMTM5NDM2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNC
-w2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3
-OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1Nj
-QsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAx
-MzEyMjgyOF19
+eyJoaXN0b3J5IjpbNDQwMjE4NjQxLC0yMjgwNTk3NTgsMTA2MT
+Y2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2
+OCwxMzk0MzYxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LD
+Y4NjA1NDIzNiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5
+MjUyMiwtNzA2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NC
+wtNzgzMjY5MzMyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEz
+MTIyODI4XX0=
 -->
