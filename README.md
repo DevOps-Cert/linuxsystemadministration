@@ -1215,21 +1215,33 @@ Make use of grep on these to find what you are looking for in previous content o
 ##	Running commands at a scheduled date and time
 Commands at, cron, crontab, sleep
 Files: /etc/crontab; /etc/cron.*
-How do you tell BASH to take a 1 minute break bfore doing something? `sleep 1m`
+How do you tell BASH to take a 1 minute break before doing something? `sleep 1m`
 Use crontab tool to list and set up scheduled tasks.
-Let’s take a look at current scheduled tasks:
+<details><summary>Let’s take a look at current scheduled tasks:</summary>
+
 ```
 crontab -l
 ```
-Edit crontab:
+
+</details>
+
+<details><summary>Edit crontab:</summary>
+
 ```
 update-alternatives --config editor # Great time to set text editor to avoid nano
 crontab -e
 ```
-List a specific user’s scheduled jobs:
+
+</details>
+
+<details><summary>List a specific user’s scheduled jobs:</summary>
+
 ```
 crontab -u lab -l
 ```
+
+</details>
+
 <details><summary>Run `df -h > /var/log/df.log` that daily at 10:15 checks disk space and writes it to /var/log/systemstatus.log</summary>
 
 ```
@@ -3189,11 +3201,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEwMzA1MzQ5LDEwNjE2NjYwMDMsLTE5OD
-E2MjMyMDEsLTEyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMy
-NiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLT
-ExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5
-MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMi
-wtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3
-NDgzOTkxXX0=
+eyJoaXN0b3J5IjpbLTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOT
+gxNjIzMjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEz
+MjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC
+0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYw
+OTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMz
+IsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4
+NzQ4Mzk5MV19
 -->
