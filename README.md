@@ -2627,23 +2627,32 @@ Documentation : `/usr/share/doc/ifupdown/examples/network-interfaces` which is a
 
 </details>
 
-#### TASK: Statically route traffic dRestined for 1.2.3.0/24 through IP 10.20.40.20 persistent across reboot
+<details><summary>Statically route traffic dRestined for 1.2.3.0/24 through IP 10.20.40.20 persistent across reboot</summary>
+
 ```
 # grep route /etc/network/interfaces
       up route add -net 1.2.3.0 netmask 255.255.255.0 gw 10.20.40.20
 # /etc/init.d/networking restart
 ```
-#### TASK: Temporarily for this session route traffic destined for host 2.3.4.5 through IP 10.20.40.20
+
+</details>
+
+<details><summary>Temporarily for this session route traffic destined for host 2.3.4.5 through IP 10.20.40.20</summary>
+
 ```
 # route add 2.3.4.5 gw 10.20.40.20
 ```
+
+</details>
+
 ##	Establishing and maintaining correct time 
 Traditional NTP server is best; when installing ntp package the new Ubuntu mechanism gets disabled which is what you want at this time as the new Ubuntu method drifts slightly and is just not as good.
+
+<details><summary>Install ntp and setup ntp client to using several pool servers on lb40 and host service to other lb50-lb60 devices:
+</summary>
+
 ```
 # apt-get install ntp -y -qqq
-```
-Setup ntp client to using several pool servers on lb40 and host service to other lb50-lb60 devices:
-```
 # cat /etc/ntp.conf
 pool 0.ubuntu.pool.ntp.org iburst
 pool 1.ubuntu.pool.ntp.org iburst
@@ -2651,7 +2660,11 @@ pool 2.ubuntu.pool.ntp.org iburst
 pool 3.ubuntu.pool.ntp.org iburst
 restrict 10.20.30.0 netmask 255.255.255.0 nomodify notrap
 ```
+
+</details>
+
 Reset services after changing settings:```systemctl restart ntp```
+
 Check NTP status of peers with only numeric IP entries to speed up checking:
 ```
 # ntpq -p -n 
@@ -3079,7 +3092,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MzcxOTAyOSw0Mzk3Mzk2OCwxMzk0Mz
+eyJoaXN0b3J5IjpbMTM4ODIxNTM3Nyw0Mzk3Mzk2OCwxMzk0Mz
 YxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIz
 NiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNz
 A2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5
