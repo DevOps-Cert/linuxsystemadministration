@@ -3017,6 +3017,11 @@ echo $STATUS
 ## Web server
 <details><summary> Configure an HTTP server</summary>
 
+```
+# apt-get install apache2
+# systemctl enable apache2
+```
+
 </details>
 
 <details><summary> Deploy a basic web application and get rid of welcome page</summary>
@@ -3232,11 +3237,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMz
-I1Nzg2MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMy
-MDEsLTEyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMT
-M2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2
-ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3Mi
-wtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3
-ODc0ODQwXX0=
+eyJoaXN0b3J5IjpbMTU2MDQ0NDQwOCwtODg2MTI1NzA0LDUxMD
+EyMTM1MywtMjIzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAw
+MywtMTk4MTYyMzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMz
+k0MzYxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1
+NDIzNiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMi
+wtNzA2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgz
+MjY5MzMyXX0=
 -->
