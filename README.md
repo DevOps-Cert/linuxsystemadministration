@@ -3064,6 +3064,7 @@ Require user nel
 </Directory>" > /etc/apache2/sites-enabled/010-nel.conf
 # htpasswd -c /etc/apache2/passwd nel
 # systemctl restart apache2
+# echo "the above fails currently..."
 # curl http://localhost/nel
 ```
 https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-apache-on-ubuntu-14-04
@@ -3244,11 +3245,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUxMD
-EyMTM1MywtMjIzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAw
-MywtMTk4MTYyMzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMz
-k0MzYxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1
-NDIzNiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMi
-wtNzA2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgz
-MjY5MzMyXX0=
+eyJoaXN0b3J5IjpbOTg0NTMzNTY2LC0zMjMzOTg0ODMsLTg4Nj
+EyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2MywtMjI4MDU5NzU4
+LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLTEyMjY1MjA2NjQsND
+M5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5
+MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC
+02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIy
+ODY1NjRdfQ==
 -->
