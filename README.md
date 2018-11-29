@@ -2592,7 +2592,7 @@ iptables -A INPUT -p tcp --dport ssh -j ACCEPT
 
 </details>
 
-<details><summary>Rule 2 shall block 80 from 10.20.30.60 but then rule 3 allow the rest of network 10.20.30.0/24 to connect to 80.
+<details><summary>Rule 2 shall block 80 from 10.20.30.60 but then rule 3 allow the rest of network 10.20.30.0/24 to connect to 80.</summary>
 
 ```
 iptables -A INPUT -p tcp --source 10.20.30.60 --dport 80 -j DROP
@@ -2601,10 +2601,14 @@ iptables -A INPUT -p tcp --source 10.20.30.0/24 --dport 80 -j ACCEPT
 
 </details>
 
-#### TASK: Save current iptable rules to /etc/iptables
+<details><summary>Save current iptable rules to /etc/iptables</summary>
+
 ```
 iptables-save > /etc/iptables
 ```
+
+</details>
+
 Sources: [tecmint - iptables](https://www.tecmint.com/basic-guide-on-iptables-linux-firewall-tips-commands/)
 
 ##	Route traffic statically
@@ -3043,11 +3047,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MzkwOTc0OCwxMzk0MzYxMzI2LC0xMz
-YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
-NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
-0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
-NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OT
-EsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEz
-OTkxMzAwNTFdfQ==
+eyJoaXN0b3J5IjpbNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2Mz
+Q5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcy
+ODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMT
+cxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0
+ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC
+05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMzk5
+MTMwMDUxXX0=
 -->
