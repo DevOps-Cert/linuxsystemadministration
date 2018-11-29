@@ -2564,29 +2564,43 @@ ip addr sh
 nmtui
 ```
 
-### TASK: Add nameserver 4.2.2.2 as a backup to existing network configuration
+<details><summary>Add nameserver 4.2.2.2 as a backup to existing network configuration</summary>
 
 ```
 # echo "nameserver 4.2.2.2" >> /etc/resolv.conf
 ```
 
-### TASK: Add a hostname entry in lb40 for static mapping of  lb50 to 10.20.30.50
+</details>
+
+<details><summary>Add a hostname entry in lb40 for static mapping of  lb50 to 10.20.30.50</summary>
+
 ```
 # echo -e "10.20.30.50\tlb50" >> /etc/hosts
 ```
+
+</details>
+
 ##	Host-based firewalling with iptables
 Although Ubuntu often uses ufw as an iptables front end and CentOS uses firewalld, generic iptables is better to learn as it translates across all Linux distributions as well as it is more powerful.  
 
 All filtering tasks to be performed on lb90 only to avoid creating difficulty of troubleshooting a broken service on a machine also running another service such as bind or squid.
-#### Tasks: Disable ufw if configured on lb90,  and setup iptables to accept ssh as first rule.
+<details><summary>Disable ufw if configured on lb90,  and setup iptables to accept ssh as first rule.</summary>
+
 ```
 iptables -A INPUT -p tcp --dport ssh -j ACCEPT
 ```
-#### TASK: Rule 2 shall block 80 from 10.20.30.60 but then rule 3 allow the rest of network 10.20.30.0/24 to connect to 80.
+
+</details>
+
+<details><summary>Rule 2 shall block 80 from 10.20.30.60 but then rule 3 allow the rest of network 10.20.30.0/24 to connect to 80.
+
 ```
 iptables -A INPUT -p tcp --source 10.20.30.60 --dport 80 -j DROP
 iptables -A INPUT -p tcp --source 10.20.30.0/24 --dport 80 -j ACCEPT
 ```
+
+</details>
+
 #### TASK: Save current iptable rules to /etc/iptables
 ```
 iptables-save > /etc/iptables
@@ -3029,7 +3043,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NzM5OTQyNiwxMzk0MzYxMzI2LC0xMz
+eyJoaXN0b3J5IjpbLTg3MzkwOTc0OCwxMzk0MzYxMzI2LC0xMz
 YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
 NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
 0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
