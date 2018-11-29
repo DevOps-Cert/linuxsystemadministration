@@ -1162,7 +1162,7 @@ The main system logs are located in /var/log/
 /var/log/apache2 stores apache2 logs
 
 
-<details><summary>TASK: Find all occurrences of sudo and su authentication and place a report in /tmp/41.15 in a file named attackers.txt</summary>
+<details><summary>Find all occurrences of sudo and su authentication and place a report in /tmp/41.15 in a file named attackers.txt</summary>
 
 ```
 # grep "su|sudo" /var/log/auth.log > /tmp/41.15/attackers.txt
@@ -3047,7 +3047,7 @@ $ docker build -t my-image dockerfiles/ or $ docker build -t aspnet5 . { there i
 
 Sources: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs-commands-to-manage-and-configure-containers-in-linux/
 ## File Sharing
-#### TASK: Setup NFS  
+#### NFS  
 <details><summary>On lb80, share /nfs with dummy file named test with lb70 machines on network as /nfs and set to mount persistently</summary>
 
 ```
@@ -3143,11 +3143,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTY0OTUzNCw0Mzk3Mzk2OCwxMzk0Mz
-YxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIz
-NiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNz
-A2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5
-MzMyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LD
-EzODc0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0
-MzgxODldfQ==
+eyJoaXN0b3J5IjpbLTE1NjUxMzcxOTMsNDM5NzM5NjgsMTM5ND
+M2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQy
+MzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLT
+cwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2
+OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOC
+wxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYy
+NDM4MTg5XX0=
 -->
