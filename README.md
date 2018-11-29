@@ -3020,6 +3020,7 @@ echo $STATUS
 ```
 # apt-get install apache2
 # systemctl enable apache2
+# systemctl restart apache2
 ```
 
 </details>
@@ -3028,6 +3029,9 @@ echo $STATUS
 
 ```
 # echo "<html><body>Hello, world.</body></html>" > /var/www/html/index.html
+# curl localhost
+<html><body>Hello, world.</body></html>
+
 ```
 </details>
 
@@ -3237,7 +3241,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDQ0NDQwOCwtODg2MTI1NzA0LDUxMD
+eyJoaXN0b3J5IjpbMTIwNjUyMDUwMCwtODg2MTI1NzA0LDUxMD
 EyMTM1MywtMjIzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAw
 MywtMTk4MTYyMzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMz
 k0MzYxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1
