@@ -348,13 +348,16 @@ cd /tmp/1.2
 ```
 <details><summary>Put the binary path for ping into file named /tmp/1.2/path 
 Figure out where the program 'ping' is stored:</summary>
+
 ```
 # which ping
 /bin/ping
 # which ping > /tmp/1.2/path 
 #
 ```
-### TASK: Find by name
+
+</details>
+
 <details>
 <summary>Find file named file in /tmp/1.2/ after creating it and place path into /tmp/1.2/filepath.</summary>
 
@@ -367,9 +370,7 @@ cat /tmp/1.2/filepath
 
 </details>
 
-### TASK: Find with permissions
-<details>
-<summary>Find all files in /etc which are read only for all users:</summary>
+<details><summary>Find with permissions all files in /etc which are read only for all users:</summary>
 
 ```
 # find /etc/ -perm 444 -exec ls -al {} \;
@@ -404,7 +405,6 @@ cat /tmp/1.2/filepath
 
 </details>
 
-### TASK: Find files
 <details><summary>Put path of first five files in /usr/share/ into /tmp/1.2/filepaths.txt:  </summary>
 
 ```
@@ -438,7 +438,6 @@ cat /tmp/1.2/filepath
 
 </details>
 
-### Find -ok
 <details><summary>Add file deleteme in /tmp/1.2.  Find all files in /tmp/1.2 and ask if it is ok to delete them one by one but answer no to each delete other than deleteme: </summary>
 
 ```
@@ -466,7 +465,6 @@ cat /tmp/1.2/filepath
 
 </details>
 
-### Find time
 <details><summary>First, make inside /tmp/62.21/ make dummy file named 1999 with the modify time during day of January 1st, 1999 and a current file with all timestamps for today named 2018; </summary>
 
 ```
@@ -489,12 +487,15 @@ Modify: 1999-01-01 01:01:00.000000000 +0000
 
 </details>
 
-### File path
-Sometimes it is helpful to find out the full path for a file:
+<details><summary>Sometimes it is helpful to find out the full path for a file:</summary>
+
 ```
 # readlink -f /tmp/1.2/freds
 /tmp/1.2/freds
 ```
+
+</details>
+
 Extra credit commands that can help out in a jam:
 ```
 # locate ping
@@ -3134,11 +3135,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY4NTAzNjQ5LDQzOTczOTY4LDEzOTQzNj
-EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
-LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
-YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
-MzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMT
-M4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQz
-ODE4OV19
+eyJoaXN0b3J5IjpbLTkwMzE2NTc2Niw0Mzk3Mzk2OCwxMzk0Mz
+YxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIz
+NiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNz
+A2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5
+MzMyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LD
+EzODc0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0
+MzgxODldfQ==
 -->
