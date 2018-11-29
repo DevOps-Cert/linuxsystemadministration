@@ -1,3 +1,4 @@
+
 # linuxsystemadministration
 While there are many introductions to Linux, this guide provides working lab activities to help practice Linux system administration commands.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is available for the selected Linux distribution which is Ubuntu 16.04 LTS server.   
 
@@ -1416,7 +1417,7 @@ other::r-x
 
 </details>
 
-<summary><details>To see more about a process or file with SE information:</summary>
+<details><summary>To see more about a process or file with SE information:</summary>
 ```
 * ls -Z
 * ps -eZ
@@ -1424,7 +1425,7 @@ other::r-x
 
 </details>
 
-<summary><details>Task: Restore default SELinux file contexts for /etc/passwd</summary>
+<details><summary>Task: Restore default SELinux file contexts for /etc/passwd</summary>
 
 ```
 #
@@ -1432,7 +1433,7 @@ other::r-x
 
 </details>
 
-<summary><details>Change SELINUX current state to disabled until next reboot?</summary>
+<details><summary>Change SELINUX current state to disabled until next reboot?</summary>
 
 ```
 # setenforce 0
@@ -1440,7 +1441,7 @@ other::r-x
 
 </details>
 
-<summary><details>Task: What is my current SELINUX state?</summary>
+<details><summary>Task: What is my current SELINUX state?</summary>
 
 ```
 # getenforce
@@ -1448,7 +1449,7 @@ other::r-x
 
 </details>
 
-<summary><details>Disable SELINUX permanently?</summary>
+<details><summary>Disable SELINUX permanently?</summary>
 
 ```
 # grep SELINUX /etc/selinux/config
@@ -2547,6 +2548,7 @@ Check NTP status of peers with only numeric IP entries to speed up checking:
 ``` 
 Results above are truncated.  Look for entries that aren't 16 under st column
 To setup lb40 as server for lb50:
+
 ```
 # cat /etc/ntp.conf
 server 10.20.30.40
@@ -2808,6 +2810,7 @@ MariaDB is the most common database server and is what we use.
 # lxc-destroy -n mylxcontainer
 ```
 #### TASK: Use Docker to setup a web server before destroying it.
+
 ```
 $ apt update  
 $ free -m  
@@ -2840,6 +2843,7 @@ $ docker stats
 $ docker top container_id  
 $ docker build -t my-image dockerfiles/ or $ docker build -t aspnet5 . { there is a dot at the end to pick the local yaml file for the build }
 ```
+
 Sources: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs-commands-to-manage-and-configure-containers-in-linux/
 ## File Sharing
 #### TASK: Setup NFS  
@@ -2938,11 +2942,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3ODUyODk4NSwxMzk0MzYxMzI2LC0xMz
-YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
-NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
-0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
-NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LDEzODc0ODM5OT
-EsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0MzgxODksLTEz
-OTkxMzAwNTFdfQ==
+eyJoaXN0b3J5IjpbNDYwMDQwNjQzLDEzOTQzNjEzMjYsLTEzNj
+M0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3
+Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLT
+E3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nzg3
+NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MS
+wtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMTM5
+OTEzMDA1MV19
 -->
