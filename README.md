@@ -3018,9 +3018,7 @@ echo $STATUS
 <details><summary> Configure an HTTP server</summary>
 
 </details>
-###  Configure HTTP server log files
-### Configure SSL with HTTP server
-### Set up name-based virtual web hosts
+
 <details><summary> Deploy a basic web application and get rid of welcome page</summary>
 
 ```
@@ -3028,8 +3026,7 @@ echo $STATUS
 ```
 </details>
 
-### Restrict access to a web page
-<details><summary> Set up a default configuration HTTP server with SELinux in Enforcing mode and active firewalld configuration.</summary>
+<details><summary> Set up a default configuration HTTP server.</summary>
 
 ```
 apt-get install -y apache2
@@ -3054,8 +3051,13 @@ systemctl start apache2
 
 </details>
 
-###	Restrict access to a web page
+
+###  Configure HTTP server log files
+### Configure SSL with HTTP server
+### Set up name-based virtual web hosts
+<details><summary>Restrict access to a web page</summary>
 Restrict access to a web page in Apache2
+<details>
 ##	Database server
 MariaDB is the most common database server and is what we use.
 <details><summary>Setup MariaDB </summary>
@@ -3222,7 +3224,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjI0MDI2NDcsNTEwMTIxMzUzLC0yMj
+eyJoaXN0b3J5IjpbLTExMTE1MzU5NjMsNTEwMTIxMzUzLC0yMj
 MyNTc4NjMsLTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIz
 MjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLT
 EzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYw
