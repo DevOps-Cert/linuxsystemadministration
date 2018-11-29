@@ -2830,20 +2830,28 @@ google.com.             58      IN      A       172.217.14.238
 
 Sources: [tecmint - Configure Zones for Domain](https://www.tecmint.com/setup-recursive-caching-dns-server-and-configure-dns-zones/)
 ##	Email
-###	Configure an IMAP and IMAPS service
+<details><summary>Configure an IMAP and IMAPS service</summary>
+
 ```
 # apt-get -y install postfix dovecot-core
 vi /etc/postfix/main.cf
 	myorigin = /etc/mailname (hostname)
 	file /etc/postfix/transport and command postmap /etc/postfix/transport
 ```
+
+</details>
+
 Sources: [Installing Postfix and Dovecot](https://www.tecmint.com/installing-network-services-and-configuring-services-at-system-boot/)
-### Configure email aliases
+<details><summary>Configure email aliases</summary>
+
 ```
 # grep /etc/postfix/aliases: 
 sysadmin: fred, lab
 # postalias /etc/postfix/aliases
 ```
+
+</details>
+
 ##	Secure Shell (SSH) 
 ```
 systemctl status sshd
@@ -3122,11 +3130,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDg4OTE0MzUsNDM5NzM5NjgsMTM5ND
-M2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQy
-MzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLT
-cwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2
-OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOC
-wxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYy
-NDM4MTg5XX0=
+eyJoaXN0b3J5IjpbNTcxNjY4MzU5LDQzOTczOTY4LDEzOTQzNj
+EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
+LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
+YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
+MzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMT
+M4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQz
+ODE4OV19
 -->
