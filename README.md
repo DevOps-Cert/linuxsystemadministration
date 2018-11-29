@@ -2390,22 +2390,31 @@ find files with those permissions set on them
 
 </details>
 
-#### TASK: enable suid and user's executable bit for new file called /tmp/7.4/guid
+<details><summary>enable suid and user's executable bit for new file called /tmp/7.4/guid</summary>
+
 ```
 # touch /tmp/7.4/guid
 # chmod g+sx  /tmp/7.4/guid
 # ls -lt  /tmp/7.4/guid
 -rwsr--r-- 1 root root 0 Nov 18 16:36 /tmp/7.4/guid
 ```
-#### TASK: Using octal, set /tmp/7.4/octal to GUID and read only for everyone.
-First, lookup octal values with `man 2 stat`
+
+</details>
+
+<details><summary>Using octal, set /tmp/7.4/octal to GUID and read only for everyone.</summary>
+
+First, lookup octal values with man 2 stat
 ```
 # touch  /tmp/7.4/octal
 # chmod 02444   /tmp/7.4/octal
 # ls -al /tmp/7.4/octal
 ---x--s--x 1 root root 0 Nov 18 20:01 /tmp/7.4/octal
 ```
-#### TASK: Using octal, set /tmp/7.4/permissive to SUID and readwrite for everyone.
+
+</details>
+
+<details><summary>Using octal, set /tmp/7.4/permissive to SUID and readwrite for everyone.</summary>
+
 First, lookup octal values with `man 2 stat`
 ```
 # touch  /tmp/7.4/permissive
@@ -2413,6 +2422,8 @@ First, lookup octal values with `man 2 stat`
 # ls -al /tmp/7.4/permissive
 -rwsrwxrwx 1 root root 0 Nov 18 20:04 /tmp/7.4/permissive
 ```
+
+
 
 ### Find all SUID files in /tmp and make a record in /tmp/5.2/suid
 ```
@@ -2991,11 +3002,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODU2NzE5NDgsMTM5NDM2MTMyNiwtMT
-M2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2
-ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3Mi
-wtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3
-ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOT
-kxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0x
-Mzk5MTMwMDUxXX0=
+eyJoaXN0b3J5IjpbLTg2NzA1OTg4LDEzOTQzNjEzMjYsLTEzNj
+M0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3
+Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLT
+E3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nzg3
+NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MS
+wtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMTM5
+OTEzMDA1MV19
 -->
