@@ -3052,9 +3052,7 @@ echo $STATUS
 </details>
 
 
-
-
-<details><summary>Restrict access to a web page</summary>
+<details><summary>Restrict access to a private directory /var/www/html/nel to user nel </summary>
 Restrict access to a web page in Apache2
 <details>
 
@@ -3232,7 +3230,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0OTA4Mjk3LC04ODYxMjU3MDQsNTEwMT
+eyJoaXN0b3J5IjpbODI1MjQ4MzQxLC04ODYxMjU3MDQsNTEwMT
 IxMzUzLC0yMjMyNTc4NjMsLTIyODA1OTc1OCwxMDYxNjY2MDAz
 LC0xOTgxNjIzMjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOT
 QzNjEzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0
