@@ -2659,13 +2659,13 @@ pool 1.ubuntu.pool.ntp.org iburst
 pool 2.ubuntu.pool.ntp.org iburst
 pool 3.ubuntu.pool.ntp.org iburst
 restrict 10.20.30.0 netmask 255.255.255.0 nomodify notrap
+# systemctl restart ntp
 ```
 
 </details>
 
-Reset services after changing settings:```systemctl restart ntp```
+<details><summary>Check NTP status of peers with only numeric IP entries to speed up checking:</summary>
 
-Check NTP status of peers with only numeric IP entries to speed up checking:
 ```
 # ntpq -p -n 
      remote           refid      st t when poll reach   delay   offset  jitter
@@ -2673,8 +2673,11 @@ Check NTP status of peers with only numeric IP entries to speed up checking:
 +69.197.188.178  204.9.54.119     2 u   31   64    1  126.150  -53.825  16.771
 +193.225.126.76  121.131.112.137  2 u   32   64    1  188.002  -56.683  16.314
 ``` 
+
 Results above are truncated.  Look for entries that aren't 16 under st column
-To setup lb40 as server for lb50:
+</details>
+
+<details><summary>To setup lb40 as server for lb50:</summary>
 
 ```
 # cat /etc/ntp.conf
@@ -2686,7 +2689,10 @@ server 10.20.30.40
  10.20.30.40     184.105.182.16   3 u   10   64    1    0.361   93.312   0.000
 ```
 
-To change timezone to CST:
+</details>
+
+<details><summary>To change timezone to CST:</summary>
+
 ```
 # timedatectl set-timezone America/Chicago
 # timedatectl status
@@ -2698,6 +2704,9 @@ To change timezone to CST:
 NTP synchronized: yes
  RTC in local TZ: no
 ```
+
+</details>
+
 #	Configurating Services
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfiguration/
 ## Virtual Machines
@@ -3092,11 +3101,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4ODIxNTM3Nyw0Mzk3Mzk2OCwxMzk0Mz
-YxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIz
-NiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNz
-A2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5
-MzMyLC05NTc4NzQ4NDAsMzk2MjQzMzIwLC0xMDEzMTIyODI4LD
-EzODc0ODM5OTEsLTkxNzMxMDA0NywtNjMwMzk0ODcsLTEyNjI0
-MzgxODldfQ==
+eyJoaXN0b3J5IjpbODU1MzM5Mjg3LDQzOTczOTY4LDEzOTQzNj
+EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
+LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
+YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
+MzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMT
+M4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQz
+ODE4OV19
 -->
