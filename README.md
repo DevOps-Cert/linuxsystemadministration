@@ -1371,8 +1371,7 @@ Syntax
 Set:  `setfacl -m u:fred:rw /home/users/file`
 Remove:  `setfacl -x u:fred /home/users/file`
 Query:  `getfacl /home/users/file`
-<details><summary>
-Create the directory /home/acl/fred. Create a file in this directory called “fredsfile”.  Set an ACL such that fred will have access to read and write to the file.  Verify that fred cannot create new files in this directory. Verify that fred can edit the file “fredsfile”</summary>
+<details><summary>Create the directory /home/acl/fred. Create a file in this directory called “fredsfile”.  Set an ACL such that fred will have access to read and write to the file.  Verify that fred cannot create new files in this directory. Verify that fred can edit the file “fredsfile”</summary>
 
 ```
 root # mkdir -p /home/acl/fred
@@ -1391,17 +1390,7 @@ fred /home/acl/fred $ exit
 
 </details>
 
-<details><summary>- Create the directory “/home/acl/group”
-- Create the secondary group “acltest”
-- Assign fred and sally to it
-- Set the group ownership of “/home/acl/group” to “acltest”
-- Set permissions to enable SGID and to lock-out non-group users
-- Test and verify this using root account and test with all appropriate user accounts including walt
-    * As fred, Create a file called “test” in the “/home/acl/group” directory
-    * As fred, add the line “Fred was here.”
-    * As sally, add the line “Sally was here.”
-    * As walt, fail to use the file named "/home/acl/group/test".
-    * As george, see both sally and fred's entries inside the file and clobber the file</summary>
+<details><summary>Create the directory “/home/acl/group”. Create the secondary group “acltest”. Assign fred and sally to it. Set the group ownership of “/home/acl/group” to “acltest”.  Set permissions to enable SGID and to lock-out non-group users.  Test and verify this using root account and test with all appropriate user accounts including walt. As fred, Create a file called “test” in the “/home/acl/group” directory. As fred, add the line “Fred was here.” As sally, add the line “Sally was here.” As walt, fail to use the file named "/home/acl/group/test". As george, see both sally and fred's entries inside the file and clobber the file</summary>
 
 ```
 # mkdir /home/acl/group
@@ -1427,7 +1416,7 @@ other::r-x
 
 </details>
 
-To see more about a process or file with SE information:</summary>
+<summary><details>To see more about a process or file with SE information:</summary>
 ```
 * ls -Z
 * ps -eZ
@@ -1468,7 +1457,7 @@ SELINUX=disabled
 
 </details>
 
-#### TASK: Install and start AppArmor and place tcpdump profile into enforce
+<details><summary>Install and start AppArmor and place tcpdump profile into enforce</summary>
 
 ```
 # apt-get install apparmor-profiles
@@ -1477,6 +1466,7 @@ systemctl enable apparmor
 systemctl start apparmor
 ```
 
+</details>
 Sources: [tecmint - Implementing Mandatory Access Control](https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/), [Ubuntu AppArmor Wiki](https://wiki.ubuntu.com/AppArmor)
 ##	Manage Software
 On Ubuntu you can add software with `apt-get install -y <packagename>`
@@ -2948,7 +2938,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzODQ1ODEyNiwxMzk0MzYxMzI2LC0xMz
+eyJoaXN0b3J5IjpbLTc3ODUyODk4NSwxMzk0MzYxMzI2LC0xMz
 YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
 NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
 0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
