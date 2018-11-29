@@ -3031,17 +3031,8 @@ echo $STATUS
 # echo "<html><body>Hello, world.</body></html>" > /var/www/html/index.html
 # curl localhost
 <html><body>Hello, world.</body></html>
-
 ```
 </details>
-
-<details><summary> Set up a default configuration HTTP server.</summary>
-
-```
-apt-get install -y apache2
-systemctl enable apache2
-systemctl start apache2
-```
 
 <details><summary>Configure web server to use as document root /var/www/html</summary>
 
@@ -3241,11 +3232,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjUyMDUwMCwtODg2MTI1NzA0LDUxMD
-EyMTM1MywtMjIzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAw
-MywtMTk4MTYyMzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMz
-k0MzYxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1
-NDIzNiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMi
-wtNzA2MDkyMTcyLC0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgz
-MjY5MzMyXX0=
+eyJoaXN0b3J5IjpbMjE0OTA4Mjk3LC04ODYxMjU3MDQsNTEwMT
+IxMzUzLC0yMjMyNTc4NjMsLTIyODA1OTc1OCwxMDYxNjY2MDAz
+LC0xOTgxNjIzMjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOT
+QzNjEzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0
+MjM2LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC
+03MDYwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMy
+NjkzMzJdfQ==
 -->
