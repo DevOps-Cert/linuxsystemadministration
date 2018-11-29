@@ -329,7 +329,8 @@ You may not have a GUI to use when first logging into Ubuntu on a VM or physical
 
 Above all else, get used to using the CLI and not the Linux GUI (Xwindows).  GUI is never to be used on production servers so learn vi and not gnotepad+.
 
-#### TASK: System is set to a graphical environment.  Set to multi-user only on Ubuntu.
+<details><summary>System is set to a graphical environment.  Set to multi-user only on Ubuntu. </summary>
+
 ```
 # systemctl get-default
 graphical.target
@@ -337,13 +338,16 @@ graphical.target
 # systemctl start multi-user.target
 # systemctl set-default multi-user.target
 ```
+
+</details>
+
 ## Finding Files
 To begin this exercise; make sure you are in /tmp/1.2 folder which should have been created during setup.
 ```
 cd /tmp/1.2
 ```
-### TASK: Put the binary path for ping into file named /tmp/1.2/path 
-Figure out where the program 'ping' is stored:
+<details><summary>Put the binary path for ping into file named /tmp/1.2/path 
+Figure out where the program 'ping' is stored:</summary>
 ```
 # which ping
 /bin/ping
@@ -3130,7 +3134,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxNjY4MzU5LDQzOTczOTY4LDEzOTQzNj
+eyJoaXN0b3J5IjpbNzY4NTAzNjQ5LDQzOTczOTY4LDEzOTQzNj
 EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
 LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
 YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
