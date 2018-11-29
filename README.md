@@ -1532,6 +1532,7 @@ Add account hal with UID of 4000, group named hal with GUID of 4000.
 ```
 
 <details><summary>Add account nut with shell of tcsh, primary group of staff, password of abc123 but force user to rotate password upon login. </summary>
+
 ```
 # useradd -g staff -s /usr/bin/tcsh nut
 # passwd nut
@@ -1542,10 +1543,17 @@ passwd: password updated successfully
 #### Alternatively use 
 # chage -E -1 nut
 ```
-Give fred access to all of hal's home directory: </summary>
+
+</details>
+
+<details><summary>Give fred access to all of hal's home directory: </summary>
+
 ```
 
 ```
+
+</details>
+
 ## Local groups and group memberships
 Commands: vi /etc/group, groups, groupadd
 For future purposes, we will want the group named "limit":
@@ -2958,7 +2966,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyODYxMTMzNSwxMzk0MzYxMzI2LC0xMz
+eyJoaXN0b3J5IjpbLTcxODY3MjU0NSwxMzk0MzYxMzI2LC0xMz
 YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
 NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
 0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
