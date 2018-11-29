@@ -516,7 +516,7 @@ file1  file2  file3  file4  file5  file6  file7  file8  file9
 
 </details>
 
-<details><summary>Make a file named 1978 which was created that year: </details>
+<details><summary>Make a file named 1978 which was created that year: </summary>
 
 ```
 # touch -t 197801010101 1978
@@ -3145,11 +3145,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjgzNTExMTgsNDM5NzM5NjgsMTM5ND
-M2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQy
-MzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLT
-cwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2
-OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOC
-wxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYy
-NDM4MTg5XX0=
+eyJoaXN0b3J5IjpbODYwNDY5NDYyLDQzOTczOTY4LDEzOTQzNj
+EzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2
+LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MD
+YwOTIxNzIsLTE3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkz
+MzIsLTk1Nzg3NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMT
+M4NzQ4Mzk5MSwtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQz
+ODE4OV19
 -->
