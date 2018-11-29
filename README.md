@@ -2924,12 +2924,12 @@ sysadmin: fred, lab
 
 </details>
 
-<details><summary>Configure email aliases using postfix</summary>
+<details><summary>Configure email aliases using sendmail</summary>
 
 ```
-# grep /etc/postfix/aliases: 
+# grep /etc/aliases: 
 sysadmin: fred, lab
-# postalias /etc/postfix/aliases
+# newaliases
 ```
 
 </details>
@@ -3214,11 +3214,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMzI1Nzg2MywtMjI4MDU5NzU4LDEwNj
-E2NjYwMDMsLTE5ODE2MjMyMDEsLTEyMjY1MjA2NjQsNDM5NzM5
-NjgsMTM5NDM2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNC
-w2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3
-OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1Nj
-QsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAx
-MzEyMjgyOF19
+eyJoaXN0b3J5IjpbNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyOD
+A1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIw
+NjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0OTQwNzQsLT
+E1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5MzE4
+NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3MTc5ODc0OD
+YsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nzg3NDg0MCwzOTYy
+NDMzMjBdfQ==
 -->
