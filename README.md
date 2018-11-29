@@ -1093,7 +1093,7 @@ GRUB_TIMEOUT=10
 Sources: [tecmint](https://www.tecmint.com/configure-and-troubleshoot-grub-boot-loader-linux/), [Configure GRUB2 Boot Loader Settings In Ubuntu 16.04](https://www.ostechnix.com/configure-grub-2-boot-loader-settings-ubuntu-16-04/)
 
 ##	Rebooting and halting system properly
-#### TASK: Just reboot immediately:
+<details><summaryJust reboot immediately:
 ```
 # reboot
 ```
@@ -2477,14 +2477,18 @@ Sources: [tecmint - Filesystem Troubleshooting](https://www.tecmint.com/linux-ba
 #	Network Configuration
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module3-networking/
 ##	Hostname resolution
+
 ```
 ip addr sh
 nmtui
 ```
+
 ### TASK: Add nameserver 4.2.2.2 as a backup to existing network configuration
+
 ```
 # echo "nameserver 4.2.2.2" >> /etc/resolv.conf
 ```
+
 ### TASK: Add a hostname entry in lb40 for static mapping of  lb50 to 10.20.30.50
 ```
 # echo -e "10.20.30.50\tlb50" >> /etc/hosts
@@ -2944,11 +2948,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI5NTIwODc3LDEzOTQzNjEzMjYsLTEzNj
-M0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3
-Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLT
-E3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nzg3
-NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MS
-wtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMTM5
-OTEzMDA1MV19
+eyJoaXN0b3J5IjpbLTEyNTA0NzM2MTAsMTM5NDM2MTMyNiwtMT
+M2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2
+ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3Mi
+wtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3
+ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOT
+kxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0x
+Mzk5MTMwMDUxXX0=
 -->
