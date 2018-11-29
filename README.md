@@ -1128,7 +1128,7 @@ GRUB_TIMEOUT=10
 Sources: [tecmint](https://www.tecmint.com/configure-and-troubleshoot-grub-boot-loader-linux/), [Configure GRUB2 Boot Loader Settings In Ubuntu 16.04](https://www.ostechnix.com/configure-grub-2-boot-loader-settings-ubuntu-16-04/)
 
 ##	Rebooting and halting system properly
-<details><summary>Just reboot immediately: </summary>
+<details><summary>Just reboot immediately. </summary>
 
 ```
 # reboot
@@ -1136,14 +1136,15 @@ Sources: [tecmint](https://www.tecmint.com/configure-and-troubleshoot-grub-boot-
 
 </details>
 
-<details><summary>Power off system (called halting it):</summary>
+<details><summary>Power off system (called halting it).</summary>
 ```
 # shutdown -h now 
 ```
 
 </details>
 
-<details><summary>Shutdown in 5 minutes with explanation to users who are logged in using write all (wall):</summary>
+<details><summary>Shutdown in 5 minutes with explanation to users who are logged in using write all (wall).</summary>
+
 ```
 # shutdown -r +5 "I need to apply new kernel, back in a few." 
 ```
@@ -3177,11 +3178,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODE2MjMyMDEsLTEyMjY1MjA2NjQsND
-M5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5
-MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC
-02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIy
-ODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMC
-wtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYz
-MDM5NDg3XX0=
+eyJoaXN0b3J5IjpbLTE1OTAxMDA3OTksLTE5ODE2MjMyMDEsLT
+EyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5
+NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyOD
+YsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcx
+Nzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0OD
+QwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC05
+MTczMTAwNDddfQ==
 -->
