@@ -3021,8 +3021,11 @@ echo $STATUS
 ###  Configure HTTP server log files
 ### Configure SSL with HTTP server
 ### Set up name-based virtual web hosts
-<details><summary> Configure an HTTP server</summary>
+<details><summary> Deploy a basic web application and get rid of welcome page</summary>
 
+```
+# rm /etc/httpd/conf.d**
+```
 </details>
 ### Restrict access to a web page
 <details><summary> Set up a default configuration HTTP server with SELinux in Enforcing mode and active firewalld configuration.</summary>
@@ -3218,11 +3221,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU5ODY2MDAxLDUxMDEyMTM1MywtMjIzMj
-U3ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIw
-MSwtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMz
-YzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4
-NzI4NiwyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC
-0xNzE3OTg3NDg2LDMxMjI4NjU2NCwtNzgzMjY5MzMyLC05NTc4
-NzQ4NDBdfQ==
+eyJoaXN0b3J5IjpbLTMwNTU3ODEzNCw1MTAxMjEzNTMsLTIyMz
+I1Nzg2MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMy
+MDEsLTEyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMT
+M2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2
+ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3Mi
+wtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3
+ODc0ODQwXX0=
 -->
