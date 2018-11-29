@@ -5,7 +5,7 @@ While there are many introductions to Linux, this guide provides working lab act
 Work on list
 * SELinux and AppArmor https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/2/ 
 * PAM modules (figure out fastest way to search for appropriate ones to install and configure)
-* Managing libvirt machines (use old competencies as a guide)
+* Managing libvirt machines (on new machine)
 * samba
 * ldap
 * Fixup mail stuff
@@ -3052,7 +3052,7 @@ echo $STATUS
 </details>
 
 
-<details><summary>Restrict access to a private directory /var/www/html/nel to user nel </summary>
+<details><summary>Restrict access to a private web directory /var/www/html/nel to user nel </summary>
 
 ```
 # mkdir -p /var/www/html/nel
@@ -3245,11 +3245,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg0NTMzNTY2LC0zMjMzOTg0ODMsLTg4Nj
-EyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2MywtMjI4MDU5NzU4
-LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLTEyMjY1MjA2NjQsND
-M5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5
-MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC
-02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIy
-ODY1NjRdfQ==
+eyJoaXN0b3J5IjpbMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC04OD
+YxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyODA1OTc1
+OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIwNjY0LD
+QzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0OTQwNzQsLTE1NzM0
+OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNC
+wtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3MTc5ODc0ODYsMzEy
+Mjg2NTY0XX0=
 -->
