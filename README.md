@@ -1099,10 +1099,9 @@ Sources: [tecmint - Enabling sudo Access on Accounts](https://www.tecmint.com/ma
 #	Operation of Running Systems
 
 ##	Bootloader configuration
-We are clearly talking about GRUB2 which is the boot loader.
-https://help.ubuntu.com/community/Grub2 
-/etc/grub.d/40_custom is the correct place to edit many things and sometimes /etc/default/grub.
-Make any text file changes for grub settings and auto add additional found operating systems like Windows with:
+<details><summary>/etc/grub.d/40_custom is the correct place to edit many things and sometimes /etc/default/grub.
+Make any text file changes for grub settings and auto add additional found operating systems like Windows with:</summary>
+
 ```
 # update-grub
 Generating grub configuration file ...
@@ -1114,12 +1113,17 @@ Done
 $
 ```
 
-Change boot timeout to 10 seconds
+</details>
+
+<details><summary>Change boot timeout to 10 seconds</summary>
+
 ```
 # grep GRUB_TIMEOUT /etc/default/grub
 GRUB_TIMEOUT=10
 # update-grub
 ```
+
+</details>
 
 Sources: [tecmint](https://www.tecmint.com/configure-and-troubleshoot-grub-boot-loader-linux/), [Configure GRUB2 Boot Loader Settings In Ubuntu 16.04](https://www.ostechnix.com/configure-grub-2-boot-loader-settings-ubuntu-16-04/)
 
@@ -3161,11 +3165,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjY1MjA2NjQsNDM5NzM5NjgsMTM5ND
-M2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQy
-MzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLT
-cwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2
-OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOC
-wxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYy
-NDM4MTg5XX0=
+eyJoaXN0b3J5IjpbLTIwMTg4NDUyODcsLTEyMjY1MjA2NjQsND
+M5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5
+MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC
+02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIy
+ODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMC
+wtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYz
+MDM5NDg3XX0=
 -->
