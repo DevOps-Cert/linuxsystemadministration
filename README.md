@@ -1151,12 +1151,16 @@ Sources: [tecmint](https://www.tecmint.com/configure-and-troubleshoot-grub-boot-
 </details>
 
 ##	Set system to boot at a different runlevel
-Check current runlevel with below indicating multi-user (no Xwindows) and previous unknown: 
+<details><summary>Check current runlevel with below indicating multi-user (no Xwindows) and previous unknown: </summary>
+
 ```
 # runlevel
 N 3
 ```
-Find out names of runlevels: 
+
+</details>
+
+<details><summary>Find out names of runlevels:  </summary>
 ```
 # info runlevel # result truncated
        Table 1. Mapping between runlevels and systemd targets
@@ -1168,15 +1172,23 @@ Find out names of runlevels:
        │5        │ graphical.target  │
        └─────────┴───────────────────┘
 ```
-Enable GUI boot with one command (unlikely this is desired as focus is CLI): 
+
+</details>
+
+<details><summary>Enable GUI boot with one command (unlikely this is desired as focus is CLI):  </summary>
+
 ```
 # systemctl {start,enable} graphical.target
 ```
-Disable GUI boot with one command: 
+
+</details>
+
+<details><summary>Disable GUI boot with one command:  </summary>
 ```
 # systemctl {start,enable} multi-user.target
 ```
 
+</details>
 
 ##	System log files
 The main system logs are located in /var/log/
@@ -3165,7 +3177,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTg4NDUyODcsLTEyMjY1MjA2NjQsND
+eyJoaXN0b3J5IjpbLTE5ODE2MjMyMDEsLTEyMjY1MjA2NjQsND
 M5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5
 MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC
 02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIy
