@@ -1371,12 +1371,9 @@ Syntax
 Set:  `setfacl -m u:fred:rw /home/users/file`
 Remove:  `setfacl -x u:fred /home/users/file`
 Query:  `getfacl /home/users/file`
-TASK 1:
-- Create the directory /home/acl/fred
-- Create a file in this directory called “fredsfile”
-- Set an ACL such that fred will have access to read and write to the file
-- Verify that fred cannot create new files in this directory
-- Verify that fred can edit the file “fredsfile”
+<details><summary>
+Create the directory /home/acl/fred. Create a file in this directory called “fredsfile”.  Set an ACL such that fred will have access to read and write to the file.  Verify that fred cannot create new files in this directory. Verify that fred can edit the file “fredsfile”</summary>
+
 ```
 root # mkdir -p /home/acl/fred
 root # touch /home/acl/fred/fredsfile
@@ -1391,8 +1388,10 @@ fred /home/acl/fred $ cat fredsfile
 1
 fred /home/acl/fred $ exit
 ```
-TASK 2:
-- Create the directory “/home/acl/group”
+
+</details>
+
+<details><summary>- Create the directory “/home/acl/group”
 - Create the secondary group “acltest”
 - Assign fred and sally to it
 - Set the group ownership of “/home/acl/group” to “acltest”
@@ -1402,7 +1401,8 @@ TASK 2:
     * As fred, add the line “Fred was here.”
     * As sally, add the line “Sally was here.”
     * As walt, fail to use the file named "/home/acl/group/test".
-    * As george, see both sally and fred's entries inside the file and clobber the file
+    * As george, see both sally and fred's entries inside the file and clobber the file</summary>
+
 ```
 # mkdir /home/acl/group
 # addgroup acltest
@@ -1424,6 +1424,8 @@ other::r-x
 # touch /home/acl/group/acltest
 # setfacl -m g:acltest:rw /home/acl/group/acltest
 ```
+
+
 To see more about a process or file with SE information:
 ```
 * ls -Z
@@ -2930,11 +2932,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NDM2MTMyNiwtMTM2MzQ5NDA3NCwtMT
-U3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0
-OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcxNzk4NzQ4Ni
-wzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0ODQwLDM5NjI0
-MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC05MTczMTAwND
-csLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMzk5MTMwMDUxLDgy
-MjQzNDI1XX0=
+eyJoaXN0b3J5IjpbNTQ4ODUyOTI3LDEzOTQzNjEzMjYsLTEzNj
+M0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3
+Mjg2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLT
+E3MTc5ODc0ODYsMzEyMjg2NTY0LC03ODMyNjkzMzIsLTk1Nzg3
+NDg0MCwzOTYyNDMzMjAsLTEwMTMxMjI4MjgsMTM4NzQ4Mzk5MS
+wtOTE3MzEwMDQ3LC02MzAzOTQ4NywtMTI2MjQzODE4OSwtMTM5
+OTEzMDA1MV19
 -->
