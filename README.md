@@ -1483,7 +1483,9 @@ systemctl start apparmor
 Sources: [tecmint - Implementing Mandatory Access Control](https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/), [Ubuntu AppArmor Wiki](https://wiki.ubuntu.com/AppArmor)
 ##	Manage Software
 On Ubuntu you can add software with `apt-get install -y <packagename>`
-Find out which package provides ping6 and install: 
+
+<details><summary>Find out which package provides ping6 and install: </summary>
+
 ```
 # apt-cache search ping6
 iputils-ping - Tools to test the reachability of network hosts
@@ -1495,6 +1497,9 @@ iputils-ping: /bin/ping6
 iputils-ping: /usr/share/man/man8/ping6.8.gz
 # apt-get install -y iputils-ping
 ```
+
+</details>
+
 ##	Identify the component of a Linux distribution that a file belongs to placing the package name only in the file /tmp/7.5/pingpackage
 ```
 # dpkg -S /bin/ping | cut -d \:  -f 1 >  /tmp/7.5/pingpackage
@@ -2899,7 +2904,8 @@ MariaDB is the most common database server and is what we use.
 #### TASK: Setup MariaDB 
 
 ##	Containers
-#### TASK: Setup Linux container ubuntu and start it
+<details><summary>Setup Linux container ubuntu and start it</summary>
+
 ```
 # apt-get install lxc
 # systemctl status lxc.service
@@ -2914,7 +2920,7 @@ MariaDB is the most common database server and is what we use.
 # lxc-stop -n mylxcontainer  
 # lxc-destroy -n mylxcontainer
 ```
-#### TASK: Use Docker to setup a web server before destroying it.
+<details><summary>Use Docker to setup a web server before destroying it.</summary>
 
 ```
 $ apt update  
@@ -2948,6 +2954,8 @@ $ docker stats
 $ docker top container_id  
 $ docker build -t my-image dockerfiles/ or $ docker build -t aspnet5 . { there is a dot at the end to pick the local yaml file for the build }
 ```
+
+</details>
 
 Sources: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs-commands-to-manage-and-configure-containers-in-linux/
 ## File Sharing
@@ -3047,11 +3055,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2Mz
-Q5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcy
-ODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMT
-cxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2OTMzMiwtOTU3ODc0
-ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOCwxMzg3NDgzOTkxLC
-05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYyNDM4MTg5LC0xMzk5
-MTMwMDUxXX0=
+eyJoaXN0b3J5IjpbLTE5NzE3OTUxMzcsNDM5NzM5NjgsMTM5ND
+M2MTMyNiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQy
+MzYsLTExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLT
+cwNjA5MjE3MiwtMTcxNzk4NzQ4NiwzMTIyODY1NjQsLTc4MzI2
+OTMzMiwtOTU3ODc0ODQwLDM5NjI0MzMyMCwtMTAxMzEyMjgyOC
+wxMzg3NDgzOTkxLC05MTczMTAwNDcsLTYzMDM5NDg3LC0xMjYy
+NDM4MTg5XX0=
 -->
