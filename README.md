@@ -1588,7 +1588,7 @@ Sources: [tecmint - 15 dpkg Command Examples](https://www.tecmint.com/dpkg-comma
 #	User and Group Management
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module2-userandgroupmanagement/
 ##	Local user accounts
-We are going to want several accounts; if they haven't been created already from previous activity.  Make sure you have fred, sally, and walt.
+We are going to want several accounts; if they haven't been created already from previous activity.  Make sure you have fred, sally, and walt.  For Fred, make sure he is named "Fred Flintstone" and is using shell of 
 ```
 # useradd -m sally
 # useradd -m walt
@@ -3067,8 +3067,8 @@ Require user nel
 # echo "<html><body>Welcome, Nel.</body></html>" > /var/www/nel/index.html
 # curl http://localhost/nel
 <title>401 Unauthorized</title>
-# curl http://nel:abc123@localhost/nel
-<title>301 Moved Permanently</title>
+# curl http://nel:abc123@localhost/nel/
+<html><body>Welcome, Nel.</body></html>
 ```
 https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-apache-on-ubuntu-14-04
 
@@ -3260,11 +3260,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODkyMzE1NjgsMTU3NzY1NDA2MCwtMz
-IzMzk4NDgzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4
-NjMsLTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC
-0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0
-OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mj
-g2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3
-MTc5ODc0ODZdfQ==
+eyJoaXN0b3J5IjpbLTU4NTI0NTM5NywxNTc3NjU0MDYwLC0zMj
+MzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2
+MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLT
+EyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5
+NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyOD
+YsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcx
+Nzk4NzQ4Nl19
 -->
