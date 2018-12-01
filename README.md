@@ -1747,6 +1747,14 @@ MAIL=/var/mail/root
 </details>
 
 
+<details><summary>Remove set variable HELLO for root to WORLD</summary>
+
+```
+# set HELLO=WOLRD >> ~/.bashrc
+```
+
+</details>
+
 ##	New user templates
 Adding, deleting, and modifying the files in /etc/skel for new users
 ##	Restricting resource limits for users and groups
@@ -3347,7 +3355,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNTUwOTI1MSwxODI5MDIwNjg3LDIxOD
+eyJoaXN0b3J5IjpbLTYxMDc4NTk2MSwxODI5MDIwNjg3LDIxOD
 U2ODQwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgz
 LC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyOD
 A1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIw
