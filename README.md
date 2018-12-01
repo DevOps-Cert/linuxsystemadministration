@@ -1747,7 +1747,7 @@ MAIL=/var/mail/root
 </details>
 
 
-<details><summary>Remove set variable HELLO for root to WORLD</summary>
+<details><summary>Remove set variable HELLO for root to WORLD for root</summary>
 
 ```
 # echo "HELLO=WORLD" >> ~/.bashrc
@@ -3359,11 +3359,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Nzg4MTA1MDEsMTgyOTAyMDY4NywyMT
-g1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4
-MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYzLC0yMj
-gwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUy
-MDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYzNDk0MDc0LC
-0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4NzI4NiwyOTMx
-ODQ5MDRdfQ==
+eyJoaXN0b3J5IjpbNzk5OTg3NzUyLDE4MjkwMjA2ODcsMjE4NT
+Y4NDAwLDQ1OTAyNzk1OSwxNTc3NjU0MDYwLC0zMjMzOTg0ODMs
+LTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2MywtMjI4MD
+U5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLTEyMjY1MjA2
+NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5NDA3NCwtMT
+U3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0
+OTA0XX0=
 -->
