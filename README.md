@@ -3046,7 +3046,7 @@ echo $STATUS
 <details><summary>Customize Web server log files</summary>
 
 ```
-#
+# 
 ```
 
 </details>
@@ -3070,6 +3070,26 @@ Require user nel
 https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-apache-on-ubuntu-14-04
 
 </details>
+
+<details><summary>Disable directory indexing for /var/www/html/</summary>
+
+```
+# mkdir -p /var/www/html/nel
+# echo "<Directory "/var/www/html/nel">
+AuthType Basic
+AuthName "Password protected area"
+AuthUserFile /etc/apache2/passwd
+Require user nel
+</Directory>" > /etc/apache2/sites-enabled/010-nel.conf
+# htpasswd -c /etc/apache2/passwd nel
+# systemctl restart apache2
+# echo "the above fails currently..."
+# curl http://localhost/nel
+```
+https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-apache-on-ubuntu-14-04
+
+</details>
+
 
 <details><summary>More Fun</summary>
 
@@ -3245,11 +3265,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC04OD
-YxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyODA1OTc1
-OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIwNjY0LD
-QzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0OTQwNzQsLTE1NzM0
-OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5MzE4NDkwNC
-wtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3MTc5ODc0ODYsMzEy
-Mjg2NTY0XX0=
+eyJoaXN0b3J5IjpbLTEwNjg3OTc1OSwxNTc3NjU0MDYwLC0zMj
+MzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2
+MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLT
+EyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5
+NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyOD
+YsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcx
+Nzk4NzQ4Nl19
 -->
