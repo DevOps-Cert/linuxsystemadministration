@@ -1,4 +1,5 @@
 
+
 # linuxsystemadministration
 While there are many introductions to Linux, this guide provides working lab activities to help practice Linux system administration commands.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is available for the selected Linux distribution which is Ubuntu 16.04 LTS server.   
 
@@ -30,7 +31,7 @@ Setup should several additional physical volume on lb40 for RAID, swap space, qu
 
 Make vim default editor: ```update-alternatives --config editor```
 
-To create the working folders to be consistent in /tmp; use ```mkdir /tmp/{1..9}.{1..9}```
+To create the working folders to be consistent in /tmp; use ```mkdir /work/{1..9}.{1..9}```
 ### Layout of drives
 Virtualbox restricts us to 15 hard drives.  The disk layout will be as follows for lb40 and is reflected in Vagrantfile supplied to avoid confusion and drive re-use between exercises as well as partitioning for exercises:
 1. /dev/sda VagrantRoot
@@ -235,7 +236,7 @@ service ssh restart
 sudo apt-get -y purge cloud-init
 sudo mv /etc/cloud/ ~/; sudo mv /var/lib/cloud/ ~/cloud-lib
 sudo apt remove -y open-iscsi
-mkdir /tmp/{1..9}.{1..9}
+mkdir /work/{1..9}.{1..9}
 sudo useradd -m fred
 sudo useradd -m sally
 sudo useradd -m george
@@ -262,7 +263,7 @@ service ssh restart
 sudo apt-get -y purge cloud-init
 sudo mv /etc/cloud/ ~/; sudo mv /var/lib/cloud/ ~/cloud-lib
 sudo apt remove -y open-iscsi
-mkdir /tmp/{1..9}.{1..9}
+mkdir /work/{1..9}.{1..9}
 sudo useradd -m fred
 sudo useradd -m sally
 sudo useradd -m george
@@ -351,29 +352,29 @@ graphical.target
 
 </details>
 
-<details><summary>Put the binary path for ping into file named /tmp/1.2/path 
+<details><summary>Put the binary path for ping into file named /work/1.2/path 
 Figure out where the program 'ping' is stored:</summary>
 
-To begin this exercise; make sure you are in /tmp/1.2 folder which should have been created during setup.
+To begin this exercise; make sure you are in /work/1.2 folder which should have been created during setup.
 
 ```
-# cd /tmp/1.2
+# cd /work/1.2
 # which ping
 /bin/ping
-# which ping > /tmp/1.2/path 
+# which ping > /work/1.2/path 
 #
 ```
 
 </details>
 
 <details>
-<summary>Find file named file in /tmp/1.2/ after creating it and place path into /tmp/1.2/filepath.</summary>
+<summary>Find file named file in /work/1.2/ after creating it and place path into /work/1.2/filepath.</summary>
 
 ```
-touch /tmp/1.2/file
-find /tmp/1.2 -name file -print > /tmp/1.2/filepath
-cat /tmp/1.2/filepath
-/tmp/1.2/file
+touch /work/1.2/file
+find /work/1.2 -name file -print > /work/1.2/filepath
+cat /work/1.2/filepath
+/work/1.2/file
 ```
 
 </details>
@@ -387,22 +388,22 @@ cat /tmp/1.2/filepath
 ```
 </details>
 
-<details><summary>To find a file with ownership of fred in /tmp/1.2 after creating it:</summary>
+<details><summary>To find a file with ownership of fred in /work/1.2 after creating it:</summary>
 
 ```
-# touch /tmp/1.2/freds
-# chown fred /tmp/1.2/freds
-# find /tmp/1.2/ -user fred -print
+# touch /work/1.2/freds
+# chown fred /work/1.2/freds
+# find /work/1.2/ -user fred -print
 ./freds/
 ```
 
 </details>
 
-<details><summary>Put path of first five directories in /usr/share/ into /tmp/1.2/dirs:  </summary>
+<details><summary>Put path of first five directories in /usr/share/ into /work/1.2/dirs:  </summary>
 
 ```
-# find /usr/share/* -type d -print | head -5 > /tmp/1.2/dirs
-# cat /tmp/1.2/dirs
+# find /usr/share/* -type d -print | head -5 > /work/1.2/dirs
+# cat /work/1.2/dirs
 /usr/share/aclocal
 /usr/share/adduser
 /usr/share/apache2
@@ -412,11 +413,11 @@ cat /tmp/1.2/filepath
 
 </details>
 
-<details><summary>Put path of first five files in /usr/share/ into /tmp/1.2/filepaths.txt:  </summary>
+<details><summary>Put path of first five files in /usr/share/ into /work/1.2/filepaths.txt:  </summary>
 
 ```
-# find /usr/share/* -type f -print | head -5 > /tmp/1.2/filepaths.txt
-# cat /tmp/1.2/filepaths.txt
+# find /usr/share/* -type f -print | head -5 > /work/1.2/filepaths.txt
+# cat /work/1.2/filepaths.txt
 /usr/share/aclocal/dovecot.m4
 /usr/share/aclocal/dovecot-pigeonhole.m4
 /usr/share/adduser/adduser.conf
@@ -426,11 +427,11 @@ cat /tmp/1.2/filepath
 
 </details>
 
-<details><summary>In etc, find all files and then output their type to /tmp/1.2/etctypes and take a look at the top of the resulting file:</summary>
+<details><summary>In etc, find all files and then output their type to /work/1.2/etctypes and take a look at the top of the resulting file:</summary>
 
 ```
-# find /etc -type f -exec file '{}' > /tmp/1.2/etctypes \;
-# head /tmp/1.2/etctypes
+# find /etc -type f -exec file '{}' > /work/1.2/etctypes \;
+# head /work/1.2/etctypes
 /etc/environment: ASCII text
 /etc/apache2/magic: magic text file for file(1) cmd, ASCII text
 /etc/apache2/sites-available/default-ssl.conf: ASCII text
@@ -445,11 +446,11 @@ cat /tmp/1.2/filepath
 
 </details>
 
-<details><summary>Add file deleteme in /tmp/1.2.  Find all files in /tmp/1.2 and ask if it is ok to delete them one by one but answer no to each delete other than deleteme: </summary>
+<details><summary>Add file deleteme in /work/1.2.  Find all files in /work/1.2 and ask if it is ok to delete them one by one but answer no to each delete other than deleteme: </summary>
 
 ```
-# touch /tmp/1.2/{deleteme,nodelete}
-# find /tmp/1.2 -type f -ok rm '{}' \;
+# touch /work/1.2/{deleteme,nodelete}
+# find /work/1.2 -type f -ok rm '{}' \;
 < rm ... ./1999 > ? n
 < rm ... ./2018 > ? n
 < rm ... ./etctypes > ? n
@@ -458,11 +459,11 @@ cat /tmp/1.2/filepath
 
 </details>
 
-<details><summary>Find all files sized greater than 2k in /etc/pam.d/ and write results to  /tmp/1.2/bigpamfiles.txt.</summary>
+<details><summary>Find all files sized greater than 2k in /etc/pam.d/ and write results to  /work/1.2/bigpamfiles.txt.</summary>
 
 ```
-# find /etc/pam.d/ -size +2k  -print > /tmp/1.2/bigpamfiles.txt
-# cat /tmp/1.2/bigpamfiles.txt
+# find /etc/pam.d/ -size +2k  -print > /work/1.2/bigpamfiles.txt
+# cat /work/1.2/bigpamfiles.txt
 /etc/pam.d/
 /etc/pam.d/login
 /etc/pam.d/sshd
@@ -471,12 +472,12 @@ cat /tmp/1.2/filepath
 
 </details>
 
-<details><summary>First, make inside /tmp/62.21/ make dummy file named 1999 with the modify time during day of January 1st, 1999 and a current file with all timestamps for today named 2018; </summary>
+<details><summary>First, make inside /work/62.21/ make dummy file named 1999 with the modify time during day of January 1st, 1999 and a current file with all timestamps for today named 2018; </summary>
 
 ```
-# touch -t 199901010101 1999 -m /tmp/62.21/1999
-# touch /tmp/62.21/2018
-# stat /tmp/62.21/1999 | grep Modify
+# touch -t 199901010101 1999 -m /work/62.21/1999
+# touch /work/62.21/2018
+# stat /work/62.21/1999 | grep Modify
 Modify: 1999-01-01 01:01:00.000000000 +0000
 ```
 </details>
@@ -485,9 +486,9 @@ Modify: 1999-01-01 01:01:00.000000000 +0000
 <details><summary>Now,  find only the 1999 file using find command and the 2018 file using find.</summary>
 
 ```
-# find /tmp/62.21/ -mtime +6480 -print
+# find /work/62.21/ -mtime +6480 -print
 ./1999
-# find /tmp/62.21/ -mtime 0 -type f
+# find /work/62.21/ -mtime 0 -type f
 ./2018
 ```
 
@@ -496,8 +497,8 @@ Modify: 1999-01-01 01:01:00.000000000 +0000
 <details><summary>Sometimes it is helpful to find out the full path for a file:</summary>
 
 ```
-# readlink -f /tmp/1.2/freds
-/tmp/1.2/freds
+# readlink -f /work/1.2/freds
+/work/1.2/freds
 ```
 
 </details>
@@ -506,10 +507,10 @@ Modify: 1999-01-01 01:01:00.000000000 +0000
 ## Evaluate and Update Text Files
 ### touch
 <details><summary>It can be very useful to create a blank file.  Touch allows for this with bash:
-Create files named file1-file9 in /tmp/53.34/:</summary>
+Create files named file1-file9 in /work/53.34/:</summary>
 
 ```
-# touch /tmp/53.34/file{1..9}
+# touch /work/53.34/file{1..9}
 # ls
 file1  file2  file3  file4  file5  file6  file7  file8  file9
 ```
@@ -535,7 +536,7 @@ Sources: [How to Install and Use vi/vim as a Full Text Editor](https://www.tecmi
 For someone just learning Linux, there is no shame in using nano.  Were vi and emacs are similar in power to a full word processor, nano functions as a simple text editor and provides you on the bottom the commands need to complete a task.
 
 ### textfiles: diff
-<details><summary>Compare /usr/share/common-licenses/GPL-3 to /usr/share/common-licenses/GPL-2 placing result into /tmp/43.21/GPLdiff.txt: </summary>
+<details><summary>Compare /usr/share/common-licenses/GPL-3 to /usr/share/common-licenses/GPL-2 placing result into /work/43.21/GPLdiff.txt: </summary>
 
 ```
 # diff /usr/share/common-licenses/GPL-3 /usr/share/common-licenses/GPL-2c2
@@ -552,11 +553,11 @@ For someone just learning Linux, there is no shame in using nano.  Were vi and e
 
 </details>
 
-<details><summary>Make two directories using bash script `mkdir /tmp/32.42/{A_dir,B_dir}; touch /tmp/32.42/A_dir/{3..25}.txt; touch /tmp/32.42/B_dir/{5..27}.txt`   The folders have different files and sometimes similar files.  Produce a report to /tmp/32.42/B of files only that exist only in /tmp/32.42/B_dir and not at all in /tmp/32.42/A_dir .</summary>
+<details><summary>Make two directories using bash script `mkdir /work/32.42/{A_dir,B_dir}; touch /work/32.42/A_dir/{3..25}.txt; touch /work/32.42/B_dir/{5..27}.txt`   The folders have different files and sometimes similar files.  Produce a report to /work/32.42/B of files only that exist only in /work/32.42/B_dir and not at all in /work/32.42/A_dir .</summary>
 
 ```
-# diff -q /tmp/32.42/A_dir/ /tmp/32.42/B_dir/ | grep B_ > /tmp/32.42/B
-# cat /tmp/32.42/B
+# diff -q /work/32.42/A_dir/ /work/32.42/B_dir/ | grep B_ > /work/32.42/B
+# cat /work/32.42/B
 Only in B_dir/: 26.txt
 Only in B_dir/: 27.txt
 ``` 
@@ -584,10 +585,10 @@ Vimdiff starts Vim on two (or three or four) files.  Each file gets its own wind
 ### textfiles: head
 ### textfiles: tail
 ### textfiles: tr
-<details><summary>Capitalize everything in /etc/passwd and send to /tmp/1.4/CAPITALIZED.txt</summary>
+<details><summary>Capitalize everything in /etc/passwd and send to /work/1.4/CAPITALIZED.txt</summary>
 
 ```
-cat /etc/passwd | tr '[:lower:]' '[:upper:]' > /tmp/1.4/CAPITALIZED.txt
+cat /etc/passwd | tr '[:lower:]' '[:upper:]' > /work/1.4/CAPITALIZED.txt
 ```
 
 </details>
@@ -649,7 +650,7 @@ Append output to file `# command >> file`
 Send output from one command to another (indefinitely stackable): `# cat file | grep A`
 Write stdout and errors to two separate files: `# command > out 2>error`
 
-<details><summary>Write both stdout and errors to same file named /tmp/64.34/both for command : </summary>
+<details><summary>Write both stdout and errors to same file named /work/64.34/both for command : </summary>
 
 ```
 # command &> out
@@ -668,21 +669,21 @@ $ match end of line
 \^ match start of line
 find out how to look these up in man or /usr/share/doc
 
-<details><summary>Find all the lines in /usr/share/common-licenses/GPL-3 that start with the word "The" but case insensitive and put result in /tmp/7.4/the </summary>
+<details><summary>Find all the lines in /usr/share/common-licenses/GPL-3 that start with the word "The" but case insensitive and put result in /work/7.4/the </summary>
 
 ```
-grep -i "^The " /usr/share/common-licenses/GPL-3 > /tmp/7.4/the
+grep -i "^The " /usr/share/common-licenses/GPL-3 > /work/7.4/the
 ```
 
 </details>
 
 
-<details><summary>Find all the lines that end with the word "you" case sensitive within /usr/share/common-licenses/GPL-3 and put result in /tmp/32.43/you </summary>
+<details><summary>Find all the lines that end with the word "you" case sensitive within /usr/share/common-licenses/GPL-3 and put result in /work/32.43/you </summary>
 
 
 ```
-# grep " you$" /usr/share/common-licenses/GPL-3 > /tmp/32.43/you
-# head -4 /tmp/32.43/you
+# grep " you$" /usr/share/common-licenses/GPL-3 > /work/32.43/you
+# head -4 /work/32.43/you
 price.  Our General Public Licenses are designed to make sure that you
 them if you wish), that you receive source code or can get it if you
   To protect your rights, we need to prevent others from denying you
@@ -693,12 +694,12 @@ of having them make modifications exclusively for you, or provide you
 
 
 
-<details><summary>Find all the lines that start with the word "gnu" ignoring case within /usr/share/common-licenses/GPL-3 and put result in /tmp/54.24/gnu </summary>
+<details><summary>Find all the lines that start with the word "gnu" ignoring case within /usr/share/common-licenses/GPL-3 and put result in /work/54.24/gnu </summary>
 
 
 ```
-# grep -i "^GNU" /usr/share/common-licenses/GPL-3 > /tmp/54.24/gnu
-# cat /tmp/54.24/gnu
+# grep -i "^GNU" /usr/share/common-licenses/GPL-3 > /work/54.24/gnu
+# cat /work/54.24/gnu
 GNU General Public License for most of our software; it applies also to
 GNU General Public License, you may choose any version ever published
 ```
@@ -707,11 +708,11 @@ GNU General Public License, you may choose any version ever published
 
 
 
-<details><summary>Find all the lines in /usr/share/common-licenses/GPL-3 that contain word "the" followed by the word "you"  and put result in /tmp/43.24/theyou </summary>
+<details><summary>Find all the lines in /usr/share/common-licenses/GPL-3 that contain word "the" followed by the word "you"  and put result in /work/43.24/theyou </summary>
 
 ```
-# grep -w "the .* you" /usr/share/common-licenses/GPL-3 > /tmp/43.24/theyou
-# head -5 /tmp/43.24/theyou
+# grep -w "the .* you" /usr/share/common-licenses/GPL-3 > /work/43.24/theyou
+# head -5 /work/43.24/theyou
 them if you wish), that you receive source code or can get it if you
 these rights or asking you to surrender the rights.  Therefore, you have
 or can get the source code.  And you must show them these terms so they
@@ -724,31 +725,31 @@ of having them make modifications exclusively for you, or provide you
 ##	Archive or compress files and directories
 Commands: gzip, bzip2, gunzip, bunzip2, tar, xz, zip, star or tar --selinux for SELinux, rsync to another machine with ssh
 
-<details><summary>Place a gzipped archive in /tmp/3.2/ named "cron.tar.gz" which contains /etc/cron.d/ but without absolute paths</summary>
+<details><summary>Place a gzipped archive in /work/3.2/ named "cron.tar.gz" which contains /etc/cron.d/ but without absolute paths</summary>
 
 ```
 # cd /etc/cron.d/
-# tar cfgv /tmp/3.2/cron.tar.gz *
+# tar cfgv /work/3.2/cron.tar.gz *
 ```
 
 </details>
 
-<details><summary>Place a XZ compressed tar archive in /tmp/3.2/ named "ssh_config.tar.xz" which contains all of /etc/ssh but without folders from root.</summary>
+<details><summary>Place a XZ compressed tar archive in /work/3.2/ named "ssh_config.tar.xz" which contains all of /etc/ssh but without folders from root.</summary>
 
 ```
 # cd /etc/ssh/
-# tar cfJ /tmp/3.2/ssh_config.tar.xz *
+# tar cfJ /work/3.2/ssh_config.tar.xz *
 
 ```
 
 </details>
 
-<details><summary>Extract  /usr/share/doc/apg/php.tar.gz into a new directory named /tmp/3.2/php</summary>
+<details><summary>Extract  /usr/share/doc/apg/php.tar.gz into a new directory named /work/3.2/php</summary>
 
 ```
-# mkdir -p /tmp/3.2/php
-# tar xfvz /usr/share/doc/apg/php.tar.gz -C /tmp/3.2/php
-# ls /tmp/3.2/php
+# mkdir -p /work/3.2/php
+# tar xfvz /usr/share/doc/apg/php.tar.gz -C /work/3.2/php
+# ls /work/3.2/php
 index.php  lang/  README  themes/
 ```
 
@@ -773,126 +774,126 @@ mv
 
 </details>
 
-<details><summary>Create directories dir1-dir8 in /tmp/37.24</summary>
+<details><summary>Create directories dir1-dir8 in /work/37.24</summary>
 
 ```
-mkdir /tmp/37.24/dir{1..8}
-# ls /tmp/37.24/
+mkdir /work/37.24/dir{1..8}
+# ls /work/37.24/
 dir1  dir2  dir3  dir4  dir5  dir6  dir7  dir8
 ```
 
 </details>
 
 
-<details><summary>Create dummy files file1-99 in /tmp/1.64 and then delete file40 through file52</summary>
+<details><summary>Create dummy files file1-99 in /work/1.64 and then delete file40 through file52</summary>
 
 ```
-# touch /tmp/1.64/file{1..99}
-# rm /tmp/1.64/file{40..49}
-# ls /tmp/1.64/file{40..49}
-# ls /tmp/1.64/file* # result truncated to avoid filling this space
-```
-
-</details>
-
-
-<details><summary>Copy /etc/debian_version to /tmp/34.21/ </summary>
-
-```
-# cp /etc/debian_version /tmp/34.21/
-# ls /tmp/34.21/debi*
-/tmp/34.21/debian_version
-```
-
-</details>
-
-<details><summary>Place a copy of /etc/debian_version in directory /tmp/33.23 with the name of ubuntu </summary>
-
-```
-# cp /etc/debian_version /tmp/33.23/ubuntu
-# ls /tmp/33.23/ubuntu
-/tmp/33.23/debian_version
+# touch /work/1.64/file{1..99}
+# rm /work/1.64/file{40..49}
+# ls /work/1.64/file{40..49}
+# ls /work/1.64/file* # result truncated to avoid filling this space
 ```
 
 </details>
 
 
-<details><summary>Make directories in /tmp/1.8/dirtest named 1,2,3,4, and 5 with one command; then delete them all with one command:</summary>
+<details><summary>Copy /etc/debian_version to /work/34.21/ </summary>
 
 ```
-# mkdir -p /tmp/1.8/dirtest/{1..5}
-# find /tmp/1.8/dirtest/ -type d -print
-/tmp/1.8/dirtest/
-/tmp/1.8/dirtest/4
-/tmp/1.8/dirtest/2
-/tmp/1.8/dirtest/3
-/tmp/1.8/dirtest/1
-/tmp/1.8/dirtest/5
-# rm -rf /tmp/1.8/dirtest/
+# cp /etc/debian_version /work/34.21/
+# ls /work/34.21/debi*
+/work/34.21/debian_version
 ```
 
 </details>
 
-<details><summary>Ask for confirmation before deleting directory /tmp/1.8/ then cancel.</summary>
+<details><summary>Place a copy of /etc/debian_version in directory /work/33.23 with the name of ubuntu </summary>
 
 ```
-rm -Rfi /tmp/1.8/
-```
-
-</details>
-
-<details><summary>Make the following path: /tmp/1.8/4/5/1/3/2/1/4/1/3/2/1/4/5/6/4 </summary>
-
-```
-mkdir -p /tmp/1.8/4/5/1/3/2/1/4/1/3/2/1/4/5/6/4
+# cp /etc/debian_version /work/33.23/ubuntu
+# ls /work/33.23/ubuntu
+/work/33.23/debian_version
 ```
 
 </details>
 
-<details><summary>Change your working directory (the directory you are currently in) to /tmp/1.8 and print working directory:</summary>
+
+<details><summary>Make directories in /work/1.8/dirtest named 1,2,3,4, and 5 with one command; then delete them all with one command:</summary>
 
 ```
-# cd /tmp/1.8
+# mkdir -p /work/1.8/dirtest/{1..5}
+# find /work/1.8/dirtest/ -type d -print
+/work/1.8/dirtest/
+/work/1.8/dirtest/4
+/work/1.8/dirtest/2
+/work/1.8/dirtest/3
+/work/1.8/dirtest/1
+/work/1.8/dirtest/5
+# rm -rf /work/1.8/dirtest/
+```
+
+</details>
+
+<details><summary>Ask for confirmation before deleting directory /work/1.8/ then cancel.</summary>
+
+```
+rm -Rfi /work/1.8/
+```
+
+</details>
+
+<details><summary>Make the following path: /work/1.8/4/5/1/3/2/1/4/1/3/2/1/4/5/6/4 </summary>
+
+```
+mkdir -p /work/1.8/4/5/1/3/2/1/4/1/3/2/1/4/5/6/4
+```
+
+</details>
+
+<details><summary>Change your working directory (the directory you are currently in) to /work/1.8 and print working directory:</summary>
+
+```
+# cd /work/1.8
 # pwd
-/tmp/1.8
+/work/1.8
 ```
 
 </details>
 
 ##	Shortcuts to files and directories with hard and soft links
-<details><summary>Create a hard link from /etc/apg.conf to /tmp/2.4/apglink: </summary>
+<details><summary>Create a hard link from /etc/apg.conf to /work/2.4/apglink: </summary>
 
 ```
-ln /etc/apg.conf /tmp/2.4/apglink
-```
-
-</details>
-
-<details><summary>Create a symbolic link between /etc/appstream.conf and /tmp/5.6/appstream.txt</summary>
-
-```
-# ln -s /etc/appstream.conf /tmp/5.6/appstream.txt
-# ls -al /tmp/5.6/appstream.txt
-lrwxrwxrwx 1 root root 19 Nov 10 01:47 /tmp/5.6/appstream.txt -> /etc/appstream.conf
+ln /etc/apg.conf /work/2.4/apglink
 ```
 
 </details>
 
-<details><summary>Figure out where the symbolic link /etc/vtrgb points to and put the result in /tmp/3.6/vtrgb</summary>
+<details><summary>Create a symbolic link between /etc/appstream.conf and /work/5.6/appstream.txt</summary>
 
 ```
-# ls -al /etc/vtrgb > /tmp/3.6/vtrgb
-# cat /tmp/3.6/vtrgb
-lrwxrwxrwx 1 root root 19 Nov 10 01:47 /tmp/5.6/appstream.txt -> /etc/appstream.conf
+# ln -s /etc/appstream.conf /work/5.6/appstream.txt
+# ls -al /work/5.6/appstream.txt
+lrwxrwxrwx 1 root root 19 Nov 10 01:47 /work/5.6/appstream.txt -> /etc/appstream.conf
 ```
 
 </details>
 
-<details><summary>/etc/ has a bunch of symbolic links.  Provide a report of them all in /tmp/3.6/etclinks.txt</summary>
+<details><summary>Figure out where the symbolic link /etc/vtrgb points to and put the result in /work/3.6/vtrgb</summary>
 
 ```
-# find /etc -type l  -exec ls -l {} \; > /tmp/3.6/etclinks.txt
-# head /tmp/3.6/etclinks.txt
+# ls -al /etc/vtrgb > /work/3.6/vtrgb
+# cat /work/3.6/vtrgb
+lrwxrwxrwx 1 root root 19 Nov 10 01:47 /work/5.6/appstream.txt -> /etc/appstream.conf
+```
+
+</details>
+
+<details><summary>/etc/ has a bunch of symbolic links.  Provide a report of them all in /work/3.6/etclinks.txt</summary>
+
+```
+# find /etc -type l  -exec ls -l {} \; > /work/3.6/etclinks.txt
+# head /work/3.6/etclinks.txt
 lrwxrwxrwx 1 root root 24 Nov 12 01:43 /etc/mysql/my.cnf -> /etc/alternatives/my.cnf
 lrwxrwxrwx 1 root root 17 Nov 14 00:55 /etc/rc5.d/S02anacron -> ../init.d/anacron
 lrwxrwxrwx 1 root root 17 Nov 15 20:42 /etc/rc5.d/S04dovecot -> ../init.d/dovecot
@@ -904,11 +905,11 @@ lrwxrwxrwx 1 root root 22 Nov 15 20:42 /etc/rc5.d/S04cpufrequtils -> ../init.d/c
 ##	Standard file permissions
 Commands: chmod, chown, chgrp, umask
 
-<details><summary>Create empty files in /tmp/8.2 with following names and permissions:
+<details><summary>Create empty files in /work/8.2 with following names and permissions:
 readonly r--r--r--, readwriteowner rw-------, and readwritegroup ---rw---- </summary>
 
 ```
-# cd /tmp/8.2
+# cd /work/8.2
 # touch readonlyowner readwriteowner readwritegroup
 # chmod 600 readwriteowner
 # chmod 400 readonlyowner
@@ -1200,10 +1201,10 @@ The main system logs are located in /var/log/
 /var/log/apache2 stores apache2 logs
 
 
-<details><summary>Find all occurrences of sudo and su authentication and place a report in /tmp/41.15 in a file named attackers.txt</summary>
+<details><summary>Find all occurrences of sudo and su authentication and place a report in /work/41.15 in a file named attackers.txt</summary>
 
 ```
-# grep "su|sudo" /var/log/auth.log > /tmp/41.15/attackers.txt
+# grep "su|sudo" /var/log/auth.log > /work/41.15/attackers.txt
 ```
 
 </details>
@@ -1280,14 +1281,14 @@ Commands: dpkg, apt-get, apt-cache, aptitude
 ### Update packages from the network, a remote repository, or from the local file system
 Install a specific DEB file given URL: `# apt-get -y install `
 install web server: `apt-get install -y apache2`
-dump the information for package apache to a file named /tmp/3.2/apacheinfo `apt-cache show apache2 > /tmp/3.2/apacheinfo`
+dump the information for package apache to a file named /work/3.2/apacheinfo `apt-cache show apache2 > /work/3.2/apacheinfo`
 Remove package named finger: `apt purge -y finger`
 How many files are part of finger?
 ```
 dpkg -L finger | wc -l
 13
 ```
-Copy all files that contain the word grub from /etc/grub.d into /tmp/4.7: 
+Copy all files that contain the word grub from /etc/grub.d into /work/4.7: 
 ```
 cp `grep -il "grub" /etc/grub.d/*` .
 for file in /etc/grub.d/*; do if grep -q "grub" "$file";then cp "$file"
@@ -1329,10 +1330,10 @@ Sources: [tecmint](https://www.tecmint.com/change-modify-linux-kernel-runtime-pa
 Commands: mktemp, touch, crontab, at, cron
 Files: /etc/cron.d/, /etc/crontab
 Create a very basic script to perform a series of commands in a set sequence.
-Make a temporary file in /tmp/ and display name: `mktemp`
-Make a temporary directory in /tmp/ and display name: `mktemp -d`
+Make a temporary file in /work/ and display name: `mktemp`
+Make a temporary directory in /work/ and display name: `mktemp -d`
 
-Create a bash script named “infiniteloop” in /tmp/6.7 that does the following:
+Create a bash script named “infiniteloop” in /work/6.7 that does the following:
 1.  Continually writes the string "Hello, world!" to the folder /dev/null
 2. Has no exit loop (that is, it will continue to run until told to stop    
 3.  Give fred permissions to run infinite_loop
@@ -1347,7 +1348,7 @@ while true; do echo "Hello, world!" > /dev/null ; done
 # ps auxf | grep fred
 # kill <PID>
 ```
-Write a BASH script called 2MB.sh in the /tmp/6.3/ directory that creates 17 files of 1MB each using the fallocate command. The files should have the name of: file_N where N is a number from 1 to 17.
+Write a BASH script called 2MB.sh in the /work/6.3/ directory that creates 17 files of 1MB each using the fallocate command. The files should have the name of: file_N where N is a number from 1 to 17.
 ```
 # SUM=1 ; 
 > until [ $SUM = 18 ]  ;
@@ -1571,10 +1572,10 @@ iputils-ping: /usr/share/man/man8/ping6.8.gz
 
 </details>
 
-##	Identify the component of a Linux distribution that a file belongs to placing the package name only in the file /tmp/7.5/pingpackage
+##	Identify the component of a Linux distribution that a file belongs to placing the package name only in the file /work/7.5/pingpackage
 ```
-# dpkg -S /bin/ping | cut -d \:  -f 1 >  /tmp/7.5/pingpackage
-# cat /tmp/7.5/pingpackage
+# dpkg -S /bin/ping | cut -d \:  -f 1 >  /work/7.5/pingpackage
+# cat /work/7.5/pingpackage
 iputils-ping
 ```
 What is in a package:
@@ -1641,11 +1642,11 @@ userdel: sally mail spool (/var/mail/sally) not found
 
 </details>
 
-<details><summary>Provide all of walt's idenfiying information such as UID and GUID into a file named /tmp/43.13/walt: </summary>
+<details><summary>Provide all of walt's idenfiying information such as UID and GUID into a file named /work/43.13/walt: </summary>
 
 ```
-# id walt > /tmp/43.13/walt
-# cat /tmp/43.13/walt
+# id walt > /work/43.13/walt
+# cat /work/43.13/walt
 ```
 
 </details>
@@ -1836,13 +1837,13 @@ Each filesystem can have various extended attributes which can be investigated v
 <details><summary>Make a file that is immutable and one that is mutable after creating both and then try to delete both:</summary>
 
 ```
-# touch /tmp/43.23/{immutable,mutable}
-# chattr +i /tmp/43.23/immutable
-# lsattr /tmp/43.23/*mutable
-----i---------e--- /tmp/43.23/immutable
---------------e--- /tmp/43.23/mutable
-# rm /tmp/43.23/*mutable
-rm: cannot remove '/tmp/43.23/immutable': Operation not permitted
+# touch /work/43.23/{immutable,mutable}
+# chattr +i /work/43.23/immutable
+# lsattr /work/43.23/*mutable
+----i---------e--- /work/43.23/immutable
+--------------e--- /work/43.23/mutable
+# rm /work/43.23/*mutable
+rm: cannot remove '/work/43.23/immutable': Operation not permitted
 ```
 
 </details>
@@ -1850,13 +1851,13 @@ rm: cannot remove '/tmp/43.23/immutable': Operation not permitted
 <details><summary>Delete both immutable mutable created earlier</summary>
 
 ```
-# chattr -i /tmp/43.23/immutable
-# lsattr /tmp/43.23/*mutable
-----i---------e--- /tmp/43.23/immutable
---------------e--- /tmp/43.23/mutable
-# rm /tmp/43.23/{immutable,mutable}
-# lsattr /tmp/43.23/*mutable
-lsattr: No such file or directory while trying to stat /tmp/43.23/*mutable
+# chattr -i /work/43.23/immutable
+# lsattr /work/43.23/*mutable
+----i---------e--- /work/43.23/immutable
+--------------e--- /work/43.23/mutable
+# rm /work/43.23/{immutable,mutable}
+# lsattr /work/43.23/*mutable
+lsattr: No such file or directory while trying to stat /work/43.23/*mutable
 ```
 
 </details>
@@ -1864,14 +1865,14 @@ lsattr: No such file or directory while trying to stat /tmp/43.23/*mutable
 <details><summary>Disable access time for a file such as would be desirable on an SSD drive and test:</summary>
 
 ```
-# touch /tmp/1.3/{timenoatime,timeatime}
-# chattr +A /tmp/1.3/timenoatime
-# echo 1 > /tmp/1.3/timeatime
-# echo 1 > /tmp/1.3/timenoatime
-# stat /tmp/1.3/time* | egrep "time|Access: 20"
-  File: '/tmp/1.3/timeatime'
+# touch /work/1.3/{timenoatime,timeatime}
+# chattr +A /work/1.3/timenoatime
+# echo 1 > /work/1.3/timeatime
+# echo 1 > /work/1.3/timenoatime
+# stat /work/1.3/time* | egrep "time|Access: 20"
+  File: '/work/1.3/timeatime'
 Access: 2018-11-08 15:22:07.248033652 -0600
-  File: '/tmp/1.3/timenoatime'
+  File: '/work/1.3/timenoatime'
 Access: 2018-11-08 15:18:12.279613170 -0600
 ```
 
@@ -2315,7 +2316,7 @@ swapon -s
 ```
  
  </details>
-<details><summary>Make a 3 MB swap file at /tmp/3MBswap and temporarily use it. </summary>
+<details><summary>Make a 3 MB swap file at /work/3MBswap and temporarily use it. </summary>
 
 ```
 #### pick between dd and fallocate
@@ -2485,59 +2486,59 @@ chmod
 find files with those permissions set on them
 ```
 
-<details><summary>enable suid and user's executable bit for new file called /tmp/7.4/suid</summary>
+<details><summary>enable suid and user's executable bit for new file called /work/7.4/suid</summary>
 
 ```
-# touch /tmp/7.4/suid
-# chmod u+sx  /tmp/7.4/suid 
-# ls -lt  /tmp/7.4/suid 
--rwsr--r-- 1 root root 0 Nov 18 16:36 /tmp/7.4/suid
-```
-
-</details>
-
-<details><summary>enable suid and user's executable bit for new file called /tmp/7.4/guid</summary>
-
-```
-# touch /tmp/7.4/guid
-# chmod g+sx  /tmp/7.4/guid
-# ls -lt  /tmp/7.4/guid
--rwsr--r-- 1 root root 0 Nov 18 16:36 /tmp/7.4/guid
+# touch /work/7.4/suid
+# chmod u+sx  /work/7.4/suid 
+# ls -lt  /work/7.4/suid 
+-rwsr--r-- 1 root root 0 Nov 18 16:36 /work/7.4/suid
 ```
 
 </details>
 
-<details><summary>Using octal, set /tmp/7.4/octal to GUID and read only for everyone.</summary>
+<details><summary>enable suid and user's executable bit for new file called /work/7.4/guid</summary>
+
+```
+# touch /work/7.4/guid
+# chmod g+sx  /work/7.4/guid
+# ls -lt  /work/7.4/guid
+-rwsr--r-- 1 root root 0 Nov 18 16:36 /work/7.4/guid
+```
+
+</details>
+
+<details><summary>Using octal, set /work/7.4/octal to GUID and read only for everyone.</summary>
 
 First, lookup octal values with man 2 stat
 ```
-# touch  /tmp/7.4/octal
-# chmod 02444   /tmp/7.4/octal
-# ls -al /tmp/7.4/octal
----x--s--x 1 root root 0 Nov 18 20:01 /tmp/7.4/octal
+# touch  /work/7.4/octal
+# chmod 02444   /work/7.4/octal
+# ls -al /work/7.4/octal
+---x--s--x 1 root root 0 Nov 18 20:01 /work/7.4/octal
 ```
 
 </details>
 
-<details><summary>Using octal, set /tmp/7.4/permissive to SUID and readwrite for everyone.</summary>
+<details><summary>Using octal, set /work/7.4/permissive to SUID and readwrite for everyone.</summary>
 
 First, lookup octal values with `man 2 stat`
 ```
-# touch  /tmp/7.4/permissive
-# chmod 04777   /tmp/7.4/permissive
-# ls -al /tmp/7.4/permissive
--rwsrwxrwx 1 root root 0 Nov 18 20:04 /tmp/7.4/permissive
+# touch  /work/7.4/permissive
+# chmod 04777   /work/7.4/permissive
+# ls -al /work/7.4/permissive
+-rwsrwxrwx 1 root root 0 Nov 18 20:04 /work/7.4/permissive
 ```
 
 </details>
 
-<details><summary>Find all SUID files in /tmp and make a record in /tmp/5.2/suid</summary>
+<details><summary>Find all SUID files in /tmp and make a record in /work/5.2/suid</summary>
 
 ```
 # grep -i "suid" -R /usr/share/ | grep find
 /usr/share/man/man1/find.1:.B find / \e( \-perm \-4000 \-fprintf /root/suid.txt \(aq%#m %u %p\en\(aq \e) , \e
 # man find 
-# find /tmp -perm 4000 -print > /tmp/5.2/suid
+# find /tmp -perm 4000 -print > /work/5.2/suid
 ```
 
 </details>
@@ -2720,10 +2721,10 @@ Sources: [tecmint - iptables](https://www.tecmint.com/basic-guide-on-iptables-li
 ##	Route traffic statically
 Commands: route, netstat -nr
 Documentation : `/usr/share/doc/ifupdown/examples/network-interfaces` which is at bottom of the `man interfaces` page.
-<details><summary>Place a copy of the  current routing table using numeric values only in /tmp/3.2/routes  </summary>
+<details><summary>Place a copy of the  current routing table using numeric values only in /work/3.2/routes  </summary>
 
 ```
-# route -nr > /tmp/3.2/routes  
+# route -nr > /work/3.2/routes  
 ```
 
 </details>
@@ -3290,11 +3291,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM3OTI1MTQsMTU3NzY1NDA2MCwtMzIzMz
-k4NDgzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMs
-LTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMj
-I2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0OTQw
-NzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LD
-I5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3MTc5
-ODc0ODZdfQ==
+eyJoaXN0b3J5IjpbMTM5MDE3NTQ1OCwxNTc3NjU0MDYwLC0zMj
+MzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2
+MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLT
+EyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5
+NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyOD
+YsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcx
+Nzk4NzQ4Nl19
 -->
