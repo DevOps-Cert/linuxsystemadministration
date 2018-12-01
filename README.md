@@ -1647,6 +1647,7 @@ userdel: sally mail spool (/var/mail/sally) not found
 ```
 # id walt > /work/43.13/walt
 # cat /work/43.13/walt
+uid=1006(walt) gid=1006(walt) groups=1006(walt)
 ```
 
 </details>
@@ -3291,11 +3292,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MDE3NTQ1OCwxNTc3NjU0MDYwLC0zMj
-MzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2
-MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLT
-EyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5
-NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyOD
-YsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcx
-Nzk4NzQ4Nl19
+eyJoaXN0b3J5IjpbNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMz
+M5ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYz
+LC0yMjgwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMT
+IyNjUyMDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYzNDk0
+MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4NzI4Ni
+wyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC0xNzE3
+OTg3NDg2XX0=
 -->
