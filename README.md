@@ -1708,7 +1708,30 @@ wild:.LimVdL1o85i0H4ZPw0h4oM/7.gKsCh6i8iXIds8/IQDAVIysCu7PbSa4CuIBwSpfybHH1/::
 
 Sources: [tecmint - Managing Users & Groups](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
 ##	System-wide profiles
-To control system wide environmental variables; tweak one of the following: /etc/environment, /etc/profile, /etc/profile.d/, /etc/bash.bashrc. These variables are loaded every time system is powered on and logged in either locally or remotely by any user.
+To control system wide environmental variables; tweak one of the following: /etc/environment, /etc/profile, /etc/profile.d/, /etc/bash.bashrc. 
+##	User Environmental Variables
+### Temporarily setting an environmental variable
+<details><summary>Put a report of all the current user environmental variables for root into /work/41.56/environment</summary>
+
+```
+# useradd abc123
+# passwd abc123
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+# grep abc123 /etc/shadow
+abc123:$6$hTjxsNcj$ncyhRhaNhVcFFEP.LimVdL1o85i0H4ZPw0h4oM/7.gKsCh6i8iXIds8/IQDAVIysCu7PbSa4CuIBwSpfybHH1/:17866:0:99999:7:::
+# groupmod -p $6$hTjxsNcj$ncyhRhaNhVcFFEP.LimVdL1o85i0H4ZPw0h4oM/7.gKsCh6i8iXIds8/IQDAVIysCu7PbSa4CuIBwSpfybHH1/ wild
+# grep wild /etc/gshadow
+wild:.LimVdL1o85i0H4ZPw0h4oM/7.gKsCh6i8iXIds8/IQDAVIysCu7PbSa4CuIBwSpfybHH1/::
+```
+
+</details>
+
+### Permanently setting an environmental variable
+
+
+
 ##	New user templates
 Adding, deleting, and modifying the files in /etc/skel for new users
 ##	Restricting resource limits for users and groups
@@ -3309,11 +3332,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjMzMTAzNzUsMTgyOTAyMDY4NywyMT
-g1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4
-MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYzLC0yMj
-gwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUy
-MDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYzNDk0MDc0LC
-0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4NzI4NiwyOTMx
-ODQ5MDRdfQ==
+eyJoaXN0b3J5IjpbLTUzMTAwODk1NSwxODI5MDIwNjg3LDIxOD
+U2ODQwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgz
+LC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyOD
+A1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIw
+NjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0OTQwNzQsLT
+E1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5MzE4
+NDkwNF19
 -->
