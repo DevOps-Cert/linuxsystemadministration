@@ -1691,7 +1691,16 @@ chgrp
 <details><summary>Set a group up called wild with a group password of halt.</summary>
 
 ```
-# mkdir /home/partners
+# useradd abc123
+# passwd abc123
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+# grep abc123 /etc/shadow
+abc123:$6$hTjxsNcj$ncyhRhaNhVcFFEP.LimVdL1o85i0H4ZPw0h4oM/7.gKsCh6i8iXIds8/IQDAVIysCu7PbSa4CuIBwSpfybHH1/:17866:0:99999:7:::
+# groupmod -p $6$hTjxsNcj$ncyhRhaNhVcFFEP.LimVdL1o85i0H4ZPw0h4oM/7.gKsCh6i8iXIds8/IQDAVIysCu7PbSa4CuIBwSpfybHH1/ wild
+# grep wild /etc/gshadow
+wild:.LimVdL1o85i0H4ZPw0h4oM/7.gKsCh6i8iXIds8/IQDAVIysCu7PbSa4CuIBwSpfybHH1/::
 ```
 
 </details>
@@ -3299,11 +3308,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE4NTY4NDAwLDQ1OTAyNzk1OSwxNTc3Nj
-U0MDYwLC0zMjMzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMs
-LTIyMzI1Nzg2MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5OD
-E2MjMyMDEsLTEyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMy
-NiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLT
-ExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5
-MjE3Ml19
+eyJoaXN0b3J5IjpbMTgyOTAyMDY4NywyMTg1Njg0MDAsNDU5MD
+I3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0
+LDUxMDEyMTM1MywtMjIzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MT
+Y2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2
+OCwxMzk0MzYxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LD
+Y4NjA1NDIzNiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5
+MjUyMl19
 -->
