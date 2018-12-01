@@ -1724,15 +1724,11 @@ USER=root
 
 </details>
 
-<details><summary>Set shellterm to </summary>
+<details><summary>Set mail variable to /dev/null then unset</summary>
 
 ```
-# env > /work/41.56/environment
-# cat /work/41.56/environment
-XDG_SESSION_ID=c1
-TERM=xterm
-SHELL=/bin/bash
-USER=root
+# env -i csh
+# unset 
 ```
 
 </details>
@@ -3341,7 +3337,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDY2OTczMTksMTgyOTAyMDY4NywyMT
+eyJoaXN0b3J5IjpbLTEzNjA0MzY2NzksMTgyOTAyMDY4NywyMT
 g1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4
 MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYzLC0yMj
 gwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUy
