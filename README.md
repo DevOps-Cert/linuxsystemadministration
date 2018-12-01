@@ -3065,6 +3065,9 @@ Require user nel
 # htpasswd -c /etc/apache2/passwd nel
 # systemctl restart apache2
 # curl http://localhost/nel
+<title>401 Unauthorized</title>
+# curl http://nel:abc123@localhost/nel
+<title>301 Moved Permanently</title>
 ```
 https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-apache-on-ubuntu-14-04
 
@@ -3256,11 +3259,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUxODc5NDY5LDE1Nzc2NTQwNjAsLTMyMz
-M5ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYz
-LC0yMjgwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMT
-IyNjUyMDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYzNDk0
-MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4NzI4Ni
-wyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC0xNzE3
-OTg3NDg2XX0=
+eyJoaXN0b3J5IjpbMjA4OTgxOTEsMTU3NzY1NDA2MCwtMzIzMz
+k4NDgzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMs
+LTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMj
+I2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0OTQw
+NzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LD
+I5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3MTc5
+ODc0ODZdfQ==
 -->
