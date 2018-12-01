@@ -3071,20 +3071,12 @@ https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authenti
 
 </details>
 
-<details><summary>Disable directory indexing for /var/www/html/</summary>
+<details><summary>Disable directory indexing for /var/www/html/ including a new directory called /newdir/</summary>
 
 ```
-# mkdir -p /var/www/html/nel
-# echo "<Directory "/var/www/html/nel">
-AuthType Basic
-AuthName "Password protected area"
-AuthUserFile /etc/apache2/passwd
-Require user nel
-</Directory>" > /etc/apache2/sites-enabled/010-nel.conf
-# htpasswd -c /etc/apache2/passwd nel
 # systemctl restart apache2
-# echo "the above fails currently..."
-# curl http://localhost/nel
+# curl http://localhost/newdir/
+
 ```
 https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-apache-on-ubuntu-14-04
 
@@ -3265,11 +3257,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjg3OTc1OSwxNTc3NjU0MDYwLC0zMj
-MzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2
-MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLT
-EyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5
-NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyOD
-YsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcx
-Nzk4NzQ4Nl19
+eyJoaXN0b3J5IjpbLTIwNDAzNjE5MjQsMTU3NzY1NDA2MCwtMz
+IzMzk4NDgzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4
+NjMsLTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC
+0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0
+OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mj
+g2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3
+MTc5ODc0ODZdfQ==
 -->
