@@ -1708,6 +1708,7 @@ wild:.LimVdL1o85i0H4ZPw0h4oM/7.gKsCh6i8iXIds8/IQDAVIysCu7PbSa4CuIBwSpfybHH1/::
 
 Sources: [tecmint - Managing Users & Groups](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
 ##	System-wide profiles
+To control system wide environmental variables; tweak one of the following: /etc/environment, /etc/profile, /etc/profile.d/, /etc/bash.bashrc. These variables are loaded every time system is powered on and logged in either locally or remotely by any user.
 ##	New user templates
 Adding, deleting, and modifying the files in /etc/skel for new users
 ##	Restricting resource limits for users and groups
@@ -3308,11 +3309,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyOTAyMDY4NywyMTg1Njg0MDAsNDU5MD
-I3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0
-LDUxMDEyMTM1MywtMjIzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MT
-Y2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2
-OCwxMzk0MzYxMzI2LC0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LD
-Y4NjA1NDIzNiwtMTE2MDY4NzI4NiwyOTMxODQ5MDQsLTY0Nzc5
-MjUyMl19
+eyJoaXN0b3J5IjpbLTIxMjMzMTAzNzUsMTgyOTAyMDY4NywyMT
+g1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4
+MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYzLC0yMj
+gwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUy
+MDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYzNDk0MDc0LC
+0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4NzI4NiwyOTMx
+ODQ5MDRdfQ==
 -->
