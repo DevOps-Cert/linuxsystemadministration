@@ -1720,7 +1720,19 @@ XDG_SESSION_ID=c1
 TERM=xterm
 SHELL=/bin/bash
 USER=root
+```
 
+</details>
+
+<details><summary>Set shellterm to </summary>
+
+```
+# env > /work/41.56/environment
+# cat /work/41.56/environment
+XDG_SESSION_ID=c1
+TERM=xterm
+SHELL=/bin/bash
+USER=root
 ```
 
 </details>
@@ -3329,11 +3341,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MDY4OTc1MywxODI5MDIwNjg3LDIxOD
-U2ODQwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgz
-LC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyOD
-A1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIw
-NjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0OTQwNzQsLT
-E1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5MzE4
-NDkwNF19
+eyJoaXN0b3J5IjpbLTE3NDY2OTczMTksMTgyOTAyMDY4NywyMT
+g1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4
+MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYzLC0yMj
+gwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUy
+MDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYzNDk0MDc0LC
+0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4NzI4NiwyOTMx
+ODQ5MDRdfQ==
 -->
