@@ -1588,11 +1588,11 @@ Sources: [tecmint - 15 dpkg Command Examples](https://www.tecmint.com/dpkg-comma
 #	User and Group Management
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module2-userandgroupmanagement/
 ##	Local user accounts
-We are going to want several accounts; if they haven't been created already from previous activity.  Make sure you have fred, sally, and walt.  For Fred, make sure he is named "Fred Flintstone" and is using shell of 
+We are going to want several accounts; if they haven't been created already from previous activity.  Make sure you have fred, sally, and walt.  For Fred, make sure he is named "Fred Flintstone" and is using shell of tcsh and ensure the folders home directory gets created for fred.
 ```
 # useradd -m sally
 # useradd -m walt
-# useradd -c "Fred Flintstone" -s /bin/bash -m fred
+# useradd -c "Fred Flintstone" -s /bin/tcsh -m fred
 # passwd fred
 # su fred
 # sudo chage -l fred
@@ -1629,6 +1629,15 @@ passwd: password updated successfully
 ```
 
 </details>
+
+<details><summary>pu: </summary>
+
+```
+
+```
+
+</details>
+
 
 ## Local groups and group memberships
 Commands: vi /etc/group, groups, groupadd
@@ -3260,7 +3269,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NTI0NTM5NywxNTc3NjU0MDYwLC0zMj
+eyJoaXN0b3J5IjpbMTcwNjAzMjA0NiwxNTc3NjU0MDYwLC0zMj
 MzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2
 MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLT
 EyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5
