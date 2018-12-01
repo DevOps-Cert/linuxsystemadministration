@@ -1714,16 +1714,13 @@ To control system wide environmental variables; tweak one of the following: /etc
 <details><summary>Put a report of all the current user environmental variables for root into /work/41.56/environment</summary>
 
 ```
-# useradd abc123
-# passwd abc123
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-# grep abc123 /etc/shadow
-abc123:$6$hTjxsNcj$ncyhRhaNhVcFFEP.LimVdL1o85i0H4ZPw0h4oM/7.gKsCh6i8iXIds8/IQDAVIysCu7PbSa4CuIBwSpfybHH1/:17866:0:99999:7:::
-# groupmod -p $6$hTjxsNcj$ncyhRhaNhVcFFEP.LimVdL1o85i0H4ZPw0h4oM/7.gKsCh6i8iXIds8/IQDAVIysCu7PbSa4CuIBwSpfybHH1/ wild
-# grep wild /etc/gshadow
-wild:.LimVdL1o85i0H4ZPw0h4oM/7.gKsCh6i8iXIds8/IQDAVIysCu7PbSa4CuIBwSpfybHH1/::
+# env > /work/41.56/environment
+# cat /work/41.56/environment
+XDG_SESSION_ID=c1
+TERM=xterm
+SHELL=/bin/bash
+USER=root
+
 ```
 
 </details>
@@ -3332,7 +3329,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMTAwODk1NSwxODI5MDIwNjg3LDIxOD
+eyJoaXN0b3J5IjpbMTE0MDY4OTc1MywxODI5MDIwNjg3LDIxOD
 U2ODQwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgz
 LC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyOD
 A1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIw
