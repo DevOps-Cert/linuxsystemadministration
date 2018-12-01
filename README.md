@@ -1630,10 +1630,11 @@ passwd: password updated successfully
 
 </details>
 
-<details><summary>pu: </summary>
+<details><summary>Delete sally's account and all her files in her home directory: </summary>
 
 ```
-
+# userdel -r sally
+userdel: sally mail spool (/var/mail/sally) not found
 ```
 
 </details>
@@ -3269,11 +3270,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNjAzMjA0NiwxNTc3NjU0MDYwLC0zMj
-MzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2
-MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLT
-EyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5
-NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyOD
-YsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcx
-Nzk4NzQ4Nl19
+eyJoaXN0b3J5IjpbLTEzNDk4MTU3MzAsMTU3NzY1NDA2MCwtMz
+IzMzk4NDgzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4
+NjMsLTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC
+0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0
+OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mj
+g2LDI5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3
+MTc5ODc0ODZdfQ==
 -->
