@@ -1641,6 +1641,15 @@ userdel: sally mail spool (/var/mail/sally) not found
 
 </details>
 
+<details><summary>Provide all of walt's idenfiying information such as UID and GUID into a file named /tmp/43.13/walt: </summary>
+
+```
+# id walt > /tmp/43.13/walt
+# cat /tmp/43.13/walt
+```
+
+</details>
+
 <details><summary>Delete sally's account and all her files in her home directory: </summary>
 
 ```
@@ -3281,11 +3290,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NDcwNTU3NiwxNTc3NjU0MDYwLC0zMj
-MzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2
-MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLT
-EyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5
-NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyOD
-YsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5MjE3MiwtMTcx
-Nzk4NzQ4Nl19
+eyJoaXN0b3J5IjpbMjM3OTI1MTQsMTU3NzY1NDA2MCwtMzIzMz
+k4NDgzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMs
+LTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMj
+I2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0OTQw
+NzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LD
+I5MzE4NDkwNCwtNjQ3NzkyNTIyLC03MDYwOTIxNzIsLTE3MTc5
+ODc0ODZdfQ==
 -->
