@@ -1724,22 +1724,27 @@ USER=root
 
 </details>
 
-<details><summary>Set mail variable to /dev/null then unset</summary>
+<details><summary>Remove mail variable temporarily</summary>
 
 ```
 # env | grep MAIL
 MAIL=/var/mail/root
-# unet MAIL
-root@lb40:/var/www/html/nel# env | grep MAIL
-root@lb40:/var/www/html/nel# set $MAIL=/dev/null
-root@lb40:/var/www/html/nel# env | grep MAIL
-
+# unset MAIL
+# env | grep MAIL
+#
 ```
 
 </details>
 
 ### Permanently setting an environmental variable
 
+<details><summary>Remove mail variable permanently for root</summary>
+
+```
+# unset MAIL >> ~/.bashrc
+```
+
+</details>
 
 
 ##	New user templates
@@ -3342,11 +3347,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM3MjE2MTAwLDE4MjkwMjA2ODcsMjE4NT
-Y4NDAwLDQ1OTAyNzk1OSwxNTc3NjU0MDYwLC0zMjMzOTg0ODMs
-LTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2MywtMjI4MD
-U5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLTEyMjY1MjA2
-NjQsNDM5NzM5NjgsMTM5NDM2MTMyNiwtMTM2MzQ5NDA3NCwtMT
-U3MzQ5MzkyNCw2ODYwNTQyMzYsLTExNjA2ODcyODYsMjkzMTg0
-OTA0XX0=
+eyJoaXN0b3J5IjpbLTMyNTUwOTI1MSwxODI5MDIwNjg3LDIxOD
+U2ODQwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgz
+LC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyOD
+A1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIw
+NjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0OTQwNzQsLT
+E1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYwNjg3Mjg2LDI5MzE4
+NDkwNF19
 -->
