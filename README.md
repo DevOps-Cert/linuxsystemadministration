@@ -1661,6 +1661,8 @@ userdel: sally mail spool (/var/mail/sally) not found
 
 </details>
 
+<details><summary>Set sally to use Korn Shell, fred to use CSH, walt to use tcsh, and george to use sh.</summary>
+</details>
 
 ## Local groups and group memberships
 Commands: vi /etc/group, groups, groupadd
@@ -1686,7 +1688,12 @@ chgrp
 </details>
 
 
-<details><summary>Set sally to use Korn Shell, fred to use CSH, walt to use tcsh, and george to use sh.</summary>
+<details><summary>Set a group up called wild with a group password of halt.</summary>
+
+```
+# mkdir /home/partners
+```
+
 </details>
 
 
@@ -3292,11 +3299,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMz
-M5ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYz
-LC0yMjgwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMT
-IyNjUyMDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYzNDk0
-MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4NzI4Ni
-wyOTMxODQ5MDQsLTY0Nzc5MjUyMiwtNzA2MDkyMTcyLC0xNzE3
-OTg3NDg2XX0=
+eyJoaXN0b3J5IjpbMjE4NTY4NDAwLDQ1OTAyNzk1OSwxNTc3Nj
+U0MDYwLC0zMjMzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMs
+LTIyMzI1Nzg2MywtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5OD
+E2MjMyMDEsLTEyMjY1MjA2NjQsNDM5NzM5NjgsMTM5NDM2MTMy
+NiwtMTM2MzQ5NDA3NCwtMTU3MzQ5MzkyNCw2ODYwNTQyMzYsLT
+ExNjA2ODcyODYsMjkzMTg0OTA0LC02NDc3OTI1MjIsLTcwNjA5
+MjE3Ml19
 -->
