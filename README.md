@@ -1833,7 +1833,7 @@ You might be asked to use a PAM module, which you will have to determine, in ord
 
 https://www.tecmint.com/use-pam_tally2-to-lock-and-unlock-ssh-failed-login-attempts/ 
 ### Configure LDAP Server
-To setup lb40 as an ldap server: ```# sudo apt -y install slapd ldap-utils```
+To setup lb40 as an ldap server: ```# sudo apt -y install slapd ldap-utils openldap openldap-clients openldap-servers migrationtools```
 Fill in admin password desired when prompted, in this case let's use t3sting.
 Use the following to configure: ```sudo dpkg-reconfigure slapd```
 Let's match up with our DNS settings:
@@ -3425,11 +3425,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTMxMjMzMjUsLTkyMzAxMTg2OCwtMj
-ExMzU3ODY5OSwtMTM3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4
-MTI5NTIsLTEwODE5NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOT
-UxLDgyNzkyMTQ1MCwxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC0y
-MTM2MzkxMDg5LDE4MjkwMjA2ODcsMjE4NTY4NDAwLDQ1OTAyNz
-k1OSwxNTc3NjU0MDYwLC0zMjMzOTg0ODMsLTg4NjEyNTcwNCw1
-MTAxMjEzNTNdfQ==
+eyJoaXN0b3J5IjpbLTU4MjU4ODQwMSwtOTIzMDExODY4LC0yMT
+EzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgx
+Mjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NT
+EsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLTIx
+MzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OT
+U5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUx
+MDEyMTM1M119
 -->
