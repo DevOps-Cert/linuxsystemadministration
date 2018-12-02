@@ -3243,6 +3243,7 @@ MariaDB is the most common database server and is what we use.
 # docker ps  
 # docker ps -la 
 # docker stop httpd:2.4
+# docker rm httpd:2.4
 ```
 
 </details>
@@ -3365,11 +3366,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMj
-EzNjM5MTA4OSwxODI5MDIwNjg3LDIxODU2ODQwMCw0NTkwMjc5
-NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC04ODYxMjU3MDQsNT
-EwMTIxMzUzLC0yMjMyNTc4NjMsLTIyODA1OTc1OCwxMDYxNjY2
-MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LD
-EzOTQzNjEzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2
-MDU0MjM2XX0=
+eyJoaXN0b3J5IjpbLTE0ODU3NDUwMDAsMTA1NzE3MTgxOCwtMT
+I3NTI1MTAzMiwtMjEzNjM5MTA4OSwxODI5MDIwNjg3LDIxODU2
+ODQwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC
+04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyODA1
+OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIwNj
+Y0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0OTQwNzQsLTE1
+NzM0OTM5MjRdfQ==
 -->
