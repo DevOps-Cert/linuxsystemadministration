@@ -2888,7 +2888,8 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 ```
 # apt-get install libvirt-bin -y
 # systemctl start libvirtd
-# apt-get install -y https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_x86_64.deb
+# wget https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_x86_64.deb
+# apt-get install vagrant_*
 # vagrant init hashicorp/precise64 
 # vagrant up --provider=libvirt
 
@@ -3383,11 +3384,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg4NjQxNjY1LDE4NTM2NzIyMjgsLTUzOD
-gxMjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5
-NTEsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLT
-IxMzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3
-OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LD
-UxMDEyMTM1MywtMjIzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2
-NjAwM119
+eyJoaXN0b3J5IjpbMTE1NTI0Njg1NywxODUzNjcyMjI4LC01Mz
+g4MTI5NTIsLTEwODE5NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUw
+OTUxLDgyNzkyMTQ1MCwxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC
+0yMTM2MzkxMDg5LDE4MjkwMjA2ODcsMjE4NTY4NDAwLDQ1OTAy
+Nzk1OSwxNTc3NjU0MDYwLC0zMjMzOTg0ODMsLTg4NjEyNTcwNC
+w1MTAxMjEzNTMsLTIyMzI1Nzg2MywtMjI4MDU5NzU4LDEwNjE2
+NjYwMDNdfQ==
 -->
