@@ -3265,10 +3265,10 @@ _<type cntrl p + cntrl q> to switch back to terminal_
 CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS                      PORTS               NAMES
 e6239fd17cd9        ubuntu              "bash"              About a minute ago   Exited (0) 49 seconds ago                       angry_fermat
 
-$ docker logs containername or id  
-$ docker logs -f containername or id { live logs or streaming logs }  
-$ docker stats  
-$ docker top container_id  
+# docker logs containername or id  
+# docker logs -f containername or id { live logs or streaming logs }  
+# docker stats  
+ docker top container_id  
 $ docker build -t my-image dockerfiles/ or $ docker build -t aspnet5 . { there is a dot at the end to pick the local yaml file for the build }
 ```
 
@@ -3373,11 +3373,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mj
-c5MjE0NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMjEzNjM5
-MTA4OSwxODI5MDIwNjg3LDIxODU2ODQwMCw0NTkwMjc5NTksMT
-U3NzY1NDA2MCwtMzIzMzk4NDgzLC04ODYxMjU3MDQsNTEwMTIx
-MzUzLC0yMjMyNTc4NjMsLTIyODA1OTc1OCwxMDYxNjY2MDAzLC
-0xOTgxNjIzMjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQz
-NjEzMjZdfQ==
+eyJoaXN0b3J5IjpbLTE2MDU2MjgwNTAsMTQyMTc1MzE4NywtMT
+c2Njc1MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MTgxOCwtMTI3NTI1
+MTAzMiwtMjEzNjM5MTA4OSwxODI5MDIwNjg3LDIxODU2ODQwMC
+w0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC04ODYx
+MjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyODA1OTc1OC
+wxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIwNjY0LDQz
+OTczOTY4XX0=
 -->
