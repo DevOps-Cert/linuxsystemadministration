@@ -3237,12 +3237,12 @@ MariaDB is the most common database server and is what we use.
 # docker run hello-world 
 # docker ps  
 # docker ps -la 
-# docker search apache or microsoft { to search container by name }  
-# docker images { to list all the images in localhost }  
+# docker search apache
+# docker images
 # docker pull ubuntu  
 # docker run -it --rm -p 8080:80 nginx { for nginx, -it for interative }  
-$ docker ps -la { list all the containers, look for container_id, type first 3 letters which is enough }  
-$ docker start container_id or ubuntu { say efe }  
+# docker ps -la 
+# docker start ubuntu 
 $ docker stop efe  
 $ docker run -it ubuntu bash  
 $ root@efe34sdsdsds:/# { takes to container bash }  
@@ -3359,11 +3359,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NjQxNTMyMiwtMjEzNjM5MTA4OSwxOD
-I5MDIwNjg3LDIxODU2ODQwMCw0NTkwMjc5NTksMTU3NzY1NDA2
-MCwtMzIzMzk4NDgzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMj
-MyNTc4NjMsLTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIz
-MjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LDEzOTQzNjEzMjYsLT
-EzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2MDU0MjM2LC0xMTYw
-Njg3Mjg2XX0=
+eyJoaXN0b3J5IjpbLTIwOTE5ODY4NjUsLTIxMzYzOTEwODksMT
+gyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQw
+NjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMj
+IzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYy
+MzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC
+0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2
+MDY4NzI4Nl19
 -->
