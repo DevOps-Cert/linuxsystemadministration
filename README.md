@@ -3224,7 +3224,7 @@ MariaDB is the most common database server and is what we use.
 
 </details>
 
-<details><summary>Use Docker to setup a web server before destroying it.</summary>
+<details><summary>Use Docker to setup an Apache web server on port 4321 before destroying it.</summary>
 
 ```
 # apt update  
@@ -3236,14 +3236,21 @@ MariaDB is the most common database server and is what we use.
 # docker version  
 # docker search apache
 # docker images
-# docker pull ubuntu  
-# docker run -it --rm -p 8080:80 nginx { for nginx, -it for interative }  
-# docker start ubuntu 
+# docker pull httpd:2.4
+# docker run -dit -p 4321:80 httpd:2.4  
+# docker start httpd:2.4
 # docker ps -la 
 # docker ps  
 # docker ps -la 
-$ docker stop efe  
-$ docker run -it ubuntu bash  
+# docker stop httpd:2.4
+```
+
+</details>
+
+<details><summary>Use Docker to setup an Ubuntu machine.</summary>
+
+```
+# docker run -it ubuntu bash  
 $ root@efe34sdsdsds:/# { takes to container bash }  
 _<type cntrl p + cntrl q> to switch back to terminal_  
 $ docker save debian -o mydebian.tar  
@@ -3358,11 +3365,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzUyNTEwMzIsLTIxMzYzOTEwODksMT
-gyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQw
-NjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMj
-IzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYy
-MzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC
-0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2
-MDY4NzI4Nl19
+eyJoaXN0b3J5IjpbMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMj
+EzNjM5MTA4OSwxODI5MDIwNjg3LDIxODU2ODQwMCw0NTkwMjc5
+NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC04ODYxMjU3MDQsNT
+EwMTIxMzUzLC0yMjMyNTc4NjMsLTIyODA1OTc1OCwxMDYxNjY2
+MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIwNjY0LDQzOTczOTY4LD
+EzOTQzNjEzMjYsLTEzNjM0OTQwNzQsLTE1NzM0OTM5MjQsNjg2
+MDU0MjM2XX0=
 -->
