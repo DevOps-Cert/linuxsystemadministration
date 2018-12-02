@@ -9,7 +9,6 @@ Work on list
 * Managing libvirt machines (on new machine)
 * samba
 * ldap
-* Fixup mail stuff
 * Polish up web servers
 # Table of Contents
 
@@ -3426,11 +3425,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNjQ0NjUwMiwtOTIzMDExODY4LC0yMT
-EzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgx
-Mjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NT
-EsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLTIx
-MzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OT
-U5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUx
-MDEyMTM1M119
+eyJoaXN0b3J5IjpbLTE2OTMxMjMzMjUsLTkyMzAxMTg2OCwtMj
+ExMzU3ODY5OSwtMTM3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4
+MTI5NTIsLTEwODE5NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOT
+UxLDgyNzkyMTQ1MCwxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC0y
+MTM2MzkxMDg5LDE4MjkwMjA2ODcsMjE4NTY4NDAwLDQ1OTAyNz
+k1OSwxNTc3NjU0MDYwLC0zMjMzOTg0ODMsLTg4NjEyNTcwNCw1
+MTAxMjEzNTNdfQ==
 -->
