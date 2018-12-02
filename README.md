@@ -2882,8 +2882,8 @@ Sources: [certdepo](https://www.certdepot.net/rhel7-set-ntp-service/)
 #	Configurating Services
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfiguration/
 ## Virtual Machines
-
-### Configure a hypervisor to host virtual guests and load a simple VM
+**Ok, so, honestly this is one limitation of the VirtualBox approach with Vagrant.  You are either going to need to setup another machine really running Linux or something like that.**
+<details><summary>Configure a hypervisor to host virtual guests and load a simple VM</summary>
 
 ```
 # apt-get install libvirt-bin libvirt-dev -y
@@ -2894,6 +2894,8 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 # vagrant init generic/ubuntu1604 
 # vagrant up --provider=libvirt
 ```
+
+</details>
 
 ### Install Linux systems as virtual guests
 ### Start, stop, modify the status of virtual machines
@@ -3382,7 +3384,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MDU3MzUzMSwtMjExMzU3ODY5OSwtMT
+eyJoaXN0b3J5IjpbMTQwMjQwMDI1NywtMjExMzU3ODY5OSwtMT
 M3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5
 NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1MC
 wxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC0yMTM2MzkxMDg5LDE4
