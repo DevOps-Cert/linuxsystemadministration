@@ -11,7 +11,6 @@ Work on list
 * ldap
 * Fixup mail stuff
 * mysql steps
-* Docker and lxc
 * Polish up web servers
 # Table of Contents
 
@@ -3384,11 +3383,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjQwMDI1NywtMjExMzU3ODY5OSwtMT
-M3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5
-NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1MC
-wxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC0yMTM2MzkxMDg5LDE4
-MjkwMjA2ODcsMjE4NTY4NDAwLDQ1OTAyNzk1OSwxNTc3NjU0MD
-YwLC0zMjMzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIy
-MzI1Nzg2M119
+eyJoaXN0b3J5IjpbNTc0NjQ4MTM5LC0yMTEzNTc4Njk5LC0xMz
+cwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MTk1
+MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NTEsODI3OTIxNDUwLD
+EwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLTIxMzYzOTEwODksMTgy
+OTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNj
+AsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIz
+MjU3ODYzXX0=
 -->
