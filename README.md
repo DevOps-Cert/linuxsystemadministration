@@ -2891,6 +2891,8 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 # wget https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_x86_64.deb
 # dpkg -i vagrant_2.2.2_x86_64.deb
 # vagrant init hashicorp/precise64 
+# apt-get install zlib
+# gem install nokogiri
 # vagrant plugin install pkg-config
 # vagrant plugin install vagrant-libvirt
 # vagrant up --provider=libvirt
@@ -3383,7 +3385,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzgxMzU4MDQsMTg1MzY3MjIyOCwtNT
+eyJoaXN0b3J5IjpbLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwtNT
 M4ODEyOTUyLC0xMDgxOTUzNDEsMTQyMTc1MzE4NywtMTc2Njc1
 MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMi
 wtMjEzNjM5MTA4OSwxODI5MDIwNjg3LDIxODU2ODQwMCw0NTkw
