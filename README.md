@@ -2890,7 +2890,7 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 # systemctl start libvirtd
 # wget https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_x86_64.deb
 # dpkg -i vagrant_2.2.2_x86_64.deb
-# vagrant init hashicorp/precise64 
+# vagrant init ## [generic](https://app.vagrantup.com/generic)/[ubuntu1604](https://app.vagrantup.com/generic/boxes/ubuntu1604) 
 # vagrant plugin install vagrant-libvirt
 # vagrant up --provider=libvirt
 ```
@@ -3382,11 +3382,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMT
-g1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgxOTUzNDEsMTQyMTc1
-MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MTgxOC
-wtMTI3NTI1MTAzMiwtMjEzNjM5MTA4OSwxODI5MDIwNjg3LDIx
-ODU2ODQwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4ND
-gzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIy
-ODA1OTc1OF19
+eyJoaXN0b3J5IjpbLTIxMjI1MzMzMjMsLTIxMTM1Nzg2OTksLT
+EzNzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgx
+OTUzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0NT
+AsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMjEzNjM5MTA4OSwx
+ODI5MDIwNjg3LDIxODU2ODQwMCw0NTkwMjc5NTksMTU3NzY1ND
+A2MCwtMzIzMzk4NDgzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC0y
+MjMyNTc4NjNdfQ==
 -->
