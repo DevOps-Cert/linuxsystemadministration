@@ -3061,6 +3061,9 @@ sysadmin: fred, lab
 # cd  /etc/pki/tls/certs/
 # make /etc/dovecot/**dovecot.pem
 # grep /etc/dovecot/conf.d/10-ssl.conf
+ssl = required
+ssl_cert = </etc/dovecot/dovecot.pem
+#ssl_key = </etc/dovecot/private/dovecot.pem
 ```
 
 </details>
@@ -3423,11 +3426,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjYzMjcyNTAsLTkyMzAxMTg2OCwtMj
-ExMzU3ODY5OSwtMTM3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4
-MTI5NTIsLTEwODE5NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOT
-UxLDgyNzkyMTQ1MCwxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC0y
-MTM2MzkxMDg5LDE4MjkwMjA2ODcsMjE4NTY4NDAwLDQ1OTAyNz
-k1OSwxNTc3NjU0MDYwLC0zMjMzOTg0ODMsLTg4NjEyNTcwNCw1
-MTAxMjEzNTNdfQ==
+eyJoaXN0b3J5IjpbLTU0NTI0NTQwNiwtOTIzMDExODY4LC0yMT
+EzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgx
+Mjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NT
+EsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLTIx
+MzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OT
+U5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUx
+MDEyMTM1M119
 -->
