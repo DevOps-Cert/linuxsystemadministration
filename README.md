@@ -3234,15 +3234,14 @@ MariaDB is the most common database server and is what we use.
 # systemctl status docker  
 # docker info  
 # docker version  
-# docker run hello-world 
-# docker ps  
-# docker ps -la 
 # docker search apache
 # docker images
 # docker pull ubuntu  
 # docker run -it --rm -p 8080:80 nginx { for nginx, -it for interative }  
-# docker ps -la 
 # docker start ubuntu 
+# docker ps -la 
+# docker ps  
+# docker ps -la 
 $ docker stop efe  
 $ docker run -it ubuntu bash  
 $ root@efe34sdsdsds:/# { takes to container bash }  
@@ -3359,7 +3358,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTE5ODY4NjUsLTIxMzYzOTEwODksMT
+eyJoaXN0b3J5IjpbLTEyNzUyNTEwMzIsLTIxMzYzOTEwODksMT
 gyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQw
 NjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMj
 IzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYy
