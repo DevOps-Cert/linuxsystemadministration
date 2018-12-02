@@ -2886,9 +2886,11 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 **Ok, so, honestly this is one limitation of the VirtualBox approach with Vagrant.  You are either going to need to setup another machine really running Linux or something like that.**
 
 ```
-# apt-get install libvirt-bin vagrant -y
+# apt-get install libvirt-bin -y
 # systemctl start libvirtd
-# vagrant init hashicorp/precise64 --provider=libvirt
+# apt-get install -y https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_x86_64.deb
+# vagrant init hashicorp/precise64 
+# vagrant up --provider=libvirt
 
 # vagrant plugin install pkg-config
 # vagrant plugin install vagrant-libvirt
@@ -3381,11 +3383,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTAzODMyMzcsMTg1MzY3MjIyOCwtNT
-M4ODEyOTUyLC0xMDgxOTUzNDEsMTQyMTc1MzE4NywtMTc2Njc1
-MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMi
-wtMjEzNjM5MTA4OSwxODI5MDIwNjg3LDIxODU2ODQwMCw0NTkw
-Mjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC04ODYxMjU3MD
-QsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyODA1OTc1OCwxMDYx
-NjY2MDAzXX0=
+eyJoaXN0b3J5IjpbNDg4NjQxNjY1LDE4NTM2NzIyMjgsLTUzOD
+gxMjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5
+NTEsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLT
+IxMzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3
+OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LD
+UxMDEyMTM1MywtMjIzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2
+NjAwM119
 -->
