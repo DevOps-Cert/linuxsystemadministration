@@ -10,7 +10,6 @@ Work on list
 * samba
 * ldap
 * Fixup mail stuff
-* mysql steps
 * Polish up web servers
 # Table of Contents
 
@@ -3018,9 +3017,6 @@ Sources: [tecmint - Configure Zones for Domain](https://www.tecmint.com/setup-re
 
 ```
 # apt-get -y install postfix dovecot-core
-vi /etc/postfix/main.cf
-	myorigin = /etc/mailname (hostname)
-	file /etc/postfix/transport and command postmap /etc/postfix/transport
 ```
 
 </details>
@@ -3403,11 +3399,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI4Nzc3OTQ1LC0yMTEzNTc4Njk5LC0xMz
-cwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MTk1
-MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NTEsODI3OTIxNDUwLD
-EwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLTIxMzYzOTEwODksMTgy
-OTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNj
-AsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIz
-MjU3ODYzXX0=
+eyJoaXN0b3J5IjpbLTEzNDA0MzU0MDAsLTIxMTM1Nzg2OTksLT
+EzNzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgx
+OTUzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0NT
+AsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMjEzNjM5MTA4OSwx
+ODI5MDIwNjg3LDIxODU2ODQwMCw0NTkwMjc5NTksMTU3NzY1ND
+A2MCwtMzIzMzk4NDgzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC0y
+MjMyNTc4NjNdfQ==
 -->
