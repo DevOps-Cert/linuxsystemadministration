@@ -2886,7 +2886,7 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 **Ok, so, honestly this is one limitation of the VirtualBox approach with Vagrant.  You are either going to need to setup another machine really running Linux or something like that.**
 
 ```
-# apt-get install libvirt-bin -y
+# apt-get install libvirt-bin libvirt-dev -y
 # systemctl start libvirtd
 # wget https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_x86_64.deb
 # dpkg -i vagrant_2.2.2_x86_64.deb
@@ -2902,8 +2902,8 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 ### Configure systems to launch virtual machines at boot
 ### Evaluate memory usage of virtual machines
 ### Create light-weight virtualized guests via namespaces
-### Resize RAM or storage of VM
-### Resize storage of a VM
+### Reduce RAM of VM
+### Increase storage of a VM
 ### Cloning and replicating VMs using images or snapshots
 Ubuntu can provide hypervisor services to run VMs within domains.
 
@@ -3382,7 +3382,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjQxODY3MTMsLTEzNzAzNzAzODQsMT
+eyJoaXN0b3J5IjpbLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMT
 g1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgxOTUzNDEsMTQyMTc1
 MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MTgxOC
 wtMTI3NTI1MTAzMiwtMjEzNjM5MTA4OSwxODI5MDIwNjg3LDIx
