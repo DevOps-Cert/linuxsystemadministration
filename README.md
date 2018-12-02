@@ -3243,7 +3243,14 @@ MariaDB is the most common database server and is what we use.
 # docker ps  
 # docker ps -la 
 # docker stop httpd:2.4
-# docker rm httpd:2.4
+# docker ps -la
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES
+0fb2e7e98577        httpd:2.4           "bash"              3 minutes ago       Exited (0) 2 minutes ago                       reverent_wozniak
+# docker rm 0fb2e7e98577
+0fb2e7e98577
+# docker rm 0fb2e7e98577
+Error response from daemon: No such container: 0fb2e7e98577
+#
 ```
 
 </details>
@@ -3366,7 +3373,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODU3NDUwMDAsMTA1NzE3MTgxOCwtMT
+eyJoaXN0b3J5IjpbLTE5Njk0MDEzMDIsMTA1NzE3MTgxOCwtMT
 I3NTI1MTAzMiwtMjEzNjM5MTA4OSwxODI5MDIwNjg3LDIxODU2
 ODQwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC
 04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyODA1
