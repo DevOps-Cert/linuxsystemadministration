@@ -1857,6 +1857,11 @@ BASE     dc=ubuntu,dc=local
 URI      ldap://10.20.30.40
 ### To have PAM use LDAP server:
 To configure PAM within an application to use specifically LDAP:
+### Setup LDAP
+
+```
+slappasswd -s t3sting -n > /etc/openldap/passwd
+```
 
 Sources: [Ubuntu LDAP Server](https://www.linuxbabe.com/ubuntu/install-configure-openldap-server-ubuntu-16-04)
 
@@ -3425,11 +3430,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MjIxNTc2LC05MjMwMTE4NjgsLTIxMT
-M1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEy
-OTUyLC0xMDgxOTUzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MS
-w4Mjc5MjE0NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMjEz
-NjM5MTA4OSwxODI5MDIwNjg3LDIxODU2ODQwMCw0NTkwMjc5NT
-ksMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC04ODYxMjU3MDQsNTEw
-MTIxMzUzXX0=
+eyJoaXN0b3J5IjpbMTcwOTk0NzQxMiwtOTIzMDExODY4LC0yMT
+EzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgx
+Mjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NT
+EsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLTIx
+MzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OT
+U5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUx
+MDEyMTM1M119
 -->
