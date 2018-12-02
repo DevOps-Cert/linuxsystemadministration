@@ -3241,13 +3241,10 @@ MariaDB is the most common database server and is what we use.
 # docker start httpd:2.4
 # # curl localhost:4321
 <html><body><h1>It works!</h1></body></html>
-# docker ps -la 
-# docker ps  
-# docker ps -la 
-# docker stop httpd:2.4
 # docker ps -la
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES
 0fb2e7e98577        httpd:2.4           "bash"              3 minutes ago       Exited (0) 2 minutes ago                       reverent_wozniak
+# docker stop httpd:2.4
 # docker rm 0fb2e7e98577
 0fb2e7e98577
 # docker rm 0fb2e7e98577
@@ -3376,7 +3373,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NjAxOTE3OSwtMTc2Njc1MDk1MSw4Mj
+eyJoaXN0b3J5IjpbMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mj
 c5MjE0NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMjEzNjM5
 MTA4OSwxODI5MDIwNjg3LDIxODU2ODQwMCw0NTkwMjc5NTksMT
 U3NzY1NDA2MCwtMzIzMzk4NDgzLC04ODYxMjU3MDQsNTEwMTIx
