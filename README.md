@@ -3231,13 +3231,13 @@ MariaDB is the most common database server and is what we use.
 # apt install docker.io  
 # systemctl enable docker  
 # systemctl start docker  
-$ systemctl status docker  
+# systemctl status docker  
 # docker info  
-$ docker version  
-$ docker run hello-world { to pull the hello-world for testing }  
-$ docker ps  
-$ docker ps -la or $ docker ps -a { list all the containers }  
-$ docker search apache or microsoft { to search container by name }  
+# docker version  
+# docker run hello-world 
+# docker ps  
+# docker ps -la 
+# docker search apache or microsoft { to search container by name }  
 $ docker images { to list all the images in localhost }  
 $ docker pull ubuntu  
 $ docker run -it --rm -p 8080:80 nginx { for nginx, -it for interative }  
@@ -3359,7 +3359,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTQ2NTAzMjQsLTIxMzYzOTEwODksMT
+eyJoaXN0b3J5IjpbLTIxMzc5MDI3NDcsLTIxMzYzOTEwODksMT
 gyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQw
 NjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMj
 IzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYy
