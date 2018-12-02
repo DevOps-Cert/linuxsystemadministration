@@ -3245,6 +3245,7 @@ MariaDB is the most common database server and is what we use.
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES
 0fb2e7e98577        httpd:2.4           "bash"              3 minutes ago       Exited (0) 2 minutes ago                       reverent_wozniak
 # docker stop httpd:2.4
+# docker kill 0fb2e7e98577
 # docker rm 0fb2e7e98577
 0fb2e7e98577
 # docker rm 0fb2e7e98577
@@ -3370,11 +3371,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODE5NTM0MSwxNDIxNzUzMTg3LC0xNz
-Y2NzUwOTUxLDgyNzkyMTQ1MCwxMDU3MTcxODE4LC0xMjc1MjUx
-MDMyLC0yMTM2MzkxMDg5LDE4MjkwMjA2ODcsMjE4NTY4NDAwLD
-Q1OTAyNzk1OSwxNTc3NjU0MDYwLC0zMjMzOTg0ODMsLTg4NjEy
-NTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2MywtMjI4MDU5NzU4LD
-EwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLTEyMjY1MjA2NjQsNDM5
-NzM5NjhdfQ==
+eyJoaXN0b3J5IjpbLTE0Mjg1Mjg1OTUsLTEwODE5NTM0MSwxND
+IxNzUzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1MCwxMDU3MTcx
+ODE4LC0xMjc1MjUxMDMyLC0yMTM2MzkxMDg5LDE4MjkwMjA2OD
+csMjE4NTY4NDAwLDQ1OTAyNzk1OSwxNTc3NjU0MDYwLC0zMjMz
+OTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIyMzI1Nzg2My
+wtMjI4MDU5NzU4LDEwNjE2NjYwMDMsLTE5ODE2MjMyMDEsLTEy
+MjY1MjA2NjRdfQ==
 -->
