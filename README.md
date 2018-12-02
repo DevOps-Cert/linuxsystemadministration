@@ -3255,16 +3255,17 @@ Error response from daemon: No such container: 0fb2e7e98577
 
 </details>
 
-<details><summary>Use Docker to setup an Ubuntu machine.</summary>
+<details><summary>Use Docker to setup an Ubuntu machine, test connectivity to google.com, check stats, and look at logs.</summary>
 
 ```
 # docker run -it ubuntu bash  
 $ root@efe34sdsdsds:/# { takes to container bash }  
 _<type cntrl p + cntrl q> to switch back to terminal_  
-$ docker save debian -o mydebian.tar  
-$ docker load -i mydebian.tar  
-$ docker export web-container -o xyz.tar  
-$ docker import xyz.tar  
+# exit
+# docker ps -al
+CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS                      PORTS               NAMES
+e6239fd17cd9        ubuntu              "bash"              About a minute ago   Exited (0) 49 seconds ago                       angry_fermat
+
 $ docker logs containername or id  
 $ docker logs -f containername or id { live logs or streaming logs }  
 $ docker stats  
@@ -3373,11 +3374,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njk0MDEzMDIsMTA1NzE3MTgxOCwtMT
-I3NTI1MTAzMiwtMjEzNjM5MTA4OSwxODI5MDIwNjg3LDIxODU2
-ODQwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC
-04ODYxMjU3MDQsNTEwMTIxMzUzLC0yMjMyNTc4NjMsLTIyODA1
-OTc1OCwxMDYxNjY2MDAzLC0xOTgxNjIzMjAxLC0xMjI2NTIwNj
-Y0LDQzOTczOTY4LDEzOTQzNjEzMjYsLTEzNjM0OTQwNzQsLTE1
-NzM0OTM5MjRdfQ==
+eyJoaXN0b3J5IjpbODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNz
+UyNTEwMzIsLTIxMzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0
+MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtOD
+g2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYzLC0yMjgwNTk3
+NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUyMDY2NC
+w0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYzNDk0MDc0LC0xNTcz
+NDkzOTI0XX0=
 -->
