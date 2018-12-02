@@ -3043,6 +3043,18 @@ sysadmin: fred, lab
 
 </details>
 
+<details><summary>Restrict access to SMTP server</summary>
+
+```
+# postconf _smtpd_helo_required = yes_
+# postconf  _smtpd_helo_restrictions = permit_mynetworks, reject_invalid_helo_hostname_
+# postconf  _smtpd_sender_restrictions = permit_mynetworks, reject_unknown_sender_domain_
+# postconf  _smtpd_recipient_restrictions = permit_mynetworks, reject_unauth_destination_
+# systemctl restart  _postfix_
+```
+
+</details>
+
 Sources: [certdepo](https://www.certdepot.net/smtp-configure-alias/), [random](https://websphereissues.wordpress.com/2017/11/15/configure-postfix-and-dovecot-in-centos7/)
 ##	Secure Shell (SSH) 
 ```
@@ -3400,11 +3412,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwtMT
-M3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5
-NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1MC
-wxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC0yMTM2MzkxMDg5LDE4
-MjkwMjA2ODcsMjE4NTY4NDAwLDQ1OTAyNzk1OSwxNTc3NjU0MD
-YwLC0zMjMzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIy
-MzI1Nzg2M119
+eyJoaXN0b3J5IjpbMTU1OTY0NjAwMCwtOTIzMDExODY4LC0yMT
+EzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgx
+Mjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NT
+EsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLTIx
+MzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OT
+U5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUx
+MDEyMTM1M119
 -->
