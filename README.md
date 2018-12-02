@@ -2888,7 +2888,9 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 ```
 # apt-get install libvirt-bin -y
 # systemctl start libvirtd
-
+# gem install nokogiri
+# vagrant plugin install pkg-config
+# vagrant plugin install vagrant-libvirt
 ```
 
 ### Install Linux systems as virtual guests
@@ -3378,7 +3380,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDUwOTQ4MiwtNTM4ODEyOTUyLC0xMD
+eyJoaXN0b3J5IjpbMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMD
 gxOTUzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0
 NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMjEzNjM5MTA4OS
 wxODI5MDIwNjg3LDIxODU2ODQwMCw0NTkwMjc5NTksMTU3NzY1
