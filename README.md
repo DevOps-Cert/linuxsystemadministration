@@ -3212,7 +3212,8 @@ MariaDB is the most common database server and is what we use.
 
 ```
 # apt-get install mariadb-server -y
-
+# systemctl start mariadb
+# systemctl enable mariadb
 ```
 
 </details>
@@ -3384,7 +3385,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDczNjQxNiwtMjExMzU3ODY5OSwtMT
+eyJoaXN0b3J5IjpbLTkyODg4MTM1OSwtMjExMzU3ODY5OSwtMT
 M3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5
 NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1MC
 wxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC0yMTM2MzkxMDg5LDE4
