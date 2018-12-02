@@ -3261,7 +3261,7 @@ Error response from daemon: No such container: 0fb2e7e98577
 # docker run -it ubuntu bash  
 $ root@efe34sdsdsds:/# { takes to container bash }  
 _<type cntrl p + cntrl q> to switch back to terminal_  
-# exit
+# apt-get install
 # docker ps -al
 CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS                      PORTS               NAMES
 e6239fd17cd9        ubuntu              "bash"              About a minute ago   Exited (0) 49 seconds ago                       angry_fermat
@@ -3374,11 +3374,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNz
-UyNTEwMzIsLTIxMzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0
-MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtOD
-g2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYzLC0yMjgwNTk3
-NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUyMDY2NC
-w0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYzNDk0MDc0LC0xNTcz
-NDkzOTI0XX0=
+eyJoaXN0b3J5IjpbLTE3NjY3NTA5NTEsODI3OTIxNDUwLDEwNT
+cxNzE4MTgsLTEyNzUyNTEwMzIsLTIxMzYzOTEwODksMTgyOTAy
+MDY4NywyMTg1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLT
+MyMzM5ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3
+ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMS
+wtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYz
+NDk0MDc0XX0=
 -->
