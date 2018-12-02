@@ -2888,6 +2888,7 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 ```
 # apt-get install libvirt-bin -y
 # systemctl start libvirtd
+
 ```
 
 ### Install Linux systems as virtual guests
@@ -3377,11 +3378,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODgxMjk1MiwtMTA4MTk1MzQxLDE0Mj
-E3NTMxODcsLTE3NjY3NTA5NTEsODI3OTIxNDUwLDEwNTcxNzE4
-MTgsLTEyNzUyNTEwMzIsLTIxMzYzOTEwODksMTgyOTAyMDY4Ny
-wyMTg1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5
-ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYzLC
-0yMjgwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMTIy
-NjUyMDY2NF19
+eyJoaXN0b3J5IjpbLTIzMDUwOTQ4MiwtNTM4ODEyOTUyLC0xMD
+gxOTUzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0
+NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMjEzNjM5MTA4OS
+wxODI5MDIwNjg3LDIxODU2ODQwMCw0NTkwMjc5NTksMTU3NzY1
+NDA2MCwtMzIzMzk4NDgzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC
+0yMjMyNTc4NjMsLTIyODA1OTc1OCwxMDYxNjY2MDAzLC0xOTgx
+NjIzMjAxXX0=
 -->
