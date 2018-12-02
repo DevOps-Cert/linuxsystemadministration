@@ -3022,6 +3022,7 @@ Sources: [tecmint - Configure Zones for Domain](https://www.tecmint.com/setup-re
 </details>
 
 Sources: [Installing Postfix and Dovecot](https://www.tecmint.com/installing-network-services-and-configuring-services-at-system-boot/)
+
 <details><summary>Configure email aliases using postfix</summary>
 
 ```
@@ -3042,7 +3043,7 @@ sysadmin: fred, lab
 
 </details>
 
-Sources: [certdepo](https://www.certdepot.net/smtp-configure-alias/)
+Sources: [certdepo](https://www.certdepot.net/smtp-configure-alias/), [random](https://websphereissues.wordpress.com/2017/11/15/configure-postfix-and-dovecot-in-centos7/)
 ##	Secure Shell (SSH) 
 ```
 systemctl status sshd
@@ -3399,11 +3400,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDA0MzU0MDAsLTIxMTM1Nzg2OTksLT
-EzNzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgx
-OTUzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0NT
-AsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMjEzNjM5MTA4OSwx
-ODI5MDIwNjg3LDIxODU2ODQwMCw0NTkwMjc5NTksMTU3NzY1ND
-A2MCwtMzIzMzk4NDgzLC04ODYxMjU3MDQsNTEwMTIxMzUzLC0y
-MjMyNTc4NjNdfQ==
+eyJoaXN0b3J5IjpbLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwtMT
+M3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5
+NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1MC
+wxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC0yMTM2MzkxMDg5LDE4
+MjkwMjA2ODcsMjE4NTY4NDAwLDQ1OTAyNzk1OSwxNTc3NjU0MD
+YwLC0zMjMzOTg0ODMsLTg4NjEyNTcwNCw1MTAxMjEzNTMsLTIy
+MzI1Nzg2M119
 -->
