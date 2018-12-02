@@ -3055,7 +3055,7 @@ sysadmin: fred, lab
 
 </details>
 
-<details><summary>Enable SSL encryption</summary>
+<details><summary>Enable SSL encryption in Dovecot </summary>
 
 ```
 # cd  /etc/pki/tls/certs/
@@ -3063,7 +3063,7 @@ sysadmin: fred, lab
 # grep /etc/dovecot/conf.d/10-ssl.conf
 ssl = required
 ssl_cert = </etc/dovecot/dovecot.pem
-#ssl_key = </etc/dovecot/private/dovecot.pem
+ssl_key = </etc/dovecot/private/dovecot.pem
 ```
 
 </details>
@@ -3426,7 +3426,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NTI0NTQwNiwtOTIzMDExODY4LC0yMT
+eyJoaXN0b3J5IjpbMjEyNjQ0NjUwMiwtOTIzMDExODY4LC0yMT
 EzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgx
 Mjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NT
 EsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLTIx
