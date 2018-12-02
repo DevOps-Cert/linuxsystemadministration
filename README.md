@@ -8,7 +8,6 @@ Work on list
 * PAM modules (figure out fastest way to search for appropriate ones to install and configure)
 * Managing libvirt machines (on new machine)
 * samba
-* ldap
 * Polish up web servers
 # Table of Contents
 
@@ -3430,7 +3429,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwOTk0NzQxMiwtOTIzMDExODY4LC0yMT
+eyJoaXN0b3J5IjpbMTI1MDg5MDUzMSwtOTIzMDExODY4LC0yMT
 EzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgx
 Mjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NT
 EsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLTIx
