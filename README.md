@@ -3227,13 +3227,12 @@ MariaDB is the most common database server and is what we use.
 <details><summary>Use Docker to setup a web server before destroying it.</summary>
 
 ```
-$ apt update  
-$ free -m  
-$ apt install docker.io  
-$ systemctl enable docker  
-$ systemctl start docker  
+# apt update  
+# apt install docker.io  
+# systemctl enable docker  
+# systemctl start docker  
 $ systemctl status docker  
-$ docker info  
+# docker info  
 $ docker version  
 $ docker run hello-world { to pull the hello-world for testing }  
 $ docker ps  
@@ -3360,11 +3359,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzYzOTEwODksMTgyOTAyMDY4NywyMT
-g1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4
-MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMjIzMjU3ODYzLC0yMj
-gwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYyMzIwMSwtMTIyNjUy
-MDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC0xMzYzNDk0MDc0LC
-0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2MDY4NzI4NiwyOTMx
-ODQ5MDRdfQ==
+eyJoaXN0b3J5IjpbLTE4NTQ2NTAzMjQsLTIxMzYzOTEwODksMT
+gyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OTU5LDE1Nzc2NTQw
+NjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUxMDEyMTM1MywtMj
+IzMjU3ODYzLC0yMjgwNTk3NTgsMTA2MTY2NjAwMywtMTk4MTYy
+MzIwMSwtMTIyNjUyMDY2NCw0Mzk3Mzk2OCwxMzk0MzYxMzI2LC
+0xMzYzNDk0MDc0LC0xNTczNDkzOTI0LDY4NjA1NDIzNiwtMTE2
+MDY4NzI4Nl19
 -->
