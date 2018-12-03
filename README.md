@@ -1828,7 +1828,7 @@ sudo:x:27:lab
 sudo:x:27:lab,fred
 ```
 ##	Configure PAM
-<details><summary>Make use of PAM to lock out user accounts after certain number of failed ssh login attempts made to the system.</summary>
+<details><summary>Make use of PAM to lock out user accounts after two failed login attempts made to the system.</summary>
 
 ```
 # whatis pam_tally2
@@ -3451,7 +3451,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNDE0NzQ4NCwtNjE2MDU5ODQ3LC0yMT
+eyJoaXN0b3J5IjpbLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMT
 M1Njc2NjE2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3
 ODY5OSwtMTM3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NT
 IsLTEwODE5NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgy
