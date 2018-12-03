@@ -2946,7 +2946,25 @@ Domain root_default started
 
 </details>
 
-### Access a VM console
+<details><summary>To access VM created with Vagrant</summary>
+
+```
+# vagrant ssh
+vagrant@ubuntu1604:~$ ifconfig
+# exit
+```
+
+</details>
+
+<details><summary>Access a VM console</summary>
+
+```
+# virsh console ### Not 
+```
+
+</details>
+
+
 ### Migrate a VM between two hosts
 ### Configure systems to launch virtual machines at boot
 ### Evaluate memory usage of virtual machines
@@ -3471,7 +3489,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM3OTgxNTMzLC0xMjUzOTI1NjAxLDE0Mj
+eyJoaXN0b3J5IjpbMzA5NTgyMzk0LC0xMjUzOTI1NjAxLDE0Mj
 IxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4
 NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDExODY4LC
 0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUz
