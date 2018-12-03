@@ -2972,7 +2972,7 @@ vagrant@ubuntu1604:~$ ifconfig
 <details><summary>Change RAM usage to be 1500 MB and set processor count to 1.</summary>
 
 ```
-# virsh edit vm
+# virsh edit root_default
   <memory unit='KiB'>1500152</memory>
   <currentMemory unit='KiB'>1500152</currentMemory>
   <vcpu placement='static'>2</vcpu>
@@ -2986,18 +2986,11 @@ vagrant@ubuntu1604:~$ ifconfig
 <details><summary>Stop VM and disable startup of this VM on reboot</summary>
 
 ```
-# virsh edit vm
-  <memory unit='KiB'>1500152</memory>
-  <currentMemory unit='KiB'>1500152</currentMemory>
-  <vcpu placement='static'>2</vcpu>
+#  virsh destroy root_default
+# virsh autostart --disable root_default
 ```
 
 </details>
-
-#### TASK: 
-```virsh autostart --disable vm```
-#### TASK: Kill a libvirt machine named vm
-```virsh destroy vm```
 
 ##	DNS server
 ###	Simple local DNS server for lookup and caching speed
@@ -3499,11 +3492,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTYxODcxOTUsLTEyNTM5MjU2MDEsMT
-QyMjE4MTA5MywxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1
-OTg0NywtMjEzNTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMTE4Nj
-gsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwt
-NTM4ODEyOTUyLC0xMDgxOTUzNDEsMTQyMTc1MzE4NywtMTc2Nj
-c1MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAz
-MiwtMjEzNjM5MTA4OV19
+eyJoaXN0b3J5IjpbMTk1MzQ2MzE5MywtMTI1MzkyNTYwMSwxND
+IyMTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5
+ODQ3LC0yMTM1Njc2NjE2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OC
+wtMjExMzU3ODY5OSwtMTM3MDM3MDM4NCwxODUzNjcyMjI4LC01
+Mzg4MTI5NTIsLTEwODE5NTM0MSwxNDIxNzUzMTg3LC0xNzY2Nz
+UwOTUxLDgyNzkyMTQ1MCwxMDU3MTcxODE4LC0xMjc1MjUxMDMy
+LC0yMTM2MzkxMDg5XX0=
 -->
