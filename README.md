@@ -718,8 +718,6 @@ of having them make modifications exclusively for you, or provide you
 </details>
 
 ##	Archive or compress files and directories
-Commands: gzip, bzip2, gunzip, bunzip2, tar, xz, zip, star or tar --selinux for SELinux, rsync to another machine with ssh
-
 <details><summary>Place a gzipped archive in /work/3.2/ named "cron.tar.gz" which contains /etc/cron.d/ but without absolute paths</summary>
 
 ```
@@ -898,8 +896,6 @@ lrwxrwxrwx 1 root root 22 Nov 15 20:42 /etc/rc5.d/S04cpufrequtils -> ../init.d/c
 </details>
 
 ##	Standard file permissions
-Commands: chmod, chown, chgrp, umask
-
 <details><summary>Create empty files in /work/8.2 with following names and permissions:
 readonly r--r--r--, readwriteowner rw-------, and readwritegroup ---rw---- </summary>
 
@@ -992,8 +988,6 @@ Options:
 Sources: [tecmint]( https://www.tecmint.com/explore-linux-installed-help-documentation-and-tools/)
 
 ##	Root account and root-like access
-Commands: su, sudo, 
-Files: /etc/sudoers, /etc/sudoers.d/*
 Documentation: /usr/share/doc/sudo/examples/sudoers
 <details><summary>Change to root account</summary>
 
@@ -2633,7 +2627,6 @@ First, lookup octal values with `man 2 stat`
 </details>
 
 ##	Setup user and group disk quotas for filesystems
-Commands: quotacheck, quotaon, quotaoff, edquota, quotatool, quota 
 <details><summary>Assumption is that /quota is a separate partition on /dev/sdh1 taking up the entire 50 MB drive. If not, make one for home somewhere and somehow.</summary>
 
 ```
@@ -2649,11 +2642,11 @@ mount -o remount /quota
 
 </details>
 
-<details><summary>Limiting particular users or groups block storage using "quota"  </summary></details>
+<details><summary>Limiting particular users or groups block storage using "quota"</summary></details>
 
 <details><summary>Hard and soft limits and set grace periods</summary></details>
 
-<details><summary>Set quotas with a soft limit of 3 files and a hard limit of 7 for user fred  using 1 day grace limit and verify both as root and as fred: </summary>
+<details><summary>Set quotas with a soft limit of 3 files and a hard limit of 7 for user fred using 1 day grace limit and verify both as root and as fred: </summary>
 
 ```
 # mkdir /quota/fred; chown fred /quota/fred
@@ -2813,7 +2806,6 @@ All filtering tasks to be performed on lb90 only to avoid creating difficulty of
 Sources: [tecmint - iptables](https://www.tecmint.com/basic-guide-on-iptables-linux-firewall-tips-commands/)
 
 ##	Route traffic statically
-Commands: route, netstat -nr
 Documentation : `/usr/share/doc/ifupdown/examples/network-interfaces` which is at bottom of the `man interfaces` page.
 <details><summary>Place a copy of the  current routing table using numeric values only in /work/3.2/routes  </summary>
 
@@ -3511,11 +3503,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDY5OTg0NzQsMTQ0MDY5NTg2MCwtMj
-AzMTQ1NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2
-NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2Nj
-E2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwt
-MTM3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwOD
-E5NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1
-MCwxMDU3MTcxODE4XX0=
+eyJoaXN0b3J5IjpbNTA0Mjg3MDg1LDE0NDA2OTU4NjAsLTIwMz
+E0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYy
+MDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNi
+wxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEz
+NzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgxOT
+UzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0NTAs
+MTA1NzE3MTgxOF19
 -->
