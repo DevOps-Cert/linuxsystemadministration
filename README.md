@@ -2970,12 +2970,13 @@ vagrant@ubuntu1604:~$ ifconfig
 ### Evaluate memory usage of virtual machines
 ### Create light-weight virtualized guests via namespaces
 ### Increase RAM of VM
-<details><summary>Change RAM usage to be 1500 MB</summary>
+<details><summary>Change RAM usage to be 1500 MB and set processor count to 1.</summary>
 
 ```
 # virsh edit vm
   <memory unit='KiB'>1500152</memory>
   <currentMemory unit='KiB'>1500152</currentMemory>
+    <vcpu placement='static'>2</vcpu>
 
 
 ```
@@ -2993,14 +2994,6 @@ systemctl {enable,start} libvirtd
 
 </details>
 
-<details><summary>Change processor count on an existing libvirt machine from 2 to 1</summary>
-
-```
-# virsh edit vm
-  <vcpu placement='static'>2</vcpu>
-```
-
-</details>
 
 #### TASK: Disable startup of a VM on reboot
 ```virsh autostart --disable vm```
@@ -3507,7 +3500,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ3MTg0MjUzLC0xMjUzOTI1NjAxLDE0Mj
+eyJoaXN0b3J5IjpbODU1ODk3NTA2LC0xMjUzOTI1NjAxLDE0Mj
 IxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4
 NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDExODY4LC
 0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUz
