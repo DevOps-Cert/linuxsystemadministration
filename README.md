@@ -469,11 +469,11 @@ find /work/52.13/ -type f -ok rm '{}' \;
 
 </details>
 
-<details><summary>Find all files sized greater than 2k in /etc/pam.d/ and write results to  /work/1.2/bigpamfiles.txt.</summary>
+<details><summary>Find all files sized greater than 2k in /etc/pam.d/ and write results to  /work/16.13/bigpamfiles.txt.</summary>
 
 ```
-# find /etc/pam.d/ -size +2k  -print > /work/1.2/bigpamfiles.txt
-# cat /work/1.2/bigpamfiles.txt
+# find /etc/pam.d/ -size +2k -print > /work/16.13/bigpamfiles.txt
+# cat /work/16.13/bigpamfiles.txt
 /etc/pam.d/
 /etc/pam.d/login
 /etc/pam.d/sshd
@@ -3497,11 +3497,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MDczMzQ5MSwtNjYxMTE1MDE5LC0yND
-U0NjIwNzMsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3
-Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NC
-wtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1
-MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0xMzcwMz
-cwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MTk1MzQx
-LDE0MjE3NTMxODddfQ==
+eyJoaXN0b3J5IjpbLTQyMjIyMTQ4MywxOTcwNzMzNDkxLC02Nj
+ExMTUwMTksLTI0NTQ2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4
+NjAsLTIwMzE0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5My
+wxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEz
+NTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nz
+g2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUy
+LC0xMDgxOTUzNDFdfQ==
 -->
