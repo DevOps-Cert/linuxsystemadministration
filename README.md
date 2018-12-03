@@ -1468,6 +1468,7 @@ Display all processes with one line per thread: `ps -eLf`
 Display all processes on a system in BSD like syntax: `ps aux`
 Show the current resource limits for user: `ulimit -a`
 Two commands to set a process priority: `nice` and `renice`
+
 <details><summary>How do you find out which libraries a binary needs </summary>
  
 ```
@@ -3558,11 +3559,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEzODg0MTM4LDE3NDI1NjUwNzQsLTQ5OD
-M4MDYzMywxNjU4NDMxMjgyLDcxOTY0NjA3MCwtNDA0NTY3NjQy
-LC0xMTAyMjM4MzEzLDE5NzA3MzM0OTEsLTY2MTExNTAxOSwtMj
-Q1NDYyMDczLC02MDAyMDgwNzUsMTQ0MDY5NTg2MCwtMjAzMTQ1
-NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2NjIwNz
-QsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2NjE2LDEy
-NTA4OTA1MzFdfQ==
+eyJoaXN0b3J5IjpbLTE2OTY0NDU1NDQsNTEzODg0MTM4LDE3ND
+I1NjUwNzQsLTQ5ODM4MDYzMywxNjU4NDMxMjgyLDcxOTY0NjA3
+MCwtNDA0NTY3NjQyLC0xMTAyMjM4MzEzLDE5NzA3MzM0OTEsLT
+Y2MTExNTAxOSwtMjQ1NDYyMDczLC02MDAyMDgwNzUsMTQ0MDY5
+NTg2MCwtMjAzMTQ1NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMD
+kzLDE2ODk2NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0y
+MTM1Njc2NjE2XX0=
 -->
