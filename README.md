@@ -2959,7 +2959,7 @@ vagrant@ubuntu1604:~$ ifconfig
 <details><summary>Access a VM console</summary>
 
 ```
-# virsh console ### Not 
+# virsh console ### Not working yet
 ```
 
 </details>
@@ -2982,8 +2982,14 @@ systemctl {enable,start} libvirtd
 
 </details>
 
-#### TASK: Change processor count on an existing libvirt machine from 1 to 2
-```# virsh edit vm```
+<details><summary>Change processor count on an existing libvirt machine from 1 to 2</summary>
+
+```
+# virsh edit vm
+```
+
+</details>
+
 #### TASK: Disable startup of a VM on reboot
 ```virsh autostart --disable vm```
 #### TASK: Kill a libvirt machine named vm
@@ -3489,7 +3495,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA5NTgyMzk0LC0xMjUzOTI1NjAxLDE0Mj
+eyJoaXN0b3J5IjpbMTA3MjY1MTc2LC0xMjUzOTI1NjAxLDE0Mj
 IxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4
 NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDExODY4LC
 0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUz
