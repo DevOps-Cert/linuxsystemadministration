@@ -381,18 +381,17 @@ To begin this exercise; make sure you are in /work/1.2 folder which should have 
 ```
 </details>
 
-<details><summary>To find a file with ownership of fred in /work/1.2 after creating it:</summary>
+<details><summary>Find all files with ownership of ntp in /var storing result in /work/42.54/ntp:</summary>
 
 ```
-# touch /work/1.2/freds
-# chown fred /work/1.2/freds
-# find /work/1.2/ -user fred -print
-./freds/
+# find /var -type f -user ntp -print > /work/42.54/ntp
+# cat /work/42.54/ntp
+/var/lib/ntp/ntp.drift
 ```
 
 </details>
 
-<details><summary>ind all directories in /var with group of syslog in /work/43.11/syslogdir :</summary>
+<details><summary>Find all directories in /var with group of syslog in /work/43.11/syslogdir :</summary>
 
 ```
 # find /var -type d -group syslog -print > /work/43.11/syslogdir
@@ -402,7 +401,7 @@ To begin this exercise; make sure you are in /work/1.2 folder which should have 
 
 </details>
 
-<details><summary>Put path of first five directories in /usr/share/ into /work/1.2/dirs:  </summary>
+<details><summary>Put path of first five directories in /usr/share/ into /work/43.41/dirs:  </summary>
 
 ```
 # find /usr/share/* -type d -print | head -5 > /work/1.2/dirs
@@ -3490,11 +3489,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MjY2NTU1MiwtNjYxMTE1MDE5LC0yND
-U0NjIwNzMsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3
-Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NC
-wtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1
-MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0xMzcwMz
-cwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MTk1MzQx
-LDE0MjE3NTMxODddfQ==
+eyJoaXN0b3J5IjpbODQ0NjYwNzksLTY2MTExNTAxOSwtMjQ1ND
+YyMDczLC02MDAyMDgwNzUsMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5
+NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2NjIwNzQsLT
+k5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2NjE2LDEyNTA4
+OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwtMTM3MDM3MD
+M4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5NTM0MSwx
+NDIxNzUzMTg3XX0=
 -->
