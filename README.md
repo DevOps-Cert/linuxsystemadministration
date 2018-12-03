@@ -2601,7 +2601,7 @@ find files with those permissions set on them
 
 </details>
 
-<details><summary>enable suid and user's executable bit for new file called /work/7.4/guid</summary>
+<details><summary>enable guid and group's executable bit for new file called /work/7.4/guid</summary>
 
 ```
 # touch /work/7.4/guid
@@ -3552,11 +3552,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODQ4MDMwODEsLTE2OTY0NDU1NDQsNT
-EzODg0MTM4LDE3NDI1NjUwNzQsLTQ5ODM4MDYzMywxNjU4NDMx
-MjgyLDcxOTY0NjA3MCwtNDA0NTY3NjQyLC0xMTAyMjM4MzEzLD
-E5NzA3MzM0OTEsLTY2MTExNTAxOSwtMjQ1NDYyMDczLC02MDAy
-MDgwNzUsMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5NSwtMTI1MzkyNT
-YwMSwxNDIyMTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0NDM1Miwt
-NjE2MDU5ODQ3XX0=
+eyJoaXN0b3J5IjpbMTAwNjkxNTkzMywtMTI4NDgwMzA4MSwtMT
+Y5NjQ0NTU0NCw1MTM4ODQxMzgsMTc0MjU2NTA3NCwtNDk4Mzgw
+NjMzLDE2NTg0MzEyODIsNzE5NjQ2MDcwLC00MDQ1Njc2NDIsLT
+ExMDIyMzgzMTMsMTk3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0
+NjIwNzMsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mj
+k1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwt
+OTk1MDQ0MzUyXX0=
 -->
