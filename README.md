@@ -2961,11 +2961,26 @@ vagrant@ubuntu1604:~$ ifconfig
 Guests need to have serial enabled
 
 ```
-
+# sudo systemctl enable serial-getty@ttyS0.service
+# sudo systemctl start serial-getty@ttyS0.service
 ```
 
+Then, console will work on the sever (use^] to exit).
+
+ 
 ```
-# virsh console ### Not working yet
+# virsh console root_default
+Connected to domain root_default
+Escape character is ^]
+
+Ubuntu 16.04.5 LTS ubuntu1604.localdomain ttyS0
+
+ubuntu1604 login: vagrant
+Password:
+Last login: Mon Dec  3 07:17:57 PST 2018 from 192.168.121.1 on pts/0
+vagrant@ubuntu1604:~$ exit
+logout
+
 ```
 
 </details>
@@ -3494,7 +3509,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5MTc4OTI1LC0yMDMxNDU3Mjk1LC0xMj
+eyJoaXN0b3J5IjpbNDE3NjkxMDgzLC0yMDMxNDU3Mjk1LC0xMj
 UzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0
 MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMS
 wtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4
