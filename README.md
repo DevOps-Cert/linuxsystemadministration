@@ -2964,9 +2964,6 @@ vagrant@ubuntu1604:~$ ifconfig
 
 </details>
 
-
-### Migrate a VM between two hosts
-### Configure systems to launch virtual machines at boot
 ### Evaluate memory usage of virtual machines
 ### Create light-weight virtualized guests via namespaces
 <details><summary>Change RAM usage to be 1500 MB and set processor count to 1.</summary>
@@ -3492,11 +3489,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzQ2MzE5MywtMTI1MzkyNTYwMSwxND
-IyMTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5
-ODQ3LC0yMTM1Njc2NjE2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OC
-wtMjExMzU3ODY5OSwtMTM3MDM3MDM4NCwxODUzNjcyMjI4LC01
-Mzg4MTI5NTIsLTEwODE5NTM0MSwxNDIxNzUzMTg3LC0xNzY2Nz
-UwOTUxLDgyNzkyMTQ1MCwxMDU3MTcxODE4LC0xMjc1MjUxMDMy
-LC0yMTM2MzkxMDg5XX0=
+eyJoaXN0b3J5IjpbLTIwMzE0NTcyOTUsLTEyNTM5MjU2MDEsMT
+QyMjE4MTA5MywxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1
+OTg0NywtMjEzNTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMTE4Nj
+gsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwt
+NTM4ODEyOTUyLC0xMDgxOTUzNDEsMTQyMTc1MzE4NywtMTc2Nj
+c1MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAz
+MiwtMjEzNjM5MTA4OV19
 -->
