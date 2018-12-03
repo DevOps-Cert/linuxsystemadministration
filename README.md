@@ -1,13 +1,6 @@
-
-
 # linuxsystemadministration
 While there are many introductions to Linux, this guide provides working lab activities to help practice Linux system administration commands.  To practice common Linux system administrative functions, tasks are prescribed and then the fastest way(s) to accomplish the goal is available for the selected Linux distribution which is Ubuntu 16.04 LTS server.   
 
-Work on list
-* SELinux and AppArmor https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/2/ 
-* PAM modules (figure out fastest way to search for appropriate ones to install and configure)
-* samba
-* Polish up web servers
 # Table of Contents
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -3559,11 +3552,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTY0NDU1NDQsNTEzODg0MTM4LDE3ND
-I1NjUwNzQsLTQ5ODM4MDYzMywxNjU4NDMxMjgyLDcxOTY0NjA3
-MCwtNDA0NTY3NjQyLC0xMTAyMjM4MzEzLDE5NzA3MzM0OTEsLT
-Y2MTExNTAxOSwtMjQ1NDYyMDczLC02MDAyMDgwNzUsMTQ0MDY5
-NTg2MCwtMjAzMTQ1NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMD
-kzLDE2ODk2NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0y
-MTM1Njc2NjE2XX0=
+eyJoaXN0b3J5IjpbLTEyODQ4MDMwODEsLTE2OTY0NDU1NDQsNT
+EzODg0MTM4LDE3NDI1NjUwNzQsLTQ5ODM4MDYzMywxNjU4NDMx
+MjgyLDcxOTY0NjA3MCwtNDA0NTY3NjQyLC0xMTAyMjM4MzEzLD
+E5NzA3MzM0OTEsLTY2MTExNTAxOSwtMjQ1NDYyMDczLC02MDAy
+MDgwNzUsMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5NSwtMTI1MzkyNT
+YwMSwxNDIyMTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0NDM1Miwt
+NjE2MDU5ODQ3XX0=
 -->
