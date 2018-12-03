@@ -1828,9 +1828,16 @@ sudo:x:27:lab
 sudo:x:27:lab,fred
 ```
 ##	Configure PAM
-You might be asked to use a PAM module, which you will have to determine, in order to achieve a specific goal.
+<details><summary>Make use of PAM to lock out user accounts after certain number of failed ssh login attempts made to the system.</summary>
+
+```
+
+```
+
+</details>
 
 https://www.tecmint.com/use-pam_tally2-to-lock-and-unlock-ssh-failed-login-attempts/ 
+
 ### Configure LDAP Server
 To setup lb40 as an ldap server: ```# sudo apt -y install slapd ldap-utils migrationtools```
 Fill in admin password desired when prompted, in this case let's use t3sting.
@@ -3429,11 +3436,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MDg5MDUzMSwtOTIzMDExODY4LC0yMT
-EzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgx
-Mjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NT
-EsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIsLTIx
-MzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0MDAsNDU5MDI3OT
-U5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4MywtODg2MTI1NzA0LDUx
-MDEyMTM1M119
+eyJoaXN0b3J5IjpbMjA4ODc1MzIzMSwxMjUwODkwNTMxLC05Mj
+MwMTE4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3
+MjIyOCwtNTM4ODEyOTUyLC0xMDgxOTUzNDEsMTQyMTc1MzE4Ny
+wtMTc2Njc1MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MTgxOCwtMTI3
+NTI1MTAzMiwtMjEzNjM5MTA4OSwxODI5MDIwNjg3LDIxODU2OD
+QwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC04
+ODYxMjU3MDRdfQ==
 -->
