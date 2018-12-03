@@ -676,6 +676,10 @@ Write stdout and errors to two separate files: `# command > out 2>error`
 <details><summary>Write both stdout and errors to same file named /work/64.34/both for command : </summary>
 
 ```
+```
+echo this goes to stdout
+echo and this goes to stderr >&2
+```
 # command &> out
 ```
 
@@ -3510,11 +3514,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDU2NzY0MiwtMTEwMjIzODMxMywxOT
-cwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2MjA3MywtNjAwMjA4
-MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOTUsLTEyNTM5MjU2MD
-EsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYx
-NjA1OTg0NywtMjEzNTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMT
-E4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIy
-OCwtNTM4ODEyOTUyXX0=
+eyJoaXN0b3J5IjpbLTE4MzI4NTM2MDQsLTQwNDU2NzY0MiwtMT
+EwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2
+MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOT
+UsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC05
+OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNiwxMjUwOD
+kwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNzAz
+ODQsMTg1MzY3MjIyOF19
 -->
