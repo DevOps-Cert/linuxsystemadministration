@@ -2905,23 +2905,17 @@ Sources: [certdepo](https://www.certdepot.net/rhel7-set-ntp-service/)
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfiguration/
 ## Virtual Machines
 **Ok, so, honestly this is one limitation of the VirtualBox approach with Vagrant.  You are either going to need to setup another machine really running Linux or something like that.**
-<details><summary>Configure libvirt hypervisor to host virtual guests on a pure Linux box and load a simple Ubuntu 16.04 VM (may require extra steps like enabling VT in BIOS).  Use Vagrant to avoid actually building a box or needing console.</summary>
+<details><summary>Configure libvirt hypervisor to host virtual guests (may require extra steps like enabling VT in BIOS). </summary>
 
 ```
-# apt-get install qemu libvirt-bin ebtables dnsmasq-base libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev -y
+# apt-get install qemu libvirt-bin ebtables dnsmasq-base libxslt-dev libxml2-dev libvirt-dev  -y
 # systemctl start libvirtd
-# wget https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_x86_64.deb
-# dpkg -i vagrant_2.2.2_x86_64.deb
-# vagrant plugin install vagrant-libvirt
-# vagrant init generic/ubuntu1604 
-# vagrant up --provider=libvirt
+# systemctl enable libvirtd
 ```
 
 </details>
 
-
-
-<details><summary>Configure a hypervisor to host virtual guests on a pure Linux box and load a simple Ubuntu 16.04 VM (may require extra steps like enabling VT in BIOS).  Use Vagrant to avoid actually building a box or needing console.</summary>
+<details><summary>Configure a virtual guest using Vagrant </summary>
 
 ```
 # apt-get install qemu libvirt-bin ebtables dnsmasq-base libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev -y
@@ -3477,7 +3471,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjUyODA4LC0xMjUzOTI1NjAxLDE0Mj
+eyJoaXN0b3J5IjpbNTM3OTgxNTMzLC0xMjUzOTI1NjAxLDE0Mj
 IxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4
 NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDExODY4LC
 0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUz
