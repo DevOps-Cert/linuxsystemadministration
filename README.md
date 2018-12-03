@@ -2977,7 +2977,6 @@ vagrant@ubuntu1604:~$ ifconfig
 
 </details>
 
-### Increase storage of a VM
 ### Cloning and replicating VMs using images or snapshots
 
 <details><summary>Stop VM and disable startup of this VM on reboot</summary>
@@ -3489,11 +3488,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzE0NTcyOTUsLTEyNTM5MjU2MDEsMT
-QyMjE4MTA5MywxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1
-OTg0NywtMjEzNTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMTE4Nj
-gsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwt
-NTM4ODEyOTUyLC0xMDgxOTUzNDEsMTQyMTc1MzE4NywtMTc2Nj
-c1MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAz
-MiwtMjEzNjM5MTA4OV19
+eyJoaXN0b3J5IjpbMTY4MjczNTU0OCwtMjAzMTQ1NzI5NSwtMT
+I1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0
+NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2NjE2LDEyNTA4OTA1Mz
+EsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwtMTM3MDM3MDM4NCwx
+ODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5NTM0MSwxNDIxNz
+UzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1MCwxMDU3MTcxODE4
+LC0xMjc1MjUxMDMyXX0=
 -->
