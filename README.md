@@ -1649,7 +1649,6 @@ userdel: sally mail spool (/var/mail/sally) not found
 </details>
 
 ## Local groups and group memberships
-Commands: vi /etc/group, groups, groupadd
 For future purposes, we will want the group named "limit":
 
 For speed, just edit /etc/groups as the CLI tools are slow to use.
@@ -1888,7 +1887,6 @@ Temporary files go into /tmp
 * btrfs – Pronounced “ButterFS”: Many ideals of ext4 & ZFS + Duplication
 * Old file system support included for NTFS/FAT32/FAT16
 ### Investigating deployed file system
-Commands: cat /etc/fstab, fdisk -l, df -Th, du, e2label /dev/sda1
 ```
 # cat /etc/fstab
 # fdisk -l /dev/sda
@@ -1983,8 +1981,6 @@ Fix? yes
 </details>
 
 ##	List, create, delete, and modify physical storage partitions
-Commands: fdisk, parted, gdisk
-
 <details><summary>Create two partitions sized 100MiB on /dev/sdc with partition 1 labeled one and 2 labeled two</summary>
 
 ```
@@ -2028,8 +2024,6 @@ Number  Start (sector)    End (sector)  Size       Code  Name
 
 Sources: [tecmint - Formatting Filesystems](https://www.tecmint.com/create-partitions-and-filesystems-in-linux/)
 ##	Manage and configure LVM storage
-Commands: lvm, mkfs.*, mount/umount
-Files: /etc/fstab
 ### Practice Environment
 My preferred way of handling this is to use a virtual machine inside virtualbox and then add several 50 MB hard drives.  I am assuming that configuration for the following commands with vagrant file and that sdc, sdm, sdn, and sdo are available.	This avoids having to undo LVM to do RAID and also allows for doing swapspace on the LVM drives.
 13. /dev/sdm 50MB LVM
@@ -2212,8 +2206,6 @@ no label, UUID=7e2f501c-37a1-4358-af23-3d5082bf9e47
 
 Sources: [tecmint](https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/)
 ##	Create and configure encrypted storage
-Commands: cryptsetup, mount, umount
-Files: **/usr/share/doc/cryptsetup/{README.Debian/FAQ}**
 <details><summary>Setup /dev/sde as an encrypted 50 MB swap partition active after every boot
 Make a swap partition that fills the /dev/sde which is 50MB with label of swap_encrypted and passphrase of "swap" after destroying all partitions on the drive.  Make sure it comes up after boot.
 Make sure you open the document file and use it as your reference both in practicing as well as production.  Look for word urandom</summary>
@@ -2352,9 +2344,6 @@ Force filesystem check next mount for root: `touch /forcefsck` which is discusse
 Disable filesystem check for a partition: `touch /mnt/1MB/fastboot` documented in /etc/init.d/checkfs.sh
 
 ##	Configure and manage swap space
-Commands: mkswap, swapon, swapoff
-Files: /etc/fstab
-
 <details><summary> Setting up a swap partition for activation after boot
 Make a swap partition that fills the /dev/sdd which is 50MB with label of normal_swap after destroying all partitions on the drive.</summary>
 
@@ -2553,11 +2542,7 @@ Working Devices : 4
 Sources: [tecmint - Assembling Partitions as RAID Devices](https://www.tecmint.com/creating-and-managing-raid-backups-in-linux/), [mdadm cheat sheet](http://www.ducea.com/2009/03/08/mdadm-cheat-sheet/), [MSDN blog](https://blogs.msdn.microsoft.com/maheshk/2018/06/11/lfcs-managing-software-raid/)
 
 ##	Configure systems to mount file systems on demand
-Commands: mkdir, mount, umount 
-Files: /etc/fstab
-
 ##	Create, manage and diagnose advanced file system permissions
-Commands: chmod, find . -perms, 
 ```
 sticky bit, setgid, and setuid
 chmod 
@@ -3498,11 +3483,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NjAyOTA3LDE0NDA2OTU4NjAsLTIwMz
-E0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYy
-MDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNi
-wxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEz
-NzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgxOT
-UzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0NTAs
-MTA1NzE3MTgxOF19
+eyJoaXN0b3J5IjpbLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMD
+MxNDU3Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2
+MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MT
+YsMTI1MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0x
+MzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MT
+k1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NTEsODI3OTIxNDUw
+LDEwNTcxNzE4MThdfQ==
 -->
