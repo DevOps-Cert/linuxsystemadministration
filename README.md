@@ -609,7 +609,14 @@ cat /etc/passwd | tr '[:lower:]' '[:upper:]' > /work/1.4/CAPITALIZED.txt
 
 Don't study harder than you need to, **/usr/share/doc/sed/sedfaq.txt** contains many examples.
 
-To capitalize all "a": `# sed 's/a/A/g' printer2.txt > printer3.txt`
+<details><summary>To capitalize all "a" in /etc/passwd placing result in /work/47.43/A</summary>
+
+```
+# sed 's/a/A/g' /etc/passwd > /work/47.43/A
+```
+
+</details>
+
 Special character escaped with a backslash in sed: `# sed -e "s/'/\"/g" printer2.txt`
 Print only user lab in /etc/passwd with sed: `# sed -n '/lab/p' /etc/passwd`
 
@@ -3515,11 +3522,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1ODQzMTI4Miw3MTk2NDYwNzAsLTQwND
-U2NzY0MiwtMTEwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUw
-MTksLTI0NTQ2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLT
-IwMzE0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5
-NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3Nj
-YxNiwxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTks
-LTEzNzAzNzAzODRdfQ==
+eyJoaXN0b3J5IjpbMjA3ODA0NzAzNiwxNjU4NDMxMjgyLDcxOT
+Y0NjA3MCwtNDA0NTY3NjQyLC0xMTAyMjM4MzEzLDE5NzA3MzM0
+OTEsLTY2MTExNTAxOSwtMjQ1NDYyMDczLC02MDAyMDgwNzUsMT
+Q0MDY5NTg2MCwtMjAzMTQ1NzI5NSwtMTI1MzkyNTYwMSwxNDIy
+MTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5OD
+Q3LC0yMTM1Njc2NjE2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwt
+MjExMzU3ODY5OV19
 -->
