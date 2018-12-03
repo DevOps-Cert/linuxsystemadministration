@@ -2919,8 +2919,22 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 
 </details>
 
-### Install Linux systems as virtual guests
-### Start, stop, modify the status of virtual machines
+<details><summary>Find running VMs, stop, and start it on bootup.</summary>
+
+```
+# virsh list
+ Id    Name                           State
+----------------------------------------------------
+ 1     root_default                   running
+
+# virsh autostart root_default
+Domain root_default marked as autostarted
+
+```
+
+</details>
+
+### 
 ### Access a VM console
 ### Migrate a VM between two hosts
 ### Configure systems to launch virtual machines at boot
@@ -2941,8 +2955,6 @@ systemctl {enable,start} libvirtd
 
 #### TASK: Change processor count on an existing libvirt machine from 1 to 2
 ```# virsh edit vm```
-#### TASK: Set a libvirt machine to boot every time machine is rebooted
-```virsh autostart```
 #### TASK: Disable startup of a VM on reboot
 ```virsh autostart --disable vm```
 #### TASK: Kill a libvirt machine named vm
@@ -3448,11 +3460,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNj
-g5NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3
-NjYxNiwxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OT
-ksLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0x
-MDgxOTUzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5Mj
-E0NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMjEzNjM5MTA4
-OSwxODI5MDIwNjg3XX0=
+eyJoaXN0b3J5IjpbMTM4ODQyMDE4LC0xMjUzOTI1NjAxLDE0Mj
+IxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4
+NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDExODY4LC
+0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUz
+ODgxMjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NT
+A5NTEsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIs
+LTIxMzYzOTEwODldfQ==
 -->
