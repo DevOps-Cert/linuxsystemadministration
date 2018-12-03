@@ -2970,6 +2970,14 @@ vagrant@ubuntu1604:~$ ifconfig
 ### Evaluate memory usage of virtual machines
 ### Create light-weight virtualized guests via namespaces
 ### Increase RAM of VM
+<details><summary>Change RAM usage to be 1500 MB</summary>
+
+```
+# virsh edit vm
+  <vcpu placement='static'>1</vcpu>
+```
+
+</details>
 ### Increase storage of a VM
 ### Cloning and replicating VMs using images or snapshots
 Ubuntu can provide hypervisor services to run VMs within domains.
@@ -2982,10 +2990,11 @@ systemctl {enable,start} libvirtd
 
 </details>
 
-<details><summary>Change processor count on an existing libvirt machine from 1 to 2</summary>
+<details><summary>Change processor count on an existing libvirt machine from 2 to 1</summary>
 
 ```
 # virsh edit vm
+  <vcpu placement='static'>2</vcpu>
 ```
 
 </details>
@@ -3495,7 +3504,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MjY1MTc2LC0xMjUzOTI1NjAxLDE0Mj
+eyJoaXN0b3J5IjpbMTQ0NDkxMTY5LC0xMjUzOTI1NjAxLDE0Mj
 IxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4
 NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDExODY4LC
 0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUz
