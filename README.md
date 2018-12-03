@@ -672,14 +672,13 @@ Write output to file `# echo "hello" > file`
 Append output to file `# command >> file`
 Send output from one command to another (indefinitely stackable): `# cat file | grep A`
 
-<details><summary>Write stdout to /work/76.and errors to two separate files: `# command > out 2>error/work/65.43/both for command : </summary>
+<details><summary>Write stdout to /work/76.43/stdout and errors /work/76.43/stderr: </summary>
 
 ```
 # echo "echo this goes to stdout
 echo and this goes to stderr >&2" > /work/65.43/command
 # chmod 755 /work/65.43/command
-
-# /work/65.43/command &>  /work/65.43/both
+# /work/65.43/command > /work/76.43/stdout 2> /work/76.43/stderr
 ```
 https://www.linuxjournal.com/content/working-stdin-and-stdout
 
@@ -690,10 +689,6 @@ https://www.linuxjournal.com/content/working-stdin-and-stdout
 <details><summary>Write both stdout and errors to same file named /work/65.43/both for command : </summary>
 
 ```
-# echo "echo this goes to stdout
-echo and this goes to stderr >&2" > /work/65.43/command
-# chmod 755 /work/65.43/command
-
 # /work/65.43/command &>  /work/65.43/both
 ```
 https://www.linuxjournal.com/content/working-stdin-and-stdout
@@ -3529,7 +3524,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxOTAwMDM1Nyw3MTk2NDYwNzAsLTQwND
+eyJoaXN0b3J5IjpbMTI0MzEwNDM1Myw3MTk2NDYwNzAsLTQwND
 U2NzY0MiwtMTEwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUw
 MTksLTI0NTQ2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLT
 IwMzE0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5
