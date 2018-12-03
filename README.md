@@ -1835,6 +1835,17 @@ sudo:x:27:lab,fred
 pam_tally2 (8)       - The login counter (tallying) module
 # head -2 /etc/pam.d/common-auth  # Settings must be at top!
 auth required pam_tally2.so deny=2 unlock_time=900
+# ssh fred@localhost
+Password:
+Password:
+Account locked due to 3 failed logins
+Password:
+# pam_tally2 --user=fred
+Login           Failures Latest failure     From
+fred                3    12/03/18 14:00:14  127.0.0.1
+# pam_tally2 --user=fred --reset
+Login           Failures Latest failure     From
+fred                0
 
 ```
 
@@ -3440,7 +3451,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NDYzNDA5NiwtNjE2MDU5ODQ3LC0yMT
+eyJoaXN0b3J5IjpbLTkxNDE0NzQ4NCwtNjE2MDU5ODQ3LC0yMT
 M1Njc2NjE2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3
 ODY5OSwtMTM3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NT
 IsLTEwODE5NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgy
