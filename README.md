@@ -2905,7 +2905,7 @@ Sources: [certdepo](https://www.certdepot.net/rhel7-set-ntp-service/)
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfiguration/
 ## Virtual Machines
 **Ok, so, honestly this is one limitation of the VirtualBox approach with Vagrant.  You are either going to need to setup another machine really running Linux or something like that.**
-<details><summary>Configure a hypervisor to host virtual guests on a pure Linux box and load a simple Ubuntu 16.04 VM (may require extra steps like enabling VT in BIOS)</summary>
+<details><summary>Configure a hypervisor to host virtual guests on a pure Linux box and load a simple Ubuntu 16.04 VM (may require extra steps like enabling VT in BIOS).  Use Vagrant to avoid actually building a box or needing console.</summary>
 
 ```
 # apt-get install qemu libvirt-bin ebtables dnsmasq-base libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev -y
@@ -3448,7 +3448,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDA2ODQ5MDYsMTQyMjE4MTA5MywxNj
+eyJoaXN0b3J5IjpbLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNj
 g5NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3
 NjYxNiwxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OT
 ksLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0x
