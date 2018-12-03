@@ -2965,8 +2965,7 @@ Guests need to have serial enabled
 # sudo systemctl start serial-getty@ttyS0.service
 ```
 
-Then, console will work on the sever (use^] to exit).
-
+Then, console will work on the sever (use ^] to escape).
  
 ```
 # virsh console root_default
@@ -3509,11 +3508,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3NjkxMDgzLC0yMDMxNDU3Mjk1LC0xMj
-UzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0
-MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMS
-wtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4
-NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MTk1MzQxLDE0MjE3NT
-MxODcsLTE3NjY3NTA5NTEsODI3OTIxNDUwLDEwNTcxNzE4MTgs
-LTEyNzUyNTEwMzJdfQ==
+eyJoaXN0b3J5IjpbMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5NSwtMT
+I1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0
+NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2NjE2LDEyNTA4OTA1Mz
+EsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwtMTM3MDM3MDM4NCwx
+ODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5NTM0MSwxNDIxNz
+UzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1MCwxMDU3MTcxODE4
+LC0xMjc1MjUxMDMyXX0=
 -->
