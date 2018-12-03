@@ -1833,7 +1833,7 @@ sudo:x:27:lab,fred
 ```
 # whatis pam_tally2
 pam_tally2 (8)       - The login counter (tallying) module
-# grep tally2 /etc/pam.d/password-auth
+# grep tally2 /etc/pam.d/common-auth
 auth        required      pam_tally2.so  file=/var/log/tallylog deny=3 even_deny_root unlock_time=1200
 ```
 
@@ -3439,7 +3439,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDY1MTQzMjgsMTI1MDg5MDUzMSwtOT
+eyJoaXN0b3J5IjpbLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOT
 IzMDExODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2
 NzIyMjgsLTUzODgxMjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxOD
 csLTE3NjY3NTA5NTEsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEy
