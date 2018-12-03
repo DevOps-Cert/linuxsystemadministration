@@ -652,11 +652,14 @@ ls -ld <filename>
 </details>
 
 
-<details><summary>Put the type of file out of long listing for /etc/rc2.d/S06rc.local and /etc/passwd into /work/32.45/files?<summary>
+<details><summary>Put the type of file out of long listing for /etc/rc2.d/S02ssh and /etc/passwd into /work/32.45/files?<summary>
 
 ```
-# ls -al /etc/rc2.d/S06rc.local > /work/32.45/files
+# ls -al /etc/rc2.d/S02ssh > /work/32.45/files
 # ls -ld /etc/passwd >> /work/32.45/files
+# cat /work/32.45/files
+lrwxrwxrwx 1 root root 13 Nov 27 14:24 /etc/rc2.d/S02ssh -> ../init.d/ssh
+-rw-r--r-- 1 root root 2431 Dec  1 02:35 /etc/passwd
 ```
 
 </details>
@@ -3507,11 +3510,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzc3NDg0ODIsLTExMDIyMzgzMTMsMT
-k3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNzMsLTYwMDIw
-ODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0xMjUzOTI1Nj
-AxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02
-MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMD
-ExODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIy
-MjgsLTUzODgxMjk1Ml19
+eyJoaXN0b3J5IjpbLTQwNDU2NzY0MiwtMTEwMjIzODMxMywxOT
+cwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2MjA3MywtNjAwMjA4
+MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOTUsLTEyNTM5MjU2MD
+EsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYx
+NjA1OTg0NywtMjEzNTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMT
+E4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIy
+OCwtNTM4ODEyOTUyXX0=
 -->
