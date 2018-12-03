@@ -2590,7 +2590,7 @@ chmod
 find files with those permissions set on them
 ```
 
-<details><summary>enable suid and user's executable bit for new file called /work/7.4/suid</summary>
+<details><summary>Enable suid and user's executable bit for new file called /work/7.4/suid</summary>
 
 ```
 # touch /work/7.4/suid
@@ -2601,7 +2601,7 @@ find files with those permissions set on them
 
 </details>
 
-<details><summary>enable guid and group's executable bit for new file called /work/7.4/guid</summary>
+<details><summary>Enable guid and group's executable bit for new file called /work/7.4/guid</summary>
 
 ```
 # touch /work/7.4/guid
@@ -3552,11 +3552,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjkxNTkzMywtMTI4NDgwMzA4MSwtMT
-Y5NjQ0NTU0NCw1MTM4ODQxMzgsMTc0MjU2NTA3NCwtNDk4Mzgw
-NjMzLDE2NTg0MzEyODIsNzE5NjQ2MDcwLC00MDQ1Njc2NDIsLT
-ExMDIyMzgzMTMsMTk3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0
-NjIwNzMsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mj
-k1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwt
-OTk1MDQ0MzUyXX0=
+eyJoaXN0b3J5IjpbNTk0ODA1MTQ5LC0xMjg0ODAzMDgxLC0xNj
+k2NDQ1NTQ0LDUxMzg4NDEzOCwxNzQyNTY1MDc0LC00OTgzODA2
+MzMsMTY1ODQzMTI4Miw3MTk2NDYwNzAsLTQwNDU2NzY0MiwtMT
+EwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2
+MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOT
+UsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC05
+OTUwNDQzNTJdfQ==
 -->
