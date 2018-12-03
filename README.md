@@ -2793,7 +2793,7 @@ All filtering tasks to be performed on lb90 only to avoid creating difficulty of
 
 </details>
 
-<details><summary>Rule 2 shall block port 80 from 10.20.30.60 but then rule 3 allow the rest of network 10.20.30.0/24 to connect to port 80.</summary>
+<details><summary>Rule 2 shall drop port 80 from 10.20.30.60 but then rule 3 allow the rest of network 10.20.30.0/24 to connect to port 80.</summary>
 
 ```
 # iptables -A INPUT -p tcp --source 10.20.30.60 --dport 80 -j DROP
@@ -2802,10 +2802,10 @@ All filtering tasks to be performed on lb90 only to avoid creating difficulty of
 
 </details>
 
-<details><summary>Save current iptable rules to /tmp/43.54/iptables</summary>
+<details><summary>Save current iptable rules to /etc/iptables/rules.v4</summary>
 
 ```
-# iptables-save > /tmp/43.54/iptables
+# iptables-save > /etc/iptables/rules.v4
 ```
 
 </details>
@@ -3511,11 +3511,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMTcwNjg0OCwxNDQwNjk1ODYwLC0yMD
-MxNDU3Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2
-MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MT
-YsMTI1MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0x
-MzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MT
-k1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NTEsODI3OTIxNDUw
-LDEwNTcxNzE4MThdfQ==
+eyJoaXN0b3J5IjpbLTExMDY5OTg0NzQsMTQ0MDY5NTg2MCwtMj
+AzMTQ1NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2
+NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2Nj
+E2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwt
+MTM3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwOD
+E5NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1
+MCwxMDU3MTcxODE4XX0=
 -->
