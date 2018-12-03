@@ -624,6 +624,8 @@ Print only user lab in /etc/passwd with sed: `# sed -n '/lab/p' /etc/passwd`
 ```
 # cp /etc/apt/sources.list /work/43.21/
 # sudo sed -i.backup 's/http:/ftp:/g' /etc/apt/sources.list
+# grep -v ^# /etc/apt/sources.list | tail -2
+deb-src ftp://la-mirrors.evowise.com/ubuntu xenial-security multiverse
 ```
 
 </details>
@@ -3507,11 +3509,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE5MTgwMjEyLC0xMTAyMjM4MzEzLDE5Nz
-A3MzM0OTEsLTY2MTExNTAxOSwtMjQ1NDYyMDczLC02MDAyMDgw
-NzUsMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5NSwtMTI1MzkyNTYwMS
-wxNDIyMTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0NDM1MiwtNjE2
-MDU5ODQ3LC0yMTM1Njc2NjE2LDEyNTA4OTA1MzEsLTkyMzAxMT
-g2OCwtMjExMzU3ODY5OSwtMTM3MDM3MDM4NCwxODUzNjcyMjI4
-LC01Mzg4MTI5NTJdfQ==
+eyJoaXN0b3J5IjpbLTE5ODEwNjI1OTksLTExMDIyMzgzMTMsMT
+k3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNzMsLTYwMDIw
+ODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0xMjUzOTI1Nj
+AxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02
+MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMD
+ExODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIy
+MjgsLTUzODgxMjk1Ml19
 -->
