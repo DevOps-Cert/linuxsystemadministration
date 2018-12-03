@@ -371,7 +371,7 @@ To begin this exercise; make sure you are in /work/1.2 folder which should have 
 
 </details>
 
-<details><summary>Place long list of files with permissions in /etc which are read only for all users to a file named /work/85.21/444:</summary>
+<details><summary>Place long list of files displaying permissions in /etc which are read only for all users to a file named /work/85.21/444:</summary>
 
 ```
 # find /etc/ -perm 444 -exec ls -al "{}" \; > /work/85.21/444
@@ -379,6 +379,17 @@ To begin this exercise; make sure you are in /work/1.2 folder which should have 
 -r--r--r-- 1 root root 33 Nov 27 14:17 /etc/machine-id
 -r--r--r-- 1 root root 2415 Nov 28 03:23 /etc/apt/apt.conf.d/01autoremove-kernels
 ```
+</details>
+
+<details><summary>To find a file with ownership of fred in /work/1.2 after creating it:</summary>
+
+```
+# touch /work/1.2/freds
+# chown fred /work/1.2/freds
+# find /work/1.2/ -user fred -print
+./freds/
+```
+
 </details>
 
 <details><summary>To find a file with ownership of fred in /work/1.2 after creating it:</summary>
@@ -3480,11 +3491,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2OTkyNDc1NywtNjYxMTE1MDE5LC0yND
-U0NjIwNzMsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3
-Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NC
-wtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1
-MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0xMzcwMz
-cwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MTk1MzQx
-LDE0MjE3NTMxODddfQ==
+eyJoaXN0b3J5IjpbLTE4NjI4MTA3NzksLTY2MTExNTAxOSwtMj
+Q1NDYyMDczLC02MDAyMDgwNzUsMTQ0MDY5NTg2MCwtMjAzMTQ1
+NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2NjIwNz
+QsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2NjE2LDEy
+NTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwtMTM3MD
+M3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5NTM0
+MSwxNDIxNzUzMTg3XX0=
 -->
