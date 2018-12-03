@@ -3435,17 +3435,17 @@ Sources: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs-commands-to-ma
 ## File Sharing
 #### NFS  
 
-<details><summary>On lb80, share /nfstemp with dummy file named test with lb70 machines on network as /nfs.</summary>
+<details><summary>On lb80, share /nfstemp with dummy file named test with lb70 machines on network as /nfstemp.</summary>
 
 ```
 lb80 # apt-get install -y nfswatch nfs-common nfs-kernel-server
 lb80 # tail -2 /etc/hosts
 10.20.30.70     lb70    lb70
 10.20.30.80     lb80    lb80
-lb80 # mkdir /nfs
-lb80 # touch /nfs/test
+lb80 # mkdir /nfstemp
+lb80 # touch /nfstemp/test
 lb80 # cat /etc/exports
-/nfs       lb70(rw,no_root_squash)
+/nfstemp       lb70(rw,no_root_squash)
 # exportfs -avr
 lb80 # systemctl restart nfs-server.service rpcbind
 lb70 # tail -2 /etc/hosts
@@ -3560,11 +3560,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MjU2NTA3NCwtNDk4MzgwNjMzLDE2NT
-g0MzEyODIsNzE5NjQ2MDcwLC00MDQ1Njc2NDIsLTExMDIyMzgz
-MTMsMTk3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNzMsLT
-YwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0xMjUz
-OTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0Mz
-UyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwt
-OTIzMDExODY4XX0=
+eyJoaXN0b3J5IjpbMTUzMzcwMTI5MCwxNzQyNTY1MDc0LC00OT
+gzODA2MzMsMTY1ODQzMTI4Miw3MTk2NDYwNzAsLTQwNDU2NzY0
+MiwtMTEwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUwMTksLT
+I0NTQ2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0
+NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYyMD
+c0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNiwx
+MjUwODkwNTMxXX0=
 -->
