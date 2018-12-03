@@ -1833,8 +1833,9 @@ sudo:x:27:lab,fred
 ```
 # whatis pam_tally2
 pam_tally2 (8)       - The login counter (tallying) module
-# grep tally2 /etc/pam.d/login
-auth        required      pam_tally2.so  file=/var/log/tallylog deny=3 even_deny_root unlock_time=1200
+# head -2 /etc/pam.d/common-auth  # Settings must be at top!
+auth required pam_tally2.so deny=2 unlock_time=900
+
 ```
 
 </details>
@@ -3439,11 +3440,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNjA1OTg0NywtMjEzNTY3NjYxNiwxMj
-UwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEzNzAz
-NzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgxOTUzND
-EsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0NTAsMTA1
-NzE3MTgxOCwtMTI3NTI1MTAzMiwtMjEzNjM5MTA4OSwxODI5MD
-IwNjg3LDIxODU2ODQwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwt
-MzIzMzk4NDgzXX0=
+eyJoaXN0b3J5IjpbLTk3NDYzNDA5NiwtNjE2MDU5ODQ3LC0yMT
+M1Njc2NjE2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3
+ODY5OSwtMTM3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NT
+IsLTEwODE5NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgy
+NzkyMTQ1MCwxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC0yMTM2Mz
+kxMDg5LDE4MjkwMjA2ODcsMjE4NTY4NDAwLDQ1OTAyNzk1OSwx
+NTc3NjU0MDYwXX0=
 -->
