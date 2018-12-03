@@ -619,11 +619,11 @@ Print only user lab in /etc/passwd with sed: `# sed -n '/lab/p' /etc/passwd`
 
 </details>
 
-<details><summary>Copy /etc/apt/sources.list to /work/43.21/.  Substitute all occurrences of security.ubuntu.com with la-mirrors.evowise.com.</summary>
+<details><summary>Copy /etc/apt/sources.list to /work/43.21/.  Substitute all occurrences of "http:" with "ftp:" .</summary>
 
 ```
 # cp /etc/apt/sources.list /work/43.21/
-sudo sed -i.backup 's/security.ubuntu.com/la-mirrors.evowise.com/g' /etc/apt/sources.list
+# sudo sed -i.backup 's/http:/ftp:/g' /etc/apt/sources.list
 ```
 
 </details>
@@ -3507,11 +3507,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMTc2NjU5NSwtMTEwMjIzODMxMywxOT
-cwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2MjA3MywtNjAwMjA4
-MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOTUsLTEyNTM5MjU2MD
-EsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYx
-NjA1OTg0NywtMjEzNTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMT
-E4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIy
-OCwtNTM4ODEyOTUyXX0=
+eyJoaXN0b3J5IjpbNTE5MTgwMjEyLC0xMTAyMjM4MzEzLDE5Nz
+A3MzM0OTEsLTY2MTExNTAxOSwtMjQ1NDYyMDczLC02MDAyMDgw
+NzUsMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5NSwtMTI1MzkyNTYwMS
+wxNDIyMTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0NDM1MiwtNjE2
+MDU5ODQ3LC0yMTM1Njc2NjE2LDEyNTA4OTA1MzEsLTkyMzAxMT
+g2OCwtMjExMzU3ODY5OSwtMTM3MDM3MDM4NCwxODUzNjcyMjI4
+LC01Mzg4MTI5NTJdfQ==
 -->
