@@ -542,10 +542,6 @@ There are many text editors.  For the serious administrator, traditional vi or o
 
 Sources: [How to Install and Use vi/vim as a Full Text Editor](https://www.tecmint.com/vi-editor-usage/)
 
-### textfiles: nano
-For someone just learning Linux, there is no shame in using nano.  Were vi and emacs are similar in power to a full word processor, nano functions as a simple text editor and provides you on the bottom the commands need to complete a task.
-
-### textfiles: diff
 <details><summary>Compare /usr/share/common-licenses/GPL-3 to /usr/share/common-licenses/GPL-2 placing result into /work/43.21/GPLdiff.txt: </summary>
 
 ```
@@ -3519,7 +3515,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MDg5OTE4MCw3MTk2NDYwNzAsLTQwND
+eyJoaXN0b3J5IjpbMTY1ODQzMTI4Miw3MTk2NDYwNzAsLTQwND
 U2NzY0MiwtMTEwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUw
 MTksLTI0NTQ2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLT
 IwMzE0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5
