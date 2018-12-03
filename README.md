@@ -2905,7 +2905,7 @@ Sources: [certdepo](https://www.certdepot.net/rhel7-set-ntp-service/)
 https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfiguration/
 ## Virtual Machines
 **Ok, so, honestly this is one limitation of the VirtualBox approach with Vagrant.  You are either going to need to setup another machine really running Linux or something like that.**
-<details><summary>Configure a hypervisor to host virtual guests on a pure Linux box and load a simple Ubuntu 16.04 VM (may require extra steps like enabling VT BIOS)</summary>
+<details><summary>Configure a hypervisor to host virtual guests on a pure Linux box and load a simple Ubuntu 16.04 VM (may require extra steps like enabling VT in BIOS)</summary>
 
 ```
 # apt-get install qemu libvirt-bin ebtables dnsmasq-base libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev -y
@@ -2926,7 +2926,7 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 ### Configure systems to launch virtual machines at boot
 ### Evaluate memory usage of virtual machines
 ### Create light-weight virtualized guests via namespaces
-### Reduce RAM of VM
+### Increase RAM of VM
 ### Increase storage of a VM
 ### Cloning and replicating VMs using images or snapshots
 Ubuntu can provide hypervisor services to run VMs within domains.
@@ -2938,8 +2938,6 @@ systemctl {enable,start} libvirtd
 ```
 
 </details>
-
-#### TASK: Get a default vm
 
 #### TASK: Change processor count on an existing libvirt machine from 1 to 2
 ```# virsh edit vm```
@@ -3450,11 +3448,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTQyMjY3NywxNDIyMTgxMDkzLDE2OD
-k2NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2
-NjE2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3ODY5OS
-wtMTM3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEw
-ODE5NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMT
-Q1MCwxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC0yMTM2MzkxMDg5
-LDE4MjkwMjA2ODddfQ==
+eyJoaXN0b3J5IjpbLTE3NDA2ODQ5MDYsMTQyMjE4MTA5MywxNj
+g5NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3
+NjYxNiwxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OT
+ksLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0x
+MDgxOTUzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5Mj
+E0NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAzMiwtMjEzNjM5MTA4
+OSwxODI5MDIwNjg3XX0=
 -->
