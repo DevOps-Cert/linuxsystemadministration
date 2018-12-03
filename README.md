@@ -364,17 +364,17 @@ To begin this exercise; make sure you are in /work/1.2 folder which should have 
 <summary>Find file named Debian-PAM-MiniPolicy in /usr/share and place path into /work/1.2/filepath.</summary>
 
 ```
-# find /work/1.2 -name file -print > /work/1.2/filepath
-cat /work/1.2/filepath
-/work/1.2/file
+# find /usr/share/ -name Debian-PAM-MiniPolicy -print > /work/1.2/filepath
+# cat /work/1.2/filepath
+/usr/share/doc/libpam0g/Debian-PAM-MiniPolicy
 ```
 
 </details>
 
-<details><summary>Find with permissions all files in /etc which are read only for all users:</summary>
+<details><summary>Place list of files with permissions all files in /etc which are read only for all users:</summary>
 
 ```
-# find /etc/ -perm 444 -exec ls -al {} \;
+# find /etc/ -perm 444 -exec ls -al "{}" \;
 -r--r--r-- 1 root root 1504 Nov  9 08:30 /etc/apt/apt.conf.d/01autoremove-kernels
 -r--r--r-- 1 root root 33 Nov  9 22:24 /etc/machine-id
 ```
@@ -3479,11 +3479,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNjQ4MDM0NiwtNjYxMTE1MDE5LC0yND
-U0NjIwNzMsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3
-Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NC
-wtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1
-MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0xMzcwMz
-cwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MTk1MzQx
-LDE0MjE3NTMxODddfQ==
+eyJoaXN0b3J5IjpbODE2NTEwODg2LC02NjExMTUwMTksLTI0NT
+Q2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcy
+OTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC
+05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNiwxMjUw
+ODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNz
+AzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgxOTUzNDEs
+MTQyMTc1MzE4N119
 -->
