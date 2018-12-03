@@ -2969,33 +2969,32 @@ vagrant@ubuntu1604:~$ ifconfig
 ### Configure systems to launch virtual machines at boot
 ### Evaluate memory usage of virtual machines
 ### Create light-weight virtualized guests via namespaces
-### Increase RAM of VM
 <details><summary>Change RAM usage to be 1500 MB and set processor count to 1.</summary>
 
 ```
 # virsh edit vm
   <memory unit='KiB'>1500152</memory>
   <currentMemory unit='KiB'>1500152</currentMemory>
-    <vcpu placement='static'>2</vcpu>
-
-
+  <vcpu placement='static'>2</vcpu>
 ```
 
 </details>
+
 ### Increase storage of a VM
 ### Cloning and replicating VMs using images or snapshots
-Ubuntu can provide hypervisor services to run VMs within domains.
 
-<details><summary>To enable this, you will need appropriate packages.  Ensure that libvirtd service is running.</summary>
+<details><summary>Stop VM and disable startup of this VM on reboot</summary>
+
 ```
-apt-get install -y qemu-kvm qemu-img libvirt
-systemctl {enable,start} libvirtd
+# virsh edit vm
+  <memory unit='KiB'>1500152</memory>
+  <currentMemory unit='KiB'>1500152</currentMemory>
+  <vcpu placement='static'>2</vcpu>
 ```
 
 </details>
 
-
-#### TASK: Disable startup of a VM on reboot
+#### TASK: 
 ```virsh autostart --disable vm```
 #### TASK: Kill a libvirt machine named vm
 ```virsh destroy vm```
@@ -3500,11 +3499,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU1ODk3NTA2LC0xMjUzOTI1NjAxLDE0Mj
-IxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4
-NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDExODY4LC
-0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUz
-ODgxMjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3NjY3NT
-A5NTEsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNTEwMzIs
-LTIxMzYzOTEwODldfQ==
+eyJoaXN0b3J5IjpbLTExMTYxODcxOTUsLTEyNTM5MjU2MDEsMT
+QyMjE4MTA5MywxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1
+OTg0NywtMjEzNTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMTE4Nj
+gsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwt
+NTM4ODEyOTUyLC0xMDgxOTUzNDEsMTQyMTc1MzE4NywtMTc2Nj
+c1MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MTgxOCwtMTI3NTI1MTAz
+MiwtMjEzNjM5MTA4OV19
 -->
