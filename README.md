@@ -2540,7 +2540,6 @@ Working Devices : 4
 </details>
 
 Sources: [tecmint - Assembling Partitions as RAID Devices](https://www.tecmint.com/creating-and-managing-raid-backups-in-linux/), [mdadm cheat sheet](http://www.ducea.com/2009/03/08/mdadm-cheat-sheet/), [MSDN blog](https://blogs.msdn.microsoft.com/maheshk/2018/06/11/lfcs-managing-software-raid/)
-
 ##	Configure systems to mount file systems on demand
 ##	Create, manage and diagnose advanced file system permissions
 ```
@@ -3483,11 +3482,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMD
-MxNDU3Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2
-MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MT
-YsMTI1MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0x
-MzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MT
-k1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NTEsODI3OTIxNDUw
-LDEwNTcxNzE4MThdfQ==
+eyJoaXN0b3J5IjpbLTI0NTQ2MjA3MywtNjAwMjA4MDc1LDE0ND
+A2OTU4NjAsLTIwMzE0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4
+MTA5MywxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0Ny
+wtMjEzNTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIx
+MTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4OD
+EyOTUyLC0xMDgxOTUzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1
+MSw4Mjc5MjE0NTBdfQ==
 -->
