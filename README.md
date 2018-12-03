@@ -605,6 +605,7 @@ cat /etc/passwd | tr '[:lower:]' '[:upper:]' > /work/1.4/CAPITALIZED.txt
 </details>
 
 <details><summary>textfiles: sed</summary>
+
 Don't study harder than you need to, **/usr/share/doc/sed/sedfaq.txt** contains many examples.
 
 To capitalize all "a": `# sed 's/a/A/g' printer2.txt > printer3.txt`
@@ -3500,11 +3501,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1ODQ0MDI5NywtMTEwMjIzODMxMywxOT
-cwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2MjA3MywtNjAwMjA4
-MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOTUsLTEyNTM5MjU2MD
-EsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYx
-NjA1OTg0NywtMjEzNTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMT
-E4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIy
-OCwtNTM4ODEyOTUyXX0=
+eyJoaXN0b3J5IjpbLTE1MzU2MTcxNTcsLTExMDIyMzgzMTMsMT
+k3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNzMsLTYwMDIw
+ODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0xMjUzOTI1Nj
+AxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02
+MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMD
+ExODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIy
+MjgsLTUzODgxMjk1Ml19
 -->
