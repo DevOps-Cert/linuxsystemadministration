@@ -6,7 +6,6 @@ While there are many introductions to Linux, this guide provides working lab act
 Work on list
 * SELinux and AppArmor https://www.tecmint.com/mandatory-access-control-with-selinux-or-apparmor-linux/2/ 
 * PAM modules (figure out fastest way to search for appropriate ones to install and configure)
-* Managing libvirt machines (on new machine)
 * samba
 * Polish up web servers
 # Table of Contents
@@ -15,9 +14,9 @@ Work on list
 
 # Setup Process
 ## Caveats
-While this guide could make use of sudo for all super privileged commands (/sbin) to avoid the use of the root account; efficiency of time makes it optimal to use the root account for almost all functions.  In a few cases, an unprivileged account will be used such as testing file and user privileges.  It is with heavy heart that the use of root account herein is documented; but, the goal is speed and this shortcut turns into a tremendous time saver.  Do not pursue this approach with production servers with multiple administrators where you should be using sudo to provide audit trail and visudo rather than these shortcuts.  Root can be accessed via `sudo -i` or `sudo su - root` from vagrant account.
+While this guide could make use of sudo for all super privileged commands (such as those in /sbin) to avoid the use of the root account; efficiency of time makes it optimal to use the root account for almost all functions.  In a few cases, an unprivileged account will be used such as testing file and user privileges.  It is with heavy heart that the use of root account herein is documented; but, the goal is speed and this shortcut turns into a tremendous time saver.  Do not pursue this approach with production servers with multiple administrators where you should be using sudo to provide audit trail and visudo rather than these shortcuts.  Root can be accessed via `sudo -i` or `sudo su - root` from vagrant account.
 ## Platform generic focus
-Take careful note of the version of Ubuntu as this presumes 16.04.  These instructions are platform specific to Ubuntu 16.04 to avoid extra commands to master.  When possible, generic concepts and methods encompassing multiple distributions are covered such as iptables instead of ufw for example.
+Take careful note of the version of Ubuntu as this presumes 16.04.  These instructions are platform specific to Ubuntu 16.04 to avoid extra commands to master.  When possible, generic concepts and methods encompassing multiple distributions are covered such as iptables instead of ufw for example.  
 ## Setup notes
 There are a multitude of possible ways to setup your learning environment.  However, given the overall benefit of standardizing your configuration to match this guide so that it works every time from scratch and is identical, vagrant is the preferred solution.  A libvirt hypervisor or manual configuration of a group of virtualbox/vm ware hosts can work but provide some complexity to keep standardized.
 
@@ -3508,11 +3507,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5NSwtMT
-I1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0
-NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2NjE2LDEyNTA4OTA1Mz
-EsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwtMTM3MDM3MDM4NCwx
-ODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5NTM0MSwxNDIxNz
-UzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1MCwxMDU3MTcxODE4
-LC0xMjc1MjUxMDMyXX0=
+eyJoaXN0b3J5IjpbMTQwNzAwMDQ2MiwxNDQwNjk1ODYwLC0yMD
+MxNDU3Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2
+MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MT
+YsMTI1MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0x
+MzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MT
+k1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NTEsODI3OTIxNDUw
+LDEwNTcxNzE4MThdfQ==
 -->
