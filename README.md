@@ -630,9 +630,9 @@ deb-src ftp://la-mirrors.evowise.com/ubuntu xenial-security multiverse
 
 </details>
 
-### Binary files: ls -l, cmp, md5sum
-### Identify kind of file type
-<details><summary>What is /boot/vmlinuz*</summary>
+<details><summary>Binary files: ls -l, cmp, md5sum</summary></details>
+
+<details><summary>What type of file is /boot/vmlinuz*</summary>
 
 ```
 # file /boot/vmlinuz-4.15.0-38-generic
@@ -652,13 +652,11 @@ ls -ld <filename>
 </details>
 
 
-<details><summary>What is /etc/rc2.d/S06rc.local?<summary>
+<details><summary>Put the type of file out of long listing for /etc/rc2.d/S06rc.local and /etc/passwd into /work/32.45/files?<summary>
 
 ```
-# ls -al /etc/rc2.d/S06rc.local
-lrwxrwxrwx 1 root root 18 Nov  8 13:12 /etc/rc2.d/S06rc.local -> ../init.d/rc.local
-# ls -ld /etc/passwd
--rw-r--r-- 1 root root 2767 Nov  8 15:15 /etc/passwd
+# ls -al /etc/rc2.d/S06rc.local > /work/32.45/files
+# ls -ld /etc/passwd >> /work/32.45/files
 ```
 
 </details>
@@ -3509,7 +3507,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODEwNjI1OTksLTExMDIyMzgzMTMsMT
+eyJoaXN0b3J5IjpbLTE3Mzc3NDg0ODIsLTExMDIyMzgzMTMsMT
 k3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNzMsLTYwMDIw
 ODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0xMjUzOTI1Nj
 AxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02
