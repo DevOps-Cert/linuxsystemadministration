@@ -2784,6 +2784,8 @@ All filtering tasks to be performed on lb90 only to avoid creating difficulty of
 <details><summary>Disable ufw if configured on lb90,  and setup iptables to accept ssh as Rule 1.</summary>
 
 ```
+# systemctl disable ufw
+# systemctl stop ufw
 # iptables -A INPUT -p tcp --dport ssh -j ACCEPT
 ```
 
@@ -3507,11 +3509,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ0NzEyMjksMTQ0MDY5NTg2MCwtMjAzMT
-Q1NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2NjIw
-NzQsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2NjE2LD
-EyNTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwtMTM3
-MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5NT
-M0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1MCwx
-MDU3MTcxODE4XX0=
+eyJoaXN0b3J5IjpbLTU4NDAyNDMwNywxNDQwNjk1ODYwLC0yMD
+MxNDU3Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2
+MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MT
+YsMTI1MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0x
+MzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MT
+k1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NTEsODI3OTIxNDUw
+LDEwNTcxNzE4MThdfQ==
 -->
