@@ -589,11 +589,16 @@ root:x:0:0:root:/root:/bin/bash
 
 
 <details><summary>textfiles: vimdiff</summary>
+
 Vimdiff starts Vim on two (or three or four) files.  Each file gets its own window. The differences between the files are highlighted.  This is a nice way to inspect changes and to move changes from one version to another version of the same file.
 </details>
+
 <details><summary>textfiles: pr</summary></details>
+
 <details><summary>textfiles: cat</summary></details>
+
 <details><summary>textfiles: tac</summary></details>
+
 <details><summary>textfiles: tail</summary></details>
 
 <details><summary>Capitalize everything in /etc/passwd and send to /work/1.4/CAPITALIZED.txt</summary>
@@ -3501,7 +3506,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzU2MTcxNTcsLTExMDIyMzgzMTMsMT
+eyJoaXN0b3J5IjpbLTEzNjQzOTczMDcsLTExMDIyMzgzMTMsMT
 k3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNzMsLTYwMDIw
 ODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0xMjUzOTI1Nj
 AxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02
