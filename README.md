@@ -2784,7 +2784,7 @@ All filtering tasks to be performed on lb90 only to avoid creating difficulty of
 <details><summary>Disable ufw if configured on lb90,  and setup iptables to accept ssh as Rule 1.</summary>
 
 ```
-iptables -A INPUT -p tcp --dport ssh -j ACCEPT
+# iptables -A INPUT -p tcp --dport ssh -j ACCEPT
 ```
 
 </details>
@@ -2792,16 +2792,16 @@ iptables -A INPUT -p tcp --dport ssh -j ACCEPT
 <details><summary>Rule 2 shall block port 80 from 10.20.30.60 but then rule 3 allow the rest of network 10.20.30.0/24 to connect to port 80.</summary>
 
 ```
-iptables -A INPUT -p tcp --source 10.20.30.60 --dport 80 -j DROP
-iptables -A INPUT -p tcp --source 10.20.30.0/24 --dport 80 -j ACCEPT
+# iptables -A INPUT -p tcp --source 10.20.30.60 --dport 80 -j DROP
+# iptables -A INPUT -p tcp --source 10.20.30.0/24 --dport 80 -j ACCEPT
 ```
 
 </details>
 
-<details><summary>Save current iptable rules to /etc/iptables</summary>
+<details><summary>Save current iptable rules to /tmp/43.54/iptables</summary>
 
 ```
-iptables-save > /etc/iptables
+# iptables-save > /tmp/43.54/iptables
 ```
 
 </details>
@@ -3507,11 +3507,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYyOTQ2OTE5LDE0NDA2OTU4NjAsLTIwMz
-E0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYy
-MDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNi
-wxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEz
-NzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgxOT
-UzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0NTAs
-MTA1NzE3MTgxOF19
+eyJoaXN0b3J5IjpbNTQ0NzEyMjksMTQ0MDY5NTg2MCwtMjAzMT
+Q1NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2NjIw
+NzQsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2NjE2LD
+EyNTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwtMTM3
+MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5NT
+M0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgyNzkyMTQ1MCwx
+MDU3MTcxODE4XX0=
 -->
