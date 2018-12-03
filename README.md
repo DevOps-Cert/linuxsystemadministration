@@ -1831,6 +1831,8 @@ sudo:x:27:lab,fred
 <details><summary>Make use of PAM to lock out user accounts after certain number of failed ssh login attempts made to the system.</summary>
 
 ```
+# whatis pam_tally2
+pam_tally2 (8)       - The login counter (tallying) module
 # grep tally2 /etc/pam.d/password-auth
 auth        required      pam_tally2.so  file=/var/log/tallylog deny=3 even_deny_root unlock_time=1200
 ```
@@ -3437,11 +3439,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTIzNDc0NCwxMjUwODkwNTMxLC05Mj
-MwMTE4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3
-MjIyOCwtNTM4ODEyOTUyLC0xMDgxOTUzNDEsMTQyMTc1MzE4Ny
-wtMTc2Njc1MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MTgxOCwtMTI3
-NTI1MTAzMiwtMjEzNjM5MTA4OSwxODI5MDIwNjg3LDIxODU2OD
-QwMCw0NTkwMjc5NTksMTU3NzY1NDA2MCwtMzIzMzk4NDgzLC04
-ODYxMjU3MDRdfQ==
+eyJoaXN0b3J5IjpbLTE1NDY1MTQzMjgsMTI1MDg5MDUzMSwtOT
+IzMDExODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2
+NzIyMjgsLTUzODgxMjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxOD
+csLTE3NjY3NTA5NTEsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEy
+NzUyNTEwMzIsLTIxMzYzOTEwODksMTgyOTAyMDY4NywyMTg1Nj
+g0MDAsNDU5MDI3OTU5LDE1Nzc2NTQwNjAsLTMyMzM5ODQ4Mywt
+ODg2MTI1NzA0XX0=
 -->
