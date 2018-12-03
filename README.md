@@ -623,7 +623,8 @@ Abc123:x:1007:1008::/home/Abc123:
 
 <details><summary>Escape special character </summary>
 
-backslash in sed: ```
+backslash in sed: 
+```
 # sed -e "s/'/\"/g" printer2.txt
 ```
 
@@ -3529,11 +3530,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIzMjE0ODY5LDE2NTg0MzEyODIsNzE5Nj
-Q2MDcwLC00MDQ1Njc2NDIsLTExMDIyMzgzMTMsMTk3MDczMzQ5
-MSwtNjYxMTE1MDE5LC0yNDU0NjIwNzMsLTYwMDIwODA3NSwxND
-QwNjk1ODYwLC0yMDMxNDU3Mjk1LC0xMjUzOTI1NjAxLDE0MjIx
-ODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4ND
-csLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDExODY4LC0y
-MTEzNTc4Njk5XX0=
+eyJoaXN0b3J5IjpbLTQ5ODM4MDYzMywxNjU4NDMxMjgyLDcxOT
+Y0NjA3MCwtNDA0NTY3NjQyLC0xMTAyMjM4MzEzLDE5NzA3MzM0
+OTEsLTY2MTExNTAxOSwtMjQ1NDYyMDczLC02MDAyMDgwNzUsMT
+Q0MDY5NTg2MCwtMjAzMTQ1NzI5NSwtMTI1MzkyNTYwMSwxNDIy
+MTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5OD
+Q3LC0yMTM1Njc2NjE2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwt
+MjExMzU3ODY5OV19
 -->
