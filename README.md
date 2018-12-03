@@ -3451,9 +3451,7 @@ lb80 # systemctl restart nfs-server.service rpcbind
 lb70 # tail -2 /etc/hosts
 10.20.30.70     lb70    lb70
 10.20.30.80     lb80    lb80
-lb70 # mkdir /nfs
-lb70 # grep nfs /etc/fstab
-lb80:/nfs       /nfs    nfs     defaults        0       2
+lb70 # mkdir /nfstemp
 lb70 # mount /nfs
 lb70 # df -h /nfs/
 Filesystem      Size  Used Avail Use% Mounted on
@@ -3560,11 +3558,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMzcwMTI5MCwxNzQyNTY1MDc0LC00OT
-gzODA2MzMsMTY1ODQzMTI4Miw3MTk2NDYwNzAsLTQwNDU2NzY0
-MiwtMTEwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUwMTksLT
-I0NTQ2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0
-NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYyMD
-c0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNiwx
-MjUwODkwNTMxXX0=
+eyJoaXN0b3J5IjpbNTEzODg0MTM4LDE3NDI1NjUwNzQsLTQ5OD
+M4MDYzMywxNjU4NDMxMjgyLDcxOTY0NjA3MCwtNDA0NTY3NjQy
+LC0xMTAyMjM4MzEzLDE5NzA3MzM0OTEsLTY2MTExNTAxOSwtMj
+Q1NDYyMDczLC02MDAyMDgwNzUsMTQ0MDY5NTg2MCwtMjAzMTQ1
+NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2NjIwNz
+QsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2NjE2LDEy
+NTA4OTA1MzFdfQ==
 -->
