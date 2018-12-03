@@ -485,7 +485,7 @@ find /work/52.13/ -type f -ok rm '{}' \;
 <details><summary>First, make inside /work/62.21/ make dummy file named 1999 with the modify time during day of January 1st, 1999 and a current file with all timestamps for today named 2018; </summary>
 
 ```
-# touch -t 199901010101 1999 -m /work/62.21/1999
+# touch -t 199901010101 1999 /work/62.21/1999
 # touch /work/62.21/2018
 # stat /work/62.21/1999 | grep Modify
 Modify: 1999-01-01 01:01:00.000000000 +0000
@@ -3497,11 +3497,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMjIyMTQ4MywxOTcwNzMzNDkxLC02Nj
-ExMTUwMTksLTI0NTQ2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4
-NjAsLTIwMzE0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5My
-wxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEz
-NTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nz
-g2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUy
-LC0xMDgxOTUzNDFdfQ==
+eyJoaXN0b3J5IjpbLTExMDIyMzgzMTMsMTk3MDczMzQ5MSwtNj
+YxMTE1MDE5LC0yNDU0NjIwNzMsLTYwMDIwODA3NSwxNDQwNjk1
+ODYwLC0yMDMxNDU3Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOT
+MsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIx
+MzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNT
+c4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1
+MiwtMTA4MTk1MzQxXX0=
 -->
