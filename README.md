@@ -563,7 +563,7 @@ For someone just learning Linux, there is no shame in using nano.  Were vi and e
 
 </details>
 
-<details><summary>Make two directories using bash script `mkdir /work/32.42/{A_dir,B_dir}; touch /work/32.42/A_dir/{3..25}.txt; touch /work/32.42/B_dir/{5..27}.txt`   The folders have different files and sometimes similar files.  Produce a report to /work/32.42/B of files only that exist only in /work/32.42/B_dir and not at all in /work/32.42/A_dir .</summary>
+<details><summary>Make two directories using bash script `mkdir -p /work/32.42/{A_dir,B_dir}; touch /work/32.42/A_dir/{3..25}.txt; touch /work/32.42/B_dir/{5..27}.txt`   The folders have different files and sometimes similar files.  Produce a report to /work/32.42/B of files only that exist only in /work/32.42/B_dir and not at all in /work/32.42/A_dir .</summary>
 
 ```
 # diff -q /work/32.42/A_dir/ /work/32.42/B_dir/ | grep B_ > /work/32.42/B
@@ -595,6 +595,15 @@ Vimdiff starts Vim on two (or three or four) files.  Each file gets its own wind
 ### textfiles: head
 ### textfiles: tail
 ### textfiles: tr
+
+<details><summary>Capitalize everything in /etc/passwd and send to /work/1.4/CAPITALIZED.txt</summary>
+
+```
+cat /etc/passwd | tr '[:lower:]' '[:upper:]' > /work/1.4/CAPITALIZED.txt
+```
+
+</details>
+
 <details><summary>Capitalize everything in /etc/passwd and send to /work/1.4/CAPITALIZED.txt</summary>
 
 ```
@@ -3497,11 +3506,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDIyMzgzMTMsMTk3MDczMzQ5MSwtNj
-YxMTE1MDE5LC0yNDU0NjIwNzMsLTYwMDIwODA3NSwxNDQwNjk1
-ODYwLC0yMDMxNDU3Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOT
-MsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIx
-MzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNT
-c4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1
-MiwtMTA4MTk1MzQxXX0=
+eyJoaXN0b3J5IjpbLTE0MDI4NjI1NjEsLTExMDIyMzgzMTMsMT
+k3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNzMsLTYwMDIw
+ODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0xMjUzOTI1Nj
+AxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02
+MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMD
+ExODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIy
+MjgsLTUzODgxMjk1Ml19
 -->
