@@ -2974,7 +2974,10 @@ vagrant@ubuntu1604:~$ ifconfig
 
 ```
 # virsh edit vm
-  <vcpu placement='static'>1</vcpu>
+  <memory unit='KiB'>1500152</memory>
+  <currentMemory unit='KiB'>1500152</currentMemory>
+
+
 ```
 
 </details>
@@ -3504,7 +3507,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NDkxMTY5LC0xMjUzOTI1NjAxLDE0Mj
+eyJoaXN0b3J5IjpbOTQ3MTg0MjUzLC0xMjUzOTI1NjAxLDE0Mj
 IxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4
 NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDExODY4LC
 0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUz
