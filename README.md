@@ -3434,6 +3434,36 @@ e6239fd17cd9        ubuntu              "bash"              About a minute ago  
 Sources: https://blogs.msdn.microsoft.com/maheshk/2018/05/27/lfcs-commands-to-manage-and-configure-containers-in-linux/
 ## File Sharing
 #### NFS  
+
+<details><summary>On lb80, share /nfstemp with dummy file named test with lb70 machines on network as /nfs.</summary>
+
+```
+lb80 # apt-get install -y nfswatch nfs-common nfs-kernel-server
+lb80 # tail -2 /etc/hosts
+10.20.30.70     lb70    lb70
+10.20.30.80     lb80    lb80
+lb80 # mkdir /nfs
+lb80 # touch /nfs/test
+lb80 # cat /etc/exports
+/nfs       lb70(rw,no_root_squash)
+# exportfs -avr
+lb80 # systemctl restart nfs-server.service rpcbind
+lb70 # tail -2 /etc/hosts
+10.20.30.70     lb70    lb70
+10.20.30.80     lb80    lb80
+lb70 # mkdir /nfs
+lb70 # grep nfs /etc/fstab
+lb80:/nfs       /nfs    nfs     defaults        0       2
+lb70 # mount /nfs
+lb70 # df -h /nfs/
+Filesystem      Size  Used Avail Use% Mounted on
+lb80:/nfs       9.7G  1.4G  8.3G  14% /nfs
+lb70 # ls /nfs/test
+/nfs/test
+```
+
+</details>
+
 <details><summary>On lb80, share /nfs with dummy file named test with lb70 machines on network as /nfs and set to mount persistently</summary>
 
 ```
@@ -3464,7 +3494,7 @@ lb70 # ls /nfs/test
 </details>
 Sources: [certdepo](https://www.certdepot.net/rhel7-provide-nfs-network-shares-specific-clients/)
 #### SAMBA File Sharing 
-<details><summary>on lb80 to share /smbpublic RO with lb70 machines on network as /smbpublic </summary>
+<details><summary>On lb80 to share /smbpublic RO with lb70 machines on network as /smbpublic </summary>
 
 ```
 lb80 # apt-get install -y samba samba-client samba-common
@@ -3530,11 +3560,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5ODM4MDYzMywxNjU4NDMxMjgyLDcxOT
-Y0NjA3MCwtNDA0NTY3NjQyLC0xMTAyMjM4MzEzLDE5NzA3MzM0
-OTEsLTY2MTExNTAxOSwtMjQ1NDYyMDczLC02MDAyMDgwNzUsMT
-Q0MDY5NTg2MCwtMjAzMTQ1NzI5NSwtMTI1MzkyNTYwMSwxNDIy
-MTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5OD
-Q3LC0yMTM1Njc2NjE2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwt
-MjExMzU3ODY5OV19
+eyJoaXN0b3J5IjpbMTc0MjU2NTA3NCwtNDk4MzgwNjMzLDE2NT
+g0MzEyODIsNzE5NjQ2MDcwLC00MDQ1Njc2NDIsLTExMDIyMzgz
+MTMsMTk3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNzMsLT
+YwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0xMjUz
+OTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0Mz
+UyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwt
+OTIzMDExODY4XX0=
 -->
