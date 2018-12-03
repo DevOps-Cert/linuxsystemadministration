@@ -285,8 +285,8 @@ Way too often the Internet isn't reachable because you have messed something up 
 
 Extract all the compressed gzip files in /usr/share
 ```
-# find /usr/share -regex '*.gz' -type f -exec ls -l {} \; 
-# find /usr/share -name *.gz -type f -exec gunzip -k {} \;
+# find /usr/share -name "*.gz" -type f -exec ls -l "{}" \; 
+# find /usr/share -name "*.gz" -type f -exec gunzip -k "{}" \;
 # grep "route add.*" -R /usr/share/
 /usr/share/man/fr/man8/route.8:.B route add \-net 192.57.66.0 netmask 255.255.255.0 gw ipx4
 ```
@@ -3482,11 +3482,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MTExNTAxOSwtMjQ1NDYyMDczLC02MD
-AyMDgwNzUsMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5NSwtMTI1Mzky
-NTYwMSwxNDIyMTgxMDkzLDE2ODk2NjIwNzQsLTk5NTA0NDM1Mi
-wtNjE2MDU5ODQ3LC0yMTM1Njc2NjE2LDEyNTA4OTA1MzEsLTky
-MzAxMTg2OCwtMjExMzU3ODY5OSwtMTM3MDM3MDM4NCwxODUzNj
-cyMjI4LC01Mzg4MTI5NTIsLTEwODE5NTM0MSwxNDIxNzUzMTg3
-LC0xNzY2NzUwOTUxXX0=
+eyJoaXN0b3J5IjpbMTg4MjI5MjkzNSwtNjYxMTE1MDE5LC0yND
+U0NjIwNzMsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3
+Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NC
+wtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1
+MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0xMzcwMz
+cwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MTk1MzQx
+LDE0MjE3NTMxODddfQ==
 -->
