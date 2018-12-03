@@ -619,9 +619,10 @@ Print only user lab in /etc/passwd with sed: `# sed -n '/lab/p' /etc/passwd`
 
 </details>
 
-<details><summary>Substitute all occurrences of X with Y in a file</summary>
+<details><summary>Copy /etc/apt/sources.list to /work/43.21/.  Substitute all occurrences of security.ubuntu.com with la-mirrors.evowise.com.</summary>
 
 ```
+# cp /etc/apt/sources.list /work/43.21/
 sudo sed -i.backup 's/security.ubuntu.com/la-mirrors.evowise.com/g' /etc/apt/sources.list
 ```
 
@@ -3506,11 +3507,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjQzOTczMDcsLTExMDIyMzgzMTMsMT
-k3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNzMsLTYwMDIw
-ODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0xMjUzOTI1Nj
-AxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02
-MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMD
-ExODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIy
-MjgsLTUzODgxMjk1Ml19
+eyJoaXN0b3J5IjpbLTkzMTc2NjU5NSwtMTEwMjIzODMxMywxOT
+cwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2MjA3MywtNjAwMjA4
+MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOTUsLTEyNTM5MjU2MD
+EsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYx
+NjA1OTg0NywtMjEzNTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMT
+E4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIy
+OCwtNTM4ODEyOTUyXX0=
 -->
