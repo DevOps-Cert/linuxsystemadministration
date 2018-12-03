@@ -673,13 +673,12 @@ Append output to file `# command >> file`
 Send output from one command to another (indefinitely stackable): `# cat file | grep A`
 Write stdout and errors to two separate files: `# command > out 2>error`
 
-<details><summary>Write both stdout and errors to same file named /work/64.34/both for command : </summary>
+<details><summary>Write both stdout and errors to same file named /work/65.43/both for command : </summary>
 
 ```
-```
-echo this goes to stdout
-echo and this goes to stderr >&2
-```
+# echo "echo this goes to stdout
+echo and this goes to stderr >&2" > /work/65.43/command
+
 # command &> out
 ```
 
@@ -3514,11 +3513,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzI4NTM2MDQsLTQwNDU2NzY0MiwtMT
-EwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2
-MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOT
-UsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC05
-OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNiwxMjUwOD
-kwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNzAz
-ODQsMTg1MzY3MjIyOF19
+eyJoaXN0b3J5IjpbNzE5NjQ2MDcwLC00MDQ1Njc2NDIsLTExMD
+IyMzgzMTMsMTk3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIw
+NzMsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC
+0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1
+MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MD
+UzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0
+LDE4NTM2NzIyMjhdfQ==
 -->
