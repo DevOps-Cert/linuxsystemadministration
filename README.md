@@ -415,11 +415,11 @@ To begin this exercise; make sure you are in /work/1.2 folder which should have 
 
 </details>
 
-<details><summary>Put path of first five files in /usr/share/ into /work/1.2/filepaths.txt:  </summary>
+<details><summary>Put path of first five files in /usr/share/ into /work/87.56/filepaths.txt:  </summary>
 
 ```
-# find /usr/share/* -type f -print | head -5 > /work/1.2/filepaths.txt
-# cat /work/1.2/filepaths.txt
+# find /usr/share/* -type f -print | head -5 > /work/87.56/filepaths.txt
+# cat /work/87.56/filepaths.txt
 /usr/share/aclocal/dovecot.m4
 /usr/share/aclocal/dovecot-pigeonhole.m4
 /usr/share/adduser/adduser.conf
@@ -429,11 +429,11 @@ To begin this exercise; make sure you are in /work/1.2 folder which should have 
 
 </details>
 
-<details><summary>In etc, find all files and then output their type to /work/1.2/etctypes and take a look at the top of the resulting file:</summary>
+<details><summary>In etc, find all files and then output their type to /work/87.56/etctypes and take a look at the top of the resulting file:</summary>
 
 ```
-# find /etc -type f -exec file '{}' > /work/1.2/etctypes \;
-# head /work/1.2/etctypes
+# find /etc -type f -exec file '{}' > /work/87.56/etctypes \;
+# head /work/87.56/etctypes
 /etc/environment: ASCII text
 /etc/apache2/magic: magic text file for file(1) cmd, ASCII text
 /etc/apache2/sites-available/default-ssl.conf: ASCII text
@@ -448,7 +448,7 @@ To begin this exercise; make sure you are in /work/1.2 folder which should have 
 
 </details>
 
-<details><summary>Add file deleteme in /work/1.2.  Find all files in /work/1.2 and ask if it is ok to delete them one by one but answer no to each delete other than deleteme: </summary>
+<details><summary>Copy everything in /etc/ssh/ to /work/52.13/.  Find all files in /work/1.2 and ask if it is ok to delete them one by one but answer no to each delete other than deleteme: </summary>
 
 ```
 # touch /work/1.2/{deleteme,nodelete}
@@ -3489,7 +3489,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkwNjQ5NzU1LC02NjExMTUwMTksLTI0NT
+eyJoaXN0b3J5IjpbMTIxMjY0ODk2LC02NjExMTUwMTksLTI0NT
 Q2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcy
 OTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC
 05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNiwxMjUw
