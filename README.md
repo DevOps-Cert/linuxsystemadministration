@@ -1828,7 +1828,7 @@ sudo:x:27:lab
 sudo:x:27:lab,fred
 ```
 ##	Configure PAM
-<details><summary>Make use of PAM to lock out user accounts after two failed login attempts made to the system.</summary>
+<details><summary>Make use of PAM to lock out user accounts after two failed ssh login attempts made to the system.</summary>
 
 ```
 # whatis pam_tally2
@@ -1846,7 +1846,6 @@ fred                3    12/03/18 14:00:14  127.0.0.1
 # pam_tally2 --user=fred --reset
 Login           Failures Latest failure     From
 fred                0
-
 ```
 
 </details>
@@ -3451,11 +3450,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMT
-M1Njc2NjE2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3
-ODY5OSwtMTM3MDM3MDM4NCwxODUzNjcyMjI4LC01Mzg4MTI5NT
-IsLTEwODE5NTM0MSwxNDIxNzUzMTg3LC0xNzY2NzUwOTUxLDgy
-NzkyMTQ1MCwxMDU3MTcxODE4LC0xMjc1MjUxMDMyLC0yMTM2Mz
-kxMDg5LDE4MjkwMjA2ODcsMjE4NTY4NDAwLDQ1OTAyNzk1OSwx
-NTc3NjU0MDYwXX0=
+eyJoaXN0b3J5IjpbMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MT
+YwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDEx
+ODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMj
+gsLTUzODgxMjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3
+NjY3NTA5NTEsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNT
+EwMzIsLTIxMzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0MDAs
+NDU5MDI3OTU5XX0=
 -->
