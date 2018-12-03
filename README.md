@@ -701,15 +701,6 @@ Source: https://www.linuxjournal.com/content/working-stdin-and-stdout
 
 To read a file back into a command: `# wc -l < syslog.pdf`
 ##	Regular expression syntax
-grep, grep -i, grep -v, grep -E '^root' /etc/passwd
-
-.(dot) match a single character
-a|z match a or z
-$ match end of line
-\* match 0 or more preceding items
-\^ match start of line
-find out how to look these up in man or /usr/share/doc
-
 <details><summary>Find all the lines in /usr/share/common-licenses/GPL-3 that start with the word "The" but case insensitive and put result in /work/7.4/the </summary>
 
 ```
@@ -3528,11 +3519,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgyNjUwMDE0LDcxOTY0NjA3MCwtNDA0NT
-Y3NjQyLC0xMTAyMjM4MzEzLDE5NzA3MzM0OTEsLTY2MTExNTAx
-OSwtMjQ1NDYyMDczLC02MDAyMDgwNzUsMTQ0MDY5NTg2MCwtMj
-AzMTQ1NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2
-NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2Nj
-E2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwt
-MTM3MDM3MDM4NF19
+eyJoaXN0b3J5IjpbMTE4MDg5OTE4MCw3MTk2NDYwNzAsLTQwND
+U2NzY0MiwtMTEwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUw
+MTksLTI0NTQ2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLT
+IwMzE0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5
+NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3Nj
+YxNiwxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTks
+LTEzNzAzNzAzODRdfQ==
 -->
