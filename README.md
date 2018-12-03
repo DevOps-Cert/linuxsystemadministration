@@ -404,8 +404,8 @@ To begin this exercise; make sure you are in /work/1.2 folder which should have 
 <details><summary>Put path of first five directories in /usr/share/ into /work/43.41/dirs:  </summary>
 
 ```
-# find /usr/share/* -type d -print | head -5 > /work/1.2/dirs
-# cat /work/1.2/dirs
+# find /usr/share/* -type d -print | head -5 >  /work/43.41/dirs
+# cat /work/43.41/dirs
 /usr/share/aclocal
 /usr/share/adduser
 /usr/share/apache2
@@ -3489,11 +3489,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ0NjYwNzksLTY2MTExNTAxOSwtMjQ1ND
-YyMDczLC02MDAyMDgwNzUsMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5
-NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2NjIwNzQsLT
-k5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2NjE2LDEyNTA4
-OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwtMTM3MDM3MD
-M4NCwxODUzNjcyMjI4LC01Mzg4MTI5NTIsLTEwODE5NTM0MSwx
-NDIxNzUzMTg3XX0=
+eyJoaXN0b3J5IjpbODkwNjQ5NzU1LC02NjExMTUwMTksLTI0NT
+Q2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcy
+OTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC
+05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNiwxMjUw
+ODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNz
+AzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgxOTUzNDEs
+MTQyMTc1MzE4N119
 -->
