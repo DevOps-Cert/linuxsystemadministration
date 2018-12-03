@@ -448,15 +448,23 @@ To begin this exercise; make sure you are in /work/1.2 folder which should have 
 
 </details>
 
-<details><summary>Copy everything in /etc/ssh/ to /work/52.13/.  Find all files in /work/1.2 and ask if it is ok to delete them one by one but answer no to each delete other than deleteme: </summary>
+<details><summary>Copy everything in /etc/ssh/ to /work/52.13/.  Find all files in /work/52.13/ and ask if it is ok to delete them one by one but answer no to each delete other than moduli: </summary>
 
 ```
-# touch /work/1.2/{deleteme,nodelete}
-# find /work/1.2 -type f -ok rm '{}' \;
-< rm ... ./1999 > ? n
-< rm ... ./2018 > ? n
-< rm ... ./etctypes > ? n
-< rm ... ./deleteme > ? y
+# cp  /etc/ssh/* /work/52.13/
+find /work/52.13/ -type f -ok rm '{}' \;
+< rm ... /work/52.13/ssh_host_ed25519_key > ? n
+< rm ... /work/52.13/ssh_import_id > ? n
+< rm ... /work/52.13/ssh_host_dsa_key > ? n
+< rm ... /work/52.13/ssh_host_rsa_key > ? n
+< rm ... /work/52.13/sshd_config > ? n
+< rm ... /work/52.13/ssh_host_rsa_key.pub > ? n
+< rm ... /work/52.13/moduli > ? y
+< rm ... /work/52.13/ssh_config > ? n
+< rm ... /work/52.13/ssh_host_ecdsa_key.pub > ? n
+< rm ... /work/52.13/ssh_host_ed25519_key.pub > ? n
+< rm ... /work/52.13/ssh_host_ecdsa_key > ? n
+< rm ... /work/52.13/ssh_host_dsa_key.pub > ? n
 ```
 
 </details>
@@ -3489,11 +3497,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMjY0ODk2LC02NjExMTUwMTksLTI0NT
-Q2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcy
-OTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC
-05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNiwxMjUw
-ODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNz
-AzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgxOTUzNDEs
-MTQyMTc1MzE4N119
+eyJoaXN0b3J5IjpbMTk3MDczMzQ5MSwtNjYxMTE1MDE5LC0yND
+U0NjIwNzMsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3
+Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NC
+wtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1
+MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0xMzcwMz
+cwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MTk1MzQx
+LDE0MjE3NTMxODddfQ==
 -->
