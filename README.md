@@ -587,14 +587,14 @@ root:x:0:0:root:/root:/bin/bash
 
 </details>
 
-### textfiles: vimdiff
+
+<details><summary>textfiles: vimdiff</summary>
 Vimdiff starts Vim on two (or three or four) files.  Each file gets its own window. The differences between the files are highlighted.  This is a nice way to inspect changes and to move changes from one version to another version of the same file.
-### textfiles: pr
-### textfiles: cat
-### textfiles: tac
-### textfiles: head
-### textfiles: tail
-### textfiles: tr
+</details>
+<details><summary>textfiles: pr</summary></details>
+<details><summary>textfiles: cat</summary></details>
+<details><summary>textfiles: tac</summary></details>
+<details><summary>textfiles: tail</summary></details>
 
 <details><summary>Capitalize everything in /etc/passwd and send to /work/1.4/CAPITALIZED.txt</summary>
 
@@ -604,22 +604,16 @@ cat /etc/passwd | tr '[:lower:]' '[:upper:]' > /work/1.4/CAPITALIZED.txt
 
 </details>
 
-<details><summary>Capitalize everything in /etc/passwd and send to /work/1.4/CAPITALIZED.txt</summary>
-
-```
-cat /etc/passwd | tr '[:lower:]' '[:upper:]' > /work/1.4/CAPITALIZED.txt
-```
-
-</details>
-
-### textfiles: sed
+<details><summary>textfiles: sed</summary>
 Don't study harder than you need to, **/usr/share/doc/sed/sedfaq.txt** contains many examples.
 
 To capitalize all "a": `# sed 's/a/A/g' printer2.txt > printer3.txt`
 Special character escaped with a backslash in sed: `# sed -e "s/'/\"/g" printer2.txt`
 Print only user lab in /etc/passwd with sed: `# sed -n '/lab/p' /etc/passwd`
 
-<details><summary>Substitute all occurance of X with Y in a file</summary>
+</details>
+
+<details><summary>Substitute all occurrences of X with Y in a file</summary>
 
 ```
 sudo sed -i.backup 's/security.ubuntu.com/la-mirrors.evowise.com/g' /etc/apt/sources.list
@@ -3506,11 +3500,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDI4NjI1NjEsLTExMDIyMzgzMTMsMT
-k3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNzMsLTYwMDIw
-ODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0xMjUzOTI1Nj
-AxLDE0MjIxODEwOTMsMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02
-MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMD
-ExODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIy
-MjgsLTUzODgxMjk1Ml19
+eyJoaXN0b3J5IjpbMTY1ODQ0MDI5NywtMTEwMjIzODMxMywxOT
+cwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2MjA3MywtNjAwMjA4
+MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOTUsLTEyNTM5MjU2MD
+EsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC05OTUwNDQzNTIsLTYx
+NjA1OTg0NywtMjEzNTY3NjYxNiwxMjUwODkwNTMxLC05MjMwMT
+E4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNzAzODQsMTg1MzY3MjIy
+OCwtNTM4ODEyOTUyXX0=
 -->
