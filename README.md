@@ -2781,7 +2781,7 @@ nmtui
 Although Ubuntu often uses ufw as an iptables front end and CentOS uses firewalld, generic iptables is better to learn as it translates across all Linux distributions as well as it is more powerful.  
 
 All filtering tasks to be performed on lb90 only to avoid creating difficulty of troubleshooting a broken service on a machine also running another service such as bind or squid.
-<details><summary>Disable ufw if configured on lb90,  and setup iptables to accept ssh as first rule.</summary>
+<details><summary>Disable ufw if configured on lb90,  and setup iptables to accept ssh as Rule 1.</summary>
 
 ```
 iptables -A INPUT -p tcp --dport ssh -j ACCEPT
@@ -3507,7 +3507,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNzAwMDQ2MiwxNDQwNjk1ODYwLC0yMD
+eyJoaXN0b3J5IjpbMTE5MzQyMzk1MSwxNDQwNjk1ODYwLC0yMD
 MxNDU3Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2
 MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MT
 YsMTI1MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0x
