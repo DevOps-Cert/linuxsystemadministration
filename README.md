@@ -2780,7 +2780,7 @@ nmtui
 ##	Host-based firewalling with iptables
 Although Ubuntu often uses ufw as an iptables front end and CentOS uses firewalld, generic iptables is better to learn as it translates across all Linux distributions as well as it is more powerful.  
 
-All filtering tasks to be performed on lb90 only to avoid creating difficulty of troubleshooting a broken service on a machine also running another service such as bind or squid.
+All filtering tasks to be performed on lb90 only to avoid creating difficulty of troubleshooting a broken service on a machine also running another service such as bind or squid. 
 <details><summary>Disable ufw if configured on lb90,  and setup iptables to accept ssh as Rule 1.</summary>
 
 ```
@@ -2789,7 +2789,7 @@ iptables -A INPUT -p tcp --dport ssh -j ACCEPT
 
 </details>
 
-<details><summary>Rule 2 shall block 80 from 10.20.30.60 but then rule 3 allow the rest of network 10.20.30.0/24 to connect to 80.</summary>
+<details><summary>Rule 2 shall block port 80 from 10.20.30.60 but then rule 3 allow the rest of network 10.20.30.0/24 to connect to port 80.</summary>
 
 ```
 iptables -A INPUT -p tcp --source 10.20.30.60 --dport 80 -j DROP
@@ -3507,11 +3507,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MzQyMzk1MSwxNDQwNjk1ODYwLC0yMD
-MxNDU3Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2
-MjA3NCwtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MT
-YsMTI1MDg5MDUzMSwtOTIzMDExODY4LC0yMTEzNTc4Njk5LC0x
-MzcwMzcwMzg0LDE4NTM2NzIyMjgsLTUzODgxMjk1MiwtMTA4MT
-k1MzQxLDE0MjE3NTMxODcsLTE3NjY3NTA5NTEsODI3OTIxNDUw
-LDEwNTcxNzE4MThdfQ==
+eyJoaXN0b3J5IjpbNzYyOTQ2OTE5LDE0NDA2OTU4NjAsLTIwMz
+E0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYy
+MDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNi
+wxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEz
+NzAzNzAzODQsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgxOT
+UzNDEsMTQyMTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0NTAs
+MTA1NzE3MTgxOF19
 -->
