@@ -1266,7 +1266,6 @@ Sources: [tecmint](https://www.tecmint.com/11-cron-scheduling-task-examples-in-l
 ##	Evaluating results of scheduled commands
 cron will log output which can be useful to investigate how a job performed.  The logs will inform you as to the failure or success of your task.
 ##	Apply software patches from Linux vendor
-Commands: dpkg, apt-get, apt-cache, aptitude
 ### Update packages from the network, a remote repository, or from the local file system
 Install a specific DEB file given URL: `# apt-get -y install `
 install web server: `apt-get install -y apache2`
@@ -1316,8 +1315,6 @@ sysctl -p
 ```
 Sources: [tecmint](https://www.tecmint.com/change-modify-linux-kernel-runtime-parameters/)
 ##	Basic Shell Scripting
-Commands: mktemp, touch, crontab, at, cron
-Files: /etc/cron.d/, /etc/crontab
 Create a very basic script to perform a series of commands in a set sequence.
 Make a temporary file in /work/ and display name: `mktemp`
 Make a temporary directory in /work/ and display name: `mktemp -d`
@@ -1398,8 +1395,6 @@ systemctl status bind
 
 
 ##	Individual processes
-Commands: nice, renice, ps, kill, top, htop
-Files: /etc/security/limits.conf
 Getting information about running processes on a system 
 ```
 top (1)              - display Linux processes 
@@ -3503,7 +3498,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0Mjg3MDg1LDE0NDA2OTU4NjAsLTIwMz
+eyJoaXN0b3J5IjpbLTQ4NjAyOTA3LDE0NDA2OTU4NjAsLTIwMz
 E0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYy
 MDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNi
 wxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEz
