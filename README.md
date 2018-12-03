@@ -2908,7 +2908,7 @@ https://www.cheatography.com/nhatlong0605/cheat-sheets/lfcs-module6-serviceconfi
 <details><summary>Configure a hypervisor to host virtual guests and load a simple VM</summary>
 
 ```
-# apt-get install libvirt-bin libvirt-dev -y
+# apt-get install qemu libvirt-bin ebtables dnsmasq-base libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev -y
 # systemctl start libvirtd
 # wget https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_x86_64.deb
 # dpkg -i vagrant_2.2.2_x86_64.deb
@@ -3450,11 +3450,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4OTY2MjA3NCwtOTk1MDQ0MzUyLC02MT
-YwNTk4NDcsLTIxMzU2NzY2MTYsMTI1MDg5MDUzMSwtOTIzMDEx
-ODY4LC0yMTEzNTc4Njk5LC0xMzcwMzcwMzg0LDE4NTM2NzIyMj
-gsLTUzODgxMjk1MiwtMTA4MTk1MzQxLDE0MjE3NTMxODcsLTE3
-NjY3NTA5NTEsODI3OTIxNDUwLDEwNTcxNzE4MTgsLTEyNzUyNT
-EwMzIsLTIxMzYzOTEwODksMTgyOTAyMDY4NywyMTg1Njg0MDAs
-NDU5MDI3OTU5XX0=
+eyJoaXN0b3J5IjpbLTUzNDcwODI5NiwxNjg5NjYyMDc0LC05OT
+UwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3NjYxNiwxMjUwODkw
+NTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTksLTEzNzAzNzAzOD
+QsMTg1MzY3MjIyOCwtNTM4ODEyOTUyLC0xMDgxOTUzNDEsMTQy
+MTc1MzE4NywtMTc2Njc1MDk1MSw4Mjc5MjE0NTAsMTA1NzE3MT
+gxOCwtMTI3NTI1MTAzMiwtMjEzNjM5MTA4OSwxODI5MDIwNjg3
+LDIxODU2ODQwMF19
 -->
