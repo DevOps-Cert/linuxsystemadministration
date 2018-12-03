@@ -353,11 +353,9 @@ Figure out where the program 'ping' is stored:</summary>
 To begin this exercise; make sure you are in /work/1.2 folder which should have been created during setup.
 
 ```
-# cd /work/1.2
-# which ping
+# which ping > /work/1.2/path
+# cat /work/1.2/path 
 /bin/ping
-# which ping > /work/1.2/path 
-#
 ```
 
 </details>
@@ -3482,7 +3480,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MjI5MjkzNSwtNjYxMTE1MDE5LC0yND
+eyJoaXN0b3J5IjpbMTcxNjQ0MDk1MSwtNjYxMTE1MDE5LC0yND
 U0NjIwNzMsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3
 Mjk1LC0xMjUzOTI1NjAxLDE0MjIxODEwOTMsMTY4OTY2MjA3NC
 wtOTk1MDQ0MzUyLC02MTYwNTk4NDcsLTIxMzU2NzY2MTYsMTI1
