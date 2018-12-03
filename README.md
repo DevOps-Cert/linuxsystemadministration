@@ -679,19 +679,23 @@ Send output from one command to another (indefinitely stackable): `# cat file | 
 echo and this goes to stderr >&2" > /work/65.43/command
 # chmod 755 /work/65.43/command
 # /work/65.43/command > /work/76.43/stdout 2> /work/76.43/stderr
+# cat /work/76.43/stdout
+this goes to stdout
+# cat /work/76.43/stderr
+and this goes to stderr
 ```
-https://www.linuxjournal.com/content/working-stdin-and-stdout
+Source: https://www.linuxjournal.com/content/working-stdin-and-stdout
 
 </details>
 
-`
+
 
 <details><summary>Write both stdout and errors to same file named /work/65.43/both for command : </summary>
 
 ```
 # /work/65.43/command &>  /work/65.43/both
 ```
-https://www.linuxjournal.com/content/working-stdin-and-stdout
+Source: https://www.linuxjournal.com/content/working-stdin-and-stdout
 
 </details>
 
@@ -3524,11 +3528,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MzEwNDM1Myw3MTk2NDYwNzAsLTQwND
-U2NzY0MiwtMTEwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUw
-MTksLTI0NTQ2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLT
-IwMzE0NTcyOTUsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5
-NjYyMDc0LC05OTUwNDQzNTIsLTYxNjA1OTg0NywtMjEzNTY3Nj
-YxNiwxMjUwODkwNTMxLC05MjMwMTE4NjgsLTIxMTM1Nzg2OTks
-LTEzNzAzNzAzODRdfQ==
+eyJoaXN0b3J5IjpbNTgyNjUwMDE0LDcxOTY0NjA3MCwtNDA0NT
+Y3NjQyLC0xMTAyMjM4MzEzLDE5NzA3MzM0OTEsLTY2MTExNTAx
+OSwtMjQ1NDYyMDczLC02MDAyMDgwNzUsMTQ0MDY5NTg2MCwtMj
+AzMTQ1NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2ODk2
+NjIwNzQsLTk5NTA0NDM1MiwtNjE2MDU5ODQ3LC0yMTM1Njc2Nj
+E2LDEyNTA4OTA1MzEsLTkyMzAxMTg2OCwtMjExMzU3ODY5OSwt
+MTM3MDM3MDM4NF19
 -->
