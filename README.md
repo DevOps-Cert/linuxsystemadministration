@@ -2659,13 +2659,13 @@ First, lookup octal values with `man 2 stat`
 </details>
 
 
-<details><summary>Find all SUID and GUID marked  files in /work and make a record in /work/5.2/suid</summary>
+<details><summary>Find all SUID and GUID marked  files in /work and make a record in /work/5.2/suidandguid</summary>
 
 ```
 # grep -i "suid" -R /usr/share/ | grep find
 /usr/share/man/man1/find.1:.B find / \e( \-perm \-4000 \-fprintf /root/suid.txt \(aq%#m %u %p\en\(aq \e) , \e
 # man find 
-# find /work -perm 4000 -print > /work/5.2/suid
+# find /work -perm 6000 -print > /work/5.2/suidandguid
 ```
 
 </details>
@@ -3577,11 +3577,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 * [Udemy video course of possible benefit](https://www.udemy.com/linux-foundation-ceritifed-system-administrator-lfcs-2018/learn/v4/content)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjIyNzM4ODYsLTEwMzQwMjMwNzYsMT
-A5MDQzNjY5NSw1OTQ4MDUxNDksLTEyODQ4MDMwODEsLTE2OTY0
-NDU1NDQsNTEzODg0MTM4LDE3NDI1NjUwNzQsLTQ5ODM4MDYzMy
-wxNjU4NDMxMjgyLDcxOTY0NjA3MCwtNDA0NTY3NjQyLC0xMTAy
-MjM4MzEzLDE5NzA3MzM0OTEsLTY2MTExNTAxOSwtMjQ1NDYyMD
-czLC02MDAyMDgwNzUsMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5NSwt
-MTI1MzkyNTYwMV19
+eyJoaXN0b3J5IjpbNjI0Nzk0NTQ2LC0xMDM0MDIzMDc2LDEwOT
+A0MzY2OTUsNTk0ODA1MTQ5LC0xMjg0ODAzMDgxLC0xNjk2NDQ1
+NTQ0LDUxMzg4NDEzOCwxNzQyNTY1MDc0LC00OTgzODA2MzMsMT
+Y1ODQzMTI4Miw3MTk2NDYwNzAsLTQwNDU2NzY0MiwtMTEwMjIz
+ODMxMywxOTcwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2MjA3My
+wtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOTUsLTEy
+NTM5MjU2MDFdfQ==
 -->
