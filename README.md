@@ -2836,7 +2836,7 @@ Documentation : `/usr/share/doc/ifupdown/examples/network-interfaces` which is a
 
 </details>
 
-<details><summary>Statically route traffic dRestined for 1.2.3.0/24 through IP 10.20.40.20 persistent across reboot</summary>
+<details><summary>Statically route traffic destined for 1.2.3.0/24 through IP 10.20.40.20 persistent across reboot</summary>
 
 ```
 # grep route /etc/network/interfaces
@@ -3552,11 +3552,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk0ODA1MTQ5LC0xMjg0ODAzMDgxLC0xNj
-k2NDQ1NTQ0LDUxMzg4NDEzOCwxNzQyNTY1MDc0LC00OTgzODA2
-MzMsMTY1ODQzMTI4Miw3MTk2NDYwNzAsLTQwNDU2NzY0MiwtMT
-EwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2
-MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOT
-UsLTEyNTM5MjU2MDEsMTQyMjE4MTA5MywxNjg5NjYyMDc0LC05
-OTUwNDQzNTJdfQ==
+eyJoaXN0b3J5IjpbMTA5MDQzNjY5NSw1OTQ4MDUxNDksLTEyOD
+Q4MDMwODEsLTE2OTY0NDU1NDQsNTEzODg0MTM4LDE3NDI1NjUw
+NzQsLTQ5ODM4MDYzMywxNjU4NDMxMjgyLDcxOTY0NjA3MCwtND
+A0NTY3NjQyLC0xMTAyMjM4MzEzLDE5NzA3MzM0OTEsLTY2MTEx
+NTAxOSwtMjQ1NDYyMDczLC02MDAyMDgwNzUsMTQ0MDY5NTg2MC
+wtMjAzMTQ1NzI5NSwtMTI1MzkyNTYwMSwxNDIyMTgxMDkzLDE2
+ODk2NjIwNzRdfQ==
 -->
