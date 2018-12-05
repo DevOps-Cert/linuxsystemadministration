@@ -942,7 +942,7 @@ lrwxrwxrwx 1 root root 22 Nov 15 20:42 /etc/rc5.d/S04cpufrequtils -> ../init.d/c
 ```
 # touch /work/98.31/{1..5}.txt; mkdir hard
 # for filename in /work/98.31/*.txt ; do $RANDOM=((1 + RANDOM % 10));  ln "$filename" "$filename"."$RANDOM" ;     done
-# for filename in /work/98.31/*.txt ; do RANDOM=((1 + RANDOM % 10));  echo "$RANDOM" ;     done
+# for filename in /work/98.31/*.txt ; do iterate=od -A n -t d -N 1 /dev/urandom;  echo "$iterate" ;     done
 # find /etc -type l  -exec ls -l {} \; > /work/3.6/etclinks.txt
 # head /work/3.6/etclinks.txt
 lrwxrwxrwx 1 root root 24 Nov 12 01:43 /etc/mysql/my.cnf -> /etc/alternatives/my.cnf
@@ -3594,7 +3594,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 * [Udemy video course of possible benefit](https://www.udemy.com/linux-foundation-ceritifed-system-administrator-lfcs-2018/learn/v4/content)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDI3Njk1NDEsLTQ5NTYxMjQyNywtMz
+eyJoaXN0b3J5IjpbLTExMDcyNzY3MjUsLTQ5NTYxMjQyNywtMz
 g0MjMwNDg1LC0xMDM0MDIzMDc2LDEwOTA0MzY2OTUsNTk0ODA1
 MTQ5LC0xMjg0ODAzMDgxLC0xNjk2NDQ1NTQ0LDUxMzg4NDEzOC
 wxNzQyNTY1MDc0LC00OTgzODA2MzMsMTY1ODQzMTI4Miw3MTk2
