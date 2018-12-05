@@ -2636,7 +2636,7 @@ First, lookup octal values with `man 2 stat`
 
 </details>
 
-<details><summary>Find all SUID files in /tmp and make a record in /work/5.2/suid</summary>
+<details><summary>Find all SUID files in /work and make a record in /work/5.2/suid</summary>
 
 ```
 # grep -i "suid" -R /usr/share/ | grep find
@@ -2646,6 +2646,30 @@ First, lookup octal values with `man 2 stat`
 ```
 
 </details>
+
+<details><summary>Find all GUID files in /work and make a record in /work/5.2/guid</summary>
+
+```
+# grep -i "suid" -R /usr/share/ | grep find
+/usr/share/man/man1/find.1:.B find / \e( \-perm \-4000 \-fprintf /root/suid.txt \(aq%#m %u %p\en\(aq \e) , \e
+# man find 
+# find /work -perm 4000 -print > /work/5.2/suid
+```
+
+</details>
+
+
+<details><summary>Find all SUID and GUID marked  files in /work and make a record in /work/5.2/suid</summary>
+
+```
+# grep -i "suid" -R /usr/share/ | grep find
+/usr/share/man/man1/find.1:.B find / \e( \-perm \-4000 \-fprintf /root/suid.txt \(aq%#m %u %p\en\(aq \e) , \e
+# man find 
+# find /work -perm 4000 -print > /work/5.2/suid
+```
+
+</details>
+
 
 ##	Setup user and group disk quotas for filesystems
 <details><summary>Assumption is that /quota is a separate partition on /dev/sdh1 taking up the entire 50 MB drive. If not, make one for home somewhere and somehow.</summary>
@@ -3553,11 +3577,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 * [Udemy video course of possible benefit](https://www.udemy.com/linux-foundation-ceritifed-system-administrator-lfcs-2018/learn/v4/content)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzQwMjMwNzYsMTA5MDQzNjY5NSw1OT
-Q4MDUxNDksLTEyODQ4MDMwODEsLTE2OTY0NDU1NDQsNTEzODg0
-MTM4LDE3NDI1NjUwNzQsLTQ5ODM4MDYzMywxNjU4NDMxMjgyLD
-cxOTY0NjA3MCwtNDA0NTY3NjQyLC0xMTAyMjM4MzEzLDE5NzA3
-MzM0OTEsLTY2MTExNTAxOSwtMjQ1NDYyMDczLC02MDAyMDgwNz
-UsMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5NSwtMTI1MzkyNTYwMSwx
-NDIyMTgxMDkzXX0=
+eyJoaXN0b3J5IjpbLTEyNjIyNzM4ODYsLTEwMzQwMjMwNzYsMT
+A5MDQzNjY5NSw1OTQ4MDUxNDksLTEyODQ4MDMwODEsLTE2OTY0
+NDU1NDQsNTEzODg0MTM4LDE3NDI1NjUwNzQsLTQ5ODM4MDYzMy
+wxNjU4NDMxMjgyLDcxOTY0NjA3MCwtNDA0NTY3NjQyLC0xMTAy
+MjM4MzEzLDE5NzA3MzM0OTEsLTY2MTExNTAxOSwtMjQ1NDYyMD
+czLC02MDAyMDgwNzUsMTQ0MDY5NTg2MCwtMjAzMTQ1NzI5NSwt
+MTI1MzkyNTYwMV19
 -->
