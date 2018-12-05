@@ -672,7 +672,8 @@ lrwxrwxrwx 1 root root 13 Nov 27 14:24 /etc/rc2.d/S02ssh -> ../init.d/ssh
 To get help: `man sh` or `man bash` and look for redirect.
 This is as good of a time as any to introduce cat.  cat - concatenate files and print on the standard output. It dumps to standard output (stdout) input files.
 Also, echo is useful to take text enclosed in quotes to either send to stdout or with redirect to a file.
-Write output to file `# echo "hello" > file`
+Write output to file clobbering any existing content:
+`# echo "hello" > file`
 Append output to file `# command >> file`
 Send output from one command to another (indefinitely stackable): `# cat file | grep A`
 
@@ -919,6 +920,19 @@ lrwxrwxrwx 1 root root 19 Nov 10 01:47 /work/5.6/appstream.txt -> /etc/appstream
 # ls -al /etc/vtrgb > /work/3.6/vtrgb
 # cat /work/3.6/vtrgb
 lrwxrwxrwx 1 root root 19 Nov 10 01:47 /work/5.6/appstream.txt -> /etc/appstream.conf
+```
+
+</details>
+
+<details><summary>/etc/ has a bunch of symbolic links.  Provide a report of them all in /work/3.6/etclinks.txt</summary>
+
+```
+# find /etc -type l  -exec ls -l {} \; > /work/3.6/etclinks.txt
+# head /work/3.6/etclinks.txt
+lrwxrwxrwx 1 root root 24 Nov 12 01:43 /etc/mysql/my.cnf -> /etc/alternatives/my.cnf
+lrwxrwxrwx 1 root root 17 Nov 14 00:55 /etc/rc5.d/S02anacron -> ../init.d/anacron
+lrwxrwxrwx 1 root root 17 Nov 15 20:42 /etc/rc5.d/S04dovecot -> ../init.d/dovecot
+lrwxrwxrwx 1 root root 22 Nov 15 20:42 /etc/rc5.d/S04cpufrequtils -> ../init.d/cpufrequtils
 ```
 
 </details>
@@ -3577,11 +3591,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 * [Udemy video course of possible benefit](https://www.udemy.com/linux-foundation-ceritifed-system-administrator-lfcs-2018/learn/v4/content)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0Nzk0NTQ2LC0xMDM0MDIzMDc2LDEwOT
-A0MzY2OTUsNTk0ODA1MTQ5LC0xMjg0ODAzMDgxLC0xNjk2NDQ1
-NTQ0LDUxMzg4NDEzOCwxNzQyNTY1MDc0LC00OTgzODA2MzMsMT
-Y1ODQzMTI4Miw3MTk2NDYwNzAsLTQwNDU2NzY0MiwtMTEwMjIz
-ODMxMywxOTcwNzMzNDkxLC02NjExMTUwMTksLTI0NTQ2MjA3My
-wtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIwMzE0NTcyOTUsLTEy
-NTM5MjU2MDFdfQ==
+eyJoaXN0b3J5IjpbLTM4NDIzMDQ4NSwtMTAzNDAyMzA3NiwxMD
+kwNDM2Njk1LDU5NDgwNTE0OSwtMTI4NDgwMzA4MSwtMTY5NjQ0
+NTU0NCw1MTM4ODQxMzgsMTc0MjU2NTA3NCwtNDk4MzgwNjMzLD
+E2NTg0MzEyODIsNzE5NjQ2MDcwLC00MDQ1Njc2NDIsLTExMDIy
+MzgzMTMsMTk3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNz
+MsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0x
+MjUzOTI1NjAxXX0=
 -->
