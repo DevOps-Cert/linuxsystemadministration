@@ -937,9 +937,10 @@ lrwxrwxrwx 1 root root 22 Nov 15 20:42 /etc/rc5.d/S04cpufrequtils -> ../init.d/c
 
 </details>
 
-<details><summary>/etc/ has a bunch of symbolic links.  Provide a report of them all in /work/3.6/etclinks.txt</summary>
+<details><summary>/work/98.31 has a bunch of hard links you will create.  Provide a report of them all in /work/98.31/etclinks.txt</summary>
 
 ```
+# ln 
 # find /etc -type l  -exec ls -l {} \; > /work/3.6/etclinks.txt
 # head /work/3.6/etclinks.txt
 lrwxrwxrwx 1 root root 24 Nov 12 01:43 /etc/mysql/my.cnf -> /etc/alternatives/my.cnf
@@ -3591,11 +3592,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 * [Udemy video course of possible benefit](https://www.udemy.com/linux-foundation-ceritifed-system-administrator-lfcs-2018/learn/v4/content)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NDIzMDQ4NSwtMTAzNDAyMzA3NiwxMD
-kwNDM2Njk1LDU5NDgwNTE0OSwtMTI4NDgwMzA4MSwtMTY5NjQ0
-NTU0NCw1MTM4ODQxMzgsMTc0MjU2NTA3NCwtNDk4MzgwNjMzLD
-E2NTg0MzEyODIsNzE5NjQ2MDcwLC00MDQ1Njc2NDIsLTExMDIy
-MzgzMTMsMTk3MDczMzQ5MSwtNjYxMTE1MDE5LC0yNDU0NjIwNz
-MsLTYwMDIwODA3NSwxNDQwNjk1ODYwLC0yMDMxNDU3Mjk1LC0x
-MjUzOTI1NjAxXX0=
+eyJoaXN0b3J5IjpbMTc2NjIzNjA1MiwtMzg0MjMwNDg1LC0xMD
+M0MDIzMDc2LDEwOTA0MzY2OTUsNTk0ODA1MTQ5LC0xMjg0ODAz
+MDgxLC0xNjk2NDQ1NTQ0LDUxMzg4NDEzOCwxNzQyNTY1MDc0LC
+00OTgzODA2MzMsMTY1ODQzMTI4Miw3MTk2NDYwNzAsLTQwNDU2
+NzY0MiwtMTEwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUwMT
+ksLTI0NTQ2MjA3MywtNjAwMjA4MDc1LDE0NDA2OTU4NjAsLTIw
+MzE0NTcyOTVdfQ==
 -->
