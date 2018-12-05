@@ -937,7 +937,7 @@ lrwxrwxrwx 1 root root 22 Nov 15 20:42 /etc/rc5.d/S04cpufrequtils -> ../init.d/c
 
 </details>
 
-<details><summary>/work/98.31 has a bunch of hard links you will create.  Provide a report of them all in /work/98.31/etclinks.txt</summary>
+<details><summary>Since there is an absence of hard links on default install, we need to create a bunch in /work/98.31.  Provide a report of them all after creating them in /work/98.31/etclinks.txt</summary>
 
 ```
 # ln 
@@ -3592,7 +3592,7 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 * [Udemy video course of possible benefit](https://www.udemy.com/linux-foundation-ceritifed-system-administrator-lfcs-2018/learn/v4/content)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NjIzNjA1MiwtMzg0MjMwNDg1LC0xMD
+eyJoaXN0b3J5IjpbMTA4MDk1NjY1NywtMzg0MjMwNDg1LC0xMD
 M0MDIzMDc2LDEwOTA0MzY2OTUsNTk0ODA1MTQ5LC0xMjg0ODAz
 MDgxLC0xNjk2NDQ1NTQ0LDUxMzg4NDEzOCwxNzQyNTY1MDc0LC
 00OTgzODA2MzMsMTY1ODQzMTI4Miw3MTk2NDYwNzAsLTQwNDU2
