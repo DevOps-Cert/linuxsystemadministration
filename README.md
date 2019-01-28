@@ -52,7 +52,7 @@ This is the easiest solution and easiest to maintain and install.  It requires n
 
 _Install on the server_
 ```
-# sudo apt-get install squid-deb-proxy squid-deb-proxy-client;  sudo systemctl start squid-deb-proxy; systemctl enable squid-deb-proxy
+# sudo apt-get install -y squid-deb-proxy squid-deb-proxy-client;  sudo systemctl start squid-deb-proxy; systemctl enable squid-deb-proxy
 ```
 _Install on clients_
 ```
@@ -3593,11 +3593,11 @@ Sources: [tecmint - SMB/NFS](https://www.tecmint.com/mount-filesystem-in-linux/)
 * [nhatlong0605](https://www.cheatography.com/nhatlong0605/cheat-sheets/)
 * [Udemy video course of possible benefit](https://www.udemy.com/linux-foundation-ceritifed-system-administrator-lfcs-2018/learn/v4/content)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MjY2NzUwMiwtMTQ4Mjk2MDE2MywtND
-k1NjEyNDI3LC0zODQyMzA0ODUsLTEwMzQwMjMwNzYsMTA5MDQz
-NjY5NSw1OTQ4MDUxNDksLTEyODQ4MDMwODEsLTE2OTY0NDU1ND
-QsNTEzODg0MTM4LDE3NDI1NjUwNzQsLTQ5ODM4MDYzMywxNjU4
-NDMxMjgyLDcxOTY0NjA3MCwtNDA0NTY3NjQyLC0xMTAyMjM4Mz
-EzLDE5NzA3MzM0OTEsLTY2MTExNTAxOSwtMjQ1NDYyMDczLC02
-MDAyMDgwNzVdfQ==
+eyJoaXN0b3J5IjpbNDgxMjk1Mzk2LC00NjI2Njc1MDIsLTE0OD
+I5NjAxNjMsLTQ5NTYxMjQyNywtMzg0MjMwNDg1LC0xMDM0MDIz
+MDc2LDEwOTA0MzY2OTUsNTk0ODA1MTQ5LC0xMjg0ODAzMDgxLC
+0xNjk2NDQ1NTQ0LDUxMzg4NDEzOCwxNzQyNTY1MDc0LC00OTgz
+ODA2MzMsMTY1ODQzMTI4Miw3MTk2NDYwNzAsLTQwNDU2NzY0Mi
+wtMTEwMjIzODMxMywxOTcwNzMzNDkxLC02NjExMTUwMTksLTI0
+NTQ2MjA3M119
 -->
